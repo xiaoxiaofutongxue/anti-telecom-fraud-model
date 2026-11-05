@@ -1649,7 +1649,7 @@
   "fourflow/windows.py": "1a472ddbb64db2a2f589a2af92df2d2ca25a60fd18d34a6f5a5144b2d201c3eb",
   "fourflow/workspace_lock.py": "1b616a3e758e7f1e3f45d66e81be979da13053718c75762214d0a01a76486e7d",
   "launch.pyw": "c79b52be3233549413611f7ab0aa49fb23284f698482698ea4b652f7b6dd0508",
-  "README.md": "e86edd5ef74338edcbebff25aaf0cf7bfed9fff8632175423bbc4b482df7c1e2",
+  "README.md": "b020dfbf0bd379e448aaa659bc4322ad252f76021cd0079d11bf217483ee61e8",
   "requirements-lock.txt": "ac50e8eef46a3e30a08046504509217a0d746e8507b62063b21c8a4fba0909af",
   "requirements.txt": "9ed701e0b726e4112895b9ac58a9b1290057e7fe799c456a703dcc0f5dc470ab",
   "runtime/models/joint_1_4_dro/model_card.json": "193c99935fbd97cb5cee0df5830a14b999a6e289726fb6923fa0a0098f92bcbb",
@@ -1689,10 +1689,10 @@
   "tools/train_upgrade_1_3.py": "058fdba7c70c28226cab34bcf75308db2a76aa838fa3322953be08a359d34a4c",
   "tools/train_upgrade_1_4.py": "e1b82b02352db99374b3226c11e1f1182614e7605d41b66c89536e5d665b71ab",
   "启动系统.vbs": "c27b82caabbcce2d1511e3f8b9c98637289bd5a5284fdf5624fdd3d13fdd05e4",
-  "项目文档/01_项目演进与本轮验收记录_1.9.1.docx": "4a643d00906d2e8197672054fe9a453cd9c313db9ab7287c9a58c0e6b8225150",
-  "项目文档/02_各板块功能与使用说明_1.9.1.docx": "d35cef1367db1b9ff381ee32ec9dcad7225eb60fe5e626c55c5834d40207e51b",
-  "项目文档/03_零基础操作手册_1.9.1.docx": "5e7d53fdb8e79ea9c8e2f996a2b3a5fa1d4647063a0a28eab65355535b6d8280",
-  "项目文档/README.md": "0159ba300b5791e4d8c68830c050be845b4deaed11126e2f44aa7aeaa6efe4d1",
+  "项目文档/01_项目演进与本轮验收记录_1.9.1.docx": "1806f4d705690b2be5fe949f9dd8dee343328b41768d91d10c167eca535a97b7",
+  "项目文档/02_各板块功能与使用说明_1.9.1.docx": "caafbec1ff6c4aee6dea6dd9cd14e5c22265706ebfe91a0b76512e769548784e",
+  "项目文档/03_零基础操作手册_1.9.1.docx": "c6d3a768d09d205521c50e04c97363d5999535743b5c25c0657137b625a5eea8",
+  "项目文档/README.md": "b1ca13e777a3903efdf43cfb2e895e58a7ded555d00ca4af8c3327e47dc7a6a9",
   ".gitattributes": "763d8b30279c84381b69638d230ff951639657e25e67f4e163a4aba2e45f02fd",
   "docs/命令行操作详解.md": "8405fba8677d571165e9faae8253f8ac29d23bd01b31dff7d3dff3491ca8a46c"
 }
