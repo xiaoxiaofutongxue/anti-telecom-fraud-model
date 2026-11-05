@@ -1,0 +1,46 @@
+{
+  "available": true,
+  "case_id": "SIM_IMPORT",
+  "as_of": "",
+  "max_gap_hours": 72,
+  "nodes": [
+    {
+      "id": "funds:SIM001",
+      "table": "funds",
+      "record_id": "SIM001",
+      "flow": "funds",
+      "timestamp": "2026-01-01T08:00:00+08:00",
+      "source_id": "IMP_26378dad26f0",
+      "csv_line": 2,
+      "entities": [
+        "account:%E5%90%88%E6%88%90%E9%93%B6%E8%A1%8C%E5%9F%9F:000123",
+        "account:%E5%90%88%E6%88%90%E9%93%B6%E8%A1%8C%E5%9F%9F:000456"
+      ]
+    },
+    {
+      "id": "funds:SIM002",
+      "table": "funds",
+      "record_id": "SIM002",
+      "flow": "funds",
+      "timestamp": "2026-01-01T08:02:00+08:00",
+      "source_id": "IMP_26378dad26f0",
+      "csv_line": 3,
+      "entities": [
+        "account:%E5%90%88%E6%88%90%E9%93%B6%E8%A1%8C%E5%9F%9F:000456",
+        "account:%E5%90%88%E6%88%90%E9%93%B6%E8%A1%8C%E5%9F%9F:000789"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "funds:SIM001",
+      "to": "funds:SIM002",
+      "entities": [
+        "account:%E5%90%88%E6%88%90%E9%93%B6%E8%A1%8C%E5%9F%9F:000456"
+      ],
+      "gap_hours": 0.03333333333333333,
+      "relation": "同实体先后出现"
+    }
+  ],
+  "interpretation": "事件节点来自去重原始记录；边只表示同一实体在窗口内先后出现，不证明资金归属、实体控制或因果关系。"
+}

@@ -1,0 +1,3 @@
+﻿case_id,tx_id,from_id,to_id,from_kind,to_kind,chain,timestamp,amount,currency,order_id,exchange_id,source_id
+SIM_IMPORT,SIM001,000123,000456,account,account,合成银行域,2026-01-01T08:00:00+08:00,100.01,CNY,,,IMP_26378dad26f0
+SIM_IMPORT,SIM002,000456,000789,account,account,合成银行域,2026-01-01T08:02:00+08:00,80.00,CNY,,,IMP_26378dad26f0

@@ -1,0 +1,18 @@
+﻿record_id,ip,scope,timestamp,anchors,device_nodes,source_port,source_id,csv_line,original_line
+NET001,192.0.2.1,synthetic-DEMO14_C001,2026-01-01T08:00:00+08:00,"[""actor:A6"", ""wallet:TRON:DEMO14_C001-W00""]","[""device:D1""]",30000,S001,2,2
+NET002,192.0.2.1,synthetic-DEMO14_C001,2026-01-01T08:04:00+08:00,"[""actor:A3"", ""wallet:TRON:DEMO14_C001-W01""]","[""device:D2""]",30001,S001,3,3
+TECH0,198.51.100.10,synthetic-DEMO14_C001,2026-01-01T08:05:00+08:00,"[""actor:A4""]","[""device:D_TECH""]",41000,S001,110,110
+TECH1,198.51.100.11,synthetic-DEMO14_C001,2026-01-01T08:07:00+08:00,"[""actor:A4""]","[""device:D_TECH""]",41001,S001,111,111
+NETV1,2001:db8::1,synthetic-DEMO14_C001,2026-01-01T08:08:00+08:00,"[""actor:A6"", ""wallet:TRON:DEMO14_C001-W00""]","[""device:D1""]",,S001,8,8
+NET003,192.0.2.1,synthetic-DEMO14_C001,2026-01-01T08:08:00+08:00,"[""actor:A2"", ""wallet:TRON:DEMO14_C001-W02""]","[""device:D3""]",30002,S001,4,4
+NETV2,2001:db8::2,synthetic-DEMO14_C001,2026-01-01T08:11:00+08:00,"[""actor:A6"", ""wallet:TRON:DEMO14_C001-W00""]","[""device:D1""]",,S001,9,9
+NET004,192.0.2.2,synthetic-DEMO14_C001,2026-01-01T08:12:00+08:00,"[""actor:A6"", ""wallet:TRON:DEMO14_C001-W00""]","[""device:D1""]",30003,S001,5,5
+TECH4,198.51.100.14,synthetic-DEMO14_C001,2026-01-01T08:13:00+08:00,"[""actor:A4""]","[""device:D_TECH""]",41004,S001,112,112
+NETV3,2001:db8::3,synthetic-DEMO14_C001,2026-01-01T08:14:00+08:00,"[""actor:A6"", ""wallet:TRON:DEMO14_C001-W00""]","[""device:D1""]",,S001,10,10
+TECH5,198.51.100.15,synthetic-DEMO14_C001,2026-01-01T08:15:00+08:00,"[""actor:A4""]","[""device:D_TECH""]",41005,S001,113,113
+NET005,192.0.2.3,synthetic-DEMO14_C001,2026-01-01T08:16:00+08:00,"[""actor:A3"", ""wallet:TRON:DEMO14_C001-W01""]","[""device:D2""]",30004,S001,6,6
+NET006,192.0.2.4,synthetic-DEMO14_C001,2026-01-01T08:20:00+08:00,"[""actor:A2"", ""wallet:TRON:DEMO14_C001-W02""]","[""device:D3""]",30005,S001,7,7
+UNKNOWN_ONCE,203.0.113.249,synthetic-DEMO14_C001,2026-01-01T08:20:00+08:00,"[""actor:BYSTANDER""]","[""device:D_UNKNOWN""]",,S001,117,117
+BGIP_A6_0,203.0.113.38,synthetic-DEMO14_C001,2026-01-01T08:45:00+08:00,"[""actor:A1""]","[""device:D_BG_A6""]",45000,S001,115,115
+BGIP_A3_0,203.0.113.29,synthetic-DEMO14_C001,2026-01-01T09:10:00+08:00,"[""actor:A2""]","[""device:D_BG_A3""]",45000,S001,114,114
+BGIP_A6_1,203.0.113.39,synthetic-DEMO14_C001,2026-01-01T09:26:00+08:00,"[""actor:A1""]","[""device:D_BG_A6""]",45001,S001,116,116

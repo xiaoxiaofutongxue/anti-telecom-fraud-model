@@ -1,0 +1,3 @@
+﻿segment_id,method,view,page,paragraph,table,row,part,start_seconds,end_seconds,text,confidence,avg_logprob,no_speech_probability,language,box,coordinate_space,status
+SEG00001,local_asr,,,,,,,0.0,4.26,"這是合成測試材料,不是真實案件。",,-0.38670848608016967,0.012159616686403751,zh,,,机器提取，待人工核验
+SEG00002,local_asr,,,,,,,4.26,10.78,"請合對訂單編號001,交易金額100元。",,-0.38670848608016967,0.012159616686403751,zh,,,机器提取，待人工核验

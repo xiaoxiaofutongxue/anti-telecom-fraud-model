@@ -1,0 +1,82 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><title>1.5 单机实证准备验收</title><style>body{font:16px/1.8 Microsoft YaHei UI,sans-serif;max-width:1120px;margin:32px auto;padding:24px;color:#1e293b;background:#f4f6fa}section,table{background:white;border-radius:12px}section{padding:22px;margin:18px 0}aside{background:#fff0d7;padding:18px}table{width:100%;border-collapse:collapse}td,th{padding:12px;text-align:left;border-bottom:1px solid #dbe3ee}pre{white-space:pre-wrap;overflow-wrap:anywhere;font-size:13px}a{color:#1d4ed8}</style><h1>1.5 单机实证准备与验收</h1><aside>本机工程及合成验收；真实标签、真实团伙控制恢复和真实跨地区/案型效果仍未验证。</aside><p>2026-10-30T14:54:38.547725+08:00 · 7项通过，0项失败</p><section><h2>可复核输出</h2><ul><li><a href="intake_workflow\analysis_20261030_145331_092110\index.html">Excel接入后完整报告</a></li><li><a href="large_workflow\analysis_20261030_145331_446358\index.html">351节点大图、完整金额与分窗覆盖</a></li><li><a href="joint_workflow\analysis_20261030_145332_475284\index.html">双图联合研判与来源报告</a></li><li><a href="domains\domain_20261030_145356_351984\report.html">冻结后72案合成域评测</a></li><li><a href="empirical\empirical_20261030_145402_192373\report.html">实证评估接口合成验证</a></li><li><a href="simulation\simulation_20261030_145402_244949\report.html">13环节与原始图片/语音/PDF/视频自测</a></li></ul></section><table><tr><th>验收项</th><th>结果</th><th>实测明细</th></tr><tr><td>Excel接入、清洗、来源与一键全流程</td><td>通过</td><td><pre>{
+  &quot;records&quot;: 2,
+  &quot;accounts_preserved&quot;: true,
+  &quot;amount&quot;: &quot;180.01 CNY&quot;,
+  &quot;tasks_undefined_explicitly_unscored&quot;: true,
+  &quot;original_sha256&quot;: &quot;623567ae3c46fdc299705bdcf5a496bed854de1c02763e51477ec97b3e24fe7f&quot;
+}</pre></td></tr><tr><td>大图分窗、覆盖率与逐币种金额</td><td>通过</td><td><pre>{
+  &quot;nodes&quot;: 351,
+  &quot;events&quot;: 350,
+  &quot;windows&quot;: 4,
+  &quot;event_coverage&quot;: 1,
+  &quot;exact_total&quot;: &quot;3.50 CNY&quot;,
+  &quot;window_scores_not_aggregated&quot;: true
+}</pre></td></tr><tr><td>资金、人员、双图模型与解释全流程</td><td>通过</td><td><pre>{
+  &quot;status&quot;: &quot;complete&quot;,
+  &quot;joint_score&quot;: 0.9999998807907104,
+  &quot;control_candidates&quot;: 5,
+  &quot;shapley_residual&quot;: -5.551115123125783e-17
+}</pre></td></tr><tr><td>独立域评测、错例保留与合成审批阻断</td><td>通过</td><td><pre>{
+  &quot;cases&quot;: 72,
+  &quot;fund_errors&quot;: 1,
+  &quot;synthetic_approval_rejected&quot;: true,
+  &quot;origin&quot;: &quot;synthetic&quot;,
+  &quot;scope&quot;: &quot;同源生成机制，不能证明真实地区与案型泛化&quot;
+}</pre></td></tr><tr><td>既有全板块模拟与原始材料识别</td><td>通过</td><td><pre>{
+  &quot;passed&quot;: 12,
+  &quot;warnings&quot;: 1,
+  &quot;failed&quot;: 0,
+  &quot;warnings_preserved&quot;: [
+    {
+      &quot;name&quot;: &quot;资金/人员模型输出、覆盖率及保存载入&quot;,
+      &quot;status&quot;: &quot;需关注&quot;,
+      &quot;detail&quot;: {
+        &quot;fund_f1&quot;: 0.9231,
+        &quot;fund_confusion&quot;: {
+          &quot;tp&quot;: 6,
+          &quot;fp&quot;: 1,
+          &quot;fn&quot;: 0,
+          &quot;tn&quot;: 5
+        },
+        &quot;fund_error_cases&quot;: [
+          {
+            &quot;case_id&quot;: &quot;SIM13_1001_C006&quot;,
+            &quot;nodes&quot;: 51,
+            &quot;edges&quot;: 126,
+            &quot;label&quot;: 0,
+            &quot;fund_score&quot;: 0.712421,
+            &quot;fund_available&quot;: true,
+            &quot;fund_reason&quot;: &quot;&quot;,
+            &quot;person_candidates&quot;: 6,
+            &quot;person_abstained&quot;: 1,
+            &quot;known_or_related_training_records&quot;: false
+          }
+        ],
+        &quot;role_macro_f1&quot;: 1.0,
+        &quot;role_errors&quot;: [],
+        &quot;selective&quot;: {
+          &quot;labelled_persons&quot;: 72,
+          &quot;eligible&quot;: 72,
+          &quot;abstained&quot;: 0,
+          &quot;coverage&quot;: 1.0,
+          &quot;joint_accuracy_on_eligible&quot;: 1.0,
+          &quot;high_confidence_joint_errors&quot;: 0,
+          &quot;unlabelled_persons&quot;: 12,
+          &quot;unlabelled_abstained&quot;: 12
+        },
+        &quot;note&quot;: &quot;模拟指标和错例保留在model_evaluation.json；不能代表真实案件性能&quot;
+      }
+    }
+  ]
+}</pre></td></tr><tr><td>完整私有备份、恢复、核验库及三模型加载</td><td>通过</td><td><pre>{
+  &quot;backup_bytes&quot;: 134614882,
+  &quot;verified_files&quot;: 152,
+  &quot;dataset_identical&quot;: true,
+  &quot;reviews_preserved&quot;: true,
+  &quot;all_three_models_load&quot;: true,
+  &quot;local_asr_weight_included&quot;: true,
+  &quot;empirical_reports_included&quot;: true,
+  &quot;existing_venv_used&quot;: true
+}</pre></td></tr><tr><td>发布模型权重与当前引用未被验收改写</td><td>通过</td><td><pre>{
+  &quot;weights_and_pointers_unchanged&quot;: true
+}</pre></td></tr></table><section><h2>自动测试与桌面检查</h2><p><a href="自动测试记录.txt">完整回归记录</a> · <a href="桌面验证记录.json">实际桌面验证范围</a></p><p>备份只在隔离合成工作区执行；恢复可加载三类冻结模型，保留数据指纹和核验记录。只使用本机既有虚拟环境。</p></section><section><h2>未完成的验证</h2><p>本次没有真实数据，未训练真实业务模型，未证明真实控制关系、现实因果识别或跨地区泛化。未验证新机器全新安装；备份与搬移继续使用本机现有虚拟环境。</p><p>材料未提供HD-EIA/MOID-XAI原始公式，现有为明确定义的工程实现。APK、NFC、NeRF及外部自动取证不在单机CSV/Excel核心流程实现范围内。</p></section></html>

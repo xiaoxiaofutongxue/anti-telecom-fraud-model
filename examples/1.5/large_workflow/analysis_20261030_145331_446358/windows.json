@@ -1,0 +1,37 @@
+{
+  "plan": {
+    "total_records": 350,
+    "covered_records": 350,
+    "coverage": 1.0,
+    "truncated": false,
+    "reference_time": "2026-01-01T08:05:49+08:00",
+    "interpretation": "窗口可重叠，金额和候选不得跨窗口相加；窗口分数不是整案概率。完整金额与原记录统计仍使用原图。"
+  },
+  "whole_case_model": false,
+  "windows": [
+    {
+      "index": 1,
+      "events": 128,
+      "nodes": 129,
+      "graph_fingerprint": "11291d905a563741c75205edfe3b5c1048b899ae37576ce4ecf8525a35b34e89"
+    },
+    {
+      "index": 2,
+      "events": 128,
+      "nodes": 129,
+      "graph_fingerprint": "2aacfbd2c4adc4bb9e5853e30ba22e707df03f393157564bf8febc9a4aa68717"
+    },
+    {
+      "index": 3,
+      "events": 128,
+      "nodes": 129,
+      "graph_fingerprint": "ea87a9da408140405609a918e94a60687343c86e81f05b71a84534c5f7de0a78"
+    },
+    {
+      "index": 4,
+      "events": 38,
+      "nodes": 39,
+      "graph_fingerprint": "4bc698133bf403433b084c0403aba19788a6287aed43b223c5126c4d0283c3c0"
+    }
+  ]
+}

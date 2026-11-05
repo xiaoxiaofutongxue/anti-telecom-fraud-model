@@ -1,0 +1,21 @@
+﻿record_id,ip,scope,timestamp,anchors,device_nodes,source_port,source_id,csv_line,original_line
+NET001,192.0.2.1,synthetic-SIM13_1001_C001,2026-01-01T08:00:00+08:00,"[""actor:A6"", ""wallet:TRON:SIM13_1001_C001-W00""]","[""device:D1""]",30000,S001,2,2
+NET002,192.0.2.1,synthetic-SIM13_1001_C001,2026-01-01T08:04:00+08:00,"[""actor:A5"", ""wallet:TRON:SIM13_1001_C001-W01""]","[""device:D2""]",30001,S001,3,3
+TECH0,198.51.100.10,synthetic-SIM13_1001_C001,2026-01-01T08:05:00+08:00,"[""actor:A4""]","[""device:D_TECH""]",41000,S001,110,110
+TECH1,198.51.100.11,synthetic-SIM13_1001_C001,2026-01-01T08:07:00+08:00,"[""actor:A4""]","[""device:D_TECH""]",41001,S001,111,111
+NETV1,2001:db8::1,synthetic-SIM13_1001_C001,2026-01-01T08:08:00+08:00,"[""actor:A6"", ""wallet:TRON:SIM13_1001_C001-W00""]","[""device:D1""]",,S001,8,8
+NET003,192.0.2.1,synthetic-SIM13_1001_C001,2026-01-01T08:08:00+08:00,"[""actor:A2"", ""wallet:TRON:SIM13_1001_C001-W02""]","[""device:D3""]",30002,S001,4,4
+BGIP_A1_0,203.0.113.23,synthetic-SIM13_1001_C001,2026-01-01T08:08:00+08:00,"[""actor:A6""]","[""device:D_BG_A1""]",45000,S001,114,114
+TECH2,198.51.100.12,synthetic-SIM13_1001_C001,2026-01-01T08:09:00+08:00,"[""actor:A4""]","[""device:D_TECH""]",41002,S001,112,112
+NETV2,2001:db8::2,synthetic-SIM13_1001_C001,2026-01-01T08:11:00+08:00,"[""actor:A6"", ""wallet:TRON:SIM13_1001_C001-W00""]","[""device:D1""]",,S001,9,9
+TECH3,198.51.100.13,synthetic-SIM13_1001_C001,2026-01-01T08:11:00+08:00,"[""actor:A4""]","[""device:D_TECH""]",41003,S001,113,113
+NET004,192.0.2.2,synthetic-SIM13_1001_C001,2026-01-01T08:12:00+08:00,"[""actor:A6"", ""wallet:TRON:SIM13_1001_C001-W00""]","[""device:D1""]",30003,S001,5,5
+NETV3,2001:db8::3,synthetic-SIM13_1001_C001,2026-01-01T08:14:00+08:00,"[""actor:A6"", ""wallet:TRON:SIM13_1001_C001-W00""]","[""device:D1""]",,S001,10,10
+NET005,192.0.2.3,synthetic-SIM13_1001_C001,2026-01-01T08:16:00+08:00,"[""actor:A5"", ""wallet:TRON:SIM13_1001_C001-W01""]","[""device:D2""]",30004,S001,6,6
+NET006,192.0.2.4,synthetic-SIM13_1001_C001,2026-01-01T08:20:00+08:00,"[""actor:A2"", ""wallet:TRON:SIM13_1001_C001-W02""]","[""device:D3""]",30005,S001,7,7
+UNKNOWN_ONCE,203.0.113.249,synthetic-SIM13_1001_C001,2026-01-01T08:20:00+08:00,"[""actor:BYSTANDER""]","[""device:D_UNKNOWN""]",,S001,120,120
+BGIP_A3_1,203.0.113.30,synthetic-SIM13_1001_C001,2026-01-01T08:27:00+08:00,"[""actor:A2""]","[""device:D_BG_A3""]",45001,S001,117,117
+BGIP_A5_1,203.0.113.36,synthetic-SIM13_1001_C001,2026-01-01T08:31:00+08:00,"[""actor:A4""]","[""device:D_BG_A5""]",45001,S001,119,119
+BGIP_A3_0,203.0.113.29,synthetic-SIM13_1001_C001,2026-01-01T08:55:00+08:00,"[""actor:A2""]","[""device:D_BG_A3""]",45000,S001,116,116
+BGIP_A5_0,203.0.113.35,synthetic-SIM13_1001_C001,2026-01-01T08:58:00+08:00,"[""actor:A4""]","[""device:D_BG_A5""]",45000,S001,118,118
+BGIP_A2_0,203.0.113.26,synthetic-SIM13_1001_C001,2026-01-01T09:18:00+08:00,"[""actor:A5""]","[""device:D_BG_A2""]",45000,S001,115,115

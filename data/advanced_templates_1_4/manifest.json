@@ -1,0 +1,32 @@
+{
+  "schema_version": 2,
+  "origin": "real",
+  "title": "请填写数据集名称",
+  "timezone": "Asia/Shanghai",
+  "description": "请填写来源和脱敏方式",
+  "label_definition": {
+    "task_id": "",
+    "positive": "",
+    "negative": ""
+  },
+  "role_task": {
+    "task_id": "",
+    "roles": [],
+    "levels": [],
+    "compatible_pairs": []
+  },
+  "advanced": {
+    "version": 1,
+    "control_task": {
+      "task_id": "",
+      "positive": "",
+      "negative": ""
+    },
+    "media_file": "multimodal_links.json",
+    "control_file": "control_labels.csv",
+    "sha256": {
+      "control_labels.csv": "a48963e858bfc84b0bbdfeeb5640f79c34553e95f27833de2e3d11fc43d58058",
+      "multimodal_links.json": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    }
+  }
+}

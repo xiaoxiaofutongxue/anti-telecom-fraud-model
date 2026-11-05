@@ -1,0 +1,64 @@
+{
+  "version": "1.5.0",
+  "origin": "synthetic",
+  "case_id": "SIM_LARGE",
+  "dataset_fingerprint": "652cd0de0b62119a3ee346fd65353025db57c7b5d9bc160a876ea38017d19767",
+  "graph_fingerprint": "31bd9d19ea47df8c0f1cc55bd2dd20c16c3528835d41544dbe958138124c106e",
+  "status": "complete",
+  "stages": [
+    {
+      "name": "核对输入及人工核验快照",
+      "status": "passed"
+    },
+    {
+      "name": "逐币种精确金额与质量提示",
+      "status": "passed"
+    },
+    {
+      "name": "资金/IP模式与截断检查",
+      "status": "passed"
+    },
+    {
+      "name": "IP与来源关联",
+      "status": "passed"
+    },
+    {
+      "name": "产业订单与材料缺口",
+      "status": "passed"
+    },
+    {
+      "name": "规划完整事件窗口",
+      "status": "passed"
+    },
+    {
+      "name": "导出完整统计和来源报告",
+      "status": "passed"
+    },
+    {
+      "name": "再次核对数据与核验状态",
+      "status": "passed"
+    }
+  ],
+  "scope": "本地辅助分析任务编排，不联网、不自动取得外部证据、不自动认定违法。",
+  "model_windows": 4,
+  "report": "reports\\SIM_LARGE_20261030_145331_637423/report.html",
+  "window_report": "windows.json",
+  "record_coverage": 1.0,
+  "truncated": false,
+  "finding_count": 100,
+  "industry_orders": 0,
+  "ip_count": 0,
+  "pattern_diagnostics": {
+    "skipped_cycle_currencies": [],
+    "truncated_cycle_currencies": [],
+    "fund_findings_truncated": true,
+    "ip_findings_truncated": false,
+    "search_complete": false,
+    "returned_findings": 100,
+    "interpretation": "部分回流分析未执行或候选列表被截断，请缩小案件时间窗口；没有显示的候选不表示不存在"
+  },
+  "next_actions": [
+    "未提供模型；当前已完成可追溯统计与关联分析",
+    "模式搜索或候选列表达到上限，请缩小时间范围复查；未显示不代表不存在"
+  ]
+}

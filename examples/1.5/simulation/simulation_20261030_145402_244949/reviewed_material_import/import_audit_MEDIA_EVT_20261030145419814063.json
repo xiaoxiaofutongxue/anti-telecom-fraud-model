@@ -1,0 +1,14 @@
+{
+  "parent_dataset_fingerprint": "cb829b4e91403c69a913f85000f51683b1ccdf77b2b3d79091e313a2c0197786",
+  "material_sha256": "98e4c754aa53f8fde9bef6cc15edefc5b69df4bca1ac83cf3b8741ec458d3945",
+  "case_id": "SIM13_1001_C001",
+  "source_id": "MEDIA_98e4c754aa53",
+  "event_id": "MEDIA_EVT_20261030145419814063",
+  "reviewer": "合成流程自测",
+  "reviewed_at": "2026-10-30T14:54:19.893096+08:00",
+  "event_time": "2026-01-01T10:00:00+08:00",
+  "original_machine_text": "合成多模态测试材料非真实案件\n时间：2026-01-0108:00:00\nIP: 192.0.2.10\nSIM001 W001 -> W002 100.00 USDT\n通信摘要：请核对订单0001的收发时间。\n识别结果均为待人工核验内容。",
+  "confirmed_text": "人工核对后的合成通信摘要",
+  "preserved_source_references": [],
+  "policy": "人工作出的主体/时间对应，仅增加通信摘要，不自动导入识别候选交易或身份"
+}

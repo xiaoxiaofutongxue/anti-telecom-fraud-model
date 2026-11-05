@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "origin": "synthetic",
+  "task_id": "synthetic_known_scm_v1",
+  "question": "在明确的合成结构方程中，二元资金信号对后续产业指标的总体平均效应",
+  "treatment": "fund_signal",
+  "outcome": "industry_measure",
+  "adjustment": [
+    "prior_activity",
+    "network_context"
+  ],
+  "dag": {
+    "nodes": [
+      "prior_activity",
+      "network_context",
+      "fund_signal",
+      "industry_measure"
+    ],
+    "edges": [
+      [
+        "prior_activity",
+        "fund_signal"
+      ],
+      [
+        "network_context",
+        "fund_signal"
+      ],
+      [
+        "prior_activity",
+        "industry_measure"
+      ],
+      [
+        "network_context",
+        "industry_measure"
+      ],
+      [
+        "fund_signal",
+        "industry_measure"
+      ]
+    ]
+  },
+  "unobserved_nodes": [],
+  "assumptions": {
+    "consistency": true,
+    "no_unmeasured_confounding": true,
+    "positivity": true,
+    "pre_treatment_covariates": true,
+    "independent_groups": true
+  },
+  "acknowledged_by": "合成生成器：仅验证已声明机制",
+  "known_ate_for_validation": 1.5,
+  "description": "此处总体效应不等于任何人的涉诈因果结论；真实研究必须由分析人员确认变量、因果图和识别假设。"
+}

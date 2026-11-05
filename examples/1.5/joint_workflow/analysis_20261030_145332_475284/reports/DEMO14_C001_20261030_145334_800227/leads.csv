@@ -1,0 +1,18 @@
+﻿lead_id,question,related_records,source_ids,suggested_material,status
+L001,核验 短时拆分候选 的业务背景及实际控制关系,"[""T002"", ""T003"", ""T004"", ""T005""]","[""S001""]",原始交易回执、同币种时序记录、对应业务凭据及控制关系材料,建议核验；非已取得证据
+L002,核验 短时归集候选 的业务背景及实际控制关系,"[""T006"", ""T007"", ""T008""]","[""S001""]",原始交易回执、同币种时序记录、对应业务凭据及控制关系材料,建议核验；非已取得证据
+L003,核验 短时转入转出候选 的业务背景及实际控制关系,"[""T002"", ""T006""]","[""S001""]",原始交易回执、同币种时序记录、对应业务凭据及控制关系材料,建议核验；非已取得证据
+L004,核验 短时转入转出候选 的业务背景及实际控制关系,"[""T003"", ""T007""]","[""S001""]",原始交易回执、同币种时序记录、对应业务凭据及控制关系材料,建议核验；非已取得证据
+L005,核验 短时转入转出候选 的业务背景及实际控制关系,"[""T004"", ""T008""]","[""S001""]",原始交易回执、同币种时序记录、对应业务凭据及控制关系材料,建议核验；非已取得证据
+L006,核验 短时转入转出候选 的业务背景及实际控制关系,"[""T005"", ""T010""]","[""S001""]",原始交易回执、同币种时序记录、对应业务凭据及控制关系材料,建议核验；非已取得证据
+L007,核验 回流结构候选 的业务背景及实际控制关系,"[""N3"", ""T002"", ""T006"", ""T009""]","[""S001""]",原始交易回执、同币种时序记录、对应业务凭据及控制关系材料,建议核验；非已取得证据
+L008,核验 回流结构候选 的业务背景及实际控制关系,"[""T003"", ""T007"", ""T009""]","[""S001""]",原始交易回执、同币种时序记录、对应业务凭据及控制关系材料,建议核验；非已取得证据
+L009,核验 回流结构候选 的业务背景及实际控制关系,"[""T004"", ""T008"", ""T009""]","[""S001""]",原始交易回执、同币种时序记录、对应业务凭据及控制关系材料,建议核验；非已取得证据
+L010,核验 回流结构候选 的业务背景及实际控制关系,"[""N1"", ""T009""]","[""S001""]",原始交易回执、同币种时序记录、对应业务凭据及控制关系材料,建议核验；非已取得证据
+L011,核验 同时间窗共享IP线索 的业务背景及实际控制关系,"[""NET001"", ""NET002"", ""NET003""]","[""S001""]",带时区的原始访问日志、源端口、网络域、设备标识及经授权的运营商对应材料；不能仅凭共享IP认定同一人,建议核验；非已取得证据
+L012,核验 短时多IP切换线索 的业务背景及实际控制关系,"[""NET001"", ""NET004"", ""NETV1"", ""NETV2"", ""NETV3""]","[""S001""]",带时区的原始访问日志、源端口、网络域、设备标识及经授权的运营商对应材料；不能仅凭共享IP认定同一人,建议核验；非已取得证据
+L013,核验 短时多IP切换线索 的业务背景及实际控制关系,"[""NET001"", ""NET004"", ""NETV1"", ""NETV2"", ""NETV3""]","[""S001""]",带时区的原始访问日志、源端口、网络域、设备标识及经授权的运营商对应材料；不能仅凭共享IP认定同一人,建议核验；非已取得证据
+L014,核验 短时多IP切换线索 的业务背景及实际控制关系,"[""TECH0"", ""TECH1"", ""TECH4"", ""TECH5""]","[""S001""]",带时区的原始访问日志、源端口、网络域、设备标识及经授权的运营商对应材料；不能仅凭共享IP认定同一人,建议核验；非已取得证据
+L015,核验主体 A5 与地址/账户 DEMO14_C001-W06 的候选关联,"[""I4""]","[""S001""]",经授权取得的开户/认证资料、控制关系材料及核验记录,身份未知；不得自动实名绑定
+L016,核验产业订单 O001,"[""identity_links:I3"", ""identity_links:I2"", ""identity_links:I1"", ""network_events:NET001"", ""funds:T001"", ""communications:M1"", ""network_events:NET002"", ""communications:M2"", ""network_events:NET003"", ""network_events:NETV1"", ""communications:M3"", ""communications:BG_A4_0"", ""communications:TECH_MSG0"", ""network_events:NETV2"", ""network_events:NET004"", ""communications:COORD_EXTRA"", ""communications:M4"", ""network_events:NETV3"", ""communications:TECH_MSG1"", ""network_events:NET005"", ""communications:FUND_MSG"", ""network_events:NET006"", ""communications:TECH_MSG2"", ""communications:BG_A4_1"", ""shipments:G001"", ""communications:J1_0"", ""communications:J1_1"", ""communications:J1_2"", ""communications:BG_A1_0"", ""communications:J2_0"", ""communications:J2_1"", ""communications:J2_2"", ""communications:BG_A6_1"", ""communications:J3_0"", ""shipments:G002"", ""communications:J3_1""]","[""S001""]",仅有单一来源材料组，需独立材料交叉核验,建议补充核验；非已取得证据
+L017,核验产业订单 O002,"[""communications:BG_A4_0"", ""communications:COORD_EXTRA"", ""communications:M4"", ""communications:BG_A4_1"", ""communications:J0_0"", ""communications:J0_1"", ""communications:J1_0"", ""communications:J1_1"", ""network_events:BGIP_A6_0"", ""communications:J1_2"", ""communications:BG_A1_0"", ""communications:BG_A6_0"", ""communications:BG_A6_1"", ""communications:BG_A3_0"", ""communications:BG_A2_0"", ""communications:BG_A1_1"", ""network_events:BGIP_A6_1"", ""shipments:G_EXTRA"", ""communications:BG_A5_1"", ""shipments:G_EXTRA2""]","[""S001""]",窗口内未找到发运前的同订单付款记录；缺少在发运前生效的已核实身份对应；仅有单一来源材料组，需独立材料交叉核验,建议补充核验；非已取得证据

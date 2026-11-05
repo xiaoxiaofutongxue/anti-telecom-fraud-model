@@ -1,0 +1,140 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><title>单机实证评测</title><style>body{font:16px/1.8 Microsoft YaHei UI,sans-serif;max-width:1100px;margin:30px auto;padding:24px;color:#172b44}pre{white-space:pre-wrap;overflow-wrap:anywhere;background:#f4f6fa;padding:20px}aside{background:#fff0d7;padding:18px}</style><h1>冻结模型外部实证评测</h1><aside>来源：synthetic。外部留出实证，未训练、校准或改变阈值。人工标签正确性仍需提供方核实。</aside><h2>指标与覆盖率</h2><pre>{
+  &quot;n&quot;: 24,
+  &quot;precision&quot;: 1.0,
+  &quot;recall&quot;: 1.0,
+  &quot;f1&quot;: 1.0,
+  &quot;accuracy&quot;: 1.0,
+  &quot;roc_auc&quot;: 1.0,
+  &quot;brier&quot;: 0.0,
+  &quot;confusion&quot;: {
+    &quot;tp&quot;: 12,
+    &quot;fp&quot;: 0,
+    &quot;fn&quot;: 0,
+    &quot;tn&quot;: 12
+  },
+  &quot;calibration&quot;: {
+    &quot;n&quot;: 24,
+    &quot;brier&quot;: 7.73930923486042e-10,
+    &quot;log_loss&quot;: 8.546356014849807e-06,
+    &quot;ece&quot;: 8.545969023165956e-06,
+    &quot;bins&quot;: [
+      {
+        &quot;lower&quot;: 0.0,
+        &quot;upper&quot;: 0.2,
+        &quot;n&quot;: 12,
+        &quot;mean_prediction&quot;: 1.6307143556826276e-05,
+        &quot;observed_frequency&quot;: 0.0
+      },
+      {
+        &quot;lower&quot;: 0.8,
+        &quot;upper&quot;: 1.0,
+        &quot;n&quot;: 12,
+        &quot;mean_prediction&quot;: 0.9999992152055105,
+        &quot;observed_frequency&quot;: 1.0
+      }
+    ],
+    &quot;interpretation&quot;: &quot;分箱频率仅描述这组留出标签；Brier同时受区分能力影响，小样本或合成数据不能证明真实概率校准。&quot;
+  },
+  &quot;precision_wilson_case_level&quot;: [
+    0.7575059933447693,
+    1.0
+  ],
+  &quot;recall_wilson_case_level&quot;: [
+    0.7575059933447693,
+    1.0
+  ],
+  &quot;labelled_cases&quot;: 24,
+  &quot;available_cases&quot;: 24,
+  &quot;coverage&quot;: 1.0,
+  &quot;positive_cases&quot;: 12,
+  &quot;negative_cases&quot;: 12,
+  &quot;independent_groups&quot;: 24,
+  &quot;f1_cluster_bootstrap_95&quot;: [
+    1.0,
+    1.0
+  ],
+  &quot;usable_bootstrap&quot;: 1000,
+  &quot;interval_scope&quot;: &quot;按声明关联分组整组重采样；Wilson按案件计算，组内相关时只作参考。零错误可能产生退化区间，不证明100%泛化。&quot;,
+  &quot;role_macro_f1&quot;: 1.0,
+  &quot;level_macro_f1&quot;: 1.0,
+  &quot;person_coverage&quot;: 1.0,
+  &quot;control_precision&quot;: 1.0,
+  &quot;control_recall&quot;: 1.0
+}</pre><h2>业务规则检查</h2><pre>{
+  &quot;passed&quot;: false,
+  &quot;checks&quot;: [
+    {
+      &quot;criterion&quot;: &quot;min_cases&quot;,
+      &quot;minimum&quot;: 30,
+      &quot;actual&quot;: 24,
+      &quot;passed&quot;: false
+    },
+    {
+      &quot;criterion&quot;: &quot;min_positive_cases&quot;,
+      &quot;minimum&quot;: 10,
+      &quot;actual&quot;: 12,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;criterion&quot;: &quot;min_negative_cases&quot;,
+      &quot;minimum&quot;: 10,
+      &quot;actual&quot;: 12,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;criterion&quot;: &quot;min_independent_groups&quot;,
+      &quot;minimum&quot;: 10,
+      &quot;actual&quot;: 24,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;criterion&quot;: &quot;min_coverage&quot;,
+      &quot;minimum&quot;: 0.8,
+      &quot;actual&quot;: 1.0,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;criterion&quot;: &quot;min_precision&quot;,
+      &quot;minimum&quot;: 0.8,
+      &quot;actual&quot;: 1.0,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;criterion&quot;: &quot;min_recall&quot;,
+      &quot;minimum&quot;: 0.8,
+      &quot;actual&quot;: 1.0,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;criterion&quot;: &quot;min_role_macro_f1&quot;,
+      &quot;minimum&quot;: 0.8,
+      &quot;actual&quot;: 1.0,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;criterion&quot;: &quot;min_level_macro_f1&quot;,
+      &quot;minimum&quot;: 0.8,
+      &quot;actual&quot;: 1.0,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;criterion&quot;: &quot;min_person_coverage&quot;,
+      &quot;minimum&quot;: 0.8,
+      &quot;actual&quot;: 1.0,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;criterion&quot;: &quot;min_control_precision&quot;,
+      &quot;minimum&quot;: 0.8,
+      &quot;actual&quot;: 1.0,
+      &quot;passed&quot;: true
+    },
+    {
+      &quot;criterion&quot;: &quot;min_control_recall&quot;,
+      &quot;minimum&quot;: 0.8,
+      &quot;actual&quot;: 1.0,
+      &quot;passed&quot;: true
+    }
+  ],
+  &quot;scope&quot;: &quot;业务人员设定的本地验收规则；示例数值不是行业标准或法律结论&quot;
+}</pre><p>完整错例、拒判、人员与控制对见同目录JSON/CSV。合成数据不能登记为真实业务实证通过。</p></html>

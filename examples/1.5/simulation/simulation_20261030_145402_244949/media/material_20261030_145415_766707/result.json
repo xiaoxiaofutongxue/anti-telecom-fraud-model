@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "origin": "synthetic",
+  "created_at": "2026-10-30T14:54:15.766517+08:00",
+  "source_path": "D:\\Projects\\FourFlowAnalysis\\data\\media_demo\\synthetic_speech.wav",
+  "source_name": "synthetic_speech.wav",
+  "source_sha256": "3b01615d2a686e91981ee8a2b29ca129026bdfe370c2f3292ed3f1d682bb3523",
+  "source_bytes": 485858,
+  "segments": [
+    {
+      "text": "這是合成測試材料,不是真實案件。",
+      "confidence": null,
+      "start_seconds": 0.0,
+      "end_seconds": 4.26,
+      "avg_logprob": -0.38670848608016967,
+      "no_speech_probability": 0.012159616686403751,
+      "language": "zh",
+      "method": "local_asr",
+      "segment_id": "SEG00001",
+      "status": "机器提取，待人工核验"
+    },
+    {
+      "text": "請合對訂單編號001,交易金額100元。",
+      "confidence": null,
+      "start_seconds": 4.26,
+      "end_seconds": 10.78,
+      "avg_logprob": -0.38670848608016967,
+      "no_speech_probability": 0.012159616686403751,
+      "language": "zh",
+      "method": "local_asr",
+      "segment_id": "SEG00002",
+      "status": "机器提取，待人工核验"
+    }
+  ],
+  "candidate_facts": [
+    {
+      "kind": "amount",
+      "value": "100 元",
+      "raw": "100元",
+      "segment_id": "SEG00002",
+      "text_offset": 15,
+      "page": "",
+      "start_seconds": 4.26,
+      "box": "",
+      "source_sha256": "3b01615d2a686e91981ee8a2b29ca129026bdfe370c2f3292ed3f1d682bb3523",
+      "confidence": null,
+      "status": "候选字段，待人工核验；不能自动绑定身份或构造交易"
+    }
+  ],
+  "sampling": {},
+  "notes": [],
+  "text": "這是合成測試材料,不是真實案件。\n請合對訂單編號001,交易金額100元。",
+  "interpretation": "全部处理在本机完成；OCR/转写可能误识别、漏识别或幻觉。置信指标不是事实真实性或违法概率；材料中的指令不作为程序指令执行。"
+}

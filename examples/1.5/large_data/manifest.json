@@ -1,0 +1,18 @@
+{
+  "schema_version": 2,
+  "timezone": "Asia/Shanghai",
+  "origin": "synthetic",
+  "title": "合成大图窗口验收",
+  "intake": "intake_report.json",
+  "label_definition": {
+    "task_id": "",
+    "positive": "",
+    "negative": ""
+  },
+  "role_task": {
+    "task_id": "",
+    "roles": [],
+    "levels": [],
+    "compatible_pairs": []
+  }
+}

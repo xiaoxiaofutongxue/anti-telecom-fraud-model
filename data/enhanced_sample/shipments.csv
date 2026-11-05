@@ -1,0 +1,13 @@
+﻿case_id,shipment_id,order_id,from_place,to_place,sender_id,receiver_id,carrier_id,vehicle_id,timestamp,goods_label,service_type,source_id
+C001,G001,O001,起运地甲,收货地乙,A4,A1,A2,V001,2026-01-01T08:30:00+08:00,合成通信设备批次（非违法认定）,telecom_equipment,S001
+C001,G002,O001,收货地乙,中转地丙,A1,A3,A2,V002,2026-01-01T09:00:00+08:00,合成通信设备批次（非违法认定）,telecom_equipment,S001
+C002,G001,O001,起运地甲,收货地乙,A1,A4,A2,V001,2026-01-04T08:30:00+08:00,合成通信设备批次（非违法认定）,telecom_equipment,S001
+C002,G002,O001,收货地乙,中转地丙,A4,A5,A2,V002,2026-01-04T09:00:00+08:00,合成通信设备批次（非违法认定）,telecom_equipment,S001
+C003,G001,O001,起运地甲,收货地乙,A2,A4,A5,V001,2026-01-07T08:30:00+08:00,合成通信设备批次（非违法认定）,telecom_equipment,S001
+C003,G002,O001,收货地乙,中转地丙,A4,A6,A5,V002,2026-01-07T09:00:00+08:00,合成通信设备批次（非违法认定）,telecom_equipment,S001
+C001,G_EXTRA,O002,合成仓储甲,合成中转乙,A2,A6,A6,V_EXTRA,2026-01-01T09:31:00+08:00,合成通信设备批次2,telecom_equipment,S001
+C001,G_EXTRA2,O002,合成中转乙,合成收货丙,A6,A2,A6,V_EXTRA,2026-01-01T10:11:00+08:00,合成通信设备批次2,telecom_equipment,S001
+C002,G_EXTRA,O002,合成仓储甲,合成中转乙,A2,A6,A6,V_EXTRA,2026-01-04T09:31:00+08:00,合成通信设备批次2,telecom_equipment,S001
+C002,G_EXTRA2,O002,合成中转乙,合成收货丙,A6,A2,A6,V_EXTRA,2026-01-04T10:11:00+08:00,合成通信设备批次2,telecom_equipment,S001
+C003,G_EXTRA,O002,合成仓储甲,合成中转乙,A5,A1,A1,V_EXTRA,2026-01-07T09:31:00+08:00,合成通信设备批次2,telecom_equipment,S001
+C003,G_EXTRA2,O002,合成中转乙,合成收货丙,A1,A5,A1,V_EXTRA,2026-01-07T10:11:00+08:00,合成通信设备批次2,telecom_equipment,S001

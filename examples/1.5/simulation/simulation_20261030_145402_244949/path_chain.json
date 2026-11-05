@@ -1,0 +1,24 @@
+[
+  {
+    "step": 1,
+    "from": "wallet:TRON:SIM13_1001_C001-W00",
+    "to": "wallet:TRON:SIM13_1001_C001-W01",
+    "relation": "transfer",
+    "timestamp": "2026-01-01T08:00:00+08:00",
+    "effective_from": "2026-01-01T08:00:00+08:00",
+    "lineage_verified": true,
+    "table": "funds",
+    "record_id": "T001",
+    "csv_line": 2,
+    "original_line": 2,
+    "original_sha256": "ce895619be2812895eca2aaf5ccb6758eebd40879fa07ed6787dd4a5e50d2af8",
+    "original_sheet": "",
+    "source_id": "S001",
+    "source_title": "合成记录说明",
+    "reference": "evidence/SIM13_1001_C001.txt",
+    "source_file_present": true,
+    "verification": "recorded",
+    "amount": "1041.64",
+    "currency": "USDT"
+  }
+]

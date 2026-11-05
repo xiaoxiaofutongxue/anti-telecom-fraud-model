@@ -1,0 +1,4326 @@
+{
+  "version": "1.5.0",
+  "model_id": "DUAL_20261028_195545_470207",
+  "model_weights_sha256": "7652e4804ce54f98e03840d878b78b098213bf11a051249e91b951201ce4eac3",
+  "selection": "冻结后评测，未更新权重、温度、阈值或指针",
+  "runs": [
+    {
+      "name": "未见地区",
+      "origin": "synthetic",
+      "dataset_fingerprint": "38c21c0cdd14ed4302a8466ce9d9ff44c369013268b030b04d81b8c6469f8705",
+      "domain_groups": {
+        "region": {
+          "合成未见区域丙": {
+            "unseen_in_training": true,
+            "case_count": 24,
+            "fund": {
+              "n": 24,
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "accuracy": 1.0,
+              "roc_auc": 1.0,
+              "brier": 0.0,
+              "confusion": {
+                "tp": 12,
+                "fp": 0,
+                "fn": 0,
+                "tn": 12
+              },
+              "calibration": {
+                "n": 24,
+                "brier": 6.789114584757633e-11,
+                "log_loss": 3.0826289386838293e-06,
+                "ece": 3.082594992524316e-06,
+                "bins": [
+                  {
+                    "lower": 0.0,
+                    "upper": 0.2,
+                    "n": 12,
+                    "mean_prediction": 1.446488940367215e-06,
+                    "observed_frequency": 0.0
+                  },
+                  {
+                    "lower": 0.8,
+                    "upper": 1.0,
+                    "n": 12,
+                    "mean_prediction": 0.9999952812989553,
+                    "observed_frequency": 1.0
+                  }
+                ],
+                "interpretation": "分箱频率仅描述这组留出标签；Brier同时受区分能力影响，小样本或合成数据不能证明真实概率校准。"
+              }
+            },
+            "roles": {
+              "n": 144,
+              "accuracy": 1.0,
+              "macro_f1": 1.0,
+              "confusion": [
+                [
+                  24,
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  48,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  24,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0,
+                  48
+                ]
+              ],
+              "nll": 0.00018881024867055992,
+              "calibration": {
+                "n": 144,
+                "brier": 7.132836828946655e-08,
+                "log_loss": 0.00018881024867055992,
+                "ece": 0.00018878570861291522,
+                "bins": [
+                  {
+                    "lower": 0.8,
+                    "upper": 1.0,
+                    "n": 144,
+                    "mean_prediction": 0.9998112142913871,
+                    "observed_frequency": 1.0
+                  }
+                ],
+                "interpretation": "分箱频率仅描述这组留出标签；Brier同时受区分能力影响，小样本或合成数据不能证明真实概率校准。"
+              }
+            },
+            "levels": {
+              "n": 144,
+              "accuracy": 1.0,
+              "macro_f1": 1.0,
+              "confusion": [
+                [
+                  24,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  72,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  48
+                ]
+              ],
+              "nll": 0.00023558475044217243,
+              "calibration": {
+                "n": 144,
+                "brier": 1.2958459368702158e-07,
+                "log_loss": 0.00023558475044217243,
+                "ece": 0.00023554472459685893,
+                "bins": [
+                  {
+                    "lower": 0.8,
+                    "upper": 1.0,
+                    "n": 144,
+                    "mean_prediction": 0.9997644552754031,
+                    "observed_frequency": 1.0
+                  }
+                ],
+                "interpretation": "分箱频率仅描述这组留出标签；Brier同时受区分能力影响，小样本或合成数据不能证明真实概率校准。"
+              }
+            },
+            "control": {
+              "n": 720,
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "accuracy": 1.0,
+              "roc_auc": 1.0,
+              "brier": 1e-06,
+              "confusion": {
+                "tp": 120,
+                "fp": 0,
+                "fn": 0,
+                "tn": 600
+              },
+              "calibration": {
+                "n": 720,
+                "brier": 1.1031354502333653e-06,
+                "log_loss": 4.388075168260779e-05,
+                "ece": 4.3318641296194656e-05,
+                "bins": [
+                  {
+                    "lower": 0.0,
+                    "upper": 0.2,
+                    "n": 600,
+                    "mean_prediction": 5.175706399817817e-05,
+                    "observed_frequency": 0.0
+                  },
+                  {
+                    "lower": 0.8,
+                    "upper": 1.0,
+                    "n": 120,
+                    "mean_prediction": 0.9999988734722137,
+                    "observed_frequency": 1.0
+                  }
+                ],
+                "interpretation": "分箱频率仅描述这组留出标签；Brier同时受区分能力影响，小样本或合成数据不能证明真实概率校准。"
+              },
+              "threshold": 0.95
+            }
+          }
+        },
+        "case_type": {
+          "合成场景乙": {
+            "unseen_in_training": false,
+            "case_count": 12,
+            "fund": {
+              "n": 12,
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "accuracy": 1.0,
+              "roc_auc": 1.0,
+              "brier": 0.0,
+              "confusion": {
+                "tp": 6,
+                "fp": 0,
+                "fn": 0,
+                "tn": 6
+              },
+              "calibration": {
+                "n": 12,
+                "brier": 8.38933231393315e-15,
+                "log_loss": 5.6297885403385226e-08,
+                "ece": 5.629788119021484e-08,
+                "bins": [
+                  {
+                    "lower": 0.0,
+                    "upper": 0.2,
+                    "n": 6,
+                    "mean_prediction": 1.3254687791786068e-08,
+                    "observed_frequency": 0.0
+                  },
+                  {
+                    "lower": 0.8,
+                    "upper": 1.0,
+                    "n": 6,
+                    "mean_prediction": 0.9999999006589254,
+                    "observed_frequency": 1.0
+                  }
+                ],
+                "interpretation": "分箱频率仅描述这组留出标签；Brier同时受区分能力影响，小样本或合成数据不能证明真实概率校准。"
+              }
+            },
+            "roles": {
+              "n": 72,
+              "accuracy": 1.0,
+              "macro_f1": 1.0,
+              "confusion": [
+                [
+                  12,
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  24,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  12,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0,
+                  24
+                ]
+              ],
+              "nll": 0.00019471556455241343,
+              "calibration": {
+                "n": 72,
+                "brier": 8.401022252927891e-08,
+                "log_loss": 0.00019471556455241343,
+                "ece": 0.0001946869823667985,
+                "bins": [
+                  {
+                    "lower": 0.8,
+                    "upper": 1.0,
+                    "n": 72,
+                    "mean_prediction": 0.9998053130176332,
+                    "observed_frequency": 1.0
+                  }
+                ],
+                "interpretation": "分箱频率仅描述这组留出标签；Brier同时受区分能力影响，小样本或合成数据不能证明真实概率校准。"
+              }
+            },
+            "levels": {
+              "n": 72,
+              "accuracy": 1.0,
+              "macro_f1": 1.0,
+              "confusion": [
+                [
+                  12,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  36,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  24
+                ]
+              ],
+              "nll": 0.00023400954938976562,
+              "calibration": {
+                "n": 72,
+                "brier": 1.1707284899256198e-07,
+                "log_loss": 0.00023400954938976562,
+                "ece": 0.0002339730660120276,
+                "bins": [
+                  {
+                    "lower": 0.8,
+                    "upper": 1.0,
+                    "n": 72,
+                    "mean_prediction": 0.999766026933988,
+                    "observed_frequency": 1.0
+                  }
+                ],
+                "interpretation": "分箱频率仅描述这组留出标签；Brier同时受区分能力影响，小样本或合成数据不能证明真实概率校准。"
+              }
+            },
+            "control": {
+              "n": 360,
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "accuracy": 1.0,
+              "roc_auc": 1.0,
+              "brier": 0.0,
+              "confusion": {
+                "tp": 60,
+                "fp": 0,
+                "fn": 0,
+                "tn": 300
+              },
+              "calibration": {
+                "n": 360,
+                "brier": 9.945008019928498e-10,
+                "log_loss": 3.669476446159311e-06,
+                "ece": 3.6689790370607607e-06,
+                "bins": [
+                  {
+                    "lower": 0.0,
+                    "upper": 0.2,
+                    "n": 300,
+                    "mean_prediction": 4.211245252597618e-06,
+                    "observed_frequency": 0.0
+                  },
+                  {
+                    "lower": 0.8,
+                    "upper": 1.0,
+                    "n": 60,
+                    "mean_prediction": 0.9999990423520406,
+                    "observed_frequency": 1.0
+                  }
+                ],
+                "interpretation": "分箱频率仅描述这组留出标签；Brier同时受区分能力影响，小样本或合成数据不能证明真实概率校准。"
+              },
+              "threshold": 0.95
+            }
+          },
+          "合成场景甲": {
+            "unseen_in_training": false,
+            "case_count": 12,
+            "fund": {
+              "n": 12,
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "accuracy": 1.0,
+              "roc_auc": 1.0,
+              "brier": 0.0,
+              "confusion": {
+                "tp": 6,
+                "fp": 0,
+                "fn": 0,
+                "tn": 6
+              },
+              "calibration": {
+                "n": 12,
+                "brier": 1.3577390236283875e-10,
+                "log_loss": 6.108959991964273e-06,
+                "ece": 6.108892103858417e-06,
+                "bins": [
+                  {
+                    "lower": 0.0,
+                    "upper": 0.2,
+                    "n": 6,
+                    "mean_prediction": 2.879723192942644e-06,
+                    "observed_frequency": 0.0
+                  },
+                  {
+                    "lower": 0.8,
+                    "upper": 1.0,
+                    "n": 6,
+                    "mean_prediction": 0.9999906619389852,
+                    "observed_frequency": 1.0
+                  }
+                ],
+                "interpretation": "分箱频率仅描述这组留出标签；Brier同时受区分能力影响，小样本或合成数据不能证明真实概率校准。"
+              }
+            },
+            "roles": {
+              "n": 72,
+              "accuracy": 1.0,
+              "macro_f1": 1.0,
+              "confusion": [
+                [
+                  12,
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  24,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  12,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0,
+                  24
+                ]
+              ],
+              "nll": 0.00018290493278870642,
+              "calibration": {
+                "n": 72,
+                "brier": 5.864651404965418e-08,
+                "log_loss": 0.00018290493278870642,
+                "ece": 0.00018288443485892092,
+                "bins": [
+                  {
+                    "lower": 0.8,
+                    "upper": 1.0,
+                    "n": 72,
+                    "mean_prediction": 0.9998171155651411,
+                    "observed_frequency": 1.0
+                  }
+                ],
+                "interpretation": "分箱频率仅描述这组留出标签；Brier同时受区分能力影响，小样本或合成数据不能证明真实概率校准。"
+              }
+            },
+            "levels": {
+              "n": 72,
+              "accuracy": 1.0,
+              "macro_f1": 1.0,
+              "confusion": [
+                [
+                  12,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  36,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  24
+                ]
+              ],
+              "nll": 0.00023715995149457922,
+              "calibration": {
+                "n": 72,
+                "brier": 1.4209633838148118e-07,
+                "log_loss": 0.00023715995149457922,
+                "ece": 0.00023711638318169026,
+                "bins": [
+                  {
+                    "lower": 0.8,
+                    "upper": 1.0,
+                    "n": 72,
+                    "mean_prediction": 0.9997628836168183,
+                    "observed_frequency": 1.0
+                  }
+                ],
+                "interpretation": "分箱频率仅描述这组留出标签；Brier同时受区分能力影响，小样本或合成数据不能证明真实概率校准。"
+              }
+            },
+            "control": {
+              "n": 360,
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "accuracy": 1.0,
+              "roc_auc": 1.0,
+              "brier": 2e-06,
+              "confusion": {
+                "tp": 60,
+                "fp": 0,
+                "fn": 0,
+                "tn": 300
+              },
+              "calibration": {
+                "n": 360,
+                "brier": 2.2052763996647382e-06,
+                "log_loss": 8.409202691905627e-05,
+                "ece": 8.296830355531005e-05,
+                "bins": [
+                  {
+                    "lower": 0.0,
+                    "upper": 0.2,
+                    "n": 300,
+                    "mean_prediction": 9.930288274375871e-05,
+                    "observed_frequency": 0.0
+                  },
+                  {
+                    "lower": 0.8,
+                    "upper": 1.0,
+                    "n": 60,
+                    "mean_prediction": 0.9999987045923869,
+                    "observed_frequency": 1.0
+                  }
+                ],
+                "interpretation": "分箱频率仅描述这组留出标签；Brier同时受区分能力影响，小样本或合成数据不能证明真实概率校准。"
+              },
+              "threshold": 0.95
+            }
+          }
+        }
+      },
+      "metrics": {
+        "cases": 24,
+        "fund": {
+          "n": 24,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "accuracy": 1.0,
+          "roc_auc": 1.0,
+          "brier": 0.0,
+          "confusion": {
+            "tp": 12,
+            "fp": 0,
+            "fn": 0,
+            "tn": 12
+          },
+          "calibration": {
+            "n": 24,
+            "brier": 6.789114584757633e-11,
+            "log_loss": 3.0826289386838293e-06,
+            "ece": 3.082594992524316e-06,
+            "bins": [
+              {
+                "lower": 0.0,
+                "upper": 0.2,
+                "n": 12,
+                "mean_prediction": 1.446488940367215e-06,
+                "observed_frequency": 0.0
+              },
+              {
+                "lower": 0.8,
+                "upper": 1.0,
+                "n": 12,
+                "mean_prediction": 0.9999952812989553,
+                "observed_frequency": 1.0
+              }
+            ],
+            "interpretation": "分箱频率仅描述这组留出标签；Brier同时受区分能力影响，小样本或合成数据不能证明真实概率校准。"
+          }
+        },
+        "roles": {
+          "n": 144,
+          "accuracy": 1.0,
+          "macro_f1": 1.0,
+          "confusion": [
+            [
+              24,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              48,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              24,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              48
+            ]
+          ],
+          "nll": 0.00018881024867055992,
+          "calibration": {
+            "n": 144,
+            "brier": 7.132836828946655e-08,
+            "log_loss": 0.00018881024867055992,
+            "ece": 0.00018878570861291522,
+            "bins": [
+              {
+                "lower": 0.8,
+                "upper": 1.0,
+                "n": 144,
+                "mean_prediction": 0.9998112142913871,
+                "observed_frequency": 1.0
+              }
+            ],
+            "interpretation": "分箱频率仅描述这组留出标签；Brier同时受区分能力影响，小样本或合成数据不能证明真实概率校准。"
+          }
+        },
+        "levels": {
+          "n": 144,
+          "accuracy": 1.0,
+          "macro_f1": 1.0,
+          "confusion": [
+            [
+              24,
+              0,
+              0
+            ],
+            [
+              0,
+              72,
+              0
+            ],
+            [
+              0,
+              0,
+              48
+            ]
+          ],
+          "nll": 0.00023558475044217243,
+          "calibration": {
+            "n": 144,
+            "brier": 1.2958459368702158e-07,
+            "log_loss": 0.00023558475044217243,
+            "ece": 0.00023554472459685893,
+            "bins": [
+              {
+                "lower": 0.8,
+                "upper": 1.0,
+                "n": 144,
+                "mean_prediction": 0.9997644552754031,
+                "observed_frequency": 1.0
+              }
+            ],
+            "interpretation": "分箱频率仅描述这组留出标签；Brier同时受区分能力影响，小样本或合成数据不能证明真实概率校准。"
+          }
+        },
+        "control": {
+          "n": 720,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "accuracy": 1.0,
+          "roc_auc": 1.0,
+          "brier": 1e-06,
+          "confusion": {
+            "tp": 120,
+            "fp": 0,
+            "fn": 0,
+            "tn": 600
+          },
+          "calibration": {
+            "n": 720,
+            "brier": 1.1031354502333653e-06,
+            "log_loss": 4.388075168260779e-05,
+            "ece": 4.3318641296194656e-05,
+            "bins": [
+              {
+                "lower": 0.0,
+                "upper": 0.2,
+                "n": 600,
+                "mean_prediction": 5.175706399817817e-05,
+                "observed_frequency": 0.0
+              },
+              {
+                "lower": 0.8,
+                "upper": 1.0,
+                "n": 120,
+                "mean_prediction": 0.9999988734722137,
+                "observed_frequency": 1.0
+              }
+            ],
+            "interpretation": "分箱频率仅描述这组留出标签；Brier同时受区分能力影响，小样本或合成数据不能证明真实概率校准。"
+          },
+          "threshold": 0.95
+        },
+        "per_case": [
+          {
+            "case_id": "E14REGION_C001",
+            "domain": "合成未见区域丙 / 合成场景甲",
+            "fund_label": 1,
+            "fund_score": 0.9999741315841675
+          },
+          {
+            "case_id": "E14REGION_C002",
+            "domain": "合成未见区域丙 / 合成场景甲",
+            "fund_label": 0,
+            "fund_score": 2.043757376668509e-06
+          },
+          {
+            "case_id": "E14REGION_C003",
+            "domain": "合成未见区域丙 / 合成场景乙",
+            "fund_label": 1,
+            "fund_score": 1.0
+          },
+          {
+            "case_id": "E14REGION_C004",
+            "domain": "合成未见区域丙 / 合成场景乙",
+            "fund_label": 0,
+            "fund_score": 1.3552104327629877e-08
+          },
+          {
+            "case_id": "E14REGION_C005",
+            "domain": "合成未见区域丙 / 合成场景甲",
+            "fund_label": 1,
+            "fund_score": 0.9999985694885254
+          },
+          {
+            "case_id": "E14REGION_C006",
+            "domain": "合成未见区域丙 / 合成场景甲",
+            "fund_label": 0,
+            "fund_score": 4.470431633762928e-07
+          },
+          {
+            "case_id": "E14REGION_C007",
+            "domain": "合成未见区域丙 / 合成场景乙",
+            "fund_label": 1,
+            "fund_score": 0.9999998807907104
+          },
+          {
+            "case_id": "E14REGION_C008",
+            "domain": "合成未见区域丙 / 合成场景乙",
+            "fund_label": 0,
+            "fund_score": 1.1334184257805191e-08
+          },
+          {
+            "case_id": "E14REGION_C009",
+            "domain": "合成未见区域丙 / 合成场景甲",
+            "fund_label": 1,
+            "fund_score": 1.0
+          },
+          {
+            "case_id": "E14REGION_C010",
+            "domain": "合成未见区域丙 / 合成场景甲",
+            "fund_label": 0,
+            "fund_score": 2.069857885089732e-07
+          },
+          {
+            "case_id": "E14REGION_C011",
+            "domain": "合成未见区域丙 / 合成场景乙",
+            "fund_label": 1,
+            "fund_score": 0.9999998807907104
+          },
+          {
+            "case_id": "E14REGION_C012",
+            "domain": "合成未见区域丙 / 合成场景乙",
+            "fund_label": 0,
+            "fund_score": 1.0128551330979008e-08
+          },
+          {
+            "case_id": "E14REGION_C013",
+            "domain": "合成未见区域丙 / 合成场景甲",
+            "fund_label": 1,
+            "fund_score": 0.9999988079071045
+          },
+          {
+            "case_id": "E14REGION_C014",
+            "domain": "合成未见区域丙 / 合成场景甲",
+            "fund_label": 0,
+            "fund_score": 3.5556550415094534e-07
+          },
+          {
+            "case_id": "E14REGION_C015",
+            "domain": "合成未见区域丙 / 合成场景乙",
+            "fund_label": 1,
+            "fund_score": 0.9999998807907104
+          },
+          {
+            "case_id": "E14REGION_C016",
+            "domain": "合成未见区域丙 / 合成场景乙",
+            "fund_label": 0,
+            "fund_score": 1.6127753355021923e-08
+          },
+          {
+            "case_id": "E14REGION_C017",
+            "domain": "合成未见区域丙 / 合成场景甲",
+            "fund_label": 1,
+            "fund_score": 0.9999724626541138
+          },
+          {
+            "case_id": "E14REGION_C018",
+            "domain": "合成未见区域丙 / 合成场景甲",
+            "fund_label": 0,
+            "fund_score": 1.3917559044784866e-05
+          },
+          {
+            "case_id": "E14REGION_C019",
+            "domain": "合成未见区域丙 / 合成场景乙",
+            "fund_label": 1,
+            "fund_score": 0.9999997615814209
+          },
+          {
+            "case_id": "E14REGION_C020",
+            "domain": "合成未见区域丙 / 合成场景乙",
+            "fund_label": 0,
+            "fund_score": 2.1884329015620096e-08
+          },
+          {
+            "case_id": "E14REGION_C021",
+            "domain": "合成未见区域丙 / 合成场景甲",
+            "fund_label": 1,
+            "fund_score": 1.0
+          },
+          {
+            "case_id": "E14REGION_C022",
+            "domain": "合成未见区域丙 / 合成场景甲",
+            "fund_label": 0,
+            "fund_score": 3.0742828016627755e-07
+          },
+          {
+            "case_id": "E14REGION_C023",
+            "domain": "合成未见区域丙 / 合成场景乙",
+            "fund_label": 1,
+            "fund_score": 1.0
+          },
+          {
+            "case_id": "E14REGION_C024",
+            "domain": "合成未见区域丙 / 合成场景乙",
+            "fund_label": 0,
+            "fund_score": 6.501204463660315e-09
+          }
+        ],
+        "selective": {
+          "labelled_persons": 144,
+          "eligible": 144,
+          "coverage": 1.0,
+          "joint_accuracy_on_eligible": 1.0,
+          "abstentions": [
+            {
+              "case_id": "E14REGION_C001",
+              "node": "actor:BYSTANDER",
+              "actor_id": "BYSTANDER",
+              "alias": "合成未标注背景主体",
+              "role": "未判定",
+              "level": "未判定",
+              "candidate_role": "技术支持",
+              "candidate_level": "中间层",
+              "score": 0.9999387860298157,
+              "role_distribution": {
+                "协调": 6.966241198824719e-05,
+                "资金处理": 6.112702249083668e-05,
+                "技术支持": 0.9997274279594421,
+                "运输执行": 0.00014183241000864655
+              },
+              "level_distribution": {
+                "上游": 0.0005593473324552178,
+                "中间层": 0.9989487528800964,
+                "执行层": 0.0004919448401778936
+              },
+              "prediction_available": false,
+              "reasons": [
+                "有效事件不足2条"
+              ],
+              "feature_shift": 2.2816306205052475
+            },
+            {
+              "case_id": "E14REGION_C002",
+              "node": "actor:BYSTANDER",
+              "actor_id": "BYSTANDER",
+              "alias": "合成未标注背景主体",
+              "role": "未判定",
+              "level": "未判定",
+              "candidate_role": "技术支持",
+              "candidate_level": "中间层",
+              "score": 0.9999390840530396,
+              "role_distribution": {
+                "协调": 6.929670053068548e-05,
+                "资金处理": 6.082886102376506e-05,
+                "技术支持": 0.9997290968894958,
+                "运输执行": 0.00014071587065700442
+              },
+              "level_distribution": {
+                "上游": 0.0005590968648903072,
+                "中间层": 0.9989519119262695,
+                "执行层": 0.0004889470874331892
+              },
+              "prediction_available": false,
+              "reasons": [
+                "有效事件不足2条"
+              ],
+              "feature_shift": 2.2816306205052475
+            },
+            {
+              "case_id": "E14REGION_C003",
+              "node": "actor:BYSTANDER",
+              "actor_id": "BYSTANDER",
+              "alias": "合成未标注背景主体",
+              "role": "未判定",
+              "level": "未判定",
+              "candidate_role": "技术支持",
+              "candidate_level": "中间层",
+              "score": 0.9999387860298157,
+              "role_distribution": {
+                "协调": 6.966241198824719e-05,
+                "资金处理": 6.112702249083668e-05,
+                "技术支持": 0.9997274279594421,
+                "运输执行": 0.00014183241000864655
+              },
+              "level_distribution": {
+                "上游": 0.0005593473324552178,
+                "中间层": 0.9989487528800964,
+                "执行层": 0.0004919448401778936
+              },
+              "prediction_available": false,
+              "reasons": [
+                "有效事件不足2条"
+              ],
+              "feature_shift": 2.2816306205052475
+            },
+            {
+              "case_id": "E14REGION_C004",
+              "node": "actor:BYSTANDER",
+              "actor_id": "BYSTANDER",
+              "alias": "合成未标注背景主体",
+              "role": "未判定",
+              "level": "未判定",
+              "candidate_role": "技术支持",
+              "candidate_level": "中间层",
+              "score": 0.9999387860298157,
+              "role_distribution": {
+                "协调": 6.966241198824719e-05,
+                "资金处理": 6.112702249083668e-05,
+                "技术支持": 0.9997274279594421,
+                "运输执行": 0.00014183241000864655
+              },
+              "level_distribution": {
+                "上游": 0.0005593473324552178,
+                "中间层": 0.9989487528800964,
+                "执行层": 0.0004919448401778936
+              },
+              "prediction_available": false,
+              "reasons": [
+                "有效事件不足2条"
+              ],
+              "feature_shift": 2.2816306205052475
+            },
+            {
+              "case_id": "E14REGION_C005",
+              "node": "actor:BYSTANDER",
+              "actor_id": "BYSTANDER",
+              "alias": "合成未标注背景主体",
+              "role": "未判定",
+              "level": "未判定",
+              "candidate_role": "技术支持",
+              "candidate_level": "中间层",
+              "score": 0.9999390840530396,
+              "role_distribution": {
+                "协调": 6.929670053068548e-05,
+                "资金处理": 6.082886102376506e-05,
+                "技术支持": 0.9997290968894958,
+                "运输执行": 0.00014071587065700442
+              },
+              "level_distribution": {
+                "上游": 0.0005590968648903072,
+                "中间层": 0.9989519119262695,
+                "执行层": 0.0004889470874331892
+              },
+              "prediction_available": false,
+              "reasons": [
+                "有效事件不足2条"
+              ],
+              "feature_shift": 2.2816306205052475
+            },
+            {
+              "case_id": "E14REGION_C006",
+              "node": "actor:BYSTANDER",
+              "actor_id": "BYSTANDER",
+              "alias": "合成未标注背景主体",
+              "role": "未判定",
+              "level": "未判定",
+              "candidate_role": "技术支持",
+              "candidate_level": "中间层",
+              "score": 0.9999390840530396,
+              "role_distribution": {
+                "协调": 6.929670053068548e-05,
+                "资金处理": 6.082886102376506e-05,
+                "技术支持": 0.9997290968894958,
+                "运输执行": 0.00014071587065700442
+              },
+              "level_distribution": {
+                "上游": 0.0005590968648903072,
+                "中间层": 0.9989519119262695,
+                "执行层": 0.0004889470874331892
+              },
+              "prediction_available": false,
+              "reasons": [
+                "有效事件不足2条"
+              ],
+              "feature_shift": 2.2816306205052475
+            },
+            {
+              "case_id": "E14REGION_C007",
+              "node": "actor:BYSTANDER",
+              "actor_id": "BYSTANDER",
+              "alias": "合成未标注背景主体",
+              "role": "未判定",
+              "level": "未判定",
+              "candidate_role": "技术支持",
+              "candidate_level": "中间层",
+              "score": 0.9999390840530396,
+              "role_distribution": {
+                "协调": 6.929670053068548e-05,
+                "资金处理": 6.082886102376506e-05,
+                "技术支持": 0.9997290968894958,
+                "运输执行": 0.00014071587065700442
+              },
+              "level_distribution": {
+                "上游": 0.0005590968648903072,
+                "中间层": 0.9989519119262695,
+                "执行层": 0.0004889470874331892
+              },
+              "prediction_available": false,
+              "reasons": [
+                "有效事件不足2条"
+              ],
+              "feature_shift": 2.2816306205052475
+            },
+            {
+              "case_id": "E14REGION_C008",
+              "node": "actor:BYSTANDER",
+              "actor_id": "BYSTANDER",
+              "alias": "合成未标注背景主体",
+              "role": "未判定",
+              "level": "未判定",
+              "candidate_role": "技术支持",
+              "candidate_level": "中间层",
+              "score": 0.9999387264251709,
+              "role_distribution": {
+                "协调": 6.961218605283648e-05,
+                "资金处理": 6.11999275861308e-05,
+                "技术支持": 0.9997281432151794,
+                "运输执行": 0.00014102835848461837
+              },
+              "level_distribution": {
+                "上游": 0.0005593884852714837,
+                "中间层": 0.9989526271820068,
+                "执行层": 0.00048806110862642527
+              },
+              "prediction_available": false,
+              "reasons": [
+                "有效事件不足2条"
+              ],
+              "feature_shift": 2.2816306205052475
+            },
+            {
+              "case_id": "E14REGION_C009",
+              "node": "actor:BYSTANDER",
+              "actor_id": "BYSTANDER",
+              "alias": "合成未标注背景主体",
+              "role": "未判定",
+              "level": "未判定",
+              "candidate_role": "技术支持",
+              "candidate_level": "中间层",
+              "score": 0.9999387860298157,
+              "role_distribution": {
+                "协调": 6.966241198824719e-05,
+                "资金处理": 6.112702249083668e-05,
+                "技术支持": 0.9997274279594421,
+                "运输执行": 0.00014183241000864655
+              },
+              "level_distribution": {
+                "上游": 0.0005593473324552178,
+                "中间层": 0.9989487528800964,
+                "执行层": 0.0004919448401778936
+              },
+              "prediction_available": false,
+              "reasons": [
+                "有效事件不足2条"
+              ],
+              "feature_shift": 2.2816306205052475
+            },
+            {
+              "case_id": "E14REGION_C010",
+              "node": "actor:BYSTANDER",
+              "actor_id": "BYSTANDER",
+              "alias": "合成未标注背景主体",
+              "role": "未判定",
+              "level": "未判定",
+              "candidate_role": "技术支持",
+              "candidate_level": "中间层",
+              "score": 0.9999387860298157,
+              "role_distribution": {
+                "协调": 6.966241198824719e-05,
+                "资金处理": 6.112702249083668e-05,
+                "技术支持": 0.9997274279594421,
+                "运输执行": 0.00014183241000864655
+              },
+              "level_distribution": {
+                "上游": 0.0005593473324552178,
+                "中间层": 0.9989487528800964,
+                "执行层": 0.0004919448401778936
+              },
+              "prediction_available": false,
+              "reasons": [
+                "有效事件不足2条"
+              ],
+              "feature_shift": 2.2816306205052475
+            },
+            {
+              "case_id": "E14REGION_C011",
+              "node": "actor:BYSTANDER",
+              "actor_id": "BYSTANDER",
+              "alias": "合成未标注背景主体",
+              "role": "未判定",
+              "level": "未判定",
+              "candidate_role": "技术支持",
+              "candidate_level": "中间层",
+              "score": 0.9999390840530396,
+              "role_distribution": {
+                "协调": 6.929670053068548e-05,
+                "资金处理": 6.082886102376506e-05,
+                "技术支持": 0.9997290968894958,
+                "运输执行": 0.00014071587065700442
+              },
+              "level_distribution": {
+                "上游": 0.0005590968648903072,
+                "中间层": 0.9989519119262695,
+                "执行层": 0.0004889470874331892
+              },
+              "prediction_available": false,
+              "reasons": [
+                "有效事件不足2条"
+              ],
+              "feature_shift": 2.2816306205052475
+            },
+            {
+              "case_id": "E14REGION_C012",
+              "node": "actor:BYSTANDER",
+              "actor_id": "BYSTANDER",
+              "alias": "合成未标注背景主体",
+              "role": "未判定",
+              "level": "未判定",
+              "candidate_role": "技术支持",
+              "candidate_level": "中间层",
+              "score": 0.9999387860298157,
+              "role_distribution": {
+                "协调": 6.966241198824719e-05,
+                "资金处理": 6.112702249083668e-05,
+                "技术支持": 0.9997274279594421,
+                "运输执行": 0.00014183241000864655
+              },
+              "level_distribution": {
+                "上游": 0.0005593473324552178,
+                "中间层": 0.9989487528800964,
+                "执行层": 0.0004919448401778936
+              },
+              "prediction_available": false,
+              "reasons": [
+                "有效事件不足2条"
+              ],
+              "feature_shift": 2.2816306205052475
+            },
+            {
+              "case_id": "E14REGION_C013",
+              "node": "actor:BYSTANDER",
+              "actor_id": "BYSTANDER",
+              "alias": "合成未标注背景主体",
+              "role": "未判定",
+              "level": "未判定",
+              "candidate_role": "技术支持",
+              "candidate_level": "中间层",
+              "score": 0.9999390840530396,
+              "role_distribution": {
+                "协调": 6.929670053068548e-05,
+                "资金处理": 6.082886102376506e-05,
+                "技术支持": 0.9997290968894958,
+                "运输执行": 0.00014071587065700442
+              },
+              "level_distribution": {
+                "上游": 0.0005590968648903072,
+                "中间层": 0.9989519119262695,
+                "执行层": 0.0004889470874331892
+              },
+              "prediction_available": false,
+              "reasons": [
+                "有效事件不足2条"
+              ],
+              "feature_shift": 2.2816306205052475
+            },
+            {
+              "case_id": "E14REGION_C014",
+              "node": "actor:BYSTANDER",
+              "actor_id": "BYSTANDER",
+              "alias": "合成未标注背景主体",
+              "role": "未判定",
+              "level": "未判定",
+              "candidate_role": "技术支持",
+              "candidate_level": "中间层",
+              "score": 0.9999387860298157,
+              "role_distribution": {
+                "协调": 6.966241198824719e-05,
+                "资金处理": 6.112702249083668e-05,
+                "技术支持": 0.9997274279594421,
+                "运输执行": 0.00014183241000864655
+              },
+              "level_distribution": {
+                "上游": 0.0005593473324552178,
+                "中间层": 0.9989487528800964,
+                "执行层": 0.0004919448401778936
+              },
+              "prediction_available": false,
+              "reasons": [
+                "有效事件不足2条"
+              ],
+              "feature_shift": 2.2816306205052475
+            },
+            {
+              "case_id": "E14REGION_C015",
+              "node": "actor:BYSTANDER",
+              "actor_id": "BYSTANDER",
+              "alias": "合成未标注背景主体",
+              "role": "未判定",
+              "level": "未判定",
+              "candidate_role": "技术支持",
+              "candidate_level": "中间层",
+              "score": 0.9999387860298157,
+              "role_distribution": {
+                "协调": 6.966241198824719e-05,
+                "资金处理": 6.112702249083668e-05,
+                "技术支持": 0.9997274279594421,
+                "运输执行": 0.00014183241000864655
+              },
+              "level_distribution": {
+                "上游": 0.0005593473324552178,
+                "中间层": 0.9989487528800964,
+                "执行层": 0.0004919448401778936
+              },
+              "prediction_available": false,
+              "reasons": [
+                "有效事件不足2条"
+              ],
+              "feature_shift": 2.2816306205052475
+            },
+            {
+              "case_id": "E14REGION_C016",
+              "node": "actor:BYSTANDER",
+              "actor_id": "BYSTANDER",
+              "alias": "合成未标注背景主体",
+              "role": "未判定",
+              "level": "未判定",
+              "candidate_role": "技术支持",
+              "candidate_level": "中间层",
+              "score": 0.9999390840530396,
+              "role_distribution": {
+                "协调": 6.929670053068548e-05,
+                "资金处理": 6.082886102376506e-05,
+                "技术支持": 0.9997290968894958,
+                "运输执行": 0.00014071587065700442
+              },
+              "level_distribution": {
+                "上游": 0.0005590968648903072,
+                "中间层": 0.9989519119262695,
+                "执行层": 0.0004889470874331892
+              },
+              "prediction_available": false,
+              "reasons": [
+                "有效事件不足2条"
+              ],
+              "feature_shift": 2.2816306205052475
+            },
+            {
+              "case_id": "E14REGION_C017",
+              "node": "actor:BYSTANDER",
+              "actor_id": "BYSTANDER",
+              "alias": "合成未标注背景主体",
+              "role": "未判定",
+              "level": "未判定",
+              "candidate_role": "技术支持",
+              "candidate_level": "中间层",
+              "score": 0.9999387860298157,
+              "role_distribution": {
+                "协调": 6.966241198824719e-05,
+                "资金处理": 6.112702249083668e-05,
+                "技术支持": 0.9997274279594421,
+                "运输执行": 0.00014183241000864655
+              },
+              "level_distribution": {
+                "上游": 0.0005593473324552178,
+                "中间层": 0.9989487528800964,
+                "执行层": 0.0004919448401778936
+              },
+              "prediction_available": false,
+              "reasons": [
+                "有效事件不足2条"
+              ],
+              "feature_shift": 2.2816306205052475
+            },
+            {
+              "case_id": "E14REGION_C018",
+              "node": "actor:BYSTANDER",
+              "actor_id": "BYSTANDER",
+              "alias": "合成未标注背景主体",
+              "role": "未判定",
+              "level": "未判定",
+              "candidate_role": "技术支持",
+              "candidate_level": "中间层",
+              "score": 0.9999390840530396,
+              "role_distribution": {
+                "协调": 6.929670053068548e-05,
+                "资金处理": 6.082886102376506e-05,
+                "技术支持": 0.9997290968894958,
+                "运输执行": 0.00014071587065700442
+              },
+              "level_distribution": {
+                "上游": 0.0005590968648903072,
+                "中间层": 0.9989519119262695,
+                "执行层": 0.0004889470874331892
+              },
+              "prediction_available": false,
+              "reasons": [
+                "有效事件不足2条"
+              ],
+              "feature_shift": 2.2816306205052475
+            },
+            {
+              "case_id": "E14REGION_C019",
+              "node": "actor:BYSTANDER",
+              "actor_id": "BYSTANDER",
+              "alias": "合成未标注背景主体",
+              "role": "未判定",
+              "level": "未判定",
+              "candidate_role": "技术支持",
+              "candidate_level": "中间层",
+              "score": 0.9999387860298157,
+              "role_distribution": {
+                "协调": 6.966241198824719e-05,
+                "资金处理": 6.112702249083668e-05,
+                "技术支持": 0.9997274279594421,
+                "运输执行": 0.00014183241000864655
+              },
+              "level_distribution": {
+                "上游": 0.0005593473324552178,
+                "中间层": 0.9989487528800964,
+                "执行层": 0.0004919448401778936
+              },
+              "prediction_available": false,
+              "reasons": [
+                "有效事件不足2条"
+              ],
+              "feature_shift": 2.2816306205052475
+            },
+            {
+              "case_id": "E14REGION_C020",
+              "node": "actor:BYSTANDER",
+              "actor_id": "BYSTANDER",
+              "alias": "合成未标注背景主体",
+              "role": "未判定",
+              "level": "未判定",
+              "candidate_role": "技术支持",
+              "candidate_level": "中间层",
+              "score": 0.9999390840530396,
+              "role_distribution": {
+                "协调": 6.929670053068548e-05,
+                "资金处理": 6.082886102376506e-05,
+                "技术支持": 0.9997290968894958,
+                "运输执行": 0.00014071587065700442
+              },
+              "level_distribution": {
+                "上游": 0.0005590968648903072,
+                "中间层": 0.9989519119262695,
+                "执行层": 0.0004889470874331892
+              },
+              "prediction_available": false,
+              "reasons": [
+                "有效事件不足2条"
+              ],
+              "feature_shift": 2.2816306205052475
+            },
+            {
+              "case_id": "E14REGION_C021",
+              "node": "actor:BYSTANDER",
+              "actor_id": "BYSTANDER",
+              "alias": "合成未标注背景主体",
+              "role": "未判定",
+              "level": "未判定",
+              "candidate_role": "技术支持",
+              "candidate_level": "中间层",
+              "score": 0.9999390840530396,
+              "role_distribution": {
+                "协调": 6.929670053068548e-05,
+                "资金处理": 6.082886102376506e-05,
+                "技术支持": 0.9997290968894958,
+                "运输执行": 0.00014071587065700442
+              },
+              "level_distribution": {
+                "上游": 0.0005590968648903072,
+                "中间层": 0.9989519119262695,
+                "执行层": 0.0004889470874331892
+              },
+              "prediction_available": false,
+              "reasons": [
+                "有效事件不足2条"
+              ],
+              "feature_shift": 2.2816306205052475
+            },
+            {
+              "case_id": "E14REGION_C022",
+              "node": "actor:BYSTANDER",
+              "actor_id": "BYSTANDER",
+              "alias": "合成未标注背景主体",
+              "role": "未判定",
+              "level": "未判定",
+              "candidate_role": "技术支持",
+              "candidate_level": "中间层",
+              "score": 0.9999387860298157,
+              "role_distribution": {
+                "协调": 6.966241198824719e-05,
+                "资金处理": 6.112702249083668e-05,
+                "技术支持": 0.9997274279594421,
+                "运输执行": 0.00014183241000864655
+              },
+              "level_distribution": {
+                "上游": 0.0005593473324552178,
+                "中间层": 0.9989487528800964,
+                "执行层": 0.0004919448401778936
+              },
+              "prediction_available": false,
+              "reasons": [
+                "有效事件不足2条"
+              ],
+              "feature_shift": 2.2816306205052475
+            },
+            {
+              "case_id": "E14REGION_C023",
+              "node": "actor:BYSTANDER",
+              "actor_id": "BYSTANDER",
+              "alias": "合成未标注背景主体",
+              "role": "未判定",
+              "level": "未判定",
+              "candidate_role": "技术支持",
+              "candidate_level": "中间层",
+              "score": 0.9999387860298157,
+              "role_distribution": {
+                "协调": 6.966241198824719e-05,
+                "资金处理": 6.112702249083668e-05,
+                "技术支持": 0.9997274279594421,
+                "运输执行": 0.00014183241000864655
+              },
+              "level_distribution": {
+                "上游": 0.0005593473324552178,
+                "中间层": 0.9989487528800964,
+                "执行层": 0.0004919448401778936
+              },
+              "prediction_available": false,
+              "reasons": [
+                "有效事件不足2条"
+              ],
+              "feature_shift": 2.2816306205052475
+            },
+            {
+              "case_id": "E14REGION_C024",
+              "node": "actor:BYSTANDER",
+              "actor_id": "BYSTANDER",
+              "alias": "合成未标注背景主体",
+              "role": "未判定",
+              "level": "未判定",
+              "candidate_role": "技术支持",
+              "candidate_level": "中间层",
+              "score": 0.9999387860298157,
+              "role_distribution": {
+                "协调": 6.966241198824719e-05,
+                "资金处理": 6.112702249083668e-05,
+                "技术支持": 0.9997274279594421,
+                "运输执行": 0.00014183241000864655
+              },
+              "level_distribution": {
+                "上游": 0.0005593473324552178,
+                "中间层": 0.9989487528800964,
+                "执行层": 0.0004919448401778936
+              },
+              "prediction_available": false,
+              "reasons": [
+                "有效事件不足2条"
+              ],
+              "feature_shift": 2.2816306205052475
+            }
+          ],
+          "person_errors": []
+        },
+        "displayed_control_candidates": {
+          "tp": 120,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "scope": "加入证据支持、人员拒判和DAG约束后的实际候选；与原控制头指标分别报告"
+        },
+        "fund_errors": []
+      }
+    },
+    {
+      "name": "未见案型",
+      "origin": "synthetic",
+      "dataset_fingerprint": "76c667533650308932db9bf316d3a20435b94e444b6146ad3e9baf20d19aead4",
+      "domain_groups": {
+        "region": {
+          "合成区域乙": {
+            "unseen_in_training": false,
+            "case_count": 12,
+            "fund": {
+              "n": 12,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "accuracy": 1.0,
+              "roc_auc": null,
+              "brier": 0.0,
+              "confusion": {
+                "tp": 0,
+                "fp": 0,
+                "fn": 0,
+                "tn": 12
+              },
+              "calibration": {
+                "n": 12,
+                "brier": 1.3863992476922952e-11,
+                "log_loss": 1.8135114965972902e-06,
+                "ece": 1.8135045645554608e-06,
+                "bins": [
+                  {
+                    "lower": 0.0,
+                    "upper": 0.2,
+                    "n": 12,
+                    "mean_prediction": 1.8135045645554608e-06,
+                    "observed_frequency": 0.0
+                  }
+                ],
+                "interpretation": "分箱频率仅描述这组留出标签；Brier同时受区分能力影响，小样本或合成数据不能证明真实概率校准。"
+              }
+            },
+            "roles": {
+              "n": 72,
+              "accuracy": 1.0,
+              "macro_f1": 1.0,
+              "confusion": [
+                [
+                  12,
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  24,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  12,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0,
+                  24
+                ]
+              ],
+              "nll": 0.00017981141928400884,
+              "calibration": {
+                "n": 72,
+                "brier": 1.409695121624343e-07,
+                "log_loss": 0.00017981141928400884,
+                "ece": 0.0001797659529579887,
+                "bins": [
+                  {
+                    "lower": 0.8,
+                    "upper": 1.0,
+                    "n": 72,
+                    "mean_prediction": 0.999820234047042,
+                    "observed_frequency": 1.0
+                  }
+                ],
+                "interpretation": "分箱频率仅描述这组留出标签；Brier同时受区分能力影响，小样本或合成数据不能证明真实概率校准。"
+              }
+            },
+            "levels": {
+              "n": 72,
+              "accuracy": 1.0,
+              "macro_f1": 1.0,
+              "confusion": [
+                [
+                  12,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  36,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  24
+                ]
+              ],
+              "nll": 0.0002066664719083273,
+              "calibration": {
+                "n": 72,
+                "brier": 8.326619701006843e-08,
+                "log_loss": 0.0002066664719083273,
+                "ece": 0.00020664019717109294,
+                "bins": [
+                  {
+                    "lower": 0.8,
+                    "upper": 1.0,
+                    "n": 72,
+                    "mean_prediction": 0.9997933598028289,
+                    "observed_frequency": 1.0
+                  }
+                ],
+                "interpretation": "分箱频率仅描述这组留出标签；Brier同时受区分能力影响，小样本或合成数据不能证明真实概率校准。"
+              }
+            },
+            "control": {
+              "n": 360,
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "accuracy": 1.0,
+              "roc_auc": 1.0,
+              "brier": 0.0,
+              "confusion": {
+                "tp": 60,
+                "fp": 0,
+                "fn": 0,
+                "tn": 300
+              },
+              "calibration": {
+                "n": 360,
+                "brier": 7.680375327801417e-10,
+                "log_loss": 4.936622357804952e-06,
+                "ece": 4.9362382763947646e-06,
+                "bins": [
+                  {
+                    "lower": 0.0,
+                    "upper": 0.2,
+                    "n": 300,
+                    "mean_prediction": 5.063986954017025e-06,
+                    "observed_frequency": 0.0
+                  },
+                  {
+                    "lower": 0.8,
+                    "upper": 1.0,
+                    "n": 60,
+                    "mean_prediction": 0.9999957025051117,
+                    "observed_frequency": 1.0
+                  }
+                ],
+                "interpretation": "分箱频率仅描述这组留出标签；Brier同时受区分能力影响，小样本或合成数据不能证明真实概率校准。"
+              },
+              "threshold": 0.95
+            }
+          },
+          "合成区域甲": {
+            "unseen_in_training": false,
+            "case_count": 12,
+            "fund": {
+              "n": 12,
+              "precision": 1.0,
+              "recall": 0.9167,
+              "f1": 0.9565,
+              "accuracy": 0.9167,
+              "roc_auc": null,
+              "brier": 0.083326,
+              "confusion": {
+                "tp": 11,
+                "fp": 0,
+                "fn": 1,
+                "tn": 0
+              },
+              "calibration": {
+                "n": 12,
+                "brier": 0.08332590859385229,
+                "log_loss": 0.834909607954042,
+                "ece": 0.08332996857431375,
+                "bins": [
+                  {
+                    "lower": 0.0,
+                    "upper": 0.2,
+                    "n": 1,
+                    "mean_prediction": 4.454943336895667e-05,
+                    "observed_frequency": 1.0
+                  },
+                  {
+                    "lower": 0.8,
+                    "upper": 1.0,
+                    "n": 11,
+                    "mean_prediction": 0.9999996206977151,
+                    "observed_frequency": 1.0
+                  }
+                ],
+                "interpretation": "分箱频率仅描述这组留出标签；Brier同时受区分能力影响，小样本或合成数据不能证明真实概率校准。"
+              }
+            },
+            "roles": {
+              "n": 72,
+              "accuracy": 1.0,
+              "macro_f1": 1.0,
+              "confusion": [
+                [
+                  12,
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  24,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  12,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0,
+                  24
+                ]
+              ],
+              "nll": 0.0001902632927399966,
+              "calibration": {
+                "n": 72,
+                "brier": 7.561179496394289e-08,
+                "log_loss": 0.0001902632927399966,
+                "ece": 0.00019023733006584553,
+                "bins": [
+                  {
+                    "lower": 0.8,
+                    "upper": 1.0,
+                    "n": 72,
+                    "mean_prediction": 0.9998097626699342,
+                    "observed_frequency": 1.0
+                  }
+                ],
+                "interpretation": "分箱频率仅描述这组留出标签；Brier同时受区分能力影响，小样本或合成数据不能证明真实概率校准。"
+              }
+            },
+            "levels": {
+              "n": 72,
+              "accuracy": 1.0,
+              "macro_f1": 1.0,
+              "confusion": [
+                [
+                  12,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  36,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  24
+                ]
+              ],
+              "nll": 0.00019540858757800307,
+              "calibration": {
+                "n": 72,
+                "brier": 7.810005893061975e-08,
+                "log_loss": 0.00019540858757800307,
+                "ece": 0.00019538485341596967,
+                "bins": [
+                  {
+                    "lower": 0.8,
+                    "upper": 1.0,
+                    "n": 72,
+                    "mean_prediction": 0.999804615146584,
+                    "observed_frequency": 1.0
+                  }
+                ],
+                "interpretation": "分箱频率仅描述这组留出标签；Brier同时受区分能力影响，小样本或合成数据不能证明真实概率校准。"
+              }
+            },
+            "control": {
+              "n": 360,
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "accuracy": 1.0,
+              "roc_auc": 1.0,
+              "brier": 0.0,
+              "confusion": {
+                "tp": 60,
+                "fp": 0,
+                "fn": 0,
+                "tn": 300
+              },
+              "calibration": {
+                "n": 360,
+                "brier": 7.922346324520651e-11,
+                "log_loss": 1.7916836020745007e-06,
+                "ece": 1.7916439885633024e-06,
+                "bins": [
+                  {
+                    "lower": 0.0,
+                    "upper": 0.2,
+                    "n": 300,
+                    "mean_prediction": 1.9131436643624894e-06,
+                    "observed_frequency": 0.0
+                  },
+                  {
+                    "lower": 0.8,
+                    "upper": 1.0,
+                    "n": 60,
+                    "mean_prediction": 0.9999988158543904,
+                    "observed_frequency": 1.0
+                  }
+                ],
+                "interpretation": "分箱频率仅描述这组留出标签；Brier同时受区分能力影响，小样本或合成数据不能证明真实概率校准。"
+              },
+              "threshold": 0.95
+            }
+          }
+        },
+        "case_type": {
+          "合成未见场景丙": {
+            "unseen_in_training": true,
+            "case_count": 24,
+            "fund": {
+              "n": 24,
+              "precision": 1.0,
+              "recall": 0.9167,
+              "f1": 0.9565,
+              "accuracy": 0.9583,
+              "roc_auc": 1.0,
+              "brier": 0.041663,
+              "confusion": {
+                "tp": 11,
+                "fp": 0,
+                "fn": 1,
+                "tn": 12
+              },
+              "calibration": {
+                "n": 24,
+                "brier": 0.04166295430385814,
+                "log_loss": 0.4174557107327694,
+                "ece": 0.041664077534874604,
+                "bins": [
+                  {
+                    "lower": 0.0,
+                    "upper": 0.2,
+                    "n": 13,
+                    "mean_prediction": 5.1008837033555535e-06,
+                    "observed_frequency": 0.07692307692307693
+                  },
+                  {
+                    "lower": 0.8,
+                    "upper": 1.0,
+                    "n": 11,
+                    "mean_prediction": 0.9999996206977151,
+                    "observed_frequency": 1.0
+                  }
+                ],
+                "interpretation": "分箱频率仅描述这组留出标签；Brier同时受区分能力影响，小样本或合成数据不能证明真实概率校准。"
+              }
+            },
+            "roles": {
+              "n": 144,
+              "accuracy": 1.0,
+              "macro_f1": 1.0,
+              "confusion": [
+                [
+                  24,
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  48,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  24,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0,
+                  48
+                ]
+              ],
+              "nll": 0.00018503735601200274,
+              "calibration": {
+                "n": 144,
+                "brier": 1.0829065356318857e-07,
+                "log_loss": 0.00018503735601200274,
+                "ece": 0.00018500164151191711,
+                "bins": [
+                  {
+                    "lower": 0.8,
+                    "upper": 1.0,
+                    "n": 144,
+                    "mean_prediction": 0.9998149983584881,
+                    "observed_frequency": 1.0
+                  }
+                ],
+                "interpretation": "分箱频率仅描述这组留出标签；Brier同时受区分能力影响，小样本或合成数据不能证明真实概率校准。"
+              }
+            },
+            "levels": {
+              "n": 144,
+              "accuracy": 1.0,
+              "macro_f1": 1.0,
+              "confusion": [
+                [
+                  24,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  72,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  48
+                ]
+              ],
+              "nll": 0.0002010375297431652,
+              "calibration": {
+                "n": 144,
+                "brier": 8.068312797034409e-08,
+                "log_loss": 0.0002010375297431652,
+                "ece": 0.00020101252529358682,
+                "bins": [
+                  {
+                    "lower": 0.8,
+                    "upper": 1.0,
+                    "n": 144,
+                    "mean_prediction": 0.9997989874747064,
+                    "observed_frequency": 1.0
+                  }
+                ],
+                "interpretation": "分箱频率仅描述这组留出标签；Brier同时受区分能力影响，小样本或合成数据不能证明真实概率校准。"
+              }
+            },
+            "control": {
+              "n": 720,
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "accuracy": 1.0,
+              "roc_auc": 1.0,
+              "brier": 0.0,
+              "confusion": {
+                "tp": 120,
+                "fp": 0,
+                "fn": 0,
+                "tn": 600
+              },
+              "calibration": {
+                "n": 720,
+                "brier": 4.23630498012674e-10,
+                "log_loss": 3.3641529799397264e-06,
+                "ece": 3.363941132469782e-06,
+                "bins": [
+                  {
+                    "lower": 0.0,
+                    "upper": 0.2,
+                    "n": 600,
+                    "mean_prediction": 3.4885653091897576e-06,
+                    "observed_frequency": 0.0
+                  },
+                  {
+                    "lower": 0.8,
+                    "upper": 1.0,
+                    "n": 120,
+                    "mean_prediction": 0.9999972591797511,
+                    "observed_frequency": 1.0
+                  }
+                ],
+                "interpretation": "分箱频率仅描述这组留出标签；Brier同时受区分能力影响，小样本或合成数据不能证明真实概率校准。"
+              },
+              "threshold": 0.95
+            }
+          }
+        }
+      },
+      "metrics": {
+        "cases": 24,
+        "fund": {
+          "n": 24,
+          "precision": 1.0,
+          "recall": 0.9167,
+          "f1": 0.9565,
+          "accuracy": 0.9583,
+          "roc_auc": 1.0,
+          "brier": 0.041663,
+          "confusion": {
+            "tp": 11,
+            "fp": 0,
+            "fn": 1,
+            "tn": 12
+          },
+          "calibration": {
+            "n": 24,
+            "brier": 0.04166295430385814,
+            "log_loss": 0.4174557107327694,
+            "ece": 0.041664077534874604,
+            "bins": [
+              {
+                "lower": 0.0,
+                "upper": 0.2,
+                "n": 13,
+                "mean_prediction": 5.1008837033555535e-06,
+                "observed_frequency": 0.07692307692307693
+              },
+              {
+                "lower": 0.8,
+                "upper": 1.0,
+                "n": 11,
+                "mean_prediction": 0.9999996206977151,
+                "observed_frequency": 1.0
+              }
+            ],
+            "interpretation": "分箱频率仅描述这组留出标签；Brier同时受区分能力影响，小样本或合成数据不能证明真实概率校准。"
+          }
+        },
+        "roles": {
+          "n": 144,
+          "accuracy": 1.0,
+          "macro_f1": 1.0,
+          "confusion": [
+            [
+              24,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              48,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              24,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              48
+            ]
+          ],
+          "nll": 0.00018503735601200274,
+          "calibration": {
+            "n": 144,
+            "brier": 1.0829065356318857e-07,
+            "log_loss": 0.00018503735601200274,
+            "ece": 0.00018500164151191711,
+            "bins": [
+              {
+                "lower": 0.8,
+                "upper": 1.0,
+                "n": 144,
+                "mean_prediction": 0.9998149983584881,
+                "observed_frequency": 1.0
+              }
+            ],
+            "interpretation": "分箱频率仅描述这组留出标签；Brier同时受区分能力影响，小样本或合成数据不能证明真实概率校准。"
+          }
+        },
+        "levels": {
+          "n": 144,
+          "accuracy": 1.0,
+          "macro_f1": 1.0,
+          "confusion": [
+            [
+              24,
+              0,
+              0
+            ],
+            [
+              0,
+              72,
+              0
+            ],
+            [
+              0,
+              0,
+              48
+            ]
+          ],
+          "nll": 0.0002010375297431652,
+          "calibration": {
+            "n": 144,
+            "brier": 8.068312797034409e-08,
+            "log_loss": 0.0002010375297431652,
+            "ece": 0.00020101252529358682,
+            "bins": [
+              {
+                "lower": 0.8,
+                "upper": 1.0,
+                "n": 144,
+                "mean_prediction": 0.9997989874747064,
+                "observed_frequency": 1.0
+              }
+            ],
+            "interpretation": "分箱频率仅描述这组留出标签；Brier同时受区分能力影响，小样本或合成数据不能证明真实概率校准。"
+          }
+        },
+        "control": {
+          "n": 720,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "accuracy": 1.0,
+          "roc_auc": 1.0,
+          "brier": 0.0,
+          "confusion": {
+            "tp": 120,
+            "fp": 0,
+            "fn": 0,
+            "tn": 600
+          },
+          "calibration": {
+            "n": 720,
+            "brier": 4.23630498012674e-10,
+            "log_loss": 3.3641529799397264e-06,
+            "ece": 3.363941132469782e-06,
+            "bins": [
+              {
+                "lower": 0.0,
+                "upper": 0.2,
+                "n": 600,
+                "mean_prediction": 3.4885653091897576e-06,
+                "observed_frequency": 0.0
+              },
+              {
+                "lower": 0.8,
+                "upper": 1.0,
+                "n": 120,
+                "mean_prediction": 0.9999972591797511,
+                "observed_frequency": 1.0
+              }
+            ],
+            "interpretation": "分箱频率仅描述这组留出标签；Brier同时受区分能力影响，小样本或合成数据不能证明真实概率校准。"
+          },
+          "threshold": 0.95
+        },
+        "per_case": [
+          {
+            "case_id": "E14TYPE_C001",
+            "domain": "合成区域甲 / 合成未见场景丙",
+            "fund_label": 1,
+            "fund_score": 0.9999991655349731
+          },
+          {
+            "case_id": "E14TYPE_C002",
+            "domain": "合成区域乙 / 合成未见场景丙",
+            "fund_label": 0,
+            "fund_score": 5.453833182400558e-06
+          },
+          {
+            "case_id": "E14TYPE_C003",
+            "domain": "合成区域甲 / 合成未见场景丙",
+            "fund_label": 1,
+            "fund_score": 1.0
+          },
+          {
+            "case_id": "E14TYPE_C004",
+            "domain": "合成区域乙 / 合成未见场景丙",
+            "fund_label": 0,
+            "fund_score": 3.9707600762994844e-08
+          },
+          {
+            "case_id": "E14TYPE_C005",
+            "domain": "合成区域甲 / 合成未见场景丙",
+            "fund_label": 1,
+            "fund_score": 1.0
+          },
+          {
+            "case_id": "E14TYPE_C006",
+            "domain": "合成区域乙 / 合成未见场景丙",
+            "fund_label": 0,
+            "fund_score": 1.135858110501431e-05
+          },
+          {
+            "case_id": "E14TYPE_C007",
+            "domain": "合成区域甲 / 合成未见场景丙",
+            "fund_label": 1,
+            "fund_score": 0.9999998807907104
+          },
+          {
+            "case_id": "E14TYPE_C008",
+            "domain": "合成区域乙 / 合成未见场景丙",
+            "fund_label": 0,
+            "fund_score": 6.779785177712938e-09
+          },
+          {
+            "case_id": "E14TYPE_C009",
+            "domain": "合成区域甲 / 合成未见场景丙",
+            "fund_label": 1,
+            "fund_score": 4.454943336895667e-05
+          },
+          {
+            "case_id": "E14TYPE_C010",
+            "domain": "合成区域乙 / 合成未见场景丙",
+            "fund_label": 0,
+            "fund_score": 8.961103503679624e-07
+          },
+          {
+            "case_id": "E14TYPE_C011",
+            "domain": "合成区域甲 / 合成未见场景丙",
+            "fund_label": 1,
+            "fund_score": 0.9999998807907104
+          },
+          {
+            "case_id": "E14TYPE_C012",
+            "domain": "合成区域乙 / 合成未见场景丙",
+            "fund_label": 0,
+            "fund_score": 7.1147816527172836e-09
+          },
+          {
+            "case_id": "E14TYPE_C013",
+            "domain": "合成区域甲 / 合成未见场景丙",
+            "fund_label": 1,
+            "fund_score": 1.0
+          },
+          {
+            "case_id": "E14TYPE_C014",
+            "domain": "合成区域乙 / 合成未见场景丙",
+            "fund_label": 0,
+            "fund_score": 1.4592620800613076e-06
+          },
+          {
+            "case_id": "E14TYPE_C015",
+            "domain": "合成区域甲 / 合成未见场景丙",
+            "fund_label": 1,
+            "fund_score": 1.0
+          },
+          {
+            "case_id": "E14TYPE_C016",
+            "domain": "合成区域乙 / 合成未见场景丙",
+            "fund_label": 0,
+            "fund_score": 4.6848423806977735e-08
+          },
+          {
+            "case_id": "E14TYPE_C017",
+            "domain": "合成区域甲 / 合成未见场景丙",
+            "fund_label": 1,
+            "fund_score": 0.9999997615814209
+          },
+          {
+            "case_id": "E14TYPE_C018",
+            "domain": "合成区域乙 / 合成未见场景丙",
+            "fund_label": 0,
+            "fund_score": 3.4042741958728584e-07
+          },
+          {
+            "case_id": "E14TYPE_C019",
+            "domain": "合成区域甲 / 合成未见场景丙",
+            "fund_label": 1,
+            "fund_score": 0.9999972581863403
+          },
+          {
+            "case_id": "E14TYPE_C020",
+            "domain": "合成区域乙 / 合成未见场景丙",
+            "fund_label": 0,
+            "fund_score": 1.1726646320653344e-08
+          },
+          {
+            "case_id": "E14TYPE_C021",
+            "domain": "合成区域甲 / 合成未见场景丙",
+            "fund_label": 1,
+            "fund_score": 1.0
+          },
+          {
+            "case_id": "E14TYPE_C022",
+            "domain": "合成区域乙 / 合成未见场景丙",
+            "fund_label": 0,
+            "fund_score": 2.133971293005743e-06
+          },
+          {
+            "case_id": "E14TYPE_C023",
+            "domain": "合成区域甲 / 合成未见场景丙",
+            "fund_label": 1,
+            "fund_score": 0.9999998807907104
+          },
+          {
+            "case_id": "E14TYPE_C024",
+            "domain": "合成区域乙 / 合成未见场景丙",
+            "fund_label": 0,
+            "fund_score": 7.692106507306562e-09
+          }
+        ],
+        "selective": {
+          "labelled_persons": 144,
+          "eligible": 144,
+          "coverage": 1.0,
+          "joint_accuracy_on_eligible": 1.0,
+          "abstentions": [
+            {
+              "case_id": "E14TYPE_C001",
+              "node": "actor:BYSTANDER",
+              "actor_id": "BYSTANDER",
+              "alias": "合成未标注背景主体",
+              "role": "未判定",
+              "level": "未判定",
+              "candidate_role": "技术支持",
+              "candidate_level": "中间层",
+              "score": 0.9999390840530396,
+              "role_distribution": {
+                "协调": 6.929670053068548e-05,
+                "资金处理": 6.082886102376506e-05,
+                "技术支持": 0.9997290968894958,
+                "运输执行": 0.00014071587065700442
+              },
+              "level_distribution": {
+                "上游": 0.0005590968648903072,
+                "中间层": 0.9989519119262695,
+                "执行层": 0.0004889470874331892
+              },
+              "prediction_available": false,
+              "reasons": [
+                "有效事件不足2条"
+              ],
+              "feature_shift": 2.2816306205052475
+            },
+            {
+              "case_id": "E14TYPE_C002",
+              "node": "actor:BYSTANDER",
+              "actor_id": "BYSTANDER",
+              "alias": "合成未标注背景主体",
+              "role": "未判定",
+              "level": "未判定",
+              "candidate_role": "技术支持",
+              "candidate_level": "中间层",
+              "score": 0.9999390840530396,
+              "role_distribution": {
+                "协调": 6.929670053068548e-05,
+                "资金处理": 6.082886102376506e-05,
+                "技术支持": 0.9997290968894958,
+                "运输执行": 0.00014071587065700442
+              },
+              "level_distribution": {
+                "上游": 0.0005590968648903072,
+                "中间层": 0.9989519119262695,
+                "执行层": 0.0004889470874331892
+              },
+              "prediction_available": false,
+              "reasons": [
+                "有效事件不足2条"
+              ],
+              "feature_shift": 2.2816306205052475
+            },
+            {
+              "case_id": "E14TYPE_C003",
+              "node": "actor:BYSTANDER",
+              "actor_id": "BYSTANDER",
+              "alias": "合成未标注背景主体",
+              "role": "未判定",
+              "level": "未判定",
+              "candidate_role": "技术支持",
+              "candidate_level": "中间层",
+              "score": 0.9999390840530396,
+              "role_distribution": {
+                "协调": 6.929670053068548e-05,
+                "资金处理": 6.082886102376506e-05,
+                "技术支持": 0.9997290968894958,
+                "运输执行": 0.00014071587065700442
+              },
+              "level_distribution": {
+                "上游": 0.0005590968648903072,
+                "中间层": 0.9989519119262695,
+                "执行层": 0.0004889470874331892
+              },
+              "prediction_available": false,
+              "reasons": [
+                "有效事件不足2条"
+              ],
+              "feature_shift": 2.2816306205052475
+            },
+            {
+              "case_id": "E14TYPE_C004",
+              "node": "actor:BYSTANDER",
+              "actor_id": "BYSTANDER",
+              "alias": "合成未标注背景主体",
+              "role": "未判定",
+              "level": "未判定",
+              "candidate_role": "技术支持",
+              "candidate_level": "中间层",
+              "score": 0.9999387860298157,
+              "role_distribution": {
+                "协调": 6.966241198824719e-05,
+                "资金处理": 6.112702249083668e-05,
+                "技术支持": 0.9997274279594421,
+                "运输执行": 0.00014183241000864655
+              },
+              "level_distribution": {
+                "上游": 0.0005593473324552178,
+                "中间层": 0.9989487528800964,
+                "执行层": 0.0004919448401778936
+              },
+              "prediction_available": false,
+              "reasons": [
+                "有效事件不足2条"
+              ],
+              "feature_shift": 2.2816306205052475
+            },
+            {
+              "case_id": "E14TYPE_C005",
+              "node": "actor:BYSTANDER",
+              "actor_id": "BYSTANDER",
+              "alias": "合成未标注背景主体",
+              "role": "未判定",
+              "level": "未判定",
+              "candidate_role": "技术支持",
+              "candidate_level": "中间层",
+              "score": 0.9999390840530396,
+              "role_distribution": {
+                "协调": 6.929670053068548e-05,
+                "资金处理": 6.082886102376506e-05,
+                "技术支持": 0.9997290968894958,
+                "运输执行": 0.00014071587065700442
+              },
+              "level_distribution": {
+                "上游": 0.0005590968648903072,
+                "中间层": 0.9989519119262695,
+                "执行层": 0.0004889470874331892
+              },
+              "prediction_available": false,
+              "reasons": [
+                "有效事件不足2条"
+              ],
+              "feature_shift": 2.2816306205052475
+            },
+            {
+              "case_id": "E14TYPE_C006",
+              "node": "actor:BYSTANDER",
+              "actor_id": "BYSTANDER",
+              "alias": "合成未标注背景主体",
+              "role": "未判定",
+              "level": "未判定",
+              "candidate_role": "技术支持",
+              "candidate_level": "中间层",
+              "score": 0.9999387860298157,
+              "role_distribution": {
+                "协调": 6.966241198824719e-05,
+                "资金处理": 6.112702249083668e-05,
+                "技术支持": 0.9997274279594421,
+                "运输执行": 0.00014183241000864655
+              },
+              "level_distribution": {
+                "上游": 0.0005593473324552178,
+                "中间层": 0.9989487528800964,
+                "执行层": 0.0004919448401778936
+              },
+              "prediction_available": false,
+              "reasons": [
+                "有效事件不足2条"
+              ],
+              "feature_shift": 2.2816306205052475
+            },
+            {
+              "case_id": "E14TYPE_C007",
+              "node": "actor:BYSTANDER",
+              "actor_id": "BYSTANDER",
+              "alias": "合成未标注背景主体",
+              "role": "未判定",
+              "level": "未判定",
+              "candidate_role": "技术支持",
+              "candidate_level": "中间层",
+              "score": 0.9999390840530396,
+              "role_distribution": {
+                "协调": 6.929670053068548e-05,
+                "资金处理": 6.082886102376506e-05,
+                "技术支持": 0.9997290968894958,
+                "运输执行": 0.00014071587065700442
+              },
+              "level_distribution": {
+                "上游": 0.0005590968648903072,
+                "中间层": 0.9989519119262695,
+                "执行层": 0.0004889470874331892
+              },
+              "prediction_available": false,
+              "reasons": [
+                "有效事件不足2条"
+              ],
+              "feature_shift": 2.2816306205052475
+            },
+            {
+              "case_id": "E14TYPE_C008",
+              "node": "actor:BYSTANDER",
+              "actor_id": "BYSTANDER",
+              "alias": "合成未标注背景主体",
+              "role": "未判定",
+              "level": "未判定",
+              "candidate_role": "技术支持",
+              "candidate_level": "中间层",
+              "score": 0.999926745891571,
+              "role_distribution": {
+                "协调": 8.001372771104798e-05,
+                "资金处理": 7.311678200494498e-05,
+                "技术支持": 0.9996949434280396,
+                "运输执行": 0.00015195801097434014
+              },
+              "level_distribution": {
+                "上游": 0.000570238393265754,
+                "中间层": 0.9989616870880127,
+                "执行层": 0.0004681674763560295
+              },
+              "prediction_available": false,
+              "reasons": [
+                "有效事件不足2条"
+              ],
+              "feature_shift": 2.2816306205052475
+            },
+            {
+              "case_id": "E14TYPE_C009",
+              "node": "actor:BYSTANDER",
+              "actor_id": "BYSTANDER",
+              "alias": "合成未标注背景主体",
+              "role": "未判定",
+              "level": "未判定",
+              "candidate_role": "技术支持",
+              "candidate_level": "中间层",
+              "score": 0.9999390840530396,
+              "role_distribution": {
+                "协调": 6.929670053068548e-05,
+                "资金处理": 6.082886102376506e-05,
+                "技术支持": 0.9997290968894958,
+                "运输执行": 0.00014071587065700442
+              },
+              "level_distribution": {
+                "上游": 0.0005590968648903072,
+                "中间层": 0.9989519119262695,
+                "执行层": 0.0004889470874331892
+              },
+              "prediction_available": false,
+              "reasons": [
+                "有效事件不足2条"
+              ],
+              "feature_shift": 2.2816306205052475
+            },
+            {
+              "case_id": "E14TYPE_C010",
+              "node": "actor:BYSTANDER",
+              "actor_id": "BYSTANDER",
+              "alias": "合成未标注背景主体",
+              "role": "未判定",
+              "level": "未判定",
+              "candidate_role": "技术支持",
+              "candidate_level": "中间层",
+              "score": 0.9999387860298157,
+              "role_distribution": {
+                "协调": 6.966241198824719e-05,
+                "资金处理": 6.112702249083668e-05,
+                "技术支持": 0.9997274279594421,
+                "运输执行": 0.00014183241000864655
+              },
+              "level_distribution": {
+                "上游": 0.0005593473324552178,
+                "中间层": 0.9989487528800964,
+                "执行层": 0.0004919448401778936
+              },
+              "prediction_available": false,
+              "reasons": [
+                "有效事件不足2条"
+              ],
+              "feature_shift": 2.2816306205052475
+            },
+            {
+              "case_id": "E14TYPE_C011",
+              "node": "actor:BYSTANDER",
+              "actor_id": "BYSTANDER",
+              "alias": "合成未标注背景主体",
+              "role": "未判定",
+              "level": "未判定",
+              "candidate_role": "技术支持",
+              "candidate_level": "中间层",
+              "score": 0.9999387860298157,
+              "role_distribution": {
+                "协调": 6.966241198824719e-05,
+                "资金处理": 6.112702249083668e-05,
+                "技术支持": 0.9997274279594421,
+                "运输执行": 0.00014183241000864655
+              },
+              "level_distribution": {
+                "上游": 0.0005593473324552178,
+                "中间层": 0.9989487528800964,
+                "执行层": 0.0004919448401778936
+              },
+              "prediction_available": false,
+              "reasons": [
+                "有效事件不足2条"
+              ],
+              "feature_shift": 2.2816306205052475
+            },
+            {
+              "case_id": "E14TYPE_C012",
+              "node": "actor:BYSTANDER",
+              "actor_id": "BYSTANDER",
+              "alias": "合成未标注背景主体",
+              "role": "未判定",
+              "level": "未判定",
+              "candidate_role": "技术支持",
+              "candidate_level": "中间层",
+              "score": 0.9999365210533142,
+              "role_distribution": {
+                "协调": 7.149162411224097e-05,
+                "资金处理": 6.34052703389898e-05,
+                "技术支持": 0.9997221827507019,
+                "运输执行": 0.00014288557576946914
+              },
+              "level_distribution": {
+                "上游": 0.0005611816304735839,
+                "中间层": 0.9989558458328247,
+                "执行层": 0.0004830203833989799
+              },
+              "prediction_available": false,
+              "reasons": [
+                "有效事件不足2条"
+              ],
+              "feature_shift": 2.2816306205052475
+            },
+            {
+              "case_id": "E14TYPE_C013",
+              "node": "actor:BYSTANDER",
+              "actor_id": "BYSTANDER",
+              "alias": "合成未标注背景主体",
+              "role": "未判定",
+              "level": "未判定",
+              "candidate_role": "技术支持",
+              "candidate_level": "中间层",
+              "score": 0.9999387860298157,
+              "role_distribution": {
+                "协调": 6.966241198824719e-05,
+                "资金处理": 6.112702249083668e-05,
+                "技术支持": 0.9997274279594421,
+                "运输执行": 0.00014183241000864655
+              },
+              "level_distribution": {
+                "上游": 0.0005593473324552178,
+                "中间层": 0.9989487528800964,
+                "执行层": 0.0004919448401778936
+              },
+              "prediction_available": false,
+              "reasons": [
+                "有效事件不足2条"
+              ],
+              "feature_shift": 2.2816306205052475
+            },
+            {
+              "case_id": "E14TYPE_C014",
+              "node": "actor:BYSTANDER",
+              "actor_id": "BYSTANDER",
+              "alias": "合成未标注背景主体",
+              "role": "未判定",
+              "level": "未判定",
+              "candidate_role": "技术支持",
+              "candidate_level": "中间层",
+              "score": 0.9999387860298157,
+              "role_distribution": {
+                "协调": 6.966241198824719e-05,
+                "资金处理": 6.112702249083668e-05,
+                "技术支持": 0.9997274279594421,
+                "运输执行": 0.00014183241000864655
+              },
+              "level_distribution": {
+                "上游": 0.0005593473324552178,
+                "中间层": 0.9989487528800964,
+                "执行层": 0.0004919448401778936
+              },
+              "prediction_available": false,
+              "reasons": [
+                "有效事件不足2条"
+              ],
+              "feature_shift": 2.2816306205052475
+            },
+            {
+              "case_id": "E14TYPE_C015",
+              "node": "actor:BYSTANDER",
+              "actor_id": "BYSTANDER",
+              "alias": "合成未标注背景主体",
+              "role": "未判定",
+              "level": "未判定",
+              "candidate_role": "技术支持",
+              "candidate_level": "中间层",
+              "score": 0.9999390840530396,
+              "role_distribution": {
+                "协调": 6.929670053068548e-05,
+                "资金处理": 6.082886102376506e-05,
+                "技术支持": 0.9997290968894958,
+                "运输执行": 0.00014071587065700442
+              },
+              "level_distribution": {
+                "上游": 0.0005590968648903072,
+                "中间层": 0.9989519119262695,
+                "执行层": 0.0004889470874331892
+              },
+              "prediction_available": false,
+              "reasons": [
+                "有效事件不足2条"
+              ],
+              "feature_shift": 2.2816306205052475
+            },
+            {
+              "case_id": "E14TYPE_C016",
+              "node": "actor:BYSTANDER",
+              "actor_id": "BYSTANDER",
+              "alias": "合成未标注背景主体",
+              "role": "未判定",
+              "level": "未判定",
+              "candidate_role": "技术支持",
+              "candidate_level": "中间层",
+              "score": 0.9999318718910217,
+              "role_distribution": {
+                "协调": 7.558584184153005e-05,
+                "资金处理": 6.803462019888684e-05,
+                "技术支持": 0.9997087121009827,
+                "运输执行": 0.0001476556499255821
+              },
+              "level_distribution": {
+                "上游": 0.0005652769468724728,
+                "中间层": 0.998957633972168,
+                "执行层": 0.00047710348735563457
+              },
+              "prediction_available": false,
+              "reasons": [
+                "有效事件不足2条"
+              ],
+              "feature_shift": 2.2816306205052475
+            },
+            {
+              "case_id": "E14TYPE_C017",
+              "node": "actor:BYSTANDER",
+              "actor_id": "BYSTANDER",
+              "alias": "合成未标注背景主体",
+              "role": "未判定",
+              "level": "未判定",
+              "candidate_role": "技术支持",
+              "candidate_level": "中间层",
+              "score": 0.9999390840530396,
+              "role_distribution": {
+                "协调": 6.929670053068548e-05,
+                "资金处理": 6.082886102376506e-05,
+                "技术支持": 0.9997290968894958,
+                "运输执行": 0.00014071587065700442
+              },
+              "level_distribution": {
+                "上游": 0.0005590968648903072,
+                "中间层": 0.9989519119262695,
+                "执行层": 0.0004889470874331892
+              },
+              "prediction_available": false,
+              "reasons": [
+                "有效事件不足2条"
+              ],
+              "feature_shift": 2.2816306205052475
+            },
+            {
+              "case_id": "E14TYPE_C018",
+              "node": "actor:BYSTANDER",
+              "actor_id": "BYSTANDER",
+              "alias": "合成未标注背景主体",
+              "role": "未判定",
+              "level": "未判定",
+              "candidate_role": "技术支持",
+              "candidate_level": "中间层",
+              "score": 0.9999387860298157,
+              "role_distribution": {
+                "协调": 6.966241198824719e-05,
+                "资金处理": 6.112702249083668e-05,
+                "技术支持": 0.9997274279594421,
+                "运输执行": 0.00014183241000864655
+              },
+              "level_distribution": {
+                "上游": 0.0005593473324552178,
+                "中间层": 0.9989487528800964,
+                "执行层": 0.0004919448401778936
+              },
+              "prediction_available": false,
+              "reasons": [
+                "有效事件不足2条"
+              ],
+              "feature_shift": 2.2816306205052475
+            },
+            {
+              "case_id": "E14TYPE_C019",
+              "node": "actor:BYSTANDER",
+              "actor_id": "BYSTANDER",
+              "alias": "合成未标注背景主体",
+              "role": "未判定",
+              "level": "未判定",
+              "candidate_role": "技术支持",
+              "candidate_level": "中间层",
+              "score": 0.9999390840530396,
+              "role_distribution": {
+                "协调": 6.929670053068548e-05,
+                "资金处理": 6.082886102376506e-05,
+                "技术支持": 0.9997290968894958,
+                "运输执行": 0.00014071587065700442
+              },
+              "level_distribution": {
+                "上游": 0.0005590968648903072,
+                "中间层": 0.9989519119262695,
+                "执行层": 0.0004889470874331892
+              },
+              "prediction_available": false,
+              "reasons": [
+                "有效事件不足2条"
+              ],
+              "feature_shift": 2.2816306205052475
+            },
+            {
+              "case_id": "E14TYPE_C020",
+              "node": "actor:BYSTANDER",
+              "actor_id": "BYSTANDER",
+              "alias": "合成未标注背景主体",
+              "role": "未判定",
+              "level": "未判定",
+              "candidate_role": "技术支持",
+              "candidate_level": "中间层",
+              "score": 0.9999345541000366,
+              "role_distribution": {
+                "协调": 7.325658953050151e-05,
+                "资金处理": 6.533203122671694e-05,
+                "技术支持": 0.9997159838676453,
+                "运输执行": 0.00014537487004417926
+              },
+              "level_distribution": {
+                "上游": 0.0005628365324810147,
+                "中间层": 0.9989546537399292,
+                "执行层": 0.00048250137479044497
+              },
+              "prediction_available": false,
+              "reasons": [
+                "有效事件不足2条"
+              ],
+              "feature_shift": 2.2816306205052475
+            },
+            {
+              "case_id": "E14TYPE_C021",
+              "node": "actor:BYSTANDER",
+              "actor_id": "BYSTANDER",
+              "alias": "合成未标注背景主体",
+              "role": "未判定",
+              "level": "未判定",
+              "candidate_role": "技术支持",
+              "candidate_level": "中间层",
+              "score": 0.9999387860298157,
+              "role_distribution": {
+                "协调": 6.966241198824719e-05,
+                "资金处理": 6.112702249083668e-05,
+                "技术支持": 0.9997274279594421,
+                "运输执行": 0.00014183241000864655
+              },
+              "level_distribution": {
+                "上游": 0.0005593473324552178,
+                "中间层": 0.9989487528800964,
+                "执行层": 0.0004919448401778936
+              },
+              "prediction_available": false,
+              "reasons": [
+                "有效事件不足2条"
+              ],
+              "feature_shift": 2.2816306205052475
+            },
+            {
+              "case_id": "E14TYPE_C022",
+              "node": "actor:BYSTANDER",
+              "actor_id": "BYSTANDER",
+              "alias": "合成未标注背景主体",
+              "role": "未判定",
+              "level": "未判定",
+              "candidate_role": "技术支持",
+              "candidate_level": "中间层",
+              "score": 0.9999390840530396,
+              "role_distribution": {
+                "协调": 6.929670053068548e-05,
+                "资金处理": 6.082886102376506e-05,
+                "技术支持": 0.9997290968894958,
+                "运输执行": 0.00014071587065700442
+              },
+              "level_distribution": {
+                "上游": 0.0005590968648903072,
+                "中间层": 0.9989519119262695,
+                "执行层": 0.0004889470874331892
+              },
+              "prediction_available": false,
+              "reasons": [
+                "有效事件不足2条"
+              ],
+              "feature_shift": 2.2816306205052475
+            },
+            {
+              "case_id": "E14TYPE_C023",
+              "node": "actor:BYSTANDER",
+              "actor_id": "BYSTANDER",
+              "alias": "合成未标注背景主体",
+              "role": "未判定",
+              "level": "未判定",
+              "candidate_role": "技术支持",
+              "candidate_level": "中间层",
+              "score": 0.9999387860298157,
+              "role_distribution": {
+                "协调": 6.966241198824719e-05,
+                "资金处理": 6.112702249083668e-05,
+                "技术支持": 0.9997274279594421,
+                "运输执行": 0.00014183241000864655
+              },
+              "level_distribution": {
+                "上游": 0.0005593473324552178,
+                "中间层": 0.9989487528800964,
+                "执行层": 0.0004919448401778936
+              },
+              "prediction_available": false,
+              "reasons": [
+                "有效事件不足2条"
+              ],
+              "feature_shift": 2.2816306205052475
+            },
+            {
+              "case_id": "E14TYPE_C024",
+              "node": "actor:BYSTANDER",
+              "actor_id": "BYSTANDER",
+              "alias": "合成未标注背景主体",
+              "role": "未判定",
+              "level": "未判定",
+              "candidate_role": "技术支持",
+              "candidate_level": "中间层",
+              "score": 0.9999333024024963,
+              "role_distribution": {
+                "协调": 7.435667794197798e-05,
+                "资金处理": 6.661088991677389e-05,
+                "技术支持": 0.9997125267982483,
+                "运输执行": 0.0001464533561374992
+              },
+              "level_distribution": {
+                "上游": 0.0005639729788526893,
+                "中间层": 0.9989560842514038,
+                "执行层": 0.0004798858717549592
+              },
+              "prediction_available": false,
+              "reasons": [
+                "有效事件不足2条"
+              ],
+              "feature_shift": 2.2816306205052475
+            }
+          ],
+          "person_errors": []
+        },
+        "displayed_control_candidates": {
+          "tp": 120,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "scope": "加入证据支持、人员拒判和DAG约束后的实际候选；与原控制头指标分别报告"
+        },
+        "fund_errors": [
+          {
+            "case_id": "E14TYPE_C009",
+            "domain": "合成区域甲 / 合成未见场景丙",
+            "fund_label": 1,
+            "fund_score": 4.454943336895667e-05
+          }
+        ]
+      }
+    },
+    {
+      "name": "地区案型同时未见",
+      "origin": "synthetic",
+      "dataset_fingerprint": "dcf5e5adc0462f63545804fb25448200d4fb40d649c3b55ccb8d944ad3d84e54",
+      "domain_groups": {
+        "region": {
+          "合成未见区域丁": {
+            "unseen_in_training": true,
+            "case_count": 24,
+            "fund": {
+              "n": 24,
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "accuracy": 1.0,
+              "roc_auc": 1.0,
+              "brier": 0.0,
+              "confusion": {
+                "tp": 12,
+                "fp": 0,
+                "fn": 0,
+                "tn": 12
+              },
+              "calibration": {
+                "n": 24,
+                "brier": 7.73930923486042e-10,
+                "log_loss": 8.546356014849807e-06,
+                "ece": 8.545969023165956e-06,
+                "bins": [
+                  {
+                    "lower": 0.0,
+                    "upper": 0.2,
+                    "n": 12,
+                    "mean_prediction": 1.6307143556826276e-05,
+                    "observed_frequency": 0.0
+                  },
+                  {
+                    "lower": 0.8,
+                    "upper": 1.0,
+                    "n": 12,
+                    "mean_prediction": 0.9999992152055105,
+                    "observed_frequency": 1.0
+                  }
+                ],
+                "interpretation": "分箱频率仅描述这组留出标签；Brier同时受区分能力影响，小样本或合成数据不能证明真实概率校准。"
+              }
+            },
+            "roles": {
+              "n": 144,
+              "accuracy": 1.0,
+              "macro_f1": 1.0,
+              "confusion": [
+                [
+                  24,
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  48,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  24,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0,
+                  48
+                ]
+              ],
+              "nll": 0.00017583547784704126,
+              "calibration": {
+                "n": 144,
+                "brier": 5.313805799122615e-08,
+                "log_loss": 0.00017583547784704126,
+                "ece": 0.00017581673132049946,
+                "bins": [
+                  {
+                    "lower": 0.8,
+                    "upper": 1.0,
+                    "n": 144,
+                    "mean_prediction": 0.9998241832686795,
+                    "observed_frequency": 1.0
+                  }
+                ],
+                "interpretation": "分箱频率仅描述这组留出标签；Brier同时受区分能力影响，小样本或合成数据不能证明真实概率校准。"
+              }
+            },
+            "levels": {
+              "n": 144,
+              "accuracy": 1.0,
+              "macro_f1": 1.0,
+              "confusion": [
+                [
+                  24,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  72,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  48
+                ]
+              ],
+              "nll": 0.0002243061757803581,
+              "calibration": {
+                "n": 144,
+                "brier": 1.1151111576770772e-07,
+                "log_loss": 0.0002243061757803581,
+                "ece": 0.00022427199615371318,
+                "bins": [
+                  {
+                    "lower": 0.8,
+                    "upper": 1.0,
+                    "n": 144,
+                    "mean_prediction": 0.9997757280038463,
+                    "observed_frequency": 1.0
+                  }
+                ],
+                "interpretation": "分箱频率仅描述这组留出标签；Brier同时受区分能力影响，小样本或合成数据不能证明真实概率校准。"
+              }
+            },
+            "control": {
+              "n": 720,
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "accuracy": 1.0,
+              "roc_auc": 1.0,
+              "brier": 0.0,
+              "confusion": {
+                "tp": 120,
+                "fp": 0,
+                "fn": 0,
+                "tn": 600
+              },
+              "calibration": {
+                "n": 720,
+                "brier": 4.740638959308875e-09,
+                "log_loss": 6.712484820088699e-06,
+                "ece": 6.710112893781033e-06,
+                "bins": [
+                  {
+                    "lower": 0.0,
+                    "upper": 0.2,
+                    "n": 600,
+                    "mean_prediction": 7.553641960068684e-06,
+                    "observed_frequency": 0.0
+                  },
+                  {
+                    "lower": 0.8,
+                    "upper": 1.0,
+                    "n": 120,
+                    "mean_prediction": 0.9999975075324377,
+                    "observed_frequency": 1.0
+                  }
+                ],
+                "interpretation": "分箱频率仅描述这组留出标签；Brier同时受区分能力影响，小样本或合成数据不能证明真实概率校准。"
+              },
+              "threshold": 0.95
+            }
+          }
+        },
+        "case_type": {
+          "合成未见场景丁": {
+            "unseen_in_training": true,
+            "case_count": 24,
+            "fund": {
+              "n": 24,
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "accuracy": 1.0,
+              "roc_auc": 1.0,
+              "brier": 0.0,
+              "confusion": {
+                "tp": 12,
+                "fp": 0,
+                "fn": 0,
+                "tn": 12
+              },
+              "calibration": {
+                "n": 24,
+                "brier": 7.73930923486042e-10,
+                "log_loss": 8.546356014849807e-06,
+                "ece": 8.545969023165956e-06,
+                "bins": [
+                  {
+                    "lower": 0.0,
+                    "upper": 0.2,
+                    "n": 12,
+                    "mean_prediction": 1.6307143556826276e-05,
+                    "observed_frequency": 0.0
+                  },
+                  {
+                    "lower": 0.8,
+                    "upper": 1.0,
+                    "n": 12,
+                    "mean_prediction": 0.9999992152055105,
+                    "observed_frequency": 1.0
+                  }
+                ],
+                "interpretation": "分箱频率仅描述这组留出标签；Brier同时受区分能力影响，小样本或合成数据不能证明真实概率校准。"
+              }
+            },
+            "roles": {
+              "n": 144,
+              "accuracy": 1.0,
+              "macro_f1": 1.0,
+              "confusion": [
+                [
+                  24,
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  48,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  24,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0,
+                  48
+                ]
+              ],
+              "nll": 0.00017583547784704126,
+              "calibration": {
+                "n": 144,
+                "brier": 5.313805799122615e-08,
+                "log_loss": 0.00017583547784704126,
+                "ece": 0.00017581673132049946,
+                "bins": [
+                  {
+                    "lower": 0.8,
+                    "upper": 1.0,
+                    "n": 144,
+                    "mean_prediction": 0.9998241832686795,
+                    "observed_frequency": 1.0
+                  }
+                ],
+                "interpretation": "分箱频率仅描述这组留出标签；Brier同时受区分能力影响，小样本或合成数据不能证明真实概率校准。"
+              }
+            },
+            "levels": {
+              "n": 144,
+              "accuracy": 1.0,
+              "macro_f1": 1.0,
+              "confusion": [
+                [
+                  24,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  72,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  48
+                ]
+              ],
+              "nll": 0.0002243061757803581,
+              "calibration": {
+                "n": 144,
+                "brier": 1.1151111576770772e-07,
+                "log_loss": 0.0002243061757803581,
+                "ece": 0.00022427199615371318,
+                "bins": [
+                  {
+                    "lower": 0.8,
+                    "upper": 1.0,
+                    "n": 144,
+                    "mean_prediction": 0.9997757280038463,
+                    "observed_frequency": 1.0
+                  }
+                ],
+                "interpretation": "分箱频率仅描述这组留出标签；Brier同时受区分能力影响，小样本或合成数据不能证明真实概率校准。"
+              }
+            },
+            "control": {
+              "n": 720,
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "accuracy": 1.0,
+              "roc_auc": 1.0,
+              "brier": 0.0,
+              "confusion": {
+                "tp": 120,
+                "fp": 0,
+                "fn": 0,
+                "tn": 600
+              },
+              "calibration": {
+                "n": 720,
+                "brier": 4.740638959308875e-09,
+                "log_loss": 6.712484820088699e-06,
+                "ece": 6.710112893781033e-06,
+                "bins": [
+                  {
+                    "lower": 0.0,
+                    "upper": 0.2,
+                    "n": 600,
+                    "mean_prediction": 7.553641960068684e-06,
+                    "observed_frequency": 0.0
+                  },
+                  {
+                    "lower": 0.8,
+                    "upper": 1.0,
+                    "n": 120,
+                    "mean_prediction": 0.9999975075324377,
+                    "observed_frequency": 1.0
+                  }
+                ],
+                "interpretation": "分箱频率仅描述这组留出标签；Brier同时受区分能力影响，小样本或合成数据不能证明真实概率校准。"
+              },
+              "threshold": 0.95
+            }
+          }
+        }
+      },
+      "metrics": {
+        "cases": 24,
+        "fund": {
+          "n": 24,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "accuracy": 1.0,
+          "roc_auc": 1.0,
+          "brier": 0.0,
+          "confusion": {
+            "tp": 12,
+            "fp": 0,
+            "fn": 0,
+            "tn": 12
+          },
+          "calibration": {
+            "n": 24,
+            "brier": 7.73930923486042e-10,
+            "log_loss": 8.546356014849807e-06,
+            "ece": 8.545969023165956e-06,
+            "bins": [
+              {
+                "lower": 0.0,
+                "upper": 0.2,
+                "n": 12,
+                "mean_prediction": 1.6307143556826276e-05,
+                "observed_frequency": 0.0
+              },
+              {
+                "lower": 0.8,
+                "upper": 1.0,
+                "n": 12,
+                "mean_prediction": 0.9999992152055105,
+                "observed_frequency": 1.0
+              }
+            ],
+            "interpretation": "分箱频率仅描述这组留出标签；Brier同时受区分能力影响，小样本或合成数据不能证明真实概率校准。"
+          }
+        },
+        "roles": {
+          "n": 144,
+          "accuracy": 1.0,
+          "macro_f1": 1.0,
+          "confusion": [
+            [
+              24,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              48,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              24,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              48
+            ]
+          ],
+          "nll": 0.00017583547784704126,
+          "calibration": {
+            "n": 144,
+            "brier": 5.313805799122615e-08,
+            "log_loss": 0.00017583547784704126,
+            "ece": 0.00017581673132049946,
+            "bins": [
+              {
+                "lower": 0.8,
+                "upper": 1.0,
+                "n": 144,
+                "mean_prediction": 0.9998241832686795,
+                "observed_frequency": 1.0
+              }
+            ],
+            "interpretation": "分箱频率仅描述这组留出标签；Brier同时受区分能力影响，小样本或合成数据不能证明真实概率校准。"
+          }
+        },
+        "levels": {
+          "n": 144,
+          "accuracy": 1.0,
+          "macro_f1": 1.0,
+          "confusion": [
+            [
+              24,
+              0,
+              0
+            ],
+            [
+              0,
+              72,
+              0
+            ],
+            [
+              0,
+              0,
+              48
+            ]
+          ],
+          "nll": 0.0002243061757803581,
+          "calibration": {
+            "n": 144,
+            "brier": 1.1151111576770772e-07,
+            "log_loss": 0.0002243061757803581,
+            "ece": 0.00022427199615371318,
+            "bins": [
+              {
+                "lower": 0.8,
+                "upper": 1.0,
+                "n": 144,
+                "mean_prediction": 0.9997757280038463,
+                "observed_frequency": 1.0
+              }
+            ],
+            "interpretation": "分箱频率仅描述这组留出标签；Brier同时受区分能力影响，小样本或合成数据不能证明真实概率校准。"
+          }
+        },
+        "control": {
+          "n": 720,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "accuracy": 1.0,
+          "roc_auc": 1.0,
+          "brier": 0.0,
+          "confusion": {
+            "tp": 120,
+            "fp": 0,
+            "fn": 0,
+            "tn": 600
+          },
+          "calibration": {
+            "n": 720,
+            "brier": 4.740638959308875e-09,
+            "log_loss": 6.712484820088699e-06,
+            "ece": 6.710112893781033e-06,
+            "bins": [
+              {
+                "lower": 0.0,
+                "upper": 0.2,
+                "n": 600,
+                "mean_prediction": 7.553641960068684e-06,
+                "observed_frequency": 0.0
+              },
+              {
+                "lower": 0.8,
+                "upper": 1.0,
+                "n": 120,
+                "mean_prediction": 0.9999975075324377,
+                "observed_frequency": 1.0
+              }
+            ],
+            "interpretation": "分箱频率仅描述这组留出标签；Brier同时受区分能力影响，小样本或合成数据不能证明真实概率校准。"
+          },
+          "threshold": 0.95
+        },
+        "per_case": [
+          {
+            "case_id": "E14JOINT_C001",
+            "domain": "合成未见区域丁 / 合成未见场景丁",
+            "fund_label": 1,
+            "fund_score": 0.9999998807907104
+          },
+          {
+            "case_id": "E14JOINT_C002",
+            "domain": "合成未见区域丁 / 合成未见场景丁",
+            "fund_label": 0,
+            "fund_score": 1.2648831670958316e-07
+          },
+          {
+            "case_id": "E14JOINT_C003",
+            "domain": "合成未见区域丁 / 合成未见场景丁",
+            "fund_label": 1,
+            "fund_score": 0.9999969005584717
+          },
+          {
+            "case_id": "E14JOINT_C004",
+            "domain": "合成未见区域丁 / 合成未见场景丁",
+            "fund_label": 0,
+            "fund_score": 2.070314142343932e-09
+          },
+          {
+            "case_id": "E14JOINT_C005",
+            "domain": "合成未见区域丁 / 合成未见场景丁",
+            "fund_label": 1,
+            "fund_score": 0.9999998807907104
+          },
+          {
+            "case_id": "E14JOINT_C006",
+            "domain": "合成未见区域丁 / 合成未见场景丁",
+            "fund_label": 0,
+            "fund_score": 7.50751860323362e-05
+          },
+          {
+            "case_id": "E14JOINT_C007",
+            "domain": "合成未见区域丁 / 合成未见场景丁",
+            "fund_label": 1,
+            "fund_score": 1.0
+          },
+          {
+            "case_id": "E14JOINT_C008",
+            "domain": "合成未见区域丁 / 合成未见场景丁",
+            "fund_label": 0,
+            "fund_score": 6.4893734830206995e-09
+          },
+          {
+            "case_id": "E14JOINT_C009",
+            "domain": "合成未见区域丁 / 合成未见场景丁",
+            "fund_label": 1,
+            "fund_score": 0.9999998807907104
+          },
+          {
+            "case_id": "E14JOINT_C010",
+            "domain": "合成未见区域丁 / 合成未见场景丁",
+            "fund_label": 0,
+            "fund_score": 1.6593719465163304e-06
+          },
+          {
+            "case_id": "E14JOINT_C011",
+            "domain": "合成未见区域丁 / 合成未见场景丁",
+            "fund_label": 1,
+            "fund_score": 1.0
+          },
+          {
+            "case_id": "E14JOINT_C012",
+            "domain": "合成未见区域丁 / 合成未见场景丁",
+            "fund_label": 0,
+            "fund_score": 4.9056261275381985e-09
+          },
+          {
+            "case_id": "E14JOINT_C013",
+            "domain": "合成未见区域丁 / 合成未见场景丁",
+            "fund_label": 1,
+            "fund_score": 1.0
+          },
+          {
+            "case_id": "E14JOINT_C014",
+            "domain": "合成未见区域丁 / 合成未见场景丁",
+            "fund_label": 0,
+            "fund_score": 4.521727078099502e-06
+          },
+          {
+            "case_id": "E14JOINT_C015",
+            "domain": "合成未见区域丁 / 合成未见场景丁",
+            "fund_label": 1,
+            "fund_score": 0.9999996423721313
+          },
+          {
+            "case_id": "E14JOINT_C016",
+            "domain": "合成未见区域丁 / 合成未见场景丁",
+            "fund_label": 0,
+            "fund_score": 7.000818147417931e-09
+          },
+          {
+            "case_id": "E14JOINT_C017",
+            "domain": "合成未见区域丁 / 合成未见场景丁",
+            "fund_label": 1,
+            "fund_score": 1.0
+          },
+          {
+            "case_id": "E14JOINT_C018",
+            "domain": "合成未见区域丁 / 合成未见场景丁",
+            "fund_label": 0,
+            "fund_score": 7.444903644682199e-07
+          },
+          {
+            "case_id": "E14JOINT_C019",
+            "domain": "合成未见区域丁 / 合成未见场景丁",
+            "fund_label": 1,
+            "fund_score": 0.999996542930603
+          },
+          {
+            "case_id": "E14JOINT_C020",
+            "domain": "合成未见区域丁 / 合成未见场景丁",
+            "fund_label": 0,
+            "fund_score": 4.242996620718031e-09
+          },
+          {
+            "case_id": "E14JOINT_C021",
+            "domain": "合成未见区域丁 / 合成未见场景丁",
+            "fund_label": 1,
+            "fund_score": 0.9999979734420776
+          },
+          {
+            "case_id": "E14JOINT_C022",
+            "domain": "合成未见区域丁 / 合成未见场景丁",
+            "fund_label": 0,
+            "fund_score": 0.00011352726141922176
+          },
+          {
+            "case_id": "E14JOINT_C023",
+            "domain": "合成未见区域丁 / 合成未见场景丁",
+            "fund_label": 1,
+            "fund_score": 0.9999998807907104
+          },
+          {
+            "case_id": "E14JOINT_C024",
+            "domain": "合成未见区域丁 / 合成未见场景丁",
+            "fund_label": 0,
+            "fund_score": 6.4883960426698195e-09
+          }
+        ],
+        "selective": {
+          "labelled_persons": 144,
+          "eligible": 144,
+          "coverage": 1.0,
+          "joint_accuracy_on_eligible": 1.0,
+          "abstentions": [
+            {
+              "case_id": "E14JOINT_C001",
+              "node": "actor:BYSTANDER",
+              "actor_id": "BYSTANDER",
+              "alias": "合成未标注背景主体",
+              "role": "未判定",
+              "level": "未判定",
+              "candidate_role": "技术支持",
+              "candidate_level": "中间层",
+              "score": 0.9999387860298157,
+              "role_distribution": {
+                "协调": 6.966241198824719e-05,
+                "资金处理": 6.112702249083668e-05,
+                "技术支持": 0.9997274279594421,
+                "运输执行": 0.00014183241000864655
+              },
+              "level_distribution": {
+                "上游": 0.0005593473324552178,
+                "中间层": 0.9989487528800964,
+                "执行层": 0.0004919448401778936
+              },
+              "prediction_available": false,
+              "reasons": [
+                "有效事件不足2条"
+              ],
+              "feature_shift": 2.2816306205052475
+            },
+            {
+              "case_id": "E14JOINT_C002",
+              "node": "actor:BYSTANDER",
+              "actor_id": "BYSTANDER",
+              "alias": "合成未标注背景主体",
+              "role": "未判定",
+              "level": "未判定",
+              "candidate_role": "技术支持",
+              "candidate_level": "中间层",
+              "score": 0.9999387860298157,
+              "role_distribution": {
+                "协调": 6.966241198824719e-05,
+                "资金处理": 6.112702249083668e-05,
+                "技术支持": 0.9997274279594421,
+                "运输执行": 0.00014183241000864655
+              },
+              "level_distribution": {
+                "上游": 0.0005593473324552178,
+                "中间层": 0.9989487528800964,
+                "执行层": 0.0004919448401778936
+              },
+              "prediction_available": false,
+              "reasons": [
+                "有效事件不足2条"
+              ],
+              "feature_shift": 2.2816306205052475
+            },
+            {
+              "case_id": "E14JOINT_C003",
+              "node": "actor:BYSTANDER",
+              "actor_id": "BYSTANDER",
+              "alias": "合成未标注背景主体",
+              "role": "未判定",
+              "level": "未判定",
+              "candidate_role": "技术支持",
+              "candidate_level": "中间层",
+              "score": 0.9999387860298157,
+              "role_distribution": {
+                "协调": 6.966241198824719e-05,
+                "资金处理": 6.112702249083668e-05,
+                "技术支持": 0.9997274279594421,
+                "运输执行": 0.00014183241000864655
+              },
+              "level_distribution": {
+                "上游": 0.0005593473324552178,
+                "中间层": 0.9989487528800964,
+                "执行层": 0.0004919448401778936
+              },
+              "prediction_available": false,
+              "reasons": [
+                "有效事件不足2条"
+              ],
+              "feature_shift": 2.2816306205052475
+            },
+            {
+              "case_id": "E14JOINT_C004",
+              "node": "actor:BYSTANDER",
+              "actor_id": "BYSTANDER",
+              "alias": "合成未标注背景主体",
+              "role": "未判定",
+              "level": "未判定",
+              "candidate_role": "技术支持",
+              "candidate_level": "中间层",
+              "score": 0.9999293684959412,
+              "role_distribution": {
+                "协调": 7.77078457758762e-05,
+                "资金处理": 7.047977123875171e-05,
+                "技术支持": 0.9997021555900574,
+                "运输执行": 0.0001497230987297371
+              },
+              "level_distribution": {
+                "上游": 0.0005676050786860287,
+                "中间层": 0.9989597797393799,
+                "执行层": 0.00047261870349757373
+              },
+              "prediction_available": false,
+              "reasons": [
+                "有效事件不足2条"
+              ],
+              "feature_shift": 2.2816306205052475
+            },
+            {
+              "case_id": "E14JOINT_C005",
+              "node": "actor:BYSTANDER",
+              "actor_id": "BYSTANDER",
+              "alias": "合成未标注背景主体",
+              "role": "未判定",
+              "level": "未判定",
+              "candidate_role": "技术支持",
+              "candidate_level": "中间层",
+              "score": 0.9999390840530396,
+              "role_distribution": {
+                "协调": 6.929670053068548e-05,
+                "资金处理": 6.082886102376506e-05,
+                "技术支持": 0.9997290968894958,
+                "运输执行": 0.00014071587065700442
+              },
+              "level_distribution": {
+                "上游": 0.0005590968648903072,
+                "中间层": 0.9989519119262695,
+                "执行层": 0.0004889470874331892
+              },
+              "prediction_available": false,
+              "reasons": [
+                "有效事件不足2条"
+              ],
+              "feature_shift": 2.2816306205052475
+            },
+            {
+              "case_id": "E14JOINT_C006",
+              "node": "actor:BYSTANDER",
+              "actor_id": "BYSTANDER",
+              "alias": "合成未标注背景主体",
+              "role": "未判定",
+              "level": "未判定",
+              "candidate_role": "技术支持",
+              "candidate_level": "中间层",
+              "score": 0.9999390840530396,
+              "role_distribution": {
+                "协调": 6.929670053068548e-05,
+                "资金处理": 6.082886102376506e-05,
+                "技术支持": 0.9997290968894958,
+                "运输执行": 0.00014071587065700442
+              },
+              "level_distribution": {
+                "上游": 0.0005590968648903072,
+                "中间层": 0.9989519119262695,
+                "执行层": 0.0004889470874331892
+              },
+              "prediction_available": false,
+              "reasons": [
+                "有效事件不足2条"
+              ],
+              "feature_shift": 2.2816306205052475
+            },
+            {
+              "case_id": "E14JOINT_C007",
+              "node": "actor:BYSTANDER",
+              "actor_id": "BYSTANDER",
+              "alias": "合成未标注背景主体",
+              "role": "未判定",
+              "level": "未判定",
+              "candidate_role": "技术支持",
+              "candidate_level": "中间层",
+              "score": 0.9999390840530396,
+              "role_distribution": {
+                "协调": 6.929670053068548e-05,
+                "资金处理": 6.082886102376506e-05,
+                "技术支持": 0.9997290968894958,
+                "运输执行": 0.00014071587065700442
+              },
+              "level_distribution": {
+                "上游": 0.0005590968648903072,
+                "中间层": 0.9989519119262695,
+                "执行层": 0.0004889470874331892
+              },
+              "prediction_available": false,
+              "reasons": [
+                "有效事件不足2条"
+              ],
+              "feature_shift": 2.2816306205052475
+            },
+            {
+              "case_id": "E14JOINT_C008",
+              "node": "actor:BYSTANDER",
+              "actor_id": "BYSTANDER",
+              "alias": "合成未标注背景主体",
+              "role": "未判定",
+              "level": "未判定",
+              "candidate_role": "技术支持",
+              "candidate_level": "中间层",
+              "score": 0.9999390840530396,
+              "role_distribution": {
+                "协调": 6.929670053068548e-05,
+                "资金处理": 6.082886102376506e-05,
+                "技术支持": 0.9997290968894958,
+                "运输执行": 0.00014071587065700442
+              },
+              "level_distribution": {
+                "上游": 0.0005590968648903072,
+                "中间层": 0.9989519119262695,
+                "执行层": 0.0004889470874331892
+              },
+              "prediction_available": false,
+              "reasons": [
+                "有效事件不足2条"
+              ],
+              "feature_shift": 2.2816306205052475
+            },
+            {
+              "case_id": "E14JOINT_C009",
+              "node": "actor:BYSTANDER",
+              "actor_id": "BYSTANDER",
+              "alias": "合成未标注背景主体",
+              "role": "未判定",
+              "level": "未判定",
+              "candidate_role": "技术支持",
+              "candidate_level": "中间层",
+              "score": 0.9999387860298157,
+              "role_distribution": {
+                "协调": 6.966241198824719e-05,
+                "资金处理": 6.112702249083668e-05,
+                "技术支持": 0.9997274279594421,
+                "运输执行": 0.00014183241000864655
+              },
+              "level_distribution": {
+                "上游": 0.0005593473324552178,
+                "中间层": 0.9989487528800964,
+                "执行层": 0.0004919448401778936
+              },
+              "prediction_available": false,
+              "reasons": [
+                "有效事件不足2条"
+              ],
+              "feature_shift": 2.2816306205052475
+            },
+            {
+              "case_id": "E14JOINT_C010",
+              "node": "actor:BYSTANDER",
+              "actor_id": "BYSTANDER",
+              "alias": "合成未标注背景主体",
+              "role": "未判定",
+              "level": "未判定",
+              "candidate_role": "技术支持",
+              "candidate_level": "中间层",
+              "score": 0.9999390840530396,
+              "role_distribution": {
+                "协调": 6.929670053068548e-05,
+                "资金处理": 6.082886102376506e-05,
+                "技术支持": 0.9997290968894958,
+                "运输执行": 0.00014071587065700442
+              },
+              "level_distribution": {
+                "上游": 0.0005590968648903072,
+                "中间层": 0.9989519119262695,
+                "执行层": 0.0004889470874331892
+              },
+              "prediction_available": false,
+              "reasons": [
+                "有效事件不足2条"
+              ],
+              "feature_shift": 2.2816306205052475
+            },
+            {
+              "case_id": "E14JOINT_C011",
+              "node": "actor:BYSTANDER",
+              "actor_id": "BYSTANDER",
+              "alias": "合成未标注背景主体",
+              "role": "未判定",
+              "level": "未判定",
+              "candidate_role": "技术支持",
+              "candidate_level": "中间层",
+              "score": 0.9999390840530396,
+              "role_distribution": {
+                "协调": 6.929670053068548e-05,
+                "资金处理": 6.082886102376506e-05,
+                "技术支持": 0.9997290968894958,
+                "运输执行": 0.00014071587065700442
+              },
+              "level_distribution": {
+                "上游": 0.0005590968648903072,
+                "中间层": 0.9989519119262695,
+                "执行层": 0.0004889470874331892
+              },
+              "prediction_available": false,
+              "reasons": [
+                "有效事件不足2条"
+              ],
+              "feature_shift": 2.2816306205052475
+            },
+            {
+              "case_id": "E14JOINT_C012",
+              "node": "actor:BYSTANDER",
+              "actor_id": "BYSTANDER",
+              "alias": "合成未标注背景主体",
+              "role": "未判定",
+              "level": "未判定",
+              "candidate_role": "技术支持",
+              "candidate_level": "中间层",
+              "score": 0.9999289512634277,
+              "role_distribution": {
+                "协调": 7.807471411069855e-05,
+                "资金处理": 7.090069993864745e-05,
+                "技术支持": 0.9997010231018066,
+                "运输执行": 0.00015007975162006915
+              },
+              "level_distribution": {
+                "上游": 0.0005680170143023133,
+                "中间层": 0.998960018157959,
+                "执行层": 0.0004718831041827798
+              },
+              "prediction_available": false,
+              "reasons": [
+                "有效事件不足2条"
+              ],
+              "feature_shift": 2.2816306205052475
+            },
+            {
+              "case_id": "E14JOINT_C013",
+              "node": "actor:BYSTANDER",
+              "actor_id": "BYSTANDER",
+              "alias": "合成未标注背景主体",
+              "role": "未判定",
+              "level": "未判定",
+              "candidate_role": "技术支持",
+              "candidate_level": "中间层",
+              "score": 0.9999387860298157,
+              "role_distribution": {
+                "协调": 6.966241198824719e-05,
+                "资金处理": 6.112702249083668e-05,
+                "技术支持": 0.9997274279594421,
+                "运输执行": 0.00014183241000864655
+              },
+              "level_distribution": {
+                "上游": 0.0005593473324552178,
+                "中间层": 0.9989487528800964,
+                "执行层": 0.0004919448401778936
+              },
+              "prediction_available": false,
+              "reasons": [
+                "有效事件不足2条"
+              ],
+              "feature_shift": 2.2816306205052475
+            },
+            {
+              "case_id": "E14JOINT_C014",
+              "node": "actor:BYSTANDER",
+              "actor_id": "BYSTANDER",
+              "alias": "合成未标注背景主体",
+              "role": "未判定",
+              "level": "未判定",
+              "candidate_role": "技术支持",
+              "candidate_level": "中间层",
+              "score": 0.9999390840530396,
+              "role_distribution": {
+                "协调": 6.929670053068548e-05,
+                "资金处理": 6.082886102376506e-05,
+                "技术支持": 0.9997290968894958,
+                "运输执行": 0.00014071587065700442
+              },
+              "level_distribution": {
+                "上游": 0.0005590968648903072,
+                "中间层": 0.9989519119262695,
+                "执行层": 0.0004889470874331892
+              },
+              "prediction_available": false,
+              "reasons": [
+                "有效事件不足2条"
+              ],
+              "feature_shift": 2.2816306205052475
+            },
+            {
+              "case_id": "E14JOINT_C015",
+              "node": "actor:BYSTANDER",
+              "actor_id": "BYSTANDER",
+              "alias": "合成未标注背景主体",
+              "role": "未判定",
+              "level": "未判定",
+              "candidate_role": "技术支持",
+              "candidate_level": "中间层",
+              "score": 0.9999390840530396,
+              "role_distribution": {
+                "协调": 6.929670053068548e-05,
+                "资金处理": 6.082886102376506e-05,
+                "技术支持": 0.9997290968894958,
+                "运输执行": 0.00014071587065700442
+              },
+              "level_distribution": {
+                "上游": 0.0005590968648903072,
+                "中间层": 0.9989519119262695,
+                "执行层": 0.0004889470874331892
+              },
+              "prediction_available": false,
+              "reasons": [
+                "有效事件不足2条"
+              ],
+              "feature_shift": 2.2816306205052475
+            },
+            {
+              "case_id": "E14JOINT_C016",
+              "node": "actor:BYSTANDER",
+              "actor_id": "BYSTANDER",
+              "alias": "合成未标注背景主体",
+              "role": "未判定",
+              "level": "未判定",
+              "candidate_role": "技术支持",
+              "candidate_level": "中间层",
+              "score": 0.9999272227287292,
+              "role_distribution": {
+                "协调": 7.948979327920824e-05,
+                "资金处理": 7.265504245879129e-05,
+                "技术支持": 0.9996970891952515,
+                "运输执行": 0.0001507034758105874
+              },
+              "level_distribution": {
+                "上游": 0.000569797120988369,
+                "中间层": 0.9989646673202515,
+                "执行层": 0.0004655331722460687
+              },
+              "prediction_available": false,
+              "reasons": [
+                "有效事件不足2条"
+              ],
+              "feature_shift": 2.2816306205052475
+            },
+            {
+              "case_id": "E14JOINT_C017",
+              "node": "actor:BYSTANDER",
+              "actor_id": "BYSTANDER",
+              "alias": "合成未标注背景主体",
+              "role": "未判定",
+              "level": "未判定",
+              "candidate_role": "技术支持",
+              "candidate_level": "中间层",
+              "score": 0.9999387860298157,
+              "role_distribution": {
+                "协调": 6.966241198824719e-05,
+                "资金处理": 6.112702249083668e-05,
+                "技术支持": 0.9997274279594421,
+                "运输执行": 0.00014183241000864655
+              },
+              "level_distribution": {
+                "上游": 0.0005593473324552178,
+                "中间层": 0.9989487528800964,
+                "执行层": 0.0004919448401778936
+              },
+              "prediction_available": false,
+              "reasons": [
+                "有效事件不足2条"
+              ],
+              "feature_shift": 2.2816306205052475
+            },
+            {
+              "case_id": "E14JOINT_C018",
+              "node": "actor:BYSTANDER",
+              "actor_id": "BYSTANDER",
+              "alias": "合成未标注背景主体",
+              "role": "未判定",
+              "level": "未判定",
+              "candidate_role": "技术支持",
+              "candidate_level": "中间层",
+              "score": 0.9999387860298157,
+              "role_distribution": {
+                "协调": 6.966241198824719e-05,
+                "资金处理": 6.112702249083668e-05,
+                "技术支持": 0.9997274279594421,
+                "运输执行": 0.00014183241000864655
+              },
+              "level_distribution": {
+                "上游": 0.0005593473324552178,
+                "中间层": 0.9989487528800964,
+                "执行层": 0.0004919448401778936
+              },
+              "prediction_available": false,
+              "reasons": [
+                "有效事件不足2条"
+              ],
+              "feature_shift": 2.2816306205052475
+            },
+            {
+              "case_id": "E14JOINT_C019",
+              "node": "actor:BYSTANDER",
+              "actor_id": "BYSTANDER",
+              "alias": "合成未标注背景主体",
+              "role": "未判定",
+              "level": "未判定",
+              "candidate_role": "技术支持",
+              "candidate_level": "中间层",
+              "score": 0.9999387860298157,
+              "role_distribution": {
+                "协调": 6.966241198824719e-05,
+                "资金处理": 6.112702249083668e-05,
+                "技术支持": 0.9997274279594421,
+                "运输执行": 0.00014183241000864655
+              },
+              "level_distribution": {
+                "上游": 0.0005593473324552178,
+                "中间层": 0.9989487528800964,
+                "执行层": 0.0004919448401778936
+              },
+              "prediction_available": false,
+              "reasons": [
+                "有效事件不足2条"
+              ],
+              "feature_shift": 2.2816306205052475
+            },
+            {
+              "case_id": "E14JOINT_C020",
+              "node": "actor:BYSTANDER",
+              "actor_id": "BYSTANDER",
+              "alias": "合成未标注背景主体",
+              "role": "未判定",
+              "level": "未判定",
+              "candidate_role": "技术支持",
+              "candidate_level": "中间层",
+              "score": 0.9999372959136963,
+              "role_distribution": {
+                "协调": 7.082334923325107e-05,
+                "资金处理": 6.262232636800036e-05,
+                "技术支持": 0.9997243285179138,
+                "运输执行": 0.0001422258501406759
+              },
+              "level_distribution": {
+                "上游": 0.0005605319165624678,
+                "中间层": 0.9989546537399292,
+                "执行层": 0.0004847650998272002
+              },
+              "prediction_available": false,
+              "reasons": [
+                "有效事件不足2条"
+              ],
+              "feature_shift": 2.2816306205052475
+            },
+            {
+              "case_id": "E14JOINT_C021",
+              "node": "actor:BYSTANDER",
+              "actor_id": "BYSTANDER",
+              "alias": "合成未标注背景主体",
+              "role": "未判定",
+              "level": "未判定",
+              "candidate_role": "技术支持",
+              "candidate_level": "中间层",
+              "score": 0.9999390840530396,
+              "role_distribution": {
+                "协调": 6.929670053068548e-05,
+                "资金处理": 6.082886102376506e-05,
+                "技术支持": 0.9997290968894958,
+                "运输执行": 0.00014071587065700442
+              },
+              "level_distribution": {
+                "上游": 0.0005590968648903072,
+                "中间层": 0.9989519119262695,
+                "执行层": 0.0004889470874331892
+              },
+              "prediction_available": false,
+              "reasons": [
+                "有效事件不足2条"
+              ],
+              "feature_shift": 2.2816306205052475
+            },
+            {
+              "case_id": "E14JOINT_C022",
+              "node": "actor:BYSTANDER",
+              "actor_id": "BYSTANDER",
+              "alias": "合成未标注背景主体",
+              "role": "未判定",
+              "level": "未判定",
+              "candidate_role": "技术支持",
+              "candidate_level": "中间层",
+              "score": 0.9999390840530396,
+              "role_distribution": {
+                "协调": 6.929670053068548e-05,
+                "资金处理": 6.082886102376506e-05,
+                "技术支持": 0.9997290968894958,
+                "运输执行": 0.00014071587065700442
+              },
+              "level_distribution": {
+                "上游": 0.0005590968648903072,
+                "中间层": 0.9989519119262695,
+                "执行层": 0.0004889470874331892
+              },
+              "prediction_available": false,
+              "reasons": [
+                "有效事件不足2条"
+              ],
+              "feature_shift": 2.2816306205052475
+            },
+            {
+              "case_id": "E14JOINT_C023",
+              "node": "actor:BYSTANDER",
+              "actor_id": "BYSTANDER",
+              "alias": "合成未标注背景主体",
+              "role": "未判定",
+              "level": "未判定",
+              "candidate_role": "技术支持",
+              "candidate_level": "中间层",
+              "score": 0.9999390840530396,
+              "role_distribution": {
+                "协调": 6.929670053068548e-05,
+                "资金处理": 6.082886102376506e-05,
+                "技术支持": 0.9997290968894958,
+                "运输执行": 0.00014071587065700442
+              },
+              "level_distribution": {
+                "上游": 0.0005590968648903072,
+                "中间层": 0.9989519119262695,
+                "执行层": 0.0004889470874331892
+              },
+              "prediction_available": false,
+              "reasons": [
+                "有效事件不足2条"
+              ],
+              "feature_shift": 2.2816306205052475
+            },
+            {
+              "case_id": "E14JOINT_C024",
+              "node": "actor:BYSTANDER",
+              "actor_id": "BYSTANDER",
+              "alias": "合成未标注背景主体",
+              "role": "未判定",
+              "level": "未判定",
+              "candidate_role": "技术支持",
+              "candidate_level": "中间层",
+              "score": 0.999934732913971,
+              "role_distribution": {
+                "协调": 7.310858927667141e-05,
+                "资金处理": 6.515964196296409e-05,
+                "技术支持": 0.9997164607048035,
+                "运输执行": 0.00014522943820338696
+              },
+              "level_distribution": {
+                "上游": 0.0005626867059618235,
+                "中间层": 0.9989544153213501,
+                "执行层": 0.00048286240780726075
+              },
+              "prediction_available": false,
+              "reasons": [
+                "有效事件不足2条"
+              ],
+              "feature_shift": 2.2816306205052475
+            }
+          ],
+          "person_errors": []
+        },
+        "displayed_control_candidates": {
+          "tp": 120,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "scope": "加入证据支持、人员拒判和DAG约束后的实际候选；与原控制头指标分别报告"
+        },
+        "fund_errors": []
+      }
+    }
+  ],
+  "scope": "合成域偏移压力测试不能证明真实地区、真实案型或真实团伙泛化；须另收集完整独立来源进行验证"
+}

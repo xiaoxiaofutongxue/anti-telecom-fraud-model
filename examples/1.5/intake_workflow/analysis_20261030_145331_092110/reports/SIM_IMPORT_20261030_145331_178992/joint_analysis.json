@@ -1,0 +1,4 @@
+{
+  "available": false,
+  "reason": "manifest须明确role_task.task_id及角色、层级类别"
+}

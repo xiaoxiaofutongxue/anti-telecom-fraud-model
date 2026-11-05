@@ -1,0 +1,4 @@
+﻿case_id,label,confirmed,label_source
+C001,1,true,S001
+C002,0,true,S001
+C003,1,true,S001

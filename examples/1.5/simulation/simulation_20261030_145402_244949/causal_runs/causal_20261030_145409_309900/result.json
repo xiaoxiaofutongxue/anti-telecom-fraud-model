@@ -1,0 +1,2127 @@
+{
+  "available": true,
+  "task_id": "synthetic_known_scm_v1",
+  "origin": "synthetic",
+  "study_fingerprint": "ac53fc2fec9acdc9a962de9e8f82d2dd9743ffd9634448b30ebf9e8d99841f73",
+  "question": "在明确的合成结构方程中，二元资金信号对后续产业指标的总体平均效应",
+  "n": 400,
+  "independent_groups": 400,
+  "treatment": "fund_signal",
+  "outcome": "industry_measure",
+  "adjustment": [
+    "prior_activity",
+    "network_context"
+  ],
+  "dag": {
+    "nodes": [
+      "prior_activity",
+      "network_context",
+      "fund_signal",
+      "industry_measure"
+    ],
+    "edges": [
+      [
+        "prior_activity",
+        "fund_signal"
+      ],
+      [
+        "network_context",
+        "fund_signal"
+      ],
+      [
+        "prior_activity",
+        "industry_measure"
+      ],
+      [
+        "network_context",
+        "industry_measure"
+      ],
+      [
+        "fund_signal",
+        "industry_measure"
+      ]
+    ]
+  },
+  "assumptions": {
+    "consistency": true,
+    "no_unmeasured_confounding": true,
+    "positivity": true,
+    "pre_treatment_covariates": true,
+    "independent_groups": true
+  },
+  "acknowledged_by": "合成生成器：仅验证已声明机制",
+  "identification": "在声明DAG与识别假设成立条件下，调整集合满足总效应后门准则",
+  "method": "5折按组交叉拟合AIPW；逻辑倾向模型与分处理组结果模型；正交影响函数；分组稳健近似标准误",
+  "diagnostics": {
+    "propensity_min": 0.230738358556122,
+    "propensity_max": 0.9856229236558531,
+    "extreme_fraction": 0.0025,
+    "effective_sample_size_control": 160.08177610308474,
+    "effective_sample_size_treated": 195.48193046934662,
+    "numerical_clipping_count": 0,
+    "balance": [
+      {
+        "variable": "prior_activity",
+        "smd_before": 0.5246303297424877,
+        "smd_after": 0.06809036825766672
+      },
+      {
+        "variable": "network_context",
+        "smd_before": 0.3721106917842534,
+        "smd_after": 0.06710898016683693
+      }
+    ],
+    "effective_group_count": 400.0,
+    "largest_group_share": 0.0025
+  },
+  "naive_difference": 2.3084767353114257,
+  "scope": "队列总体平均效应；不是当前个案或个人的犯罪因果认定",
+  "warnings": [
+    "置信区间依赖识别、模型及独立组假设，不能证明这些假设；未测混杂仍可能使结果有偏",
+    "全部为合成观测，不代表真实反电诈因果效果"
+  ],
+  "cross_fit_assignments": [
+    {
+      "observation_id": "OBS0000",
+      "group_id": "GROUP0000",
+      "fold": 2
+    },
+    {
+      "observation_id": "OBS0001",
+      "group_id": "GROUP0001",
+      "fold": 3
+    },
+    {
+      "observation_id": "OBS0002",
+      "group_id": "GROUP0002",
+      "fold": 2
+    },
+    {
+      "observation_id": "OBS0003",
+      "group_id": "GROUP0003",
+      "fold": 1
+    },
+    {
+      "observation_id": "OBS0004",
+      "group_id": "GROUP0004",
+      "fold": 0
+    },
+    {
+      "observation_id": "OBS0005",
+      "group_id": "GROUP0005",
+      "fold": 2
+    },
+    {
+      "observation_id": "OBS0006",
+      "group_id": "GROUP0006",
+      "fold": 4
+    },
+    {
+      "observation_id": "OBS0007",
+      "group_id": "GROUP0007",
+      "fold": 1
+    },
+    {
+      "observation_id": "OBS0008",
+      "group_id": "GROUP0008",
+      "fold": 4
+    },
+    {
+      "observation_id": "OBS0009",
+      "group_id": "GROUP0009",
+      "fold": 3
+    },
+    {
+      "observation_id": "OBS0010",
+      "group_id": "GROUP0010",
+      "fold": 0
+    },
+    {
+      "observation_id": "OBS0011",
+      "group_id": "GROUP0011",
+      "fold": 0
+    },
+    {
+      "observation_id": "OBS0012",
+      "group_id": "GROUP0012",
+      "fold": 4
+    },
+    {
+      "observation_id": "OBS0013",
+      "group_id": "GROUP0013",
+      "fold": 0
+    },
+    {
+      "observation_id": "OBS0014",
+      "group_id": "GROUP0014",
+      "fold": 2
+    },
+    {
+      "observation_id": "OBS0015",
+      "group_id": "GROUP0015",
+      "fold": 4
+    },
+    {
+      "observation_id": "OBS0016",
+      "group_id": "GROUP0016",
+      "fold": 4
+    },
+    {
+      "observation_id": "OBS0017",
+      "group_id": "GROUP0017",
+      "fold": 4
+    },
+    {
+      "observation_id": "OBS0018",
+      "group_id": "GROUP0018",
+      "fold": 0
+    },
+    {
+      "observation_id": "OBS0019",
+      "group_id": "GROUP0019",
+      "fold": 3
+    },
+    {
+      "observation_id": "OBS0020",
+      "group_id": "GROUP0020",
+      "fold": 0
+    },
+    {
+      "observation_id": "OBS0021",
+      "group_id": "GROUP0021",
+      "fold": 0
+    },
+    {
+      "observation_id": "OBS0022",
+      "group_id": "GROUP0022",
+      "fold": 3
+    },
+    {
+      "observation_id": "OBS0023",
+      "group_id": "GROUP0023",
+      "fold": 0
+    },
+    {
+      "observation_id": "OBS0024",
+      "group_id": "GROUP0024",
+      "fold": 2
+    },
+    {
+      "observation_id": "OBS0025",
+      "group_id": "GROUP0025",
+      "fold": 1
+    },
+    {
+      "observation_id": "OBS0026",
+      "group_id": "GROUP0026",
+      "fold": 1
+    },
+    {
+      "observation_id": "OBS0027",
+      "group_id": "GROUP0027",
+      "fold": 4
+    },
+    {
+      "observation_id": "OBS0028",
+      "group_id": "GROUP0028",
+      "fold": 3
+    },
+    {
+      "observation_id": "OBS0029",
+      "group_id": "GROUP0029",
+      "fold": 4
+    },
+    {
+      "observation_id": "OBS0030",
+      "group_id": "GROUP0030",
+      "fold": 1
+    },
+    {
+      "observation_id": "OBS0031",
+      "group_id": "GROUP0031",
+      "fold": 2
+    },
+    {
+      "observation_id": "OBS0032",
+      "group_id": "GROUP0032",
+      "fold": 3
+    },
+    {
+      "observation_id": "OBS0033",
+      "group_id": "GROUP0033",
+      "fold": 2
+    },
+    {
+      "observation_id": "OBS0034",
+      "group_id": "GROUP0034",
+      "fold": 1
+    },
+    {
+      "observation_id": "OBS0035",
+      "group_id": "GROUP0035",
+      "fold": 3
+    },
+    {
+      "observation_id": "OBS0036",
+      "group_id": "GROUP0036",
+      "fold": 1
+    },
+    {
+      "observation_id": "OBS0037",
+      "group_id": "GROUP0037",
+      "fold": 2
+    },
+    {
+      "observation_id": "OBS0038",
+      "group_id": "GROUP0038",
+      "fold": 0
+    },
+    {
+      "observation_id": "OBS0039",
+      "group_id": "GROUP0039",
+      "fold": 3
+    },
+    {
+      "observation_id": "OBS0040",
+      "group_id": "GROUP0040",
+      "fold": 2
+    },
+    {
+      "observation_id": "OBS0041",
+      "group_id": "GROUP0041",
+      "fold": 0
+    },
+    {
+      "observation_id": "OBS0042",
+      "group_id": "GROUP0042",
+      "fold": 3
+    },
+    {
+      "observation_id": "OBS0043",
+      "group_id": "GROUP0043",
+      "fold": 4
+    },
+    {
+      "observation_id": "OBS0044",
+      "group_id": "GROUP0044",
+      "fold": 4
+    },
+    {
+      "observation_id": "OBS0045",
+      "group_id": "GROUP0045",
+      "fold": 0
+    },
+    {
+      "observation_id": "OBS0046",
+      "group_id": "GROUP0046",
+      "fold": 3
+    },
+    {
+      "observation_id": "OBS0047",
+      "group_id": "GROUP0047",
+      "fold": 4
+    },
+    {
+      "observation_id": "OBS0048",
+      "group_id": "GROUP0048",
+      "fold": 4
+    },
+    {
+      "observation_id": "OBS0049",
+      "group_id": "GROUP0049",
+      "fold": 2
+    },
+    {
+      "observation_id": "OBS0050",
+      "group_id": "GROUP0050",
+      "fold": 0
+    },
+    {
+      "observation_id": "OBS0051",
+      "group_id": "GROUP0051",
+      "fold": 0
+    },
+    {
+      "observation_id": "OBS0052",
+      "group_id": "GROUP0052",
+      "fold": 0
+    },
+    {
+      "observation_id": "OBS0053",
+      "group_id": "GROUP0053",
+      "fold": 3
+    },
+    {
+      "observation_id": "OBS0054",
+      "group_id": "GROUP0054",
+      "fold": 2
+    },
+    {
+      "observation_id": "OBS0055",
+      "group_id": "GROUP0055",
+      "fold": 3
+    },
+    {
+      "observation_id": "OBS0056",
+      "group_id": "GROUP0056",
+      "fold": 0
+    },
+    {
+      "observation_id": "OBS0057",
+      "group_id": "GROUP0057",
+      "fold": 3
+    },
+    {
+      "observation_id": "OBS0058",
+      "group_id": "GROUP0058",
+      "fold": 1
+    },
+    {
+      "observation_id": "OBS0059",
+      "group_id": "GROUP0059",
+      "fold": 3
+    },
+    {
+      "observation_id": "OBS0060",
+      "group_id": "GROUP0060",
+      "fold": 1
+    },
+    {
+      "observation_id": "OBS0061",
+      "group_id": "GROUP0061",
+      "fold": 3
+    },
+    {
+      "observation_id": "OBS0062",
+      "group_id": "GROUP0062",
+      "fold": 2
+    },
+    {
+      "observation_id": "OBS0063",
+      "group_id": "GROUP0063",
+      "fold": 4
+    },
+    {
+      "observation_id": "OBS0064",
+      "group_id": "GROUP0064",
+      "fold": 4
+    },
+    {
+      "observation_id": "OBS0065",
+      "group_id": "GROUP0065",
+      "fold": 3
+    },
+    {
+      "observation_id": "OBS0066",
+      "group_id": "GROUP0066",
+      "fold": 4
+    },
+    {
+      "observation_id": "OBS0067",
+      "group_id": "GROUP0067",
+      "fold": 4
+    },
+    {
+      "observation_id": "OBS0068",
+      "group_id": "GROUP0068",
+      "fold": 0
+    },
+    {
+      "observation_id": "OBS0069",
+      "group_id": "GROUP0069",
+      "fold": 2
+    },
+    {
+      "observation_id": "OBS0070",
+      "group_id": "GROUP0070",
+      "fold": 0
+    },
+    {
+      "observation_id": "OBS0071",
+      "group_id": "GROUP0071",
+      "fold": 2
+    },
+    {
+      "observation_id": "OBS0072",
+      "group_id": "GROUP0072",
+      "fold": 2
+    },
+    {
+      "observation_id": "OBS0073",
+      "group_id": "GROUP0073",
+      "fold": 4
+    },
+    {
+      "observation_id": "OBS0074",
+      "group_id": "GROUP0074",
+      "fold": 2
+    },
+    {
+      "observation_id": "OBS0075",
+      "group_id": "GROUP0075",
+      "fold": 0
+    },
+    {
+      "observation_id": "OBS0076",
+      "group_id": "GROUP0076",
+      "fold": 0
+    },
+    {
+      "observation_id": "OBS0077",
+      "group_id": "GROUP0077",
+      "fold": 2
+    },
+    {
+      "observation_id": "OBS0078",
+      "group_id": "GROUP0078",
+      "fold": 2
+    },
+    {
+      "observation_id": "OBS0079",
+      "group_id": "GROUP0079",
+      "fold": 1
+    },
+    {
+      "observation_id": "OBS0080",
+      "group_id": "GROUP0080",
+      "fold": 4
+    },
+    {
+      "observation_id": "OBS0081",
+      "group_id": "GROUP0081",
+      "fold": 0
+    },
+    {
+      "observation_id": "OBS0082",
+      "group_id": "GROUP0082",
+      "fold": 4
+    },
+    {
+      "observation_id": "OBS0083",
+      "group_id": "GROUP0083",
+      "fold": 2
+    },
+    {
+      "observation_id": "OBS0084",
+      "group_id": "GROUP0084",
+      "fold": 1
+    },
+    {
+      "observation_id": "OBS0085",
+      "group_id": "GROUP0085",
+      "fold": 0
+    },
+    {
+      "observation_id": "OBS0086",
+      "group_id": "GROUP0086",
+      "fold": 0
+    },
+    {
+      "observation_id": "OBS0087",
+      "group_id": "GROUP0087",
+      "fold": 0
+    },
+    {
+      "observation_id": "OBS0088",
+      "group_id": "GROUP0088",
+      "fold": 3
+    },
+    {
+      "observation_id": "OBS0089",
+      "group_id": "GROUP0089",
+      "fold": 4
+    },
+    {
+      "observation_id": "OBS0090",
+      "group_id": "GROUP0090",
+      "fold": 0
+    },
+    {
+      "observation_id": "OBS0091",
+      "group_id": "GROUP0091",
+      "fold": 2
+    },
+    {
+      "observation_id": "OBS0092",
+      "group_id": "GROUP0092",
+      "fold": 4
+    },
+    {
+      "observation_id": "OBS0093",
+      "group_id": "GROUP0093",
+      "fold": 4
+    },
+    {
+      "observation_id": "OBS0094",
+      "group_id": "GROUP0094",
+      "fold": 4
+    },
+    {
+      "observation_id": "OBS0095",
+      "group_id": "GROUP0095",
+      "fold": 1
+    },
+    {
+      "observation_id": "OBS0096",
+      "group_id": "GROUP0096",
+      "fold": 2
+    },
+    {
+      "observation_id": "OBS0097",
+      "group_id": "GROUP0097",
+      "fold": 3
+    },
+    {
+      "observation_id": "OBS0098",
+      "group_id": "GROUP0098",
+      "fold": 2
+    },
+    {
+      "observation_id": "OBS0099",
+      "group_id": "GROUP0099",
+      "fold": 1
+    },
+    {
+      "observation_id": "OBS0100",
+      "group_id": "GROUP0100",
+      "fold": 2
+    },
+    {
+      "observation_id": "OBS0101",
+      "group_id": "GROUP0101",
+      "fold": 2
+    },
+    {
+      "observation_id": "OBS0102",
+      "group_id": "GROUP0102",
+      "fold": 3
+    },
+    {
+      "observation_id": "OBS0103",
+      "group_id": "GROUP0103",
+      "fold": 3
+    },
+    {
+      "observation_id": "OBS0104",
+      "group_id": "GROUP0104",
+      "fold": 2
+    },
+    {
+      "observation_id": "OBS0105",
+      "group_id": "GROUP0105",
+      "fold": 2
+    },
+    {
+      "observation_id": "OBS0106",
+      "group_id": "GROUP0106",
+      "fold": 4
+    },
+    {
+      "observation_id": "OBS0107",
+      "group_id": "GROUP0107",
+      "fold": 4
+    },
+    {
+      "observation_id": "OBS0108",
+      "group_id": "GROUP0108",
+      "fold": 2
+    },
+    {
+      "observation_id": "OBS0109",
+      "group_id": "GROUP0109",
+      "fold": 0
+    },
+    {
+      "observation_id": "OBS0110",
+      "group_id": "GROUP0110",
+      "fold": 1
+    },
+    {
+      "observation_id": "OBS0111",
+      "group_id": "GROUP0111",
+      "fold": 2
+    },
+    {
+      "observation_id": "OBS0112",
+      "group_id": "GROUP0112",
+      "fold": 4
+    },
+    {
+      "observation_id": "OBS0113",
+      "group_id": "GROUP0113",
+      "fold": 1
+    },
+    {
+      "observation_id": "OBS0114",
+      "group_id": "GROUP0114",
+      "fold": 2
+    },
+    {
+      "observation_id": "OBS0115",
+      "group_id": "GROUP0115",
+      "fold": 2
+    },
+    {
+      "observation_id": "OBS0116",
+      "group_id": "GROUP0116",
+      "fold": 0
+    },
+    {
+      "observation_id": "OBS0117",
+      "group_id": "GROUP0117",
+      "fold": 1
+    },
+    {
+      "observation_id": "OBS0118",
+      "group_id": "GROUP0118",
+      "fold": 1
+    },
+    {
+      "observation_id": "OBS0119",
+      "group_id": "GROUP0119",
+      "fold": 1
+    },
+    {
+      "observation_id": "OBS0120",
+      "group_id": "GROUP0120",
+      "fold": 0
+    },
+    {
+      "observation_id": "OBS0121",
+      "group_id": "GROUP0121",
+      "fold": 3
+    },
+    {
+      "observation_id": "OBS0122",
+      "group_id": "GROUP0122",
+      "fold": 0
+    },
+    {
+      "observation_id": "OBS0123",
+      "group_id": "GROUP0123",
+      "fold": 3
+    },
+    {
+      "observation_id": "OBS0124",
+      "group_id": "GROUP0124",
+      "fold": 2
+    },
+    {
+      "observation_id": "OBS0125",
+      "group_id": "GROUP0125",
+      "fold": 3
+    },
+    {
+      "observation_id": "OBS0126",
+      "group_id": "GROUP0126",
+      "fold": 1
+    },
+    {
+      "observation_id": "OBS0127",
+      "group_id": "GROUP0127",
+      "fold": 0
+    },
+    {
+      "observation_id": "OBS0128",
+      "group_id": "GROUP0128",
+      "fold": 2
+    },
+    {
+      "observation_id": "OBS0129",
+      "group_id": "GROUP0129",
+      "fold": 2
+    },
+    {
+      "observation_id": "OBS0130",
+      "group_id": "GROUP0130",
+      "fold": 3
+    },
+    {
+      "observation_id": "OBS0131",
+      "group_id": "GROUP0131",
+      "fold": 3
+    },
+    {
+      "observation_id": "OBS0132",
+      "group_id": "GROUP0132",
+      "fold": 4
+    },
+    {
+      "observation_id": "OBS0133",
+      "group_id": "GROUP0133",
+      "fold": 1
+    },
+    {
+      "observation_id": "OBS0134",
+      "group_id": "GROUP0134",
+      "fold": 3
+    },
+    {
+      "observation_id": "OBS0135",
+      "group_id": "GROUP0135",
+      "fold": 3
+    },
+    {
+      "observation_id": "OBS0136",
+      "group_id": "GROUP0136",
+      "fold": 0
+    },
+    {
+      "observation_id": "OBS0137",
+      "group_id": "GROUP0137",
+      "fold": 0
+    },
+    {
+      "observation_id": "OBS0138",
+      "group_id": "GROUP0138",
+      "fold": 4
+    },
+    {
+      "observation_id": "OBS0139",
+      "group_id": "GROUP0139",
+      "fold": 1
+    },
+    {
+      "observation_id": "OBS0140",
+      "group_id": "GROUP0140",
+      "fold": 0
+    },
+    {
+      "observation_id": "OBS0141",
+      "group_id": "GROUP0141",
+      "fold": 2
+    },
+    {
+      "observation_id": "OBS0142",
+      "group_id": "GROUP0142",
+      "fold": 0
+    },
+    {
+      "observation_id": "OBS0143",
+      "group_id": "GROUP0143",
+      "fold": 4
+    },
+    {
+      "observation_id": "OBS0144",
+      "group_id": "GROUP0144",
+      "fold": 4
+    },
+    {
+      "observation_id": "OBS0145",
+      "group_id": "GROUP0145",
+      "fold": 3
+    },
+    {
+      "observation_id": "OBS0146",
+      "group_id": "GROUP0146",
+      "fold": 3
+    },
+    {
+      "observation_id": "OBS0147",
+      "group_id": "GROUP0147",
+      "fold": 3
+    },
+    {
+      "observation_id": "OBS0148",
+      "group_id": "GROUP0148",
+      "fold": 0
+    },
+    {
+      "observation_id": "OBS0149",
+      "group_id": "GROUP0149",
+      "fold": 1
+    },
+    {
+      "observation_id": "OBS0150",
+      "group_id": "GROUP0150",
+      "fold": 3
+    },
+    {
+      "observation_id": "OBS0151",
+      "group_id": "GROUP0151",
+      "fold": 2
+    },
+    {
+      "observation_id": "OBS0152",
+      "group_id": "GROUP0152",
+      "fold": 2
+    },
+    {
+      "observation_id": "OBS0153",
+      "group_id": "GROUP0153",
+      "fold": 3
+    },
+    {
+      "observation_id": "OBS0154",
+      "group_id": "GROUP0154",
+      "fold": 3
+    },
+    {
+      "observation_id": "OBS0155",
+      "group_id": "GROUP0155",
+      "fold": 4
+    },
+    {
+      "observation_id": "OBS0156",
+      "group_id": "GROUP0156",
+      "fold": 3
+    },
+    {
+      "observation_id": "OBS0157",
+      "group_id": "GROUP0157",
+      "fold": 3
+    },
+    {
+      "observation_id": "OBS0158",
+      "group_id": "GROUP0158",
+      "fold": 1
+    },
+    {
+      "observation_id": "OBS0159",
+      "group_id": "GROUP0159",
+      "fold": 0
+    },
+    {
+      "observation_id": "OBS0160",
+      "group_id": "GROUP0160",
+      "fold": 1
+    },
+    {
+      "observation_id": "OBS0161",
+      "group_id": "GROUP0161",
+      "fold": 3
+    },
+    {
+      "observation_id": "OBS0162",
+      "group_id": "GROUP0162",
+      "fold": 3
+    },
+    {
+      "observation_id": "OBS0163",
+      "group_id": "GROUP0163",
+      "fold": 2
+    },
+    {
+      "observation_id": "OBS0164",
+      "group_id": "GROUP0164",
+      "fold": 2
+    },
+    {
+      "observation_id": "OBS0165",
+      "group_id": "GROUP0165",
+      "fold": 1
+    },
+    {
+      "observation_id": "OBS0166",
+      "group_id": "GROUP0166",
+      "fold": 0
+    },
+    {
+      "observation_id": "OBS0167",
+      "group_id": "GROUP0167",
+      "fold": 1
+    },
+    {
+      "observation_id": "OBS0168",
+      "group_id": "GROUP0168",
+      "fold": 1
+    },
+    {
+      "observation_id": "OBS0169",
+      "group_id": "GROUP0169",
+      "fold": 0
+    },
+    {
+      "observation_id": "OBS0170",
+      "group_id": "GROUP0170",
+      "fold": 2
+    },
+    {
+      "observation_id": "OBS0171",
+      "group_id": "GROUP0171",
+      "fold": 3
+    },
+    {
+      "observation_id": "OBS0172",
+      "group_id": "GROUP0172",
+      "fold": 0
+    },
+    {
+      "observation_id": "OBS0173",
+      "group_id": "GROUP0173",
+      "fold": 3
+    },
+    {
+      "observation_id": "OBS0174",
+      "group_id": "GROUP0174",
+      "fold": 4
+    },
+    {
+      "observation_id": "OBS0175",
+      "group_id": "GROUP0175",
+      "fold": 3
+    },
+    {
+      "observation_id": "OBS0176",
+      "group_id": "GROUP0176",
+      "fold": 1
+    },
+    {
+      "observation_id": "OBS0177",
+      "group_id": "GROUP0177",
+      "fold": 1
+    },
+    {
+      "observation_id": "OBS0178",
+      "group_id": "GROUP0178",
+      "fold": 1
+    },
+    {
+      "observation_id": "OBS0179",
+      "group_id": "GROUP0179",
+      "fold": 2
+    },
+    {
+      "observation_id": "OBS0180",
+      "group_id": "GROUP0180",
+      "fold": 0
+    },
+    {
+      "observation_id": "OBS0181",
+      "group_id": "GROUP0181",
+      "fold": 3
+    },
+    {
+      "observation_id": "OBS0182",
+      "group_id": "GROUP0182",
+      "fold": 4
+    },
+    {
+      "observation_id": "OBS0183",
+      "group_id": "GROUP0183",
+      "fold": 0
+    },
+    {
+      "observation_id": "OBS0184",
+      "group_id": "GROUP0184",
+      "fold": 0
+    },
+    {
+      "observation_id": "OBS0185",
+      "group_id": "GROUP0185",
+      "fold": 4
+    },
+    {
+      "observation_id": "OBS0186",
+      "group_id": "GROUP0186",
+      "fold": 3
+    },
+    {
+      "observation_id": "OBS0187",
+      "group_id": "GROUP0187",
+      "fold": 1
+    },
+    {
+      "observation_id": "OBS0188",
+      "group_id": "GROUP0188",
+      "fold": 3
+    },
+    {
+      "observation_id": "OBS0189",
+      "group_id": "GROUP0189",
+      "fold": 3
+    },
+    {
+      "observation_id": "OBS0190",
+      "group_id": "GROUP0190",
+      "fold": 4
+    },
+    {
+      "observation_id": "OBS0191",
+      "group_id": "GROUP0191",
+      "fold": 4
+    },
+    {
+      "observation_id": "OBS0192",
+      "group_id": "GROUP0192",
+      "fold": 2
+    },
+    {
+      "observation_id": "OBS0193",
+      "group_id": "GROUP0193",
+      "fold": 0
+    },
+    {
+      "observation_id": "OBS0194",
+      "group_id": "GROUP0194",
+      "fold": 1
+    },
+    {
+      "observation_id": "OBS0195",
+      "group_id": "GROUP0195",
+      "fold": 1
+    },
+    {
+      "observation_id": "OBS0196",
+      "group_id": "GROUP0196",
+      "fold": 2
+    },
+    {
+      "observation_id": "OBS0197",
+      "group_id": "GROUP0197",
+      "fold": 1
+    },
+    {
+      "observation_id": "OBS0198",
+      "group_id": "GROUP0198",
+      "fold": 2
+    },
+    {
+      "observation_id": "OBS0199",
+      "group_id": "GROUP0199",
+      "fold": 0
+    },
+    {
+      "observation_id": "OBS0200",
+      "group_id": "GROUP0200",
+      "fold": 4
+    },
+    {
+      "observation_id": "OBS0201",
+      "group_id": "GROUP0201",
+      "fold": 4
+    },
+    {
+      "observation_id": "OBS0202",
+      "group_id": "GROUP0202",
+      "fold": 3
+    },
+    {
+      "observation_id": "OBS0203",
+      "group_id": "GROUP0203",
+      "fold": 0
+    },
+    {
+      "observation_id": "OBS0204",
+      "group_id": "GROUP0204",
+      "fold": 0
+    },
+    {
+      "observation_id": "OBS0205",
+      "group_id": "GROUP0205",
+      "fold": 1
+    },
+    {
+      "observation_id": "OBS0206",
+      "group_id": "GROUP0206",
+      "fold": 1
+    },
+    {
+      "observation_id": "OBS0207",
+      "group_id": "GROUP0207",
+      "fold": 0
+    },
+    {
+      "observation_id": "OBS0208",
+      "group_id": "GROUP0208",
+      "fold": 1
+    },
+    {
+      "observation_id": "OBS0209",
+      "group_id": "GROUP0209",
+      "fold": 3
+    },
+    {
+      "observation_id": "OBS0210",
+      "group_id": "GROUP0210",
+      "fold": 1
+    },
+    {
+      "observation_id": "OBS0211",
+      "group_id": "GROUP0211",
+      "fold": 2
+    },
+    {
+      "observation_id": "OBS0212",
+      "group_id": "GROUP0212",
+      "fold": 0
+    },
+    {
+      "observation_id": "OBS0213",
+      "group_id": "GROUP0213",
+      "fold": 0
+    },
+    {
+      "observation_id": "OBS0214",
+      "group_id": "GROUP0214",
+      "fold": 4
+    },
+    {
+      "observation_id": "OBS0215",
+      "group_id": "GROUP0215",
+      "fold": 4
+    },
+    {
+      "observation_id": "OBS0216",
+      "group_id": "GROUP0216",
+      "fold": 1
+    },
+    {
+      "observation_id": "OBS0217",
+      "group_id": "GROUP0217",
+      "fold": 1
+    },
+    {
+      "observation_id": "OBS0218",
+      "group_id": "GROUP0218",
+      "fold": 2
+    },
+    {
+      "observation_id": "OBS0219",
+      "group_id": "GROUP0219",
+      "fold": 1
+    },
+    {
+      "observation_id": "OBS0220",
+      "group_id": "GROUP0220",
+      "fold": 2
+    },
+    {
+      "observation_id": "OBS0221",
+      "group_id": "GROUP0221",
+      "fold": 1
+    },
+    {
+      "observation_id": "OBS0222",
+      "group_id": "GROUP0222",
+      "fold": 0
+    },
+    {
+      "observation_id": "OBS0223",
+      "group_id": "GROUP0223",
+      "fold": 2
+    },
+    {
+      "observation_id": "OBS0224",
+      "group_id": "GROUP0224",
+      "fold": 2
+    },
+    {
+      "observation_id": "OBS0225",
+      "group_id": "GROUP0225",
+      "fold": 1
+    },
+    {
+      "observation_id": "OBS0226",
+      "group_id": "GROUP0226",
+      "fold": 1
+    },
+    {
+      "observation_id": "OBS0227",
+      "group_id": "GROUP0227",
+      "fold": 4
+    },
+    {
+      "observation_id": "OBS0228",
+      "group_id": "GROUP0228",
+      "fold": 4
+    },
+    {
+      "observation_id": "OBS0229",
+      "group_id": "GROUP0229",
+      "fold": 2
+    },
+    {
+      "observation_id": "OBS0230",
+      "group_id": "GROUP0230",
+      "fold": 4
+    },
+    {
+      "observation_id": "OBS0231",
+      "group_id": "GROUP0231",
+      "fold": 1
+    },
+    {
+      "observation_id": "OBS0232",
+      "group_id": "GROUP0232",
+      "fold": 0
+    },
+    {
+      "observation_id": "OBS0233",
+      "group_id": "GROUP0233",
+      "fold": 2
+    },
+    {
+      "observation_id": "OBS0234",
+      "group_id": "GROUP0234",
+      "fold": 4
+    },
+    {
+      "observation_id": "OBS0235",
+      "group_id": "GROUP0235",
+      "fold": 2
+    },
+    {
+      "observation_id": "OBS0236",
+      "group_id": "GROUP0236",
+      "fold": 1
+    },
+    {
+      "observation_id": "OBS0237",
+      "group_id": "GROUP0237",
+      "fold": 1
+    },
+    {
+      "observation_id": "OBS0238",
+      "group_id": "GROUP0238",
+      "fold": 3
+    },
+    {
+      "observation_id": "OBS0239",
+      "group_id": "GROUP0239",
+      "fold": 1
+    },
+    {
+      "observation_id": "OBS0240",
+      "group_id": "GROUP0240",
+      "fold": 0
+    },
+    {
+      "observation_id": "OBS0241",
+      "group_id": "GROUP0241",
+      "fold": 2
+    },
+    {
+      "observation_id": "OBS0242",
+      "group_id": "GROUP0242",
+      "fold": 0
+    },
+    {
+      "observation_id": "OBS0243",
+      "group_id": "GROUP0243",
+      "fold": 0
+    },
+    {
+      "observation_id": "OBS0244",
+      "group_id": "GROUP0244",
+      "fold": 2
+    },
+    {
+      "observation_id": "OBS0245",
+      "group_id": "GROUP0245",
+      "fold": 1
+    },
+    {
+      "observation_id": "OBS0246",
+      "group_id": "GROUP0246",
+      "fold": 1
+    },
+    {
+      "observation_id": "OBS0247",
+      "group_id": "GROUP0247",
+      "fold": 3
+    },
+    {
+      "observation_id": "OBS0248",
+      "group_id": "GROUP0248",
+      "fold": 0
+    },
+    {
+      "observation_id": "OBS0249",
+      "group_id": "GROUP0249",
+      "fold": 3
+    },
+    {
+      "observation_id": "OBS0250",
+      "group_id": "GROUP0250",
+      "fold": 3
+    },
+    {
+      "observation_id": "OBS0251",
+      "group_id": "GROUP0251",
+      "fold": 1
+    },
+    {
+      "observation_id": "OBS0252",
+      "group_id": "GROUP0252",
+      "fold": 2
+    },
+    {
+      "observation_id": "OBS0253",
+      "group_id": "GROUP0253",
+      "fold": 4
+    },
+    {
+      "observation_id": "OBS0254",
+      "group_id": "GROUP0254",
+      "fold": 0
+    },
+    {
+      "observation_id": "OBS0255",
+      "group_id": "GROUP0255",
+      "fold": 4
+    },
+    {
+      "observation_id": "OBS0256",
+      "group_id": "GROUP0256",
+      "fold": 4
+    },
+    {
+      "observation_id": "OBS0257",
+      "group_id": "GROUP0257",
+      "fold": 2
+    },
+    {
+      "observation_id": "OBS0258",
+      "group_id": "GROUP0258",
+      "fold": 3
+    },
+    {
+      "observation_id": "OBS0259",
+      "group_id": "GROUP0259",
+      "fold": 2
+    },
+    {
+      "observation_id": "OBS0260",
+      "group_id": "GROUP0260",
+      "fold": 3
+    },
+    {
+      "observation_id": "OBS0261",
+      "group_id": "GROUP0261",
+      "fold": 2
+    },
+    {
+      "observation_id": "OBS0262",
+      "group_id": "GROUP0262",
+      "fold": 2
+    },
+    {
+      "observation_id": "OBS0263",
+      "group_id": "GROUP0263",
+      "fold": 1
+    },
+    {
+      "observation_id": "OBS0264",
+      "group_id": "GROUP0264",
+      "fold": 4
+    },
+    {
+      "observation_id": "OBS0265",
+      "group_id": "GROUP0265",
+      "fold": 0
+    },
+    {
+      "observation_id": "OBS0266",
+      "group_id": "GROUP0266",
+      "fold": 1
+    },
+    {
+      "observation_id": "OBS0267",
+      "group_id": "GROUP0267",
+      "fold": 2
+    },
+    {
+      "observation_id": "OBS0268",
+      "group_id": "GROUP0268",
+      "fold": 4
+    },
+    {
+      "observation_id": "OBS0269",
+      "group_id": "GROUP0269",
+      "fold": 0
+    },
+    {
+      "observation_id": "OBS0270",
+      "group_id": "GROUP0270",
+      "fold": 2
+    },
+    {
+      "observation_id": "OBS0271",
+      "group_id": "GROUP0271",
+      "fold": 3
+    },
+    {
+      "observation_id": "OBS0272",
+      "group_id": "GROUP0272",
+      "fold": 1
+    },
+    {
+      "observation_id": "OBS0273",
+      "group_id": "GROUP0273",
+      "fold": 1
+    },
+    {
+      "observation_id": "OBS0274",
+      "group_id": "GROUP0274",
+      "fold": 0
+    },
+    {
+      "observation_id": "OBS0275",
+      "group_id": "GROUP0275",
+      "fold": 4
+    },
+    {
+      "observation_id": "OBS0276",
+      "group_id": "GROUP0276",
+      "fold": 4
+    },
+    {
+      "observation_id": "OBS0277",
+      "group_id": "GROUP0277",
+      "fold": 2
+    },
+    {
+      "observation_id": "OBS0278",
+      "group_id": "GROUP0278",
+      "fold": 0
+    },
+    {
+      "observation_id": "OBS0279",
+      "group_id": "GROUP0279",
+      "fold": 2
+    },
+    {
+      "observation_id": "OBS0280",
+      "group_id": "GROUP0280",
+      "fold": 1
+    },
+    {
+      "observation_id": "OBS0281",
+      "group_id": "GROUP0281",
+      "fold": 0
+    },
+    {
+      "observation_id": "OBS0282",
+      "group_id": "GROUP0282",
+      "fold": 4
+    },
+    {
+      "observation_id": "OBS0283",
+      "group_id": "GROUP0283",
+      "fold": 4
+    },
+    {
+      "observation_id": "OBS0284",
+      "group_id": "GROUP0284",
+      "fold": 3
+    },
+    {
+      "observation_id": "OBS0285",
+      "group_id": "GROUP0285",
+      "fold": 2
+    },
+    {
+      "observation_id": "OBS0286",
+      "group_id": "GROUP0286",
+      "fold": 4
+    },
+    {
+      "observation_id": "OBS0287",
+      "group_id": "GROUP0287",
+      "fold": 1
+    },
+    {
+      "observation_id": "OBS0288",
+      "group_id": "GROUP0288",
+      "fold": 1
+    },
+    {
+      "observation_id": "OBS0289",
+      "group_id": "GROUP0289",
+      "fold": 4
+    },
+    {
+      "observation_id": "OBS0290",
+      "group_id": "GROUP0290",
+      "fold": 3
+    },
+    {
+      "observation_id": "OBS0291",
+      "group_id": "GROUP0291",
+      "fold": 0
+    },
+    {
+      "observation_id": "OBS0292",
+      "group_id": "GROUP0292",
+      "fold": 4
+    },
+    {
+      "observation_id": "OBS0293",
+      "group_id": "GROUP0293",
+      "fold": 4
+    },
+    {
+      "observation_id": "OBS0294",
+      "group_id": "GROUP0294",
+      "fold": 1
+    },
+    {
+      "observation_id": "OBS0295",
+      "group_id": "GROUP0295",
+      "fold": 0
+    },
+    {
+      "observation_id": "OBS0296",
+      "group_id": "GROUP0296",
+      "fold": 3
+    },
+    {
+      "observation_id": "OBS0297",
+      "group_id": "GROUP0297",
+      "fold": 2
+    },
+    {
+      "observation_id": "OBS0298",
+      "group_id": "GROUP0298",
+      "fold": 3
+    },
+    {
+      "observation_id": "OBS0299",
+      "group_id": "GROUP0299",
+      "fold": 1
+    },
+    {
+      "observation_id": "OBS0300",
+      "group_id": "GROUP0300",
+      "fold": 1
+    },
+    {
+      "observation_id": "OBS0301",
+      "group_id": "GROUP0301",
+      "fold": 3
+    },
+    {
+      "observation_id": "OBS0302",
+      "group_id": "GROUP0302",
+      "fold": 2
+    },
+    {
+      "observation_id": "OBS0303",
+      "group_id": "GROUP0303",
+      "fold": 3
+    },
+    {
+      "observation_id": "OBS0304",
+      "group_id": "GROUP0304",
+      "fold": 1
+    },
+    {
+      "observation_id": "OBS0305",
+      "group_id": "GROUP0305",
+      "fold": 4
+    },
+    {
+      "observation_id": "OBS0306",
+      "group_id": "GROUP0306",
+      "fold": 0
+    },
+    {
+      "observation_id": "OBS0307",
+      "group_id": "GROUP0307",
+      "fold": 2
+    },
+    {
+      "observation_id": "OBS0308",
+      "group_id": "GROUP0308",
+      "fold": 3
+    },
+    {
+      "observation_id": "OBS0309",
+      "group_id": "GROUP0309",
+      "fold": 1
+    },
+    {
+      "observation_id": "OBS0310",
+      "group_id": "GROUP0310",
+      "fold": 3
+    },
+    {
+      "observation_id": "OBS0311",
+      "group_id": "GROUP0311",
+      "fold": 4
+    },
+    {
+      "observation_id": "OBS0312",
+      "group_id": "GROUP0312",
+      "fold": 2
+    },
+    {
+      "observation_id": "OBS0313",
+      "group_id": "GROUP0313",
+      "fold": 1
+    },
+    {
+      "observation_id": "OBS0314",
+      "group_id": "GROUP0314",
+      "fold": 4
+    },
+    {
+      "observation_id": "OBS0315",
+      "group_id": "GROUP0315",
+      "fold": 3
+    },
+    {
+      "observation_id": "OBS0316",
+      "group_id": "GROUP0316",
+      "fold": 1
+    },
+    {
+      "observation_id": "OBS0317",
+      "group_id": "GROUP0317",
+      "fold": 3
+    },
+    {
+      "observation_id": "OBS0318",
+      "group_id": "GROUP0318",
+      "fold": 0
+    },
+    {
+      "observation_id": "OBS0319",
+      "group_id": "GROUP0319",
+      "fold": 4
+    },
+    {
+      "observation_id": "OBS0320",
+      "group_id": "GROUP0320",
+      "fold": 1
+    },
+    {
+      "observation_id": "OBS0321",
+      "group_id": "GROUP0321",
+      "fold": 0
+    },
+    {
+      "observation_id": "OBS0322",
+      "group_id": "GROUP0322",
+      "fold": 3
+    },
+    {
+      "observation_id": "OBS0323",
+      "group_id": "GROUP0323",
+      "fold": 3
+    },
+    {
+      "observation_id": "OBS0324",
+      "group_id": "GROUP0324",
+      "fold": 4
+    },
+    {
+      "observation_id": "OBS0325",
+      "group_id": "GROUP0325",
+      "fold": 3
+    },
+    {
+      "observation_id": "OBS0326",
+      "group_id": "GROUP0326",
+      "fold": 1
+    },
+    {
+      "observation_id": "OBS0327",
+      "group_id": "GROUP0327",
+      "fold": 3
+    },
+    {
+      "observation_id": "OBS0328",
+      "group_id": "GROUP0328",
+      "fold": 1
+    },
+    {
+      "observation_id": "OBS0329",
+      "group_id": "GROUP0329",
+      "fold": 4
+    },
+    {
+      "observation_id": "OBS0330",
+      "group_id": "GROUP0330",
+      "fold": 3
+    },
+    {
+      "observation_id": "OBS0331",
+      "group_id": "GROUP0331",
+      "fold": 4
+    },
+    {
+      "observation_id": "OBS0332",
+      "group_id": "GROUP0332",
+      "fold": 4
+    },
+    {
+      "observation_id": "OBS0333",
+      "group_id": "GROUP0333",
+      "fold": 3
+    },
+    {
+      "observation_id": "OBS0334",
+      "group_id": "GROUP0334",
+      "fold": 3
+    },
+    {
+      "observation_id": "OBS0335",
+      "group_id": "GROUP0335",
+      "fold": 2
+    },
+    {
+      "observation_id": "OBS0336",
+      "group_id": "GROUP0336",
+      "fold": 3
+    },
+    {
+      "observation_id": "OBS0337",
+      "group_id": "GROUP0337",
+      "fold": 0
+    },
+    {
+      "observation_id": "OBS0338",
+      "group_id": "GROUP0338",
+      "fold": 2
+    },
+    {
+      "observation_id": "OBS0339",
+      "group_id": "GROUP0339",
+      "fold": 0
+    },
+    {
+      "observation_id": "OBS0340",
+      "group_id": "GROUP0340",
+      "fold": 1
+    },
+    {
+      "observation_id": "OBS0341",
+      "group_id": "GROUP0341",
+      "fold": 2
+    },
+    {
+      "observation_id": "OBS0342",
+      "group_id": "GROUP0342",
+      "fold": 4
+    },
+    {
+      "observation_id": "OBS0343",
+      "group_id": "GROUP0343",
+      "fold": 0
+    },
+    {
+      "observation_id": "OBS0344",
+      "group_id": "GROUP0344",
+      "fold": 0
+    },
+    {
+      "observation_id": "OBS0345",
+      "group_id": "GROUP0345",
+      "fold": 3
+    },
+    {
+      "observation_id": "OBS0346",
+      "group_id": "GROUP0346",
+      "fold": 3
+    },
+    {
+      "observation_id": "OBS0347",
+      "group_id": "GROUP0347",
+      "fold": 4
+    },
+    {
+      "observation_id": "OBS0348",
+      "group_id": "GROUP0348",
+      "fold": 1
+    },
+    {
+      "observation_id": "OBS0349",
+      "group_id": "GROUP0349",
+      "fold": 4
+    },
+    {
+      "observation_id": "OBS0350",
+      "group_id": "GROUP0350",
+      "fold": 1
+    },
+    {
+      "observation_id": "OBS0351",
+      "group_id": "GROUP0351",
+      "fold": 3
+    },
+    {
+      "observation_id": "OBS0352",
+      "group_id": "GROUP0352",
+      "fold": 4
+    },
+    {
+      "observation_id": "OBS0353",
+      "group_id": "GROUP0353",
+      "fold": 1
+    },
+    {
+      "observation_id": "OBS0354",
+      "group_id": "GROUP0354",
+      "fold": 3
+    },
+    {
+      "observation_id": "OBS0355",
+      "group_id": "GROUP0355",
+      "fold": 4
+    },
+    {
+      "observation_id": "OBS0356",
+      "group_id": "GROUP0356",
+      "fold": 4
+    },
+    {
+      "observation_id": "OBS0357",
+      "group_id": "GROUP0357",
+      "fold": 2
+    },
+    {
+      "observation_id": "OBS0358",
+      "group_id": "GROUP0358",
+      "fold": 1
+    },
+    {
+      "observation_id": "OBS0359",
+      "group_id": "GROUP0359",
+      "fold": 0
+    },
+    {
+      "observation_id": "OBS0360",
+      "group_id": "GROUP0360",
+      "fold": 2
+    },
+    {
+      "observation_id": "OBS0361",
+      "group_id": "GROUP0361",
+      "fold": 1
+    },
+    {
+      "observation_id": "OBS0362",
+      "group_id": "GROUP0362",
+      "fold": 0
+    },
+    {
+      "observation_id": "OBS0363",
+      "group_id": "GROUP0363",
+      "fold": 3
+    },
+    {
+      "observation_id": "OBS0364",
+      "group_id": "GROUP0364",
+      "fold": 2
+    },
+    {
+      "observation_id": "OBS0365",
+      "group_id": "GROUP0365",
+      "fold": 4
+    },
+    {
+      "observation_id": "OBS0366",
+      "group_id": "GROUP0366",
+      "fold": 0
+    },
+    {
+      "observation_id": "OBS0367",
+      "group_id": "GROUP0367",
+      "fold": 4
+    },
+    {
+      "observation_id": "OBS0368",
+      "group_id": "GROUP0368",
+      "fold": 4
+    },
+    {
+      "observation_id": "OBS0369",
+      "group_id": "GROUP0369",
+      "fold": 4
+    },
+    {
+      "observation_id": "OBS0370",
+      "group_id": "GROUP0370",
+      "fold": 0
+    },
+    {
+      "observation_id": "OBS0371",
+      "group_id": "GROUP0371",
+      "fold": 0
+    },
+    {
+      "observation_id": "OBS0372",
+      "group_id": "GROUP0372",
+      "fold": 0
+    },
+    {
+      "observation_id": "OBS0373",
+      "group_id": "GROUP0373",
+      "fold": 1
+    },
+    {
+      "observation_id": "OBS0374",
+      "group_id": "GROUP0374",
+      "fold": 4
+    },
+    {
+      "observation_id": "OBS0375",
+      "group_id": "GROUP0375",
+      "fold": 4
+    },
+    {
+      "observation_id": "OBS0376",
+      "group_id": "GROUP0376",
+      "fold": 4
+    },
+    {
+      "observation_id": "OBS0377",
+      "group_id": "GROUP0377",
+      "fold": 2
+    },
+    {
+      "observation_id": "OBS0378",
+      "group_id": "GROUP0378",
+      "fold": 2
+    },
+    {
+      "observation_id": "OBS0379",
+      "group_id": "GROUP0379",
+      "fold": 2
+    },
+    {
+      "observation_id": "OBS0380",
+      "group_id": "GROUP0380",
+      "fold": 0
+    },
+    {
+      "observation_id": "OBS0381",
+      "group_id": "GROUP0381",
+      "fold": 2
+    },
+    {
+      "observation_id": "OBS0382",
+      "group_id": "GROUP0382",
+      "fold": 1
+    },
+    {
+      "observation_id": "OBS0383",
+      "group_id": "GROUP0383",
+      "fold": 1
+    },
+    {
+      "observation_id": "OBS0384",
+      "group_id": "GROUP0384",
+      "fold": 2
+    },
+    {
+      "observation_id": "OBS0385",
+      "group_id": "GROUP0385",
+      "fold": 3
+    },
+    {
+      "observation_id": "OBS0386",
+      "group_id": "GROUP0386",
+      "fold": 0
+    },
+    {
+      "observation_id": "OBS0387",
+      "group_id": "GROUP0387",
+      "fold": 1
+    },
+    {
+      "observation_id": "OBS0388",
+      "group_id": "GROUP0388",
+      "fold": 0
+    },
+    {
+      "observation_id": "OBS0389",
+      "group_id": "GROUP0389",
+      "fold": 3
+    },
+    {
+      "observation_id": "OBS0390",
+      "group_id": "GROUP0390",
+      "fold": 4
+    },
+    {
+      "observation_id": "OBS0391",
+      "group_id": "GROUP0391",
+      "fold": 2
+    },
+    {
+      "observation_id": "OBS0392",
+      "group_id": "GROUP0392",
+      "fold": 2
+    },
+    {
+      "observation_id": "OBS0393",
+      "group_id": "GROUP0393",
+      "fold": 1
+    },
+    {
+      "observation_id": "OBS0394",
+      "group_id": "GROUP0394",
+      "fold": 4
+    },
+    {
+      "observation_id": "OBS0395",
+      "group_id": "GROUP0395",
+      "fold": 1
+    },
+    {
+      "observation_id": "OBS0396",
+      "group_id": "GROUP0396",
+      "fold": 3
+    },
+    {
+      "observation_id": "OBS0397",
+      "group_id": "GROUP0397",
+      "fold": 0
+    },
+    {
+      "observation_id": "OBS0398",
+      "group_id": "GROUP0398",
+      "fold": 0
+    },
+    {
+      "observation_id": "OBS0399",
+      "group_id": "GROUP0399",
+      "fold": 3
+    }
+  ],
+  "estimate": 1.393395726199591,
+  "standard_error": 0.05219225125300618,
+  "confidence_interval_95": [
+    1.2907895548257453,
+    1.4960018975734368
+  ],
+  "interval_method": "分组稳健标准误 × t临界值；自由度=独立组数-1，仍为近似区间",
+  "interval_degrees_of_freedom": 399,
+  "interval_critical_value": 1.9659272959208818,
+  "g_formula": 1.3911790784792675,
+  "ipw": 1.5661476301117137,
+  "confounding_adjustment_delta": -0.9150810091118347,
+  "refutations": {
+    "placebo_permutation_estimates": [
+      0.010697088504294152,
+      -0.11181135333999351,
+      -0.06092141265493005
+    ],
+    "placebo_mean": -0.05401189249687647,
+    "random_covariate_estimate": 1.4034642979356797,
+    "random_covariate_change": 0.01006857173608866,
+    "leave_one_adjustment_out": [
+      {
+        "omitted_variable": "prior_activity",
+        "estimate_without_adjustment_variable": 2.031074494046387,
+        "change": 0.6376787678467961,
+        "interpretation": "刻意遗漏调整变量的敏感性检查；不能替代满足后门准则的主估计"
+      },
+      {
+        "omitted_variable": "network_context",
+        "estimate_without_adjustment_variable": 1.7257178437656264,
+        "change": 0.33232211756603536,
+        "interpretation": "刻意遗漏调整变量的敏感性检查；不能替代满足后门准则的主估计"
+      }
+    ],
+    "interpretation": "置换与随机协变量为稳健性压力检查，不是无未测混杂的证明；这里不把置换结果当作因果成立检验",
+    "requested_permutations": 3,
+    "failed_permutations": []
+  },
+  "created_at": "2026-10-30T14:54:09.309900+08:00",
+  "previous_runs": [],
+  "history_interpretation": "数据、声明假设或调整集变化后重新估计并留版本；不宣称自动修正全部因果偏差"
+}

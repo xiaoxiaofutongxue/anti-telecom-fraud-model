@@ -1,0 +1,2 @@
+﻿id,kind,title,nodes,record_ids,source_ids,detail,status,review
+Fd1a3c7282c,pass_through,短时转入转出候选,"[""account:%E5%90%88%E6%88%90%E9%93%B6%E8%A1%8C%E5%9F%9F:000123"", ""account:%E5%90%88%E6%88%90%E9%93%B6%E8%A1%8C%E5%9F%9F:000456"", ""account:%E5%90%88%E6%88%90%E9%93%B6%E8%A1%8C%E5%9F%9F:000789""]","[""SIM001"", ""SIM002""]","[""IMP_26378dad26f0""]",同币种两笔记录间隔不超过 30 分钟，金额比在 0.5—1.5。没有证明为同一笔资金。,待核验,

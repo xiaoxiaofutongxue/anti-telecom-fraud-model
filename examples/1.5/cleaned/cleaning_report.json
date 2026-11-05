@@ -1,0 +1,170 @@
+{
+  "valid": true,
+  "source_directory": "D:\\Projects\\FourFlowAnalysis\\runtime\\upgrade_1_5\\acceptance_20261030_145326_579314\\imported",
+  "counts": {
+    "cases": {
+      "input": 1,
+      "kept": 1
+    },
+    "sources": {
+      "input": 1,
+      "kept": 1
+    },
+    "actors": {
+      "input": 0,
+      "kept": 0
+    },
+    "funds": {
+      "input": 2,
+      "kept": 2
+    },
+    "shipments": {
+      "input": 0,
+      "kept": 0
+    },
+    "network_events": {
+      "input": 0,
+      "kept": 0
+    },
+    "communications": {
+      "input": 0,
+      "kept": 0
+    },
+    "identity_links": {
+      "input": 0,
+      "kept": 0
+    },
+    "relations": {
+      "input": 0,
+      "kept": 0
+    },
+    "case_labels": {
+      "input": 0,
+      "kept": 0
+    },
+    "person_labels": {
+      "input": 0,
+      "kept": 0
+    }
+  },
+  "changes": [
+    {
+      "table": "funds",
+      "original_line": 2,
+      "record_id": "SIM001",
+      "changes": [
+        "时间统一为带+08:00偏移的ISO格式"
+      ]
+    },
+    {
+      "table": "funds",
+      "original_line": 3,
+      "record_id": "SIM002",
+      "changes": [
+        "时间统一为带+08:00偏移的ISO格式"
+      ]
+    }
+  ],
+  "quarantined": [],
+  "input_sha256": {
+    "cases.csv": "4927607d7cacc9da5e7a6b05f83b16fe9f3e16e07d8df253f4af54fd2398b6d3",
+    "sources.csv": "6df1954d9d1c4f686ecf9ef2b99b4607c34dda79e1cc27e0a90d9a6a0549f0f0",
+    "actors.csv": "eb2a10a23845264f4c4a4c4ab622ac2e1176cb41c9514a156bf4c31588f1d866",
+    "funds.csv": "1426478a888056a513af689a5c9fcdddf589b24b08c7de3f360ae6b50f9097f0",
+    "shipments.csv": "79952e45b02a81d2d0f20628ea2bf0aa5a2f2f55d7ef97070bb112750ce1bb31",
+    "network_events.csv": "490f0c4cd4f45eb4ab35a59caf678c64af34ad3bf93e6190639db33dcefbf94d",
+    "communications.csv": "46f7ff3c20f6f3c17f36a67bfa259d4c9f4a458a0a0b94601cdc42cb18824a0f",
+    "identity_links.csv": "d89bebc4c7ff04306ea04bad70ff0f932297bdbf0136a23a2db1dac07b061573",
+    "relations.csv": "b5eb25fb72c3aaf638d6d3611cb89c809774931fd92306ceced689a1c5d190c0",
+    "case_labels.csv": "a7d9871ae0b710ded039a20561969e47f732e303f0a8c9461b087d5dbd926f4f",
+    "person_labels.csv": "106530ad27c45e6aeb7c7672714da1d3057febe9da8e91690a43da6f37c4bfdf"
+  },
+  "output_sha256": {
+    "cases.csv": "4927607d7cacc9da5e7a6b05f83b16fe9f3e16e07d8df253f4af54fd2398b6d3",
+    "sources.csv": "6df1954d9d1c4f686ecf9ef2b99b4607c34dda79e1cc27e0a90d9a6a0549f0f0",
+    "actors.csv": "eb2a10a23845264f4c4a4c4ab622ac2e1176cb41c9514a156bf4c31588f1d866",
+    "funds.csv": "ddcc3b18e234b7f2254fad5df9600349679da4e11c086be68b2dbeb4eddb39cf",
+    "shipments.csv": "79952e45b02a81d2d0f20628ea2bf0aa5a2f2f55d7ef97070bb112750ce1bb31",
+    "network_events.csv": "490f0c4cd4f45eb4ab35a59caf678c64af34ad3bf93e6190639db33dcefbf94d",
+    "communications.csv": "46f7ff3c20f6f3c17f36a67bfa259d4c9f4a458a0a0b94601cdc42cb18824a0f",
+    "identity_links.csv": "d89bebc4c7ff04306ea04bad70ff0f932297bdbf0136a23a2db1dac07b061573",
+    "relations.csv": "b5eb25fb72c3aaf638d6d3611cb89c809774931fd92306ceced689a1c5d190c0",
+    "case_labels.csv": "a7d9871ae0b710ded039a20561969e47f732e303f0a8c9461b087d5dbd926f4f",
+    "person_labels.csv": "106530ad27c45e6aeb7c7672714da1d3057febe9da8e91690a43da6f37c4bfdf"
+  },
+  "origins": {
+    "cases": {
+      "SIM_IMPORT|SIM_IMPORT": {
+        "line": 2,
+        "sha256": "4927607d7cacc9da5e7a6b05f83b16fe9f3e16e07d8df253f4af54fd2398b6d3",
+        "sheet": "",
+        "stages": [
+          {
+            "line": 2,
+            "sha256": "4927607d7cacc9da5e7a6b05f83b16fe9f3e16e07d8df253f4af54fd2398b6d3"
+          }
+        ]
+      }
+    },
+    "sources": {
+      "IMP_26378dad26f0|SIM_IMPORT": {
+        "line": 2,
+        "sha256": "6df1954d9d1c4f686ecf9ef2b99b4607c34dda79e1cc27e0a90d9a6a0549f0f0",
+        "sheet": "",
+        "stages": [
+          {
+            "line": 2,
+            "sha256": "6df1954d9d1c4f686ecf9ef2b99b4607c34dda79e1cc27e0a90d9a6a0549f0f0"
+          }
+        ]
+      }
+    },
+    "actors": {},
+    "funds": {
+      "SIM001|SIM_IMPORT": {
+        "line": 2,
+        "sha256": "623567ae3c46fdc299705bdcf5a496bed854de1c02763e51477ec97b3e24fe7f",
+        "sheet": "合成流水",
+        "stages": [
+          {
+            "line": 2,
+            "sha256": "1426478a888056a513af689a5c9fcdddf589b24b08c7de3f360ae6b50f9097f0"
+          }
+        ]
+      },
+      "SIM002|SIM_IMPORT": {
+        "line": 3,
+        "sha256": "623567ae3c46fdc299705bdcf5a496bed854de1c02763e51477ec97b3e24fe7f",
+        "sheet": "合成流水",
+        "stages": [
+          {
+            "line": 3,
+            "sha256": "1426478a888056a513af689a5c9fcdddf589b24b08c7de3f360ae6b50f9097f0"
+          }
+        ]
+      }
+    },
+    "shipments": {},
+    "network_events": {},
+    "communications": {},
+    "identity_links": {},
+    "relations": {},
+    "case_labels": {},
+    "person_labels": {}
+  },
+  "ignored_columns": {
+    "cases": [],
+    "sources": [],
+    "actors": [],
+    "funds": [],
+    "shipments": [],
+    "network_events": [],
+    "communications": [],
+    "identity_links": [],
+    "relations": [],
+    "case_labels": [],
+    "person_labels": []
+  },
+  "policy": "不补造主体、金额、时间、IP或标签；不以数值极端为由删除可能重要的侦查记录。未建模的额外列留在原始文件，不作为推理输入。",
+  "parent_intake_sha256": "88bf95941c45b4f8543559119e5cad9cfac647347d97584ddddceb7ce78feb00"
+}

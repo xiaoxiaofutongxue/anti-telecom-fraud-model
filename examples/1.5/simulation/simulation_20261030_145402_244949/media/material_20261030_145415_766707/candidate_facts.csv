@@ -1,0 +1,2 @@
+﻿kind,value,raw,segment_id,page,start_seconds,text_offset,box,source_sha256,confidence,status
+amount,100 元,100元,SEG00002,,4.26,15,,3b01615d2a686e91981ee8a2b29ca129026bdfe370c2f3292ed3f1d682bb3523,,候选字段，待人工核验；不能自动绑定身份或构造交易

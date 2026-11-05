@@ -1,0 +1,2159 @@
+{
+  "available": true,
+  "case_id": "DEMO14_C001",
+  "as_of": "",
+  "max_gap_hours": 72,
+  "nodes": [
+    {
+      "id": "funds:T001",
+      "table": "funds",
+      "record_id": "T001",
+      "flow": "funds",
+      "timestamp": "2026-01-01T08:00:00+08:00",
+      "source_id": "S001",
+      "csv_line": 2,
+      "entities": [
+        "order:O001",
+        "wallet:TRON:DEMO14_C001-W00",
+        "wallet:TRON:DEMO14_C001-W01"
+      ]
+    },
+    {
+      "id": "network_events:NET001",
+      "table": "network_events",
+      "record_id": "NET001",
+      "flow": "information",
+      "timestamp": "2026-01-01T08:00:00+08:00",
+      "source_id": "S001",
+      "csv_line": 2,
+      "entities": [
+        "actor:A6",
+        "device:D1",
+        "ip:synthetic-DEMO14_C001:192.0.2.1",
+        "wallet:TRON:DEMO14_C001-W00"
+      ]
+    },
+    {
+      "id": "network_events:NET004",
+      "table": "network_events",
+      "record_id": "NET004",
+      "flow": "information",
+      "timestamp": "2026-01-01T08:12:00+08:00",
+      "source_id": "S001",
+      "csv_line": 5,
+      "entities": [
+        "actor:A6",
+        "device:D1",
+        "ip:synthetic-DEMO14_C001:192.0.2.2",
+        "wallet:TRON:DEMO14_C001-W00"
+      ]
+    },
+    {
+      "id": "network_events:NETV1",
+      "table": "network_events",
+      "record_id": "NETV1",
+      "flow": "information",
+      "timestamp": "2026-01-01T08:08:00+08:00",
+      "source_id": "S001",
+      "csv_line": 8,
+      "entities": [
+        "actor:A6",
+        "device:D1",
+        "ip:synthetic-DEMO14_C001:2001%3Adb8%3A%3A1",
+        "wallet:TRON:DEMO14_C001-W00"
+      ]
+    },
+    {
+      "id": "network_events:NETV2",
+      "table": "network_events",
+      "record_id": "NETV2",
+      "flow": "information",
+      "timestamp": "2026-01-01T08:11:00+08:00",
+      "source_id": "S001",
+      "csv_line": 9,
+      "entities": [
+        "actor:A6",
+        "device:D1",
+        "ip:synthetic-DEMO14_C001:2001%3Adb8%3A%3A2",
+        "wallet:TRON:DEMO14_C001-W00"
+      ]
+    },
+    {
+      "id": "network_events:NETV3",
+      "table": "network_events",
+      "record_id": "NETV3",
+      "flow": "information",
+      "timestamp": "2026-01-01T08:14:00+08:00",
+      "source_id": "S001",
+      "csv_line": 10,
+      "entities": [
+        "actor:A6",
+        "device:D1",
+        "ip:synthetic-DEMO14_C001:2001%3Adb8%3A%3A3",
+        "wallet:TRON:DEMO14_C001-W00"
+      ]
+    },
+    {
+      "id": "funds:T002",
+      "table": "funds",
+      "record_id": "T002",
+      "flow": "funds",
+      "timestamp": "2026-01-01T08:04:00+08:00",
+      "source_id": "S001",
+      "csv_line": 3,
+      "entities": [
+        "wallet:TRON:DEMO14_C001-W01",
+        "wallet:TRON:DEMO14_C001-W02"
+      ]
+    },
+    {
+      "id": "funds:T003",
+      "table": "funds",
+      "record_id": "T003",
+      "flow": "funds",
+      "timestamp": "2026-01-01T08:06:00+08:00",
+      "source_id": "S001",
+      "csv_line": 4,
+      "entities": [
+        "wallet:TRON:DEMO14_C001-W01",
+        "wallet:TRON:DEMO14_C001-W03"
+      ]
+    },
+    {
+      "id": "funds:T004",
+      "table": "funds",
+      "record_id": "T004",
+      "flow": "funds",
+      "timestamp": "2026-01-01T08:04:00+08:00",
+      "source_id": "S001",
+      "csv_line": 5,
+      "entities": [
+        "wallet:TRON:DEMO14_C001-W01",
+        "wallet:TRON:DEMO14_C001-W04"
+      ]
+    },
+    {
+      "id": "funds:T005",
+      "table": "funds",
+      "record_id": "T005",
+      "flow": "funds",
+      "timestamp": "2026-01-01T08:05:00+08:00",
+      "source_id": "S001",
+      "csv_line": 6,
+      "entities": [
+        "wallet:TRON:DEMO14_C001-W01",
+        "wallet:TRON:DEMO14_C001-W05"
+      ]
+    },
+    {
+      "id": "funds:N1",
+      "table": "funds",
+      "record_id": "N1",
+      "flow": "funds",
+      "timestamp": "2026-01-01T21:17:00+08:00",
+      "source_id": "S001",
+      "csv_line": 12,
+      "entities": [
+        "wallet:TRON:DEMO14_C001-W01",
+        "wallet:TRON:DEMO14_C001-W06"
+      ]
+    },
+    {
+      "id": "network_events:NET002",
+      "table": "network_events",
+      "record_id": "NET002",
+      "flow": "information",
+      "timestamp": "2026-01-01T08:04:00+08:00",
+      "source_id": "S001",
+      "csv_line": 3,
+      "entities": [
+        "actor:A3",
+        "device:D2",
+        "ip:synthetic-DEMO14_C001:192.0.2.1",
+        "wallet:TRON:DEMO14_C001-W01"
+      ]
+    },
+    {
+      "id": "network_events:NET005",
+      "table": "network_events",
+      "record_id": "NET005",
+      "flow": "information",
+      "timestamp": "2026-01-01T08:16:00+08:00",
+      "source_id": "S001",
+      "csv_line": 6,
+      "entities": [
+        "actor:A3",
+        "device:D2",
+        "ip:synthetic-DEMO14_C001:192.0.2.3",
+        "wallet:TRON:DEMO14_C001-W01"
+      ]
+    },
+    {
+      "id": "shipments:G001",
+      "table": "shipments",
+      "record_id": "G001",
+      "flow": "goods",
+      "timestamp": "2026-01-01T08:30:00+08:00",
+      "source_id": "S001",
+      "csv_line": 2,
+      "entities": [
+        "actor:A3",
+        "actor:A5",
+        "actor:A6",
+        "order:O001",
+        "place:%E6%94%B6%E8%B4%A7%E5%9C%B0%E4%B9%99",
+        "place:%E8%B5%B7%E8%BF%90%E5%9C%B0%E7%94%B2",
+        "vehicle:V001"
+      ]
+    },
+    {
+      "id": "shipments:G002",
+      "table": "shipments",
+      "record_id": "G002",
+      "flow": "goods",
+      "timestamp": "2026-01-01T09:00:00+08:00",
+      "source_id": "S001",
+      "csv_line": 3,
+      "entities": [
+        "actor:A2",
+        "actor:A3",
+        "actor:A5",
+        "order:O001",
+        "place:%E4%B8%AD%E8%BD%AC%E5%9C%B0%E4%B8%99",
+        "place:%E6%94%B6%E8%B4%A7%E5%9C%B0%E4%B9%99",
+        "vehicle:V002"
+      ]
+    },
+    {
+      "id": "funds:T006",
+      "table": "funds",
+      "record_id": "T006",
+      "flow": "funds",
+      "timestamp": "2026-01-01T08:09:00+08:00",
+      "source_id": "S001",
+      "csv_line": 7,
+      "entities": [
+        "wallet:TRON:DEMO14_C001-W02",
+        "wallet:TRON:DEMO14_C001-W06"
+      ]
+    },
+    {
+      "id": "funds:N3",
+      "table": "funds",
+      "record_id": "N3",
+      "flow": "funds",
+      "timestamp": "2026-01-01T17:10:00+08:00",
+      "source_id": "S001",
+      "csv_line": 14,
+      "entities": [
+        "wallet:TRON:DEMO14_C001-W02",
+        "wallet:TRON:DEMO14_C001-W06"
+      ]
+    },
+    {
+      "id": "network_events:NET003",
+      "table": "network_events",
+      "record_id": "NET003",
+      "flow": "information",
+      "timestamp": "2026-01-01T08:08:00+08:00",
+      "source_id": "S001",
+      "csv_line": 4,
+      "entities": [
+        "actor:A2",
+        "device:D3",
+        "ip:synthetic-DEMO14_C001:192.0.2.1",
+        "wallet:TRON:DEMO14_C001-W02"
+      ]
+    },
+    {
+      "id": "network_events:NET006",
+      "table": "network_events",
+      "record_id": "NET006",
+      "flow": "information",
+      "timestamp": "2026-01-01T08:20:00+08:00",
+      "source_id": "S001",
+      "csv_line": 7,
+      "entities": [
+        "actor:A2",
+        "device:D3",
+        "ip:synthetic-DEMO14_C001:192.0.2.4",
+        "wallet:TRON:DEMO14_C001-W02"
+      ]
+    },
+    {
+      "id": "funds:T007",
+      "table": "funds",
+      "record_id": "T007",
+      "flow": "funds",
+      "timestamp": "2026-01-01T08:09:00+08:00",
+      "source_id": "S001",
+      "csv_line": 8,
+      "entities": [
+        "wallet:TRON:DEMO14_C001-W03",
+        "wallet:TRON:DEMO14_C001-W06"
+      ]
+    },
+    {
+      "id": "funds:T008",
+      "table": "funds",
+      "record_id": "T008",
+      "flow": "funds",
+      "timestamp": "2026-01-01T08:10:00+08:00",
+      "source_id": "S001",
+      "csv_line": 9,
+      "entities": [
+        "wallet:TRON:DEMO14_C001-W04",
+        "wallet:TRON:DEMO14_C001-W06"
+      ]
+    },
+    {
+      "id": "funds:T010",
+      "table": "funds",
+      "record_id": "T010",
+      "flow": "funds",
+      "timestamp": "2026-01-01T08:14:00+08:00",
+      "source_id": "S001",
+      "csv_line": 11,
+      "entities": [
+        "wallet:TRON:DEMO14_C001-W05",
+        "wallet:TRON:DEMO14_C001-W07"
+      ]
+    },
+    {
+      "id": "funds:T009",
+      "table": "funds",
+      "record_id": "T009",
+      "flow": "funds",
+      "timestamp": "2026-01-01T08:17:00+08:00",
+      "source_id": "S001",
+      "csv_line": 10,
+      "entities": [
+        "wallet:TRON:DEMO14_C001-W01",
+        "wallet:TRON:DEMO14_C001-W06"
+      ]
+    },
+    {
+      "id": "funds:N2",
+      "table": "funds",
+      "record_id": "N2",
+      "flow": "funds",
+      "timestamp": "2026-01-01T09:17:00+08:00",
+      "source_id": "S001",
+      "csv_line": 13,
+      "entities": [
+        "wallet:TRON:DEMO14_C001-W06",
+        "wallet:TRON:DEMO14_C001-W07"
+      ]
+    },
+    {
+      "id": "funds:FX001",
+      "table": "funds",
+      "record_id": "FX001",
+      "flow": "funds",
+      "timestamp": "2026-01-02T14:00:00+08:00",
+      "source_id": "S001",
+      "csv_line": 15,
+      "entities": [
+        "exchange:EX001",
+        "wallet:TRON:%E5%85%91%E6%8D%A2%E6%9C%8D%E5%8A%A1%E5%9C%B0%E5%9D%80",
+        "wallet:TRON:DEMO14_C001-W07"
+      ]
+    },
+    {
+      "id": "funds:FX002",
+      "table": "funds",
+      "record_id": "FX002",
+      "flow": "funds",
+      "timestamp": "2026-01-02T14:10:00+08:00",
+      "source_id": "S001",
+      "csv_line": 16,
+      "entities": [
+        "account:%E9%93%B6%E8%A1%8C%E5%9F%9F-%E5%90%88%E6%88%90:%E6%94%B6%E6%AC%BE%E8%B4%A6%E6%88%B7",
+        "account:%E9%93%B6%E8%A1%8C%E5%9F%9F-%E5%90%88%E6%88%90:%E6%9C%8D%E5%8A%A1%E8%B4%A6%E6%88%B7",
+        "exchange:EX001"
+      ]
+    },
+    {
+      "id": "communications:M1",
+      "table": "communications",
+      "record_id": "M1",
+      "flow": "information",
+      "timestamp": "2026-01-01T08:01:00+08:00",
+      "source_id": "S001",
+      "csv_line": 2,
+      "entities": [
+        "actor:A3",
+        "actor:A6",
+        "device:D1"
+      ]
+    },
+    {
+      "id": "communications:J3_0",
+      "table": "communications",
+      "record_id": "J3_0",
+      "flow": "information",
+      "timestamp": "2026-01-01T08:59:00+08:00",
+      "source_id": "S001",
+      "csv_line": 231,
+      "entities": [
+        "actor:A3",
+        "actor:A6",
+        "device:D_A6"
+      ]
+    },
+    {
+      "id": "communications:J3_1",
+      "table": "communications",
+      "record_id": "J3_1",
+      "flow": "information",
+      "timestamp": "2026-01-01T09:00:00+08:00",
+      "source_id": "S001",
+      "csv_line": 232,
+      "entities": [
+        "actor:A3",
+        "actor:A6",
+        "device:D_A6"
+      ]
+    },
+    {
+      "id": "communications:J3_2",
+      "table": "communications",
+      "record_id": "J3_2",
+      "flow": "information",
+      "timestamp": "2026-01-01T09:01:00+08:00",
+      "source_id": "S001",
+      "csv_line": 233,
+      "entities": [
+        "actor:A3",
+        "actor:A6",
+        "device:D_A6"
+      ]
+    },
+    {
+      "id": "relations:R1",
+      "table": "relations",
+      "record_id": "R1",
+      "flow": "people",
+      "timestamp": "2026-01-01T07:30:00+08:00",
+      "source_id": "S001",
+      "csv_line": 2,
+      "entities": [
+        "actor:A3",
+        "actor:A6"
+      ]
+    },
+    {
+      "id": "communications:M2",
+      "table": "communications",
+      "record_id": "M2",
+      "flow": "information",
+      "timestamp": "2026-01-01T08:05:00+08:00",
+      "source_id": "S001",
+      "csv_line": 3,
+      "entities": [
+        "actor:A2",
+        "actor:A6",
+        "device:D1"
+      ]
+    },
+    {
+      "id": "communications:M4",
+      "table": "communications",
+      "record_id": "M4",
+      "flow": "information",
+      "timestamp": "2026-01-01T08:13:00+08:00",
+      "source_id": "S001",
+      "csv_line": 5,
+      "entities": [
+        "actor:A5",
+        "actor:A6",
+        "device:D1"
+      ]
+    },
+    {
+      "id": "communications:COORD_EXTRA",
+      "table": "communications",
+      "record_id": "COORD_EXTRA",
+      "flow": "information",
+      "timestamp": "2026-01-01T08:12:00+08:00",
+      "source_id": "S001",
+      "csv_line": 53,
+      "entities": [
+        "actor:A1",
+        "actor:A6",
+        "device:D1"
+      ]
+    },
+    {
+      "id": "communications:J2_0",
+      "table": "communications",
+      "record_id": "J2_0",
+      "flow": "information",
+      "timestamp": "2026-01-01T08:51:00+08:00",
+      "source_id": "S001",
+      "csv_line": 228,
+      "entities": [
+        "actor:A2",
+        "actor:A6",
+        "device:D_A6"
+      ]
+    },
+    {
+      "id": "communications:J2_1",
+      "table": "communications",
+      "record_id": "J2_1",
+      "flow": "information",
+      "timestamp": "2026-01-01T08:52:00+08:00",
+      "source_id": "S001",
+      "csv_line": 229,
+      "entities": [
+        "actor:A2",
+        "actor:A6",
+        "device:D_A6"
+      ]
+    },
+    {
+      "id": "communications:J2_2",
+      "table": "communications",
+      "record_id": "J2_2",
+      "flow": "information",
+      "timestamp": "2026-01-01T08:53:00+08:00",
+      "source_id": "S001",
+      "csv_line": 230,
+      "entities": [
+        "actor:A2",
+        "actor:A6",
+        "device:D_A6"
+      ]
+    },
+    {
+      "id": "communications:BG_A1_0",
+      "table": "communications",
+      "record_id": "BG_A1_0",
+      "flow": "information",
+      "timestamp": "2026-01-01T08:48:00+08:00",
+      "source_id": "S001",
+      "csv_line": 55,
+      "entities": [
+        "actor:A5",
+        "actor:A6",
+        "device:D_BG_A1"
+      ]
+    },
+    {
+      "id": "communications:BG_A1_1",
+      "table": "communications",
+      "record_id": "BG_A1_1",
+      "flow": "information",
+      "timestamp": "2026-01-01T09:21:00+08:00",
+      "source_id": "S001",
+      "csv_line": 56,
+      "entities": [
+        "actor:A5",
+        "actor:A6",
+        "device:D_BG_A1"
+      ]
+    },
+    {
+      "id": "communications:J4_0",
+      "table": "communications",
+      "record_id": "J4_0",
+      "flow": "information",
+      "timestamp": "2026-01-01T09:07:00+08:00",
+      "source_id": "S001",
+      "csv_line": 234,
+      "entities": [
+        "actor:A4",
+        "actor:A6",
+        "device:D_A6"
+      ]
+    },
+    {
+      "id": "communications:J4_1",
+      "table": "communications",
+      "record_id": "J4_1",
+      "flow": "information",
+      "timestamp": "2026-01-01T09:08:00+08:00",
+      "source_id": "S001",
+      "csv_line": 235,
+      "entities": [
+        "actor:A4",
+        "actor:A6",
+        "device:D_A6"
+      ]
+    },
+    {
+      "id": "identity_links:I1",
+      "table": "identity_links",
+      "record_id": "I1",
+      "flow": "people",
+      "timestamp": "2026-01-01T07:00:00+08:00",
+      "source_id": "S001",
+      "csv_line": 2,
+      "entities": [
+        "actor:A6",
+        "wallet:TRON:DEMO14_C001-W00"
+      ]
+    },
+    {
+      "id": "communications:M3",
+      "table": "communications",
+      "record_id": "M3",
+      "flow": "information",
+      "timestamp": "2026-01-01T08:09:00+08:00",
+      "source_id": "S001",
+      "csv_line": 4,
+      "entities": [
+        "actor:A2",
+        "actor:A3",
+        "device:D2"
+      ]
+    },
+    {
+      "id": "communications:FUND_MSG",
+      "table": "communications",
+      "record_id": "FUND_MSG",
+      "flow": "information",
+      "timestamp": "2026-01-01T08:16:00+08:00",
+      "source_id": "S001",
+      "csv_line": 54,
+      "entities": [
+        "actor:A2",
+        "actor:A3",
+        "device:D2"
+      ]
+    },
+    {
+      "id": "communications:BG_A2_0",
+      "table": "communications",
+      "record_id": "BG_A2_0",
+      "flow": "information",
+      "timestamp": "2026-01-01T09:12:00+08:00",
+      "source_id": "S001",
+      "csv_line": 57,
+      "entities": [
+        "actor:A1",
+        "actor:A3",
+        "device:D_BG_A2"
+      ]
+    },
+    {
+      "id": "identity_links:I2",
+      "table": "identity_links",
+      "record_id": "I2",
+      "flow": "people",
+      "timestamp": "2026-01-01T07:00:00+08:00",
+      "source_id": "S001",
+      "csv_line": 3,
+      "entities": [
+        "actor:A3",
+        "wallet:TRON:DEMO14_C001-W01"
+      ]
+    },
+    {
+      "id": "shipments:G_EXTRA",
+      "table": "shipments",
+      "record_id": "G_EXTRA",
+      "flow": "goods",
+      "timestamp": "2026-01-01T09:30:00+08:00",
+      "source_id": "S001",
+      "csv_line": 26,
+      "entities": [
+        "actor:A1",
+        "actor:A5",
+        "order:O002",
+        "place:%E5%90%88%E6%88%90%E4%B8%AD%E8%BD%AC%E4%B9%99",
+        "place:%E5%90%88%E6%88%90%E4%BB%93%E5%82%A8%E7%94%B2",
+        "vehicle:V_EXTRA"
+      ]
+    },
+    {
+      "id": "shipments:G_EXTRA2",
+      "table": "shipments",
+      "record_id": "G_EXTRA2",
+      "flow": "goods",
+      "timestamp": "2026-01-01T10:10:00+08:00",
+      "source_id": "S001",
+      "csv_line": 27,
+      "entities": [
+        "actor:A1",
+        "actor:A5",
+        "order:O002",
+        "place:%E5%90%88%E6%88%90%E4%B8%AD%E8%BD%AC%E4%B9%99",
+        "place:%E5%90%88%E6%88%90%E6%94%B6%E8%B4%A7%E4%B8%99",
+        "vehicle:V_EXTRA"
+      ]
+    },
+    {
+      "id": "communications:BG_A4_0",
+      "table": "communications",
+      "record_id": "BG_A4_0",
+      "flow": "information",
+      "timestamp": "2026-01-01T08:10:00+08:00",
+      "source_id": "S001",
+      "csv_line": 59,
+      "entities": [
+        "actor:A4",
+        "actor:A5",
+        "device:D_BG_A4"
+      ]
+    },
+    {
+      "id": "communications:BG_A4_1",
+      "table": "communications",
+      "record_id": "BG_A4_1",
+      "flow": "information",
+      "timestamp": "2026-01-01T08:28:00+08:00",
+      "source_id": "S001",
+      "csv_line": 60,
+      "entities": [
+        "actor:A3",
+        "actor:A5",
+        "device:D_BG_A4"
+      ]
+    },
+    {
+      "id": "communications:BG_A3_0",
+      "table": "communications",
+      "record_id": "BG_A3_0",
+      "flow": "information",
+      "timestamp": "2026-01-01T09:08:00+08:00",
+      "source_id": "S001",
+      "csv_line": 58,
+      "entities": [
+        "actor:A2",
+        "actor:A5",
+        "device:D_BG_A3"
+      ]
+    },
+    {
+      "id": "network_events:BGIP_A3_0",
+      "table": "network_events",
+      "record_id": "BGIP_A3_0",
+      "flow": "information",
+      "timestamp": "2026-01-01T09:10:00+08:00",
+      "source_id": "S001",
+      "csv_line": 114,
+      "entities": [
+        "actor:A2",
+        "device:D_BG_A3",
+        "ip:synthetic-DEMO14_C001:203.0.113.29"
+      ]
+    },
+    {
+      "id": "identity_links:I3",
+      "table": "identity_links",
+      "record_id": "I3",
+      "flow": "people",
+      "timestamp": "2026-01-01T07:00:00+08:00",
+      "source_id": "S001",
+      "csv_line": 4,
+      "entities": [
+        "actor:A2",
+        "wallet:TRON:DEMO14_C001-W02"
+      ]
+    },
+    {
+      "id": "communications:BG_A6_0",
+      "table": "communications",
+      "record_id": "BG_A6_0",
+      "flow": "information",
+      "timestamp": "2026-01-01T08:55:00+08:00",
+      "source_id": "S001",
+      "csv_line": 63,
+      "entities": [
+        "actor:A1",
+        "actor:A4",
+        "device:D_BG_A6"
+      ]
+    },
+    {
+      "id": "communications:BG_A6_1",
+      "table": "communications",
+      "record_id": "BG_A6_1",
+      "flow": "information",
+      "timestamp": "2026-01-01T08:57:00+08:00",
+      "source_id": "S001",
+      "csv_line": 64,
+      "entities": [
+        "actor:A1",
+        "actor:A3",
+        "device:D_BG_A6"
+      ]
+    },
+    {
+      "id": "network_events:BGIP_A6_0",
+      "table": "network_events",
+      "record_id": "BGIP_A6_0",
+      "flow": "information",
+      "timestamp": "2026-01-01T08:45:00+08:00",
+      "source_id": "S001",
+      "csv_line": 115,
+      "entities": [
+        "actor:A1",
+        "device:D_BG_A6",
+        "ip:synthetic-DEMO14_C001:203.0.113.38"
+      ]
+    },
+    {
+      "id": "network_events:BGIP_A6_1",
+      "table": "network_events",
+      "record_id": "BGIP_A6_1",
+      "flow": "information",
+      "timestamp": "2026-01-01T09:26:00+08:00",
+      "source_id": "S001",
+      "csv_line": 116,
+      "entities": [
+        "actor:A1",
+        "device:D_BG_A6",
+        "ip:synthetic-DEMO14_C001:203.0.113.39"
+      ]
+    },
+    {
+      "id": "communications:TECH_MSG0",
+      "table": "communications",
+      "record_id": "TECH_MSG0",
+      "flow": "information",
+      "timestamp": "2026-01-01T08:10:00+08:00",
+      "source_id": "S001",
+      "csv_line": 50,
+      "entities": [
+        "actor:A4",
+        "actor:A6",
+        "device:D_TECH"
+      ]
+    },
+    {
+      "id": "communications:TECH_MSG1",
+      "table": "communications",
+      "record_id": "TECH_MSG1",
+      "flow": "information",
+      "timestamp": "2026-01-01T08:15:00+08:00",
+      "source_id": "S001",
+      "csv_line": 51,
+      "entities": [
+        "actor:A4",
+        "actor:A6",
+        "device:D_TECH"
+      ]
+    },
+    {
+      "id": "communications:TECH_MSG2",
+      "table": "communications",
+      "record_id": "TECH_MSG2",
+      "flow": "information",
+      "timestamp": "2026-01-01T08:20:00+08:00",
+      "source_id": "S001",
+      "csv_line": 52,
+      "entities": [
+        "actor:A4",
+        "actor:A6",
+        "device:D_TECH"
+      ]
+    },
+    {
+      "id": "communications:BG_A5_0",
+      "table": "communications",
+      "record_id": "BG_A5_0",
+      "flow": "information",
+      "timestamp": "2026-01-01T09:01:00+08:00",
+      "source_id": "S001",
+      "csv_line": 61,
+      "entities": [
+        "actor:A3",
+        "actor:A4",
+        "device:D_BG_A5"
+      ]
+    },
+    {
+      "id": "communications:BG_A5_1",
+      "table": "communications",
+      "record_id": "BG_A5_1",
+      "flow": "information",
+      "timestamp": "2026-01-01T09:32:00+08:00",
+      "source_id": "S001",
+      "csv_line": 62,
+      "entities": [
+        "actor:A4",
+        "actor:A5",
+        "device:D_BG_A5"
+      ]
+    },
+    {
+      "id": "communications:J1_0",
+      "table": "communications",
+      "record_id": "J1_0",
+      "flow": "information",
+      "timestamp": "2026-01-01T08:43:00+08:00",
+      "source_id": "S001",
+      "csv_line": 225,
+      "entities": [
+        "actor:A4",
+        "actor:A5",
+        "device:D_A4"
+      ]
+    },
+    {
+      "id": "communications:J1_1",
+      "table": "communications",
+      "record_id": "J1_1",
+      "flow": "information",
+      "timestamp": "2026-01-01T08:44:00+08:00",
+      "source_id": "S001",
+      "csv_line": 226,
+      "entities": [
+        "actor:A4",
+        "actor:A5",
+        "device:D_A4"
+      ]
+    },
+    {
+      "id": "communications:J1_2",
+      "table": "communications",
+      "record_id": "J1_2",
+      "flow": "information",
+      "timestamp": "2026-01-01T08:45:00+08:00",
+      "source_id": "S001",
+      "csv_line": 227,
+      "entities": [
+        "actor:A4",
+        "actor:A5",
+        "device:D_A4"
+      ]
+    },
+    {
+      "id": "communications:J0_0",
+      "table": "communications",
+      "record_id": "J0_0",
+      "flow": "information",
+      "timestamp": "2026-01-01T08:35:00+08:00",
+      "source_id": "S001",
+      "csv_line": 223,
+      "entities": [
+        "actor:A1",
+        "actor:A4",
+        "device:D_A4"
+      ]
+    },
+    {
+      "id": "communications:J0_1",
+      "table": "communications",
+      "record_id": "J0_1",
+      "flow": "information",
+      "timestamp": "2026-01-01T08:36:00+08:00",
+      "source_id": "S001",
+      "csv_line": 224,
+      "entities": [
+        "actor:A1",
+        "actor:A4",
+        "device:D_A4"
+      ]
+    },
+    {
+      "id": "network_events:TECH0",
+      "table": "network_events",
+      "record_id": "TECH0",
+      "flow": "information",
+      "timestamp": "2026-01-01T08:05:00+08:00",
+      "source_id": "S001",
+      "csv_line": 110,
+      "entities": [
+        "actor:A4",
+        "device:D_TECH",
+        "ip:synthetic-DEMO14_C001:198.51.100.10"
+      ]
+    },
+    {
+      "id": "network_events:TECH1",
+      "table": "network_events",
+      "record_id": "TECH1",
+      "flow": "information",
+      "timestamp": "2026-01-01T08:07:00+08:00",
+      "source_id": "S001",
+      "csv_line": 111,
+      "entities": [
+        "actor:A4",
+        "device:D_TECH",
+        "ip:synthetic-DEMO14_C001:198.51.100.11"
+      ]
+    },
+    {
+      "id": "network_events:TECH4",
+      "table": "network_events",
+      "record_id": "TECH4",
+      "flow": "information",
+      "timestamp": "2026-01-01T08:13:00+08:00",
+      "source_id": "S001",
+      "csv_line": 112,
+      "entities": [
+        "actor:A4",
+        "device:D_TECH",
+        "ip:synthetic-DEMO14_C001:198.51.100.14"
+      ]
+    },
+    {
+      "id": "network_events:TECH5",
+      "table": "network_events",
+      "record_id": "TECH5",
+      "flow": "information",
+      "timestamp": "2026-01-01T08:15:00+08:00",
+      "source_id": "S001",
+      "csv_line": 113,
+      "entities": [
+        "actor:A4",
+        "device:D_TECH",
+        "ip:synthetic-DEMO14_C001:198.51.100.15"
+      ]
+    },
+    {
+      "id": "network_events:UNKNOWN_ONCE",
+      "table": "network_events",
+      "record_id": "UNKNOWN_ONCE",
+      "flow": "information",
+      "timestamp": "2026-01-01T08:20:00+08:00",
+      "source_id": "S001",
+      "csv_line": 117,
+      "entities": [
+        "actor:BYSTANDER",
+        "device:D_UNKNOWN",
+        "ip:synthetic-DEMO14_C001:203.0.113.249"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "funds:T001",
+      "to": "shipments:G001",
+      "entities": [
+        "order:O001"
+      ],
+      "gap_hours": 0.5,
+      "relation": "同实体先后出现"
+    },
+    {
+      "from": "funds:T001",
+      "to": "network_events:NET001",
+      "entities": [
+        "wallet:TRON:DEMO14_C001-W00"
+      ],
+      "gap_hours": 0.0,
+      "relation": "同实体先后出现"
+    },
+    {
+      "from": "funds:T001",
+      "to": "funds:T002",
+      "entities": [
+        "wallet:TRON:DEMO14_C001-W01"
+      ],
+      "gap_hours": 0.06666666666666667,
+      "relation": "同实体先后出现"
+    },
+    {
+      "from": "network_events:NET001",
+      "to": "network_events:NETV1",
+      "entities": [
+        "wallet:TRON:DEMO14_C001-W00"
+      ],
+      "gap_hours": 0.13333333333333333,
+      "relation": "同实体先后出现"
+    },
+    {
+      "from": "network_events:NET001",
+      "to": "communications:M1",
+      "entities": [
+        "actor:A6",
+        "device:D1"
+      ],
+      "gap_hours": 0.016666666666666666,
+      "relation": "同实体先后出现"
+    },
+    {
+      "from": "network_events:NET001",
+      "to": "network_events:NET002",
+      "entities": [
+        "ip:synthetic-DEMO14_C001:192.0.2.1"
+      ],
+      "gap_hours": 0.06666666666666667,
+      "relation": "同实体先后出现"
+    },
+    {
+      "from": "network_events:NET004",
+      "to": "network_events:NETV3",
+      "entities": [
+        "wallet:TRON:DEMO14_C001-W00"
+      ],
+      "gap_hours": 0.03333333333333333,
+      "relation": "同实体先后出现"
+    },
+    {
+      "from": "network_events:NET004",
+      "to": "communications:M4",
+      "entities": [
+        "actor:A6",
+        "device:D1"
+      ],
+      "gap_hours": 0.016666666666666666,
+      "relation": "同实体先后出现"
+    },
+    {
+      "from": "network_events:NETV1",
+      "to": "network_events:NETV2",
+      "entities": [
+        "wallet:TRON:DEMO14_C001-W00",
+        "device:D1"
+      ],
+      "gap_hours": 0.05,
+      "relation": "同实体先后出现"
+    },
+    {
+      "from": "network_events:NETV1",
+      "to": "communications:TECH_MSG0",
+      "entities": [
+        "actor:A6"
+      ],
+      "gap_hours": 0.03333333333333333,
+      "relation": "同实体先后出现"
+    },
+    {
+      "from": "network_events:NETV2",
+      "to": "network_events:NET004",
+      "entities": [
+        "wallet:TRON:DEMO14_C001-W00"
+      ],
+      "gap_hours": 0.016666666666666666,
+      "relation": "同实体先后出现"
+    },
+    {
+      "from": "network_events:NETV2",
+      "to": "communications:COORD_EXTRA",
+      "entities": [
+        "actor:A6",
+        "device:D1"
+      ],
+      "gap_hours": 0.016666666666666666,
+      "relation": "同实体先后出现"
+    },
+    {
+      "from": "network_events:NETV3",
+      "to": "communications:TECH_MSG1",
+      "entities": [
+        "actor:A6"
+      ],
+      "gap_hours": 0.016666666666666666,
+      "relation": "同实体先后出现"
+    },
+    {
+      "from": "funds:T002",
+      "to": "funds:T004",
+      "entities": [
+        "wallet:TRON:DEMO14_C001-W01"
+      ],
+      "gap_hours": 0.0,
+      "relation": "同实体先后出现"
+    },
+    {
+      "from": "funds:T002",
+      "to": "network_events:NET003",
+      "entities": [
+        "wallet:TRON:DEMO14_C001-W02"
+      ],
+      "gap_hours": 0.06666666666666667,
+      "relation": "同实体先后出现"
+    },
+    {
+      "from": "funds:T003",
+      "to": "network_events:NET005",
+      "entities": [
+        "wallet:TRON:DEMO14_C001-W01"
+      ],
+      "gap_hours": 0.16666666666666666,
+      "relation": "同实体先后出现"
+    },
+    {
+      "from": "funds:T003",
+      "to": "funds:T007",
+      "entities": [
+        "wallet:TRON:DEMO14_C001-W03"
+      ],
+      "gap_hours": 0.05,
+      "relation": "同实体先后出现"
+    },
+    {
+      "from": "funds:T004",
+      "to": "network_events:NET002",
+      "entities": [
+        "wallet:TRON:DEMO14_C001-W01"
+      ],
+      "gap_hours": 0.0,
+      "relation": "同实体先后出现"
+    },
+    {
+      "from": "funds:T004",
+      "to": "funds:T008",
+      "entities": [
+        "wallet:TRON:DEMO14_C001-W04"
+      ],
+      "gap_hours": 0.1,
+      "relation": "同实体先后出现"
+    },
+    {
+      "from": "funds:T005",
+      "to": "funds:T003",
+      "entities": [
+        "wallet:TRON:DEMO14_C001-W01"
+      ],
+      "gap_hours": 0.016666666666666666,
+      "relation": "同实体先后出现"
+    },
+    {
+      "from": "funds:T005",
+      "to": "funds:T010",
+      "entities": [
+        "wallet:TRON:DEMO14_C001-W05"
+      ],
+      "gap_hours": 0.15,
+      "relation": "同实体先后出现"
+    },
+    {
+      "from": "network_events:NET002",
+      "to": "funds:T005",
+      "entities": [
+        "wallet:TRON:DEMO14_C001-W01"
+      ],
+      "gap_hours": 0.016666666666666666,
+      "relation": "同实体先后出现"
+    },
+    {
+      "from": "network_events:NET002",
+      "to": "network_events:NET003",
+      "entities": [
+        "ip:synthetic-DEMO14_C001:192.0.2.1"
+      ],
+      "gap_hours": 0.06666666666666667,
+      "relation": "同实体先后出现"
+    },
+    {
+      "from": "network_events:NET002",
+      "to": "communications:M3",
+      "entities": [
+        "actor:A3",
+        "device:D2"
+      ],
+      "gap_hours": 0.08333333333333333,
+      "relation": "同实体先后出现"
+    },
+    {
+      "from": "network_events:NET005",
+      "to": "funds:T009",
+      "entities": [
+        "wallet:TRON:DEMO14_C001-W01"
+      ],
+      "gap_hours": 0.016666666666666666,
+      "relation": "同实体先后出现"
+    },
+    {
+      "from": "network_events:NET005",
+      "to": "communications:BG_A4_1",
+      "entities": [
+        "actor:A3"
+      ],
+      "gap_hours": 0.2,
+      "relation": "同实体先后出现"
+    },
+    {
+      "from": "shipments:G001",
+      "to": "shipments:G002",
+      "entities": [
+        "order:O001",
+        "place:%E6%94%B6%E8%B4%A7%E5%9C%B0%E4%B9%99"
+      ],
+      "gap_hours": 0.5,
+      "relation": "同实体先后出现"
+    },
+    {
+      "from": "shipments:G001",
+      "to": "communications:BG_A1_0",
+      "entities": [
+        "actor:A6"
+      ],
+      "gap_hours": 0.3,
+      "relation": "同实体先后出现"
+    },
+    {
+      "from": "shipments:G001",
+      "to": "communications:BG_A6_1",
+      "entities": [
+        "actor:A3"
+      ],
+      "gap_hours": 0.45,
+      "relation": "同实体先后出现"
+    },
+    {
+      "from": "shipments:G001",
+      "to": "communications:J1_0",
+      "entities": [
+        "actor:A5"
+      ],
+      "gap_hours": 0.21666666666666667,
+      "relation": "同实体先后出现"
+    },
+    {
+      "from": "shipments:G002",
+      "to": "communications:BG_A5_0",
+      "entities": [
+        "actor:A3"
+      ],
+      "gap_hours": 0.016666666666666666,
+      "relation": "同实体先后出现"
+    },
+    {
+      "from": "shipments:G002",
+      "to": "communications:BG_A3_0",
+      "entities": [
+        "actor:A5",
+        "actor:A2"
+      ],
+      "gap_hours": 0.13333333333333333,
+      "relation": "同实体先后出现"
+    },
+    {
+      "from": "funds:T006",
+      "to": "network_events:NET006",
+      "entities": [
+        "wallet:TRON:DEMO14_C001-W02"
+      ],
+      "gap_hours": 0.18333333333333332,
+      "relation": "同实体先后出现"
+    },
+    {
+      "from": "funds:T006",
+      "to": "funds:T007",
+      "entities": [
+        "wallet:TRON:DEMO14_C001-W06"
+      ],
+      "gap_hours": 0.0,
+      "relation": "同实体先后出现"
+    },
+    {
+      "from": "funds:N3",
+      "to": "funds:N1",
+      "entities": [
+        "wallet:TRON:DEMO14_C001-W06"
+      ],
+      "gap_hours": 4.116666666666666,
+      "relation": "同实体先后出现"
+    },
+    {
+      "from": "network_events:NET003",
+      "to": "funds:T006",
+      "entities": [
+        "wallet:TRON:DEMO14_C001-W02"
+      ],
+      "gap_hours": 0.016666666666666666,
+      "relation": "同实体先后出现"
+    },
+    {
+      "from": "network_events:NET003",
+      "to": "communications:M3",
+      "entities": [
+        "actor:A2"
+      ],
+      "gap_hours": 0.016666666666666666,
+      "relation": "同实体先后出现"
+    },
+    {
+      "from": "network_events:NET003",
+      "to": "network_events:NET006",
+      "entities": [
+        "device:D3"
+      ],
+      "gap_hours": 0.2,
+      "relation": "同实体先后出现"
+    },
+    {
+      "from": "network_events:NET006",
+      "to": "funds:N3",
+      "entities": [
+        "wallet:TRON:DEMO14_C001-W02"
+      ],
+      "gap_hours": 8.833333333333334,
+      "relation": "同实体先后出现"
+    },
+    {
+      "from": "network_events:NET006",
+      "to": "communications:J2_0",
+      "entities": [
+        "actor:A2"
+      ],
+      "gap_hours": 0.5166666666666667,
+      "relation": "同实体先后出现"
+    },
+    {
+      "from": "funds:T007",
+      "to": "funds:T008",
+      "entities": [
+        "wallet:TRON:DEMO14_C001-W06"
+      ],
+      "gap_hours": 0.016666666666666666,
+      "relation": "同实体先后出现"
+    },
+    {
+      "from": "funds:T008",
+      "to": "funds:T009",
+      "entities": [
+        "wallet:TRON:DEMO14_C001-W06"
+      ],
+      "gap_hours": 0.11666666666666667,
+      "relation": "同实体先后出现"
+    },
+    {
+      "from": "funds:T010",
+      "to": "funds:N2",
+      "entities": [
+        "wallet:TRON:DEMO14_C001-W07"
+      ],
+      "gap_hours": 1.05,
+      "relation": "同实体先后出现"
+    },
+    {
+      "from": "funds:T009",
+      "to": "funds:N1",
+      "entities": [
+        "wallet:TRON:DEMO14_C001-W01"
+      ],
+      "gap_hours": 13.0,
+      "relation": "同实体先后出现"
+    },
+    {
+      "from": "funds:T009",
+      "to": "funds:N2",
+      "entities": [
+        "wallet:TRON:DEMO14_C001-W06"
+      ],
+      "gap_hours": 1.0,
+      "relation": "同实体先后出现"
+    },
+    {
+      "from": "funds:N2",
+      "to": "funds:N3",
+      "entities": [
+        "wallet:TRON:DEMO14_C001-W06"
+      ],
+      "gap_hours": 7.883333333333334,
+      "relation": "同实体先后出现"
+    },
+    {
+      "from": "funds:N2",
+      "to": "funds:FX001",
+      "entities": [
+        "wallet:TRON:DEMO14_C001-W07"
+      ],
+      "gap_hours": 28.716666666666665,
+      "relation": "同实体先后出现"
+    },
+    {
+      "from": "funds:FX001",
+      "to": "funds:FX002",
+      "entities": [
+        "exchange:EX001"
+      ],
+      "gap_hours": 0.16666666666666666,
+      "relation": "同实体先后出现"
+    },
+    {
+      "from": "communications:M1",
+      "to": "communications:M2",
+      "entities": [
+        "actor:A6",
+        "device:D1"
+      ],
+      "gap_hours": 0.06666666666666667,
+      "relation": "同实体先后出现"
+    },
+    {
+      "from": "communications:M1",
+      "to": "network_events:NET002",
+      "entities": [
+        "actor:A3"
+      ],
+      "gap_hours": 0.05,
+      "relation": "同实体先后出现"
+    },
+    {
+      "from": "communications:J3_0",
+      "to": "communications:J3_1",
+      "entities": [
+        "actor:A6",
+        "actor:A3",
+        "device:D_A6"
+      ],
+      "gap_hours": 0.016666666666666666,
+      "relation": "同实体先后出现"
+    },
+    {
+      "from": "communications:J3_1",
+      "to": "communications:J3_2",
+      "entities": [
+        "actor:A6",
+        "device:D_A6"
+      ],
+      "gap_hours": 0.016666666666666666,
+      "relation": "同实体先后出现"
+    },
+    {
+      "from": "communications:J3_1",
+      "to": "shipments:G002",
+      "entities": [
+        "actor:A3"
+      ],
+      "gap_hours": 0.0,
+      "relation": "同实体先后出现"
+    },
+    {
+      "from": "communications:J3_2",
+      "to": "communications:J4_0",
+      "entities": [
+        "actor:A6",
+        "device:D_A6"
+      ],
+      "gap_hours": 0.1,
+      "relation": "同实体先后出现"
+    },
+    {
+      "from": "communications:J3_2",
+      "to": "communications:BG_A2_0",
+      "entities": [
+        "actor:A3"
+      ],
+      "gap_hours": 0.18333333333333332,
+      "relation": "同实体先后出现"
+    },
+    {
+      "from": "relations:R1",
+      "to": "network_events:NET001",
+      "entities": [
+        "actor:A6"
+      ],
+      "gap_hours": 0.5,
+      "relation": "同实体先后出现"
+    },
+    {
+      "from": "relations:R1",
+      "to": "communications:M1",
+      "entities": [
+        "actor:A3"
+      ],
+      "gap_hours": 0.5166666666666667,
+      "relation": "同实体先后出现"
+    },
+    {
+      "from": "communications:M2",
+      "to": "network_events:NETV1",
+      "entities": [
+        "actor:A6",
+        "device:D1"
+      ],
+      "gap_hours": 0.05,
+      "relation": "同实体先后出现"
+    },
+    {
+      "from": "communications:M2",
+      "to": "network_events:NET003",
+      "entities": [
+        "actor:A2"
+      ],
+      "gap_hours": 0.05,
+      "relation": "同实体先后出现"
+    },
+    {
+      "from": "communications:M4",
+      "to": "network_events:NETV3",
+      "entities": [
+        "actor:A6",
+        "device:D1"
+      ],
+      "gap_hours": 0.016666666666666666,
+      "relation": "同实体先后出现"
+    },
+    {
+      "from": "communications:M4",
+      "to": "communications:BG_A4_1",
+      "entities": [
+        "actor:A5"
+      ],
+      "gap_hours": 0.25,
+      "relation": "同实体先后出现"
+    },
+    {
+      "from": "communications:COORD_EXTRA",
+      "to": "network_events:NET004",
+      "entities": [
+        "actor:A6",
+        "device:D1"
+      ],
+      "gap_hours": 0.0,
+      "relation": "同实体先后出现"
+    },
+    {
+      "from": "communications:COORD_EXTRA",
+      "to": "communications:J0_0",
+      "entities": [
+        "actor:A1"
+      ],
+      "gap_hours": 0.38333333333333336,
+      "relation": "同实体先后出现"
+    },
+    {
+      "from": "communications:J2_0",
+      "to": "communications:J2_1",
+      "entities": [
+        "actor:A6",
+        "actor:A2",
+        "device:D_A6"
+      ],
+      "gap_hours": 0.016666666666666666,
+      "relation": "同实体先后出现"
+    },
+    {
+      "from": "communications:J2_1",
+      "to": "communications:J2_2",
+      "entities": [
+        "actor:A6",
+        "actor:A2",
+        "device:D_A6"
+      ],
+      "gap_hours": 0.016666666666666666,
+      "relation": "同实体先后出现"
+    },
+    {
+      "from": "communications:J2_2",
+      "to": "communications:J3_0",
+      "entities": [
+        "actor:A6",
+        "device:D_A6"
+      ],
+      "gap_hours": 0.1,
+      "relation": "同实体先后出现"
+    },
+    {
+      "from": "communications:J2_2",
+      "to": "shipments:G002",
+      "entities": [
+        "actor:A2"
+      ],
+      "gap_hours": 0.11666666666666667,
+      "relation": "同实体先后出现"
+    },
+    {
+      "from": "communications:BG_A1_0",
+      "to": "communications:J2_0",
+      "entities": [
+        "actor:A6"
+      ],
+      "gap_hours": 0.05,
+      "relation": "同实体先后出现"
+    },
+    {
+      "from": "communications:BG_A1_0",
+      "to": "shipments:G002",
+      "entities": [
+        "actor:A5"
+      ],
+      "gap_hours": 0.2,
+      "relation": "同实体先后出现"
+    },
+    {
+      "from": "communications:BG_A1_0",
+      "to": "communications:BG_A1_1",
+      "entities": [
+        "device:D_BG_A1"
+      ],
+      "gap_hours": 0.55,
+      "relation": "同实体先后出现"
+    },
+    {
+      "from": "communications:BG_A1_1",
+      "to": "shipments:G_EXTRA",
+      "entities": [
+        "actor:A5"
+      ],
+      "gap_hours": 0.15,
+      "relation": "同实体先后出现"
+    },
+    {
+      "from": "communications:J4_0",
+      "to": "communications:J4_1",
+      "entities": [
+        "actor:A6",
+        "device:D_A6",
+        "actor:A4"
+      ],
+      "gap_hours": 0.016666666666666666,
+      "relation": "同实体先后出现"
+    },
+    {
+      "from": "communications:J4_1",
+      "to": "communications:BG_A1_1",
+      "entities": [
+        "actor:A6"
+      ],
+      "gap_hours": 0.21666666666666667,
+      "relation": "同实体先后出现"
+    },
+    {
+      "from": "communications:J4_1",
+      "to": "communications:BG_A5_1",
+      "entities": [
+        "actor:A4"
+      ],
+      "gap_hours": 0.4,
+      "relation": "同实体先后出现"
+    },
+    {
+      "from": "identity_links:I1",
+      "to": "funds:T001",
+      "entities": [
+        "wallet:TRON:DEMO14_C001-W00"
+      ],
+      "gap_hours": 1.0,
+      "relation": "同实体先后出现"
+    },
+    {
+      "from": "identity_links:I1",
+      "to": "relations:R1",
+      "entities": [
+        "actor:A6"
+      ],
+      "gap_hours": 0.5,
+      "relation": "同实体先后出现"
+    },
+    {
+      "from": "communications:M3",
+      "to": "communications:FUND_MSG",
+      "entities": [
+        "actor:A3",
+        "device:D2",
+        "actor:A2"
+      ],
+      "gap_hours": 0.11666666666666667,
+      "relation": "同实体先后出现"
+    },
+    {
+      "from": "communications:FUND_MSG",
+      "to": "network_events:NET005",
+      "entities": [
+        "actor:A3",
+        "device:D2"
+      ],
+      "gap_hours": 0.0,
+      "relation": "同实体先后出现"
+    },
+    {
+      "from": "communications:FUND_MSG",
+      "to": "network_events:NET006",
+      "entities": [
+        "actor:A2"
+      ],
+      "gap_hours": 0.06666666666666667,
+      "relation": "同实体先后出现"
+    },
+    {
+      "from": "communications:BG_A2_0",
+      "to": "network_events:BGIP_A6_1",
+      "entities": [
+        "actor:A1"
+      ],
+      "gap_hours": 0.23333333333333334,
+      "relation": "同实体先后出现"
+    },
+    {
+      "from": "identity_links:I2",
+      "to": "funds:T001",
+      "entities": [
+        "wallet:TRON:DEMO14_C001-W01"
+      ],
+      "gap_hours": 1.0,
+      "relation": "同实体先后出现"
+    },
+    {
+      "from": "identity_links:I2",
+      "to": "relations:R1",
+      "entities": [
+        "actor:A3"
+      ],
+      "gap_hours": 0.5,
+      "relation": "同实体先后出现"
+    },
+    {
+      "from": "shipments:G_EXTRA",
+      "to": "communications:BG_A5_1",
+      "entities": [
+        "actor:A5"
+      ],
+      "gap_hours": 0.03333333333333333,
+      "relation": "同实体先后出现"
+    },
+    {
+      "from": "shipments:G_EXTRA",
+      "to": "shipments:G_EXTRA2",
+      "entities": [
+        "actor:A1",
+        "order:O002",
+        "place:%E5%90%88%E6%88%90%E4%B8%AD%E8%BD%AC%E4%B9%99",
+        "vehicle:V_EXTRA"
+      ],
+      "gap_hours": 0.6666666666666666,
+      "relation": "同实体先后出现"
+    },
+    {
+      "from": "communications:BG_A4_0",
+      "to": "communications:M4",
+      "entities": [
+        "actor:A5"
+      ],
+      "gap_hours": 0.05,
+      "relation": "同实体先后出现"
+    },
+    {
+      "from": "communications:BG_A4_0",
+      "to": "communications:TECH_MSG0",
+      "entities": [
+        "actor:A4"
+      ],
+      "gap_hours": 0.0,
+      "relation": "同实体先后出现"
+    },
+    {
+      "from": "communications:BG_A4_0",
+      "to": "communications:BG_A4_1",
+      "entities": [
+        "device:D_BG_A4"
+      ],
+      "gap_hours": 0.3,
+      "relation": "同实体先后出现"
+    },
+    {
+      "from": "communications:BG_A4_1",
+      "to": "shipments:G001",
+      "entities": [
+        "actor:A3",
+        "actor:A5"
+      ],
+      "gap_hours": 0.03333333333333333,
+      "relation": "同实体先后出现"
+    },
+    {
+      "from": "communications:BG_A3_0",
+      "to": "communications:BG_A1_1",
+      "entities": [
+        "actor:A5"
+      ],
+      "gap_hours": 0.21666666666666667,
+      "relation": "同实体先后出现"
+    },
+    {
+      "from": "communications:BG_A3_0",
+      "to": "network_events:BGIP_A3_0",
+      "entities": [
+        "actor:A2",
+        "device:D_BG_A3"
+      ],
+      "gap_hours": 0.03333333333333333,
+      "relation": "同实体先后出现"
+    },
+    {
+      "from": "identity_links:I3",
+      "to": "funds:T002",
+      "entities": [
+        "wallet:TRON:DEMO14_C001-W02"
+      ],
+      "gap_hours": 1.0666666666666667,
+      "relation": "同实体先后出现"
+    },
+    {
+      "from": "identity_links:I3",
+      "to": "communications:M2",
+      "entities": [
+        "actor:A2"
+      ],
+      "gap_hours": 1.0833333333333333,
+      "relation": "同实体先后出现"
+    },
+    {
+      "from": "communications:BG_A6_0",
+      "to": "communications:BG_A6_1",
+      "entities": [
+        "actor:A1",
+        "device:D_BG_A6"
+      ],
+      "gap_hours": 0.03333333333333333,
+      "relation": "同实体先后出现"
+    },
+    {
+      "from": "communications:BG_A6_0",
+      "to": "communications:BG_A5_0",
+      "entities": [
+        "actor:A4"
+      ],
+      "gap_hours": 0.1,
+      "relation": "同实体先后出现"
+    },
+    {
+      "from": "communications:BG_A6_1",
+      "to": "communications:J3_0",
+      "entities": [
+        "actor:A3"
+      ],
+      "gap_hours": 0.03333333333333333,
+      "relation": "同实体先后出现"
+    },
+    {
+      "from": "communications:BG_A6_1",
+      "to": "communications:BG_A2_0",
+      "entities": [
+        "actor:A1"
+      ],
+      "gap_hours": 0.25,
+      "relation": "同实体先后出现"
+    },
+    {
+      "from": "communications:BG_A6_1",
+      "to": "network_events:BGIP_A6_1",
+      "entities": [
+        "device:D_BG_A6"
+      ],
+      "gap_hours": 0.48333333333333334,
+      "relation": "同实体先后出现"
+    },
+    {
+      "from": "network_events:BGIP_A6_0",
+      "to": "communications:BG_A6_0",
+      "entities": [
+        "actor:A1",
+        "device:D_BG_A6"
+      ],
+      "gap_hours": 0.16666666666666666,
+      "relation": "同实体先后出现"
+    },
+    {
+      "from": "network_events:BGIP_A6_1",
+      "to": "shipments:G_EXTRA",
+      "entities": [
+        "actor:A1"
+      ],
+      "gap_hours": 0.06666666666666667,
+      "relation": "同实体先后出现"
+    },
+    {
+      "from": "communications:TECH_MSG0",
+      "to": "network_events:NETV2",
+      "entities": [
+        "actor:A6"
+      ],
+      "gap_hours": 0.016666666666666666,
+      "relation": "同实体先后出现"
+    },
+    {
+      "from": "communications:TECH_MSG0",
+      "to": "network_events:TECH4",
+      "entities": [
+        "actor:A4",
+        "device:D_TECH"
+      ],
+      "gap_hours": 0.05,
+      "relation": "同实体先后出现"
+    },
+    {
+      "from": "communications:TECH_MSG1",
+      "to": "communications:TECH_MSG2",
+      "entities": [
+        "actor:A6"
+      ],
+      "gap_hours": 0.08333333333333333,
+      "relation": "同实体先后出现"
+    },
+    {
+      "from": "communications:TECH_MSG1",
+      "to": "network_events:TECH5",
+      "entities": [
+        "actor:A4",
+        "device:D_TECH"
+      ],
+      "gap_hours": 0.0,
+      "relation": "同实体先后出现"
+    },
+    {
+      "from": "communications:TECH_MSG2",
+      "to": "shipments:G001",
+      "entities": [
+        "actor:A6"
+      ],
+      "gap_hours": 0.16666666666666666,
+      "relation": "同实体先后出现"
+    },
+    {
+      "from": "communications:TECH_MSG2",
+      "to": "communications:J0_0",
+      "entities": [
+        "actor:A4"
+      ],
+      "gap_hours": 0.25,
+      "relation": "同实体先后出现"
+    },
+    {
+      "from": "communications:BG_A5_0",
+      "to": "communications:J3_2",
+      "entities": [
+        "actor:A3"
+      ],
+      "gap_hours": 0.0,
+      "relation": "同实体先后出现"
+    },
+    {
+      "from": "communications:BG_A5_0",
+      "to": "communications:J4_0",
+      "entities": [
+        "actor:A4"
+      ],
+      "gap_hours": 0.1,
+      "relation": "同实体先后出现"
+    },
+    {
+      "from": "communications:BG_A5_0",
+      "to": "communications:BG_A5_1",
+      "entities": [
+        "device:D_BG_A5"
+      ],
+      "gap_hours": 0.5166666666666667,
+      "relation": "同实体先后出现"
+    },
+    {
+      "from": "communications:BG_A5_1",
+      "to": "shipments:G_EXTRA2",
+      "entities": [
+        "actor:A5"
+      ],
+      "gap_hours": 0.6333333333333333,
+      "relation": "同实体先后出现"
+    },
+    {
+      "from": "communications:J1_0",
+      "to": "communications:J1_1",
+      "entities": [
+        "actor:A5",
+        "actor:A4",
+        "device:D_A4"
+      ],
+      "gap_hours": 0.016666666666666666,
+      "relation": "同实体先后出现"
+    },
+    {
+      "from": "communications:J1_1",
+      "to": "communications:J1_2",
+      "entities": [
+        "actor:A5",
+        "actor:A4",
+        "device:D_A4"
+      ],
+      "gap_hours": 0.016666666666666666,
+      "relation": "同实体先后出现"
+    },
+    {
+      "from": "communications:J1_2",
+      "to": "communications:BG_A1_0",
+      "entities": [
+        "actor:A5"
+      ],
+      "gap_hours": 0.05,
+      "relation": "同实体先后出现"
+    },
+    {
+      "from": "communications:J1_2",
+      "to": "communications:BG_A6_0",
+      "entities": [
+        "actor:A4"
+      ],
+      "gap_hours": 0.16666666666666666,
+      "relation": "同实体先后出现"
+    },
+    {
+      "from": "communications:J0_0",
+      "to": "communications:J0_1",
+      "entities": [
+        "actor:A1",
+        "actor:A4",
+        "device:D_A4"
+      ],
+      "gap_hours": 0.016666666666666666,
+      "relation": "同实体先后出现"
+    },
+    {
+      "from": "communications:J0_1",
+      "to": "network_events:BGIP_A6_0",
+      "entities": [
+        "actor:A1"
+      ],
+      "gap_hours": 0.15,
+      "relation": "同实体先后出现"
+    },
+    {
+      "from": "communications:J0_1",
+      "to": "communications:J1_0",
+      "entities": [
+        "actor:A4",
+        "device:D_A4"
+      ],
+      "gap_hours": 0.11666666666666667,
+      "relation": "同实体先后出现"
+    },
+    {
+      "from": "network_events:TECH0",
+      "to": "network_events:TECH1",
+      "entities": [
+        "actor:A4",
+        "device:D_TECH"
+      ],
+      "gap_hours": 0.03333333333333333,
+      "relation": "同实体先后出现"
+    },
+    {
+      "from": "network_events:TECH1",
+      "to": "communications:BG_A4_0",
+      "entities": [
+        "actor:A4"
+      ],
+      "gap_hours": 0.05,
+      "relation": "同实体先后出现"
+    },
+    {
+      "from": "network_events:TECH1",
+      "to": "communications:TECH_MSG0",
+      "entities": [
+        "device:D_TECH"
+      ],
+      "gap_hours": 0.05,
+      "relation": "同实体先后出现"
+    },
+    {
+      "from": "network_events:TECH4",
+      "to": "communications:TECH_MSG1",
+      "entities": [
+        "actor:A4",
+        "device:D_TECH"
+      ],
+      "gap_hours": 0.03333333333333333,
+      "relation": "同实体先后出现"
+    },
+    {
+      "from": "network_events:TECH5",
+      "to": "communications:TECH_MSG2",
+      "entities": [
+        "actor:A4",
+        "device:D_TECH"
+      ],
+      "gap_hours": 0.08333333333333333,
+      "relation": "同实体先后出现"
+    }
+  ],
+  "interpretation": "事件节点来自去重原始记录；边只表示同一实体在窗口内先后出现，不证明资金归属、实体控制或因果关系。"
+}

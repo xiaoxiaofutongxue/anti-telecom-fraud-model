@@ -1,0 +1,11 @@
+# Preserve source bytes so CSV provenance and delivery checksums survive cloning.
+* -text
+*.docx binary
+*.npz binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.pdf binary
+*.wav binary
+*.mp4 binary
+*.zip binary

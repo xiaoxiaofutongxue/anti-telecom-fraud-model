@@ -1,0 +1,265 @@
+{
+  "version": "1.5.0",
+  "origin": "synthetic",
+  "seed": 1001,
+  "case_count": 12,
+  "created_at": "2026-10-30T14:54:20.102510+08:00",
+  "checks": [
+    {
+      "name": "导入、去重、冲突隔离与原始溯源",
+      "status": "通过",
+      "detail": {
+        "cases": 12,
+        "quarantined": 7,
+        "normalization_changes": 4,
+        "original_unchanged": true,
+        "amounts_unchanged": true,
+        "cleaning_report": "cleaned/cleaning_report.json"
+      }
+    },
+    {
+      "name": "四流图谱、逐币种守恒和事件轨迹图",
+      "status": "通过",
+      "detail": {
+        "nodes": 59,
+        "edges": 134,
+        "events": 61,
+        "currency_totals": {
+          "USDT": "3193.57",
+          "CNY": "700.00"
+        },
+        "patterns": 14
+      }
+    },
+    {
+      "name": "时序路径及逐步来源",
+      "status": "通过",
+      "detail": {
+        "paths": 1,
+        "first_chain_steps": 1,
+        "truncated": false
+      }
+    },
+    {
+      "name": "IP网络与产业订单溯源",
+      "status": "通过",
+      "detail": {
+        "network_events": 20,
+        "ips": 18,
+        "orders": 2,
+        "material_gaps": [
+          {
+            "order": "O001",
+            "missing": [
+              "仅有单一来源材料组，需独立材料交叉核验"
+            ]
+          },
+          {
+            "order": "O002",
+            "missing": [
+              "窗口内未找到发运前的同订单付款记录",
+              "缺少在发运前生效的已核实身份对应",
+              "仅有单一来源材料组，需独立材料交叉核验"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "四种特征投影",
+      "status": "通过",
+      "detail": {
+        "projected_nodes": {
+          "PCA": 59,
+          "LDA": 7,
+          "LLE": 59,
+          "t-SNE": 59
+        },
+        "scope": "仅探索，LDA使用已知人员标签，不能当独立分类效果"
+      }
+    },
+    {
+      "name": "资金/人员模型输出、覆盖率及保存载入",
+      "status": "需关注",
+      "detail": {
+        "fund_f1": 0.9231,
+        "fund_confusion": {
+          "tp": 6,
+          "fp": 1,
+          "fn": 0,
+          "tn": 5
+        },
+        "fund_error_cases": [
+          {
+            "case_id": "SIM13_1001_C006",
+            "nodes": 51,
+            "edges": 126,
+            "label": 0,
+            "fund_score": 0.712421,
+            "fund_available": true,
+            "fund_reason": "",
+            "person_candidates": 6,
+            "person_abstained": 1,
+            "known_or_related_training_records": false
+          }
+        ],
+        "role_macro_f1": 1.0,
+        "role_errors": [],
+        "selective": {
+          "labelled_persons": 72,
+          "eligible": 72,
+          "abstained": 0,
+          "coverage": 1.0,
+          "joint_accuracy_on_eligible": 1.0,
+          "high_confidence_joint_errors": 0,
+          "unlabelled_persons": 12,
+          "unlabelled_abstained": 12
+        },
+        "note": "模拟指标和错例保留在model_evaluation.json；不能代表真实案件性能"
+      }
+    },
+    {
+      "name": "缺流、错快照及金额/标识扰动",
+      "status": "通过",
+      "detail": {
+        "missing_information_abstained": 7,
+        "stale_snapshot_rejected": true,
+        "same_currency_scale_score_delta": 0.0,
+        "identifier_renaming_invariant": true
+      }
+    },
+    {
+      "name": "人工确认、排除及历史快照",
+      "status": "通过",
+      "detail": {
+        "source_annotation_preserved": true,
+        "future_review_not_in_history": true,
+        "current_exclusion_effective": true
+      }
+    },
+    {
+      "name": "本金条件情景及本地留痕",
+      "status": "通过",
+      "detail": {
+        "confirmed_principal": "100",
+        "coverage_min": "0.5",
+        "coverage_max": "0.8",
+        "currency": "USDT",
+        "lower": "125.00",
+        "upper": "200.00",
+        "source_ids": [
+          "S001"
+        ],
+        "method": "已核实去重本金 / 假定覆盖率",
+        "interpretation": "条件情景区间；不是统计置信区间或自动认定的涉案金额。覆盖率由分析人员提供，系统未证明该假设。",
+        "scope_as_of": ""
+      }
+    },
+    {
+      "name": "报告、空快照、ZIP与审计日志",
+      "status": "通过",
+      "detail": {
+        "case_report": "reports\\SIM13_1001_C001_20261030_145406_224058",
+        "empty_report": "reports\\SIM13_1001_C001_20261030_145406_404809",
+        "checksummed_files": 18,
+        "audit_events": 5
+      }
+    },
+    {
+      "name": "双图、原始三模态、定向控制与MOID-XAI",
+      "status": "通过",
+      "detail": {
+        "model_id": "DUAL_20261028_195545_470207",
+        "audited_cases": 12,
+        "events": 72,
+        "raw_materials": 3,
+        "control_candidates": 5,
+        "exact_flow_coalitions": 16,
+        "shapley_residual": -5.551115123125783e-17,
+        "all_branches_trained": {
+          "entity": 89.37952423095703,
+          "trajectory": 3.849644660949707,
+          "raw_image": 0.028743132948875427,
+          "raw_audio": 0.00805903971195221,
+          "raw_video": 0.008035860024392605,
+          "interaction": 0.3421107530593872,
+          "control": 4.708164691925049
+        },
+        "model_pointer_unchanged": true,
+        "scope": "合成验证，控制边和视听表示不等于真实侦查事实"
+      }
+    },
+    {
+      "name": "因果设计、混杂调整及假设检查",
+      "status": "通过",
+      "detail": {
+        "known_effect": 1.5,
+        "estimate": 1.393395726199591,
+        "interval": [
+          1.2907895548257453,
+          1.4960018975734368
+        ],
+        "interval_method": "分组稳健标准误 × t临界值；自由度=独立组数-1，仍为近似区间",
+        "unconfirmed_assumptions_rejected": true
+      }
+    },
+    {
+      "name": "图片/语音/PDF/视频及人工通信导入",
+      "status": "通过",
+      "detail": {
+        "materials": [
+          {
+            "file": "synthetic_record.png",
+            "segments": 6,
+            "candidates": 5,
+            "output": "media\\material_20261030_145412_570240"
+          },
+          {
+            "file": "synthetic_speech.wav",
+            "segments": 2,
+            "candidates": 1,
+            "output": "media\\material_20261030_145415_766707"
+          },
+          {
+            "file": "synthetic_scan.pdf",
+            "segments": 6,
+            "candidates": 5,
+            "output": "media\\material_20261030_145418_299234"
+          },
+          {
+            "file": "synthetic_silent_video.mp4",
+            "segments": 6,
+            "candidates": 5,
+            "output": "media\\material_20261030_145419_732783"
+          }
+        ],
+        "reviewed_import_creates_new_dataset": true,
+        "source_type": "synthetic"
+      }
+    }
+  ],
+  "passed": 12,
+  "warnings": 1,
+  "failed": 0,
+  "media_included": true,
+  "scope": "隔离的合成全流程模拟，不读写用户核验库、不修改生产数据或模型指针。功能通过不等于真实侦查效果达标。",
+  "model_evaluation_file": "model_evaluation.json",
+  "links": [
+    {
+      "label": "模拟个案完整报告",
+      "path": "reports\\SIM13_1001_C001_20261030_145406_224058\\report.html"
+    },
+    {
+      "label": "空历史快照报告",
+      "path": "reports\\SIM13_1001_C001_20261030_145406_404809\\report.html"
+    },
+    {
+      "label": "双图/原始多模态/控制候选/多目标解释",
+      "path": "joint_reports\\joint_20261030_145409_195732\\report.html"
+    },
+    {
+      "label": "独立合成因果研究",
+      "path": "causal_runs\\causal_20261030_145409_309900\\report.html"
+    }
+  ]
+}

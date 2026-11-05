@@ -1,0 +1,67 @@
+{
+  "schema_version": 2,
+  "origin": "synthetic",
+  "title": "四流角色层级合成训练样本",
+  "timezone": "Asia/Shanghai",
+  "description": "全部主体、交易、通信、IP、运输和标签由程序生成；confirmed 仅表示合成设定已标注，不代表真实核实。",
+  "generator_seed": 1429,
+  "label_definition": {
+    "task_id": "synthetic_fund_pattern_v1",
+    "positive": "合成短时拆分、归集及回流组合模式",
+    "negative": "生成器设定的非该组合网络；不表示已认定合法"
+  },
+  "role_task": {
+    "task_id": "synthetic_person_roles_v1",
+    "roles": [
+      "协调",
+      "资金处理",
+      "技术支持",
+      "运输执行"
+    ],
+    "levels": [
+      "上游",
+      "中间层",
+      "执行层"
+    ],
+    "compatible_pairs": [
+      [
+        "协调",
+        "上游"
+      ],
+      [
+        "资金处理",
+        "中间层"
+      ],
+      [
+        "技术支持",
+        "中间层"
+      ],
+      [
+        "运输执行",
+        "执行层"
+      ]
+    ]
+  },
+  "generator": {
+    "seed": 1429,
+    "varied": true,
+    "namespace": "E14JOINT",
+    "interpretation": "随机生成机制与业务标签均为合成设定；未标注背景主体不作为负类",
+    "raw_media": "观测时间绘图、观测时间调制音、平移视频；无人物身份和真实视听语义",
+    "domain_shift": 3
+  },
+  "advanced": {
+    "version": 1,
+    "control_task": {
+      "task_id": "synthetic_directed_control_v1",
+      "positive": "生成器设定的定向控制联系",
+      "negative": "明确标注的非该定向联系，未知不能当负类"
+    },
+    "media_file": "multimodal_links.json",
+    "control_file": "control_labels.csv",
+    "sha256": {
+      "control_labels.csv": "7cfc03788a780b97487200783417edb40709048ea6d104fd3e7c7ed13d281cd6",
+      "multimodal_links.json": "bbe299c4dca9dea1d1281da759a426e83dc6ac0a31d69d0cbc515d21e6d0b298"
+    }
+  }
+}

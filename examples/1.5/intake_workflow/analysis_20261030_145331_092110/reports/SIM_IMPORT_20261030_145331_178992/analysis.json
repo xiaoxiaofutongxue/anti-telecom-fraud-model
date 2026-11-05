@@ -1,0 +1,375 @@
+{
+  "system": "反电诈四流辅助侦查系统",
+  "version": "1.5.0",
+  "created_at": "2026-10-30T14:53:31.162903+08:00",
+  "case": {
+    "case_id": "SIM_IMPORT",
+    "title": "合成Excel接入验收",
+    "region": "合成地区",
+    "case_type": "合成接入",
+    "_table": "cases",
+    "_line": 2,
+    "_original_line": 2,
+    "_original_sha256": "4927607d7cacc9da5e7a6b05f83b16fe9f3e16e07d8df253f4af54fd2398b6d3",
+    "_lineage_verified": true,
+    "_original_sheet": ""
+  },
+  "origin": "synthetic",
+  "dataset_fingerprint": "34da40f1d5fec2fd3ed7f62f2d2821aa24c264ba2172341533e30c562d8b729a",
+  "as_of": "全部已导入记录",
+  "graph": {
+    "nodes": 3,
+    "edges": 2,
+    "flows": {
+      "funds": 2,
+      "goods": 0,
+      "information": 0,
+      "people": 0
+    }
+  },
+  "amounts": {
+    "gross_by_currency": {
+      "CNY": "180.01"
+    },
+    "addresses": [
+      {
+        "node": "account:%E5%90%88%E6%88%90%E9%93%B6%E8%A1%8C%E5%9F%9F:000123",
+        "currency": "CNY",
+        "incoming": "0",
+        "outgoing": "100.01",
+        "net": "-100.01"
+      },
+      {
+        "node": "account:%E5%90%88%E6%88%90%E9%93%B6%E8%A1%8C%E5%9F%9F:000456",
+        "currency": "CNY",
+        "incoming": "100.01",
+        "outgoing": "80.00",
+        "net": "20.01"
+      },
+      {
+        "node": "account:%E5%90%88%E6%88%90%E9%93%B6%E8%A1%8C%E5%9F%9F:000789",
+        "currency": "CNY",
+        "incoming": "80.00",
+        "outgoing": "0",
+        "net": "80.00"
+      }
+    ],
+    "interpretation": "逐币种交易额合计包含重复流转，不等于涉案本金；净流入不等于账户余额。"
+  },
+  "principal_scenario": null,
+  "findings": [
+    {
+      "id": "Fd1a3c7282c",
+      "kind": "pass_through",
+      "title": "短时转入转出候选",
+      "nodes": [
+        "account:%E5%90%88%E6%88%90%E9%93%B6%E8%A1%8C%E5%9F%9F:000123",
+        "account:%E5%90%88%E6%88%90%E9%93%B6%E8%A1%8C%E5%9F%9F:000456",
+        "account:%E5%90%88%E6%88%90%E9%93%B6%E8%A1%8C%E5%9F%9F:000789"
+      ],
+      "record_ids": [
+        "SIM001",
+        "SIM002"
+      ],
+      "source_ids": [
+        "IMP_26378dad26f0"
+      ],
+      "detail": "同币种两笔记录间隔不超过 30 分钟，金额比在 0.5—1.5。没有证明为同一笔资金。",
+      "status": "待核验",
+      "edges": [
+        [
+          "account:%E5%90%88%E6%88%90%E9%93%B6%E8%A1%8C%E5%9F%9F:000123",
+          "account:%E5%90%88%E6%88%90%E9%93%B6%E8%A1%8C%E5%9F%9F:000456",
+          "funds:SIM001:"
+        ],
+        [
+          "account:%E5%90%88%E6%88%90%E9%93%B6%E8%A1%8C%E5%9F%9F:000456",
+          "account:%E5%90%88%E6%88%90%E9%93%B6%E8%A1%8C%E5%9F%9F:000789",
+          "funds:SIM002:"
+        ]
+      ]
+    }
+  ],
+  "actor_structure": [],
+  "identity_links": [],
+  "evidence_chains": [],
+  "network_analysis": {
+    "ips": [],
+    "observations": [],
+    "findings": [],
+    "window_minutes": 30,
+    "interpretation": "IP为时点网络观测，不用于自动实名绑定；非公网IP按network_scope隔离，不做IP地理定位。",
+    "truncated": false
+  },
+  "analysis_options": {
+    "network_window_minutes": 30,
+    "industry_window_hours": 168
+  },
+  "industry_traces": [],
+  "pca": {
+    "method": "标准化后SVD-PCA，仅用于当前快照探索",
+    "explained_variance_ratio": [
+      0.5911946183904956,
+      0.4088053816095044
+    ],
+    "feature_names": [
+      "type_actor",
+      "type_wallet",
+      "type_account",
+      "type_order",
+      "type_place",
+      "type_vehicle",
+      "type_device",
+      "type_exchange",
+      "type_ip",
+      "log_in_degree",
+      "log_out_degree",
+      "log_funds_degree",
+      "log_goods_degree",
+      "log_information_degree",
+      "log_people_degree",
+      "age_30days",
+      "log_span_hours",
+      "text_hash_0",
+      "text_hash_1",
+      "text_hash_2",
+      "text_hash_3",
+      "text_hash_4",
+      "text_hash_5",
+      "text_hash_6",
+      "text_hash_7",
+      "relative_fund_in",
+      "relative_fund_out",
+      "log_distinct_ips",
+      "log_network_events"
+    ],
+    "points": [
+      {
+        "node": "account:%E5%90%88%E6%88%90%E9%93%B6%E8%A1%8C%E5%9F%9F:000123",
+        "pc1": 1.1768251759629262,
+        "pc2": 1.6949840664898332
+      },
+      {
+        "node": "account:%E5%90%88%E6%88%90%E9%93%B6%E8%A1%8C%E5%9F%9F:000456",
+        "pc1": -2.353650253533675,
+        "pc2": 4.723816399153058e-08
+      },
+      {
+        "node": "account:%E5%90%88%E6%88%90%E9%93%B6%E8%A1%8C%E5%9F%9F:000789",
+        "pc1": 1.1768250775707485,
+        "pc2": -1.694984113727997
+      }
+    ],
+    "loadings": [
+      [
+        -4.914758597232615e-16,
+        -1.1571692827105106e-16,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -0.30042985770076586,
+        -0.30042983258238104,
+        -0.6008596902831468,
+        0.0,
+        0.0,
+        0.0,
+        6.556666347256826e-05,
+        -0.09287650894254298,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -0.47424961051147,
+        0.47424962372851504,
+        0.0,
+        0.0
+      ],
+      [
+        3.4123103369233164e-16,
+        8.034210891225849e-17,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -0.6257640783706069,
+        0.6257640958102672,
+        1.7439660309935047e-08,
+        0.0,
+        0.0,
+        0.0,
+        0.00013656852569098954,
+        2.6956955141668274e-09,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.32927087184737114,
+        0.3292708443176421,
+        0.0,
+        0.0
+      ]
+    ],
+    "interpretation": "相邻投影点不表示同一身份或同一团伙。PCA没有改变监督模型输入。"
+  },
+  "cleaning_report": "D:\\Projects\\FourFlowAnalysis\\runtime\\upgrade_1_5\\acceptance_20261030_145326_579314\\cleaned\\cleaning_report.json",
+  "model_assessment": {
+    "available": false,
+    "reason": "训练或评分前，manifest.json须明确label_definition中的task_id及正负标签含义"
+  },
+  "leads": [
+    {
+      "lead_id": "L001",
+      "question": "核验 短时转入转出候选 的业务背景及实际控制关系",
+      "related_records": [
+        "SIM001",
+        "SIM002"
+      ],
+      "source_ids": [
+        "IMP_26378dad26f0"
+      ],
+      "suggested_material": "原始交易回执、同币种时序记录、对应业务凭据及控制关系材料",
+      "status": "建议核验；非已取得证据"
+    }
+  ],
+  "reviews": [],
+  "sources": [
+    {
+      "case_id": "SIM_IMPORT",
+      "source_id": "IMP_26378dad26f0",
+      "title": "synthetic_transactions.xlsx / 合成流水",
+      "reference": "_ingest_parent/623567ae3c46fdc2.xlsx",
+      "_table": "sources",
+      "_line": 2,
+      "_original_line": 2,
+      "_original_sha256": "6df1954d9d1c4f686ecf9ef2b99b4607c34dda79e1cc27e0a90d9a6a0549f0f0",
+      "_lineage_verified": true,
+      "_sha256": "623567ae3c46fdc299705bdcf5a496bed854de1c02763e51477ec97b3e24fe7f",
+      "_original_sheet": ""
+    }
+  ],
+  "boundaries": [
+    "全部输出用于辅助核验，违法认定由有权人员根据完整材料作出。",
+    "关联路径及删除特征后的分数变化不是因果证明。",
+    "共享IP不等于同一人员，不进行无来源地理定位。产业排序不等于违法概率。",
+    "图谱只覆盖导入数据；未知身份保持未知；候选身份不作为已核实绑定。",
+    "交易额不等于涉案本金；金额区间仅在人工提供覆盖率假设后输出。",
+    "图模型为小规模本地实现，合成指标不能替代真实案件评估。"
+  ],
+  "pattern_diagnostics": {
+    "skipped_cycle_currencies": [],
+    "truncated_cycle_currencies": [],
+    "fund_findings_truncated": false,
+    "ip_findings_truncated": false,
+    "search_complete": true,
+    "returned_findings": 1,
+    "interpretation": "已执行当前规则范围的搜索；规则本身不覆盖全部异常或违法行为"
+  },
+  "role_hierarchy": {
+    "available": false,
+    "reason": "manifest须明确role_task.task_id及角色、层级类别"
+  },
+  "cohort_causal": null,
+  "joint_analysis": {
+    "available": false,
+    "reason": "manifest须明确role_task.task_id及角色、层级类别"
+  },
+  "behavior_timeline": [
+    {
+      "timestamp": "2026-01-01T08:00:00+08:00",
+      "effective_from": "2026-01-01T08:00:00+08:00",
+      "lineage_verified": true,
+      "flow": "资金流",
+      "table": "funds",
+      "record_id": "SIM001",
+      "nodes": [
+        "account:%E5%90%88%E6%88%90%E9%93%B6%E8%A1%8C%E5%9F%9F:000123",
+        "account:%E5%90%88%E6%88%90%E9%93%B6%E8%A1%8C%E5%9F%9F:000456"
+      ],
+      "source_id": "IMP_26378dad26f0",
+      "source_title": "synthetic_transactions.xlsx / 合成流水",
+      "csv_line": 2,
+      "original_line": 2,
+      "original_sha256": "623567ae3c46fdc299705bdcf5a496bed854de1c02763e51477ec97b3e24fe7f",
+      "verification": "recorded"
+    },
+    {
+      "timestamp": "2026-01-01T08:02:00+08:00",
+      "effective_from": "2026-01-01T08:02:00+08:00",
+      "lineage_verified": true,
+      "flow": "资金流",
+      "table": "funds",
+      "record_id": "SIM002",
+      "nodes": [
+        "account:%E5%90%88%E6%88%90%E9%93%B6%E8%A1%8C%E5%9F%9F:000456",
+        "account:%E5%90%88%E6%88%90%E9%93%B6%E8%A1%8C%E5%9F%9F:000789"
+      ],
+      "source_id": "IMP_26378dad26f0",
+      "source_title": "synthetic_transactions.xlsx / 合成流水",
+      "csv_line": 3,
+      "original_line": 3,
+      "original_sha256": "623567ae3c46fdc299705bdcf5a496bed854de1c02763e51477ec97b3e24fe7f",
+      "verification": "recorded"
+    }
+  ],
+  "behavior_graph": {
+    "available": true,
+    "case_id": "SIM_IMPORT",
+    "as_of": "",
+    "max_gap_hours": 72,
+    "nodes": [
+      {
+        "id": "funds:SIM001",
+        "table": "funds",
+        "record_id": "SIM001",
+        "flow": "funds",
+        "timestamp": "2026-01-01T08:00:00+08:00",
+        "source_id": "IMP_26378dad26f0",
+        "csv_line": 2,
+        "entities": [
+          "account:%E5%90%88%E6%88%90%E9%93%B6%E8%A1%8C%E5%9F%9F:000123",
+          "account:%E5%90%88%E6%88%90%E9%93%B6%E8%A1%8C%E5%9F%9F:000456"
+        ]
+      },
+      {
+        "id": "funds:SIM002",
+        "table": "funds",
+        "record_id": "SIM002",
+        "flow": "funds",
+        "timestamp": "2026-01-01T08:02:00+08:00",
+        "source_id": "IMP_26378dad26f0",
+        "csv_line": 3,
+        "entities": [
+          "account:%E5%90%88%E6%88%90%E9%93%B6%E8%A1%8C%E5%9F%9F:000456",
+          "account:%E5%90%88%E6%88%90%E9%93%B6%E8%A1%8C%E5%9F%9F:000789"
+        ]
+      }
+    ],
+    "edges": [
+      {
+        "from": "funds:SIM001",
+        "to": "funds:SIM002",
+        "entities": [
+          "account:%E5%90%88%E6%88%90%E9%93%B6%E8%A1%8C%E5%9F%9F:000456"
+        ],
+        "gap_hours": 0.03333333333333333,
+        "relation": "同实体先后出现"
+      }
+    ],
+    "interpretation": "事件节点来自去重原始记录；边只表示同一实体在窗口内先后出现，不证明资金归属、实体控制或因果关系。"
+  }
+}

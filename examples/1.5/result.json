@@ -1,0 +1,170 @@
+{
+  "version": "1.5.0",
+  "created_at": "2026-10-30T14:54:38.547725+08:00",
+  "origin": "synthetic",
+  "checks": [
+    {
+      "title": "Excel接入、清洗、来源与一键全流程",
+      "status": "passed",
+      "detail": {
+        "records": 2,
+        "accounts_preserved": true,
+        "amount": "180.01 CNY",
+        "tasks_undefined_explicitly_unscored": true,
+        "original_sha256": "623567ae3c46fdc299705bdcf5a496bed854de1c02763e51477ec97b3e24fe7f"
+      }
+    },
+    {
+      "title": "大图分窗、覆盖率与逐币种金额",
+      "status": "passed",
+      "detail": {
+        "nodes": 351,
+        "events": 350,
+        "windows": 4,
+        "event_coverage": 1,
+        "exact_total": "3.50 CNY",
+        "window_scores_not_aggregated": true
+      }
+    },
+    {
+      "title": "资金、人员、双图模型与解释全流程",
+      "status": "passed",
+      "detail": {
+        "status": "complete",
+        "joint_score": 0.9999998807907104,
+        "control_candidates": 5,
+        "shapley_residual": -5.551115123125783e-17
+      }
+    },
+    {
+      "title": "独立域评测、错例保留与合成审批阻断",
+      "status": "passed",
+      "detail": {
+        "cases": 72,
+        "fund_errors": 1,
+        "synthetic_approval_rejected": true,
+        "origin": "synthetic",
+        "scope": "同源生成机制，不能证明真实地区与案型泛化"
+      }
+    },
+    {
+      "title": "既有全板块模拟与原始材料识别",
+      "status": "passed",
+      "detail": {
+        "passed": 12,
+        "warnings": 1,
+        "failed": 0,
+        "warnings_preserved": [
+          {
+            "name": "资金/人员模型输出、覆盖率及保存载入",
+            "status": "需关注",
+            "detail": {
+              "fund_f1": 0.9231,
+              "fund_confusion": {
+                "tp": 6,
+                "fp": 1,
+                "fn": 0,
+                "tn": 5
+              },
+              "fund_error_cases": [
+                {
+                  "case_id": "SIM13_1001_C006",
+                  "nodes": 51,
+                  "edges": 126,
+                  "label": 0,
+                  "fund_score": 0.712421,
+                  "fund_available": true,
+                  "fund_reason": "",
+                  "person_candidates": 6,
+                  "person_abstained": 1,
+                  "known_or_related_training_records": false
+                }
+              ],
+              "role_macro_f1": 1.0,
+              "role_errors": [],
+              "selective": {
+                "labelled_persons": 72,
+                "eligible": 72,
+                "abstained": 0,
+                "coverage": 1.0,
+                "joint_accuracy_on_eligible": 1.0,
+                "high_confidence_joint_errors": 0,
+                "unlabelled_persons": 12,
+                "unlabelled_abstained": 12
+              },
+              "note": "模拟指标和错例保留在model_evaluation.json；不能代表真实案件性能"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "title": "完整私有备份、恢复、核验库及三模型加载",
+      "status": "passed",
+      "detail": {
+        "backup_bytes": 134614882,
+        "verified_files": 152,
+        "dataset_identical": true,
+        "reviews_preserved": true,
+        "all_three_models_load": true,
+        "local_asr_weight_included": true,
+        "empirical_reports_included": true,
+        "existing_venv_used": true
+      }
+    },
+    {
+      "title": "发布模型权重与当前引用未被验收改写",
+      "status": "passed",
+      "detail": {
+        "weights_and_pointers_unchanged": true
+      }
+    }
+  ],
+  "passed": 7,
+  "failed": 0,
+  "links": [
+    [
+      "Excel接入后完整报告",
+      "intake_workflow\\analysis_20261030_145331_092110\\index.html"
+    ],
+    [
+      "351节点大图、完整金额与分窗覆盖",
+      "large_workflow\\analysis_20261030_145331_446358\\index.html"
+    ],
+    [
+      "双图联合研判与来源报告",
+      "joint_workflow\\analysis_20261030_145332_475284\\index.html"
+    ],
+    [
+      "冻结后72案合成域评测",
+      "domains\\domain_20261030_145356_351984\\report.html"
+    ],
+    [
+      "实证评估接口合成验证",
+      "empirical\\empirical_20261030_145402_192373\\report.html"
+    ],
+    [
+      "13环节与原始图片/语音/PDF/视频自测",
+      "simulation\\simulation_20261030_145402_244949\\report.html"
+    ]
+  ],
+  "frozen_models": {
+    "fund": {
+      "directory": "D:\\Projects\\FourFlowAnalysis\\runtime\\models\\funds_1_3_selected",
+      "sha256": "dd2b6703e613ac0b9af77badcae6eece5a31ca3f658e94c5932f86bd5ad2e99e",
+      "model_id": "THGNN_1_3_20261028_172448"
+    },
+    "roles": {
+      "directory": "D:\\Projects\\FourFlowAnalysis\\runtime\\models\\roles_1_3",
+      "sha256": "e09f74f88d8e9ce851e03025bb92ddd6953cd609485a6f1846d849a19deea20e",
+      "model_id": "ROLE_20261028_171837_138669"
+    },
+    "joint": {
+      "directory": "D:\\Projects\\FourFlowAnalysis\\runtime\\models\\joint_1_4_erm",
+      "sha256": "7652e4804ce54f98e03840d878b78b098213bf11a051249e91b951201ce4eac3",
+      "model_id": "DUAL_20261028_195545_470207"
+    }
+  },
+  "fresh_dependency_install_tested": false,
+  "scope": "本机工程及合成验收；真实标签、真实团伙控制恢复和真实跨地区/案型效果仍未验证。"
+}

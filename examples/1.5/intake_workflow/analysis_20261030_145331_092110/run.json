@@ -1,0 +1,65 @@
+{
+  "version": "1.5.0",
+  "origin": "synthetic",
+  "case_id": "SIM_IMPORT",
+  "dataset_fingerprint": "34da40f1d5fec2fd3ed7f62f2d2821aa24c264ba2172341533e30c562d8b729a",
+  "graph_fingerprint": "b5e74e6cb666063fa4866ffaa2a66d9a1297946a22d51f26ecf651b9714147b8",
+  "status": "complete",
+  "stages": [
+    {
+      "name": "核对输入及人工核验快照",
+      "status": "passed"
+    },
+    {
+      "name": "逐币种精确金额与质量提示",
+      "status": "passed"
+    },
+    {
+      "name": "资金/IP模式与截断检查",
+      "status": "passed"
+    },
+    {
+      "name": "IP与来源关联",
+      "status": "passed"
+    },
+    {
+      "name": "产业订单与材料缺口",
+      "status": "passed"
+    },
+    {
+      "name": "规划完整事件窗口",
+      "status": "passed"
+    },
+    {
+      "name": "导出完整统计和来源报告",
+      "status": "passed"
+    },
+    {
+      "name": "再次核对数据与核验状态",
+      "status": "passed"
+    }
+  ],
+  "scope": "本地辅助分析任务编排，不联网、不自动取得外部证据、不自动认定违法。",
+  "model_windows": 1,
+  "report": "reports\\SIM_IMPORT_20261030_145331_178992/report.html",
+  "window_report": "windows.json",
+  "record_coverage": 1.0,
+  "truncated": false,
+  "finding_count": 1,
+  "industry_orders": 0,
+  "ip_count": 0,
+  "pattern_diagnostics": {
+    "skipped_cycle_currencies": [],
+    "truncated_cycle_currencies": [],
+    "fund_findings_truncated": false,
+    "ip_findings_truncated": false,
+    "search_complete": true,
+    "returned_findings": 1,
+    "interpretation": "已执行当前规则范围的搜索；规则本身不覆盖全部异常或违法行为"
+  },
+  "next_actions": [
+    "窗口1 fund：训练或评分前，manifest.json须明确label_definition中的task_id及正负标签含义",
+    "窗口1 roles：manifest须明确role_task.task_id及角色、层级类别",
+    "窗口1 joint：manifest须明确role_task.task_id及角色、层级类别"
+  ]
+}

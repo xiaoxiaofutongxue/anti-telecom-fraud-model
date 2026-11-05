@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "origin": "real",
+  "task_id": "replace_with_reviewed_study_id",
+  "question": "请定义队列、二元处理和后续结果",
+  "treatment": "treatment",
+  "outcome": "outcome",
+  "outcome_type": "continuous",
+  "adjustment": [
+    "baseline"
+  ],
+  "dag": {
+    "nodes": [
+      "baseline",
+      "treatment",
+      "outcome"
+    ],
+    "edges": [
+      [
+        "baseline",
+        "treatment"
+      ],
+      [
+        "baseline",
+        "outcome"
+      ],
+      [
+        "treatment",
+        "outcome"
+      ]
+    ]
+  },
+  "unobserved_nodes": [],
+  "assumptions": {
+    "consistency": false,
+    "no_unmeasured_confounding": false,
+    "positivity": false,
+    "pre_treatment_covariates": false,
+    "independent_groups": false
+  },
+  "acknowledged_by": ""
+}

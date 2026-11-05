@@ -1,0 +1,13 @@
+{
+  "schema_version": 2,
+  "origin": "synthetic",
+  "title": "反电诈四流合成验证数据",
+  "timezone": "Asia/Shanghai",
+  "description": "全部主体、交易、通信、IP、运输和标签由程序生成；confirmed 仅表示合成设定已标注，不代表真实核实。",
+  "generator_seed": 42,
+  "label_definition": {
+    "task_id": "synthetic_fund_pattern_v1",
+    "positive": "合成短时拆分、归集及回流组合模式",
+    "negative": "生成器设定的非该组合网络；不表示已认定合法"
+  }
+}

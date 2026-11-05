@@ -1,0 +1,4634 @@
+{
+  "plan": {
+    "total_records": 72,
+    "covered_records": 72,
+    "coverage": 1.0,
+    "truncated": false,
+    "reference_time": "2026-01-02T14:10:00+08:00",
+    "interpretation": "窗口可重叠，金额和候选不得跨窗口相加；窗口分数不是整案概率。完整金额与原记录统计仍使用原图。"
+  },
+  "whole_case_model": true,
+  "windows": [
+    {
+      "index": 1,
+      "events": 72,
+      "nodes": 58,
+      "graph_fingerprint": "cc38facdb153e2ab9083945e3e48c2becaea8a45c9eec7eca0e82785cc758292",
+      "fund": {
+        "available": true,
+        "probability": 1.0,
+        "graph_fingerprint": "cc38facdb153e2ab9083945e3e48c2becaea8a45c9eec7eca0e82785cc758292",
+        "model_id": "THGNN_1_3_20261028_172448",
+        "origin": "synthetic",
+        "flow_ablation_deltas": {
+          "funds": 0.0,
+          "goods": 0.0,
+          "information": 0.998907,
+          "people": 0.0
+        },
+        "known_split": null,
+        "overlap_kind": null,
+        "related_splits": [],
+        "max_standardized_feature_shift": 0.4682,
+        "shifted_features": [],
+        "interpretation": "目标异常模式分数，非违法概率。删除单流关系和特征贡献时保留节点及同一时钟，分数变化只表示敏感性，不构成因果证据。特征偏离是训练节点统计量启发式提示，不是因果偏差估计。"
+      },
+      "roles": {
+        "available": true,
+        "model_id": "ROLE_20261028_171837_138669",
+        "origin": "synthetic",
+        "graph_fingerprint": "cc38facdb153e2ab9083945e3e48c2becaea8a45c9eec7eca0e82785cc758292",
+        "dataset_fingerprint": "b995ecde79c2ab1952f60e6e1c57b0a473bcd461b08b0c99398926dd22f1c1c2",
+        "task": {
+          "task_id": "synthetic_person_roles_v1",
+          "roles": [
+            "协调",
+            "资金处理",
+            "技术支持",
+            "运输执行"
+          ],
+          "levels": [
+            "上游",
+            "中间层",
+            "执行层"
+          ],
+          "compatible_pairs": [
+            [
+              "协调",
+              "上游"
+            ],
+            [
+              "资金处理",
+              "中间层"
+            ],
+            [
+              "技术支持",
+              "中间层"
+            ],
+            [
+              "运输执行",
+              "执行层"
+            ]
+          ]
+        },
+        "predictions": [
+          {
+            "node": "actor:A1",
+            "actor_id": "A1",
+            "alias": "主体F",
+            "role": "运输执行",
+            "level": "执行层",
+            "level_index": 2,
+            "candidate_role": "运输执行",
+            "candidate_level": "执行层",
+            "prediction_available": true,
+            "abstention_reasons": [],
+            "support_records": 10,
+            "support_flows": [
+              "goods",
+              "information"
+            ],
+            "feature_shift": 1.4364026243639954,
+            "role_probability": 0.9999963456065479,
+            "level_probability": 0.9999411827036937,
+            "joint_probability": 0.9999999997850456,
+            "allowed_mass": 0.9999375287401241,
+            "incompatible_heads": false,
+            "low_confidence": false,
+            "role_distribution": {
+              "协调": 6.751937646543299e-13,
+              "资金处理": 3.6419809761588526e-06,
+              "技术支持": 1.2411800749710552e-08,
+              "运输执行": 0.9999963456065479
+            },
+            "level_distribution": {
+              "上游": 1.5412581992798902e-10,
+              "中间层": 5.8817142180423796e-05,
+              "执行层": 0.9999411827036937
+            },
+            "status": "模型候选，待人工核验"
+          },
+          {
+            "node": "actor:A2",
+            "actor_id": "A2",
+            "alias": "主体C",
+            "role": "资金处理",
+            "level": "中间层",
+            "level_index": 1,
+            "candidate_role": "资金处理",
+            "candidate_level": "中间层",
+            "prediction_available": true,
+            "abstention_reasons": [],
+            "support_records": 12,
+            "support_flows": [
+              "goods",
+              "information",
+              "people"
+            ],
+            "feature_shift": 1.258799335660226,
+            "role_probability": 0.9999999965512261,
+            "level_probability": 0.9999999260267535,
+            "joint_probability": 0.9999999968244935,
+            "allowed_mass": 0.9999999257534861,
+            "incompatible_heads": false,
+            "low_confidence": false,
+            "role_distribution": {
+              "协调": 2.573299256411229e-10,
+              "资金处理": 0.9999999965512261,
+              "技术支持": 3.175506482318408e-09,
+              "运输执行": 1.5937537092787908e-11
+            },
+            "level_distribution": {
+              "上游": 7.130125553091503e-08,
+              "中间层": 0.9999999260267535,
+              "执行层": 2.671990979148277e-09
+            },
+            "status": "模型候选，待人工核验"
+          },
+          {
+            "node": "actor:A3",
+            "actor_id": "A3",
+            "alias": "主体B",
+            "role": "资金处理",
+            "level": "中间层",
+            "level_index": 1,
+            "candidate_role": "资金处理",
+            "candidate_level": "中间层",
+            "prediction_available": true,
+            "abstention_reasons": [],
+            "support_records": 16,
+            "support_flows": [
+              "goods",
+              "information",
+              "people"
+            ],
+            "feature_shift": 2.787665458562323,
+            "role_probability": 0.9999999992119517,
+            "level_probability": 0.9999999857059048,
+            "joint_probability": 0.9999999992540978,
+            "allowed_mass": 0.9999999856637587,
+            "incompatible_heads": false,
+            "low_confidence": false,
+            "role_distribution": {
+              "协调": 4.157376408662907e-11,
+              "资金处理": 0.9999999992119517,
+              "技术支持": 7.459022828443675e-10,
+              "运输执行": 5.722773351573439e-13
+            },
+            "level_distribution": {
+              "上游": 1.4027691636905878e-08,
+              "中间层": 0.9999999857059048,
+              "执行层": 2.6640362105437805e-10
+            },
+            "status": "模型候选，待人工核验"
+          },
+          {
+            "node": "actor:A4",
+            "actor_id": "A4",
+            "alias": "主体E",
+            "role": "技术支持",
+            "level": "中间层",
+            "level_index": 1,
+            "candidate_role": "技术支持",
+            "candidate_level": "中间层",
+            "prediction_available": true,
+            "abstention_reasons": [],
+            "support_records": 18,
+            "support_flows": [
+              "information"
+            ],
+            "feature_shift": 3.982095387195379,
+            "role_probability": 0.9999887890644744,
+            "level_probability": 0.999999711977054,
+            "joint_probability": 0.9999887899526283,
+            "allowed_mass": 0.9999997110888903,
+            "incompatible_heads": false,
+            "low_confidence": false,
+            "role_distribution": {
+              "协调": 1.2126996616255824e-10,
+              "资金处理": 1.121004736162653e-05,
+              "技术支持": 0.9999887890644744,
+              "运输执行": 7.668938394220827e-10
+            },
+            "level_distribution": {
+              "上游": 1.1739610001352585e-07,
+              "中间层": 0.999999711977054,
+              "执行层": 1.706268458260687e-07
+            },
+            "status": "模型候选，待人工核验"
+          },
+          {
+            "node": "actor:A5",
+            "actor_id": "A5",
+            "alias": "主体D",
+            "role": "运输执行",
+            "level": "执行层",
+            "level_index": 2,
+            "candidate_role": "运输执行",
+            "candidate_level": "执行层",
+            "prediction_available": true,
+            "abstention_reasons": [],
+            "support_records": 14,
+            "support_flows": [
+              "goods",
+              "information"
+            ],
+            "feature_shift": 3.1364812784286125,
+            "role_probability": 0.999989262898424,
+            "level_probability": 0.9998809973275865,
+            "joint_probability": 0.9999999987220906,
+            "allowed_mass": 0.999870262781498,
+            "incompatible_heads": false,
+            "low_confidence": false,
+            "role_distribution": {
+              "协调": 7.385052742956117e-15,
+              "资金处理": 1.073626652080423e-05,
+              "技术支持": 8.350476606096138e-10,
+              "运输执行": 0.999989262898424
+            },
+            "level_distribution": {
+              "上游": 1.3490856895949764e-11,
+              "中间层": 0.0001190026589226755,
+              "执行层": 0.9998809973275865
+            },
+            "status": "模型候选，待人工核验"
+          },
+          {
+            "node": "actor:A6",
+            "actor_id": "A6",
+            "alias": "主体A",
+            "role": "未判定",
+            "level": "未判定",
+            "level_index": null,
+            "candidate_role": "协调",
+            "candidate_level": "上游",
+            "prediction_available": false,
+            "abstention_reasons": [
+              "组合分数偏低或双分类头冲突"
+            ],
+            "support_records": 25,
+            "support_flows": [
+              "goods",
+              "information",
+              "people"
+            ],
+            "feature_shift": 4.214310971876529,
+            "role_probability": 0.2834369659536386,
+            "level_probability": 0.988645287824241,
+            "joint_probability": 0.9717835052374908,
+            "allowed_mass": 0.288354987787926,
+            "incompatible_heads": true,
+            "low_confidence": true,
+            "role_distribution": {
+              "协调": 0.2834369659536386,
+              "资金处理": 0.08673832924729202,
+              "技术支持": 0.6298247043836538,
+              "运输执行": 4.1541553863385707e-10
+            },
+            "level_distribution": {
+              "上游": 0.988645287824241,
+              "中间层": 0.011354712175749673,
+              "执行层": 9.503981311897756e-15
+            },
+            "status": "证据不足/输入偏离，暂不分类"
+          },
+          {
+            "node": "actor:BYSTANDER",
+            "actor_id": "BYSTANDER",
+            "alias": "合成未标注背景主体",
+            "role": "未判定",
+            "level": "未判定",
+            "level_index": null,
+            "candidate_role": "技术支持",
+            "candidate_level": "中间层",
+            "prediction_available": false,
+            "abstention_reasons": [
+              "有效关联记录不足2条",
+              "组合分数偏低或双分类头冲突"
+            ],
+            "support_records": 1,
+            "support_flows": [
+              "information"
+            ],
+            "feature_shift": 2.0949843518798947,
+            "role_probability": 0.314297335862249,
+            "level_probability": 0.4793690382709481,
+            "joint_probability": 0.38209198098187863,
+            "allowed_mass": 0.39431450834492393,
+            "incompatible_heads": false,
+            "low_confidence": true,
+            "role_distribution": {
+              "协调": 0.12562364451088434,
+              "资金处理": 0.2761195905453636,
+              "技术支持": 0.314297335862249,
+              "运输执行": 0.28395942908150307
+            },
+            "level_distribution": {
+              "上游": 0.23084583563872668,
+              "中间层": 0.4793690382709481,
+              "执行层": 0.28978512609032503
+            },
+            "status": "证据不足/输入偏离，暂不分类"
+          }
+        ],
+        "hierarchy_links": [
+          {
+            "upper": "actor:A3",
+            "lower": "actor:A1",
+            "record_ids": [
+              "BG_A2_0",
+              "BG_A6_1"
+            ],
+            "source_ids": [
+              "S001"
+            ],
+            "status": "层级预测与已有联系构成的候选，不证明指挥或控制关系"
+          },
+          {
+            "upper": "actor:A4",
+            "lower": "actor:A5",
+            "record_ids": [
+              "BG_A4_0",
+              "BG_A5_1",
+              "J1_0",
+              "J1_1",
+              "J1_2"
+            ],
+            "source_ids": [
+              "S001"
+            ],
+            "status": "层级预测与已有联系构成的候选，不证明指挥或控制关系"
+          },
+          {
+            "upper": "actor:A3",
+            "lower": "actor:A5",
+            "record_ids": [
+              "BG_A4_1"
+            ],
+            "source_ids": [
+              "S001"
+            ],
+            "status": "层级预测与已有联系构成的候选，不证明指挥或控制关系"
+          },
+          {
+            "upper": "actor:A2",
+            "lower": "actor:A5",
+            "record_ids": [
+              "BG_A3_0"
+            ],
+            "source_ids": [
+              "S001"
+            ],
+            "status": "层级预测与已有联系构成的候选，不证明指挥或控制关系"
+          },
+          {
+            "upper": "actor:A4",
+            "lower": "actor:A1",
+            "record_ids": [
+              "BG_A6_0",
+              "J0_0",
+              "J0_1"
+            ],
+            "source_ids": [
+              "S001"
+            ],
+            "status": "层级预测与已有联系构成的候选，不证明指挥或控制关系"
+          }
+        ],
+        "known_split": null,
+        "related_splits": [],
+        "eligible_count": 5,
+        "abstained_count": 2,
+        "missing_flows": [],
+        "input_reference_available": true,
+        "interpretation": "角色/层级为监督模型候选；证据不足、缺流、输入偏离或分数冲突时暂不分类，内部候选分布仍保留供复核。输入偏离是启发式检查，不保证识别所有未知场景。上下层候选不等于犯罪、指挥或控制关系。"
+      },
+      "joint": {
+        "available": true,
+        "model_id": "DUAL_20261028_195545_470207",
+        "origin": "synthetic",
+        "dataset_fingerprint": "b995ecde79c2ab1952f60e6e1c57b0a473bcd461b08b0c99398926dd22f1c1c2",
+        "aux_fingerprint": "36e7971bd04bdf8521f5f73696c0f96bcafec8efa78852d007f68730deeb7baf",
+        "graph_fingerprint": "cc38facdb153e2ab9083945e3e48c2becaea8a45c9eec7eca0e82785cc758292",
+        "case_id": "DEMO14_C001",
+        "fund_score": 0.9999998807907104,
+        "predictions": [
+          {
+            "node": "actor:A1",
+            "actor_id": "A1",
+            "alias": "主体F",
+            "role": "运输执行",
+            "level": "执行层",
+            "candidate_role": "运输执行",
+            "candidate_level": "执行层",
+            "score": 1.0,
+            "role_distribution": {
+              "协调": 5.017211151425727e-05,
+              "资金处理": 4.7453191655222327e-05,
+              "技术支持": 4.2723739170469344e-05,
+              "运输执行": 0.9998596906661987
+            },
+            "level_distribution": {
+              "上游": 5.1990722568007186e-05,
+              "中间层": 9.909718937706202e-05,
+              "执行层": 0.9998488426208496
+            },
+            "prediction_available": true,
+            "reasons": [],
+            "feature_shift": 1.27764233844427
+          },
+          {
+            "node": "actor:A2",
+            "actor_id": "A2",
+            "alias": "主体C",
+            "role": "资金处理",
+            "level": "中间层",
+            "candidate_role": "资金处理",
+            "candidate_level": "中间层",
+            "score": 0.9999338388442993,
+            "role_distribution": {
+              "协调": 2.1448351617436856e-05,
+              "资金处理": 0.9998568296432495,
+              "技术支持": 6.619674968533218e-05,
+              "运输执行": 5.5556440202053636e-05
+            },
+            "level_distribution": {
+              "上游": 8.000714296940714e-05,
+              "中间层": 0.9998366832733154,
+              "执行层": 8.328427793458104e-05
+            },
+            "prediction_available": true,
+            "reasons": [],
+            "feature_shift": 1.0070631503006346
+          },
+          {
+            "node": "actor:A3",
+            "actor_id": "A3",
+            "alias": "主体B",
+            "role": "资金处理",
+            "level": "中间层",
+            "candidate_role": "资金处理",
+            "candidate_level": "中间层",
+            "score": 0.9999191761016846,
+            "role_distribution": {
+              "协调": 2.4137727450579405e-05,
+              "资金处理": 0.9998687505722046,
+              "技术支持": 8.083572902251035e-05,
+              "运输执行": 2.6253605028614402e-05
+            },
+            "level_distribution": {
+              "上游": 0.00018068778445012867,
+              "中间层": 0.9997608065605164,
+              "执行层": 5.8485227782512084e-05
+            },
+            "prediction_available": true,
+            "reasons": [],
+            "feature_shift": 1.4347614370169068
+          },
+          {
+            "node": "actor:A4",
+            "actor_id": "A4",
+            "alias": "主体E",
+            "role": "技术支持",
+            "level": "中间层",
+            "candidate_role": "技术支持",
+            "candidate_level": "中间层",
+            "score": 0.9999443888664246,
+            "role_distribution": {
+              "协调": 3.1561638024868444e-05,
+              "资金处理": 5.563704689848237e-05,
+              "技术支持": 0.9998952150344849,
+              "运输执行": 1.747269561747089e-05
+            },
+            "level_distribution": {
+              "上游": 0.00021434904192574322,
+              "中间层": 0.9997327923774719,
+              "执行层": 5.274887371342629e-05
+            },
+            "prediction_available": true,
+            "reasons": [],
+            "feature_shift": 1.5908317200709288
+          },
+          {
+            "node": "actor:A5",
+            "actor_id": "A5",
+            "alias": "主体D",
+            "role": "运输执行",
+            "level": "执行层",
+            "candidate_role": "运输执行",
+            "candidate_level": "执行层",
+            "score": 0.9999999403953552,
+            "role_distribution": {
+              "协调": 0.0001189703616546467,
+              "资金处理": 0.00010473066504346207,
+              "技术支持": 0.00010985208791680634,
+              "运输执行": 0.9996664524078369
+            },
+            "level_distribution": {
+              "上游": 9.476763807469979e-05,
+              "中间层": 0.00023013750615064055,
+              "执行层": 0.9996751546859741
+            },
+            "prediction_available": true,
+            "reasons": [],
+            "feature_shift": 2.0515254468817044
+          },
+          {
+            "node": "actor:A6",
+            "actor_id": "A6",
+            "alias": "主体A",
+            "role": "协调",
+            "level": "上游",
+            "candidate_role": "协调",
+            "candidate_level": "上游",
+            "score": 1.0,
+            "role_distribution": {
+              "协调": 0.9998421669006348,
+              "资金处理": 1.3403981938608922e-05,
+              "技术支持": 5.10697573190555e-05,
+              "运输执行": 9.346200386062264e-05
+            },
+            "level_distribution": {
+              "上游": 0.999919056892395,
+              "中间层": 3.8305432099150494e-05,
+              "执行层": 4.2722360376501456e-05
+            },
+            "prediction_available": true,
+            "reasons": [],
+            "feature_shift": 1.833476213955875
+          },
+          {
+            "node": "actor:BYSTANDER",
+            "actor_id": "BYSTANDER",
+            "alias": "合成未标注背景主体",
+            "role": "未判定",
+            "level": "未判定",
+            "candidate_role": "技术支持",
+            "candidate_level": "中间层",
+            "score": 0.9999390840530396,
+            "role_distribution": {
+              "协调": 6.929670053068548e-05,
+              "资金处理": 6.082886102376506e-05,
+              "技术支持": 0.9997290968894958,
+              "运输执行": 0.00014071587065700442
+            },
+            "level_distribution": {
+              "上游": 0.0005590968648903072,
+              "中间层": 0.9989519119262695,
+              "执行层": 0.0004889470874331892
+            },
+            "prediction_available": false,
+            "reasons": [
+              "有效事件不足2条"
+            ],
+            "feature_shift": 2.2816306205052475
+          }
+        ],
+        "control_candidates": [
+          {
+            "from": "actor:A6",
+            "to": "actor:A2",
+            "score": 1.0,
+            "evidence": [
+              {
+                "table": "communications",
+                "record_id": "M2",
+                "source_id": "S001",
+                "timestamp": "2026-01-01T08:05:00+08:00",
+                "csv_line": 3
+              },
+              {
+                "table": "communications",
+                "record_id": "J2_0",
+                "source_id": "S001",
+                "timestamp": "2026-01-01T08:51:00+08:00",
+                "csv_line": 228
+              },
+              {
+                "table": "communications",
+                "record_id": "J2_1",
+                "source_id": "S001",
+                "timestamp": "2026-01-01T08:52:00+08:00",
+                "csv_line": 229
+              },
+              {
+                "table": "communications",
+                "record_id": "J2_2",
+                "source_id": "S001",
+                "timestamp": "2026-01-01T08:53:00+08:00",
+                "csv_line": 230
+              }
+            ],
+            "status": "有监督方向候选，待核验，不证明控制"
+          },
+          {
+            "from": "actor:A6",
+            "to": "actor:A3",
+            "score": 1.0,
+            "evidence": [
+              {
+                "table": "relations",
+                "record_id": "R1",
+                "source_id": "S001",
+                "timestamp": "2026-01-01T07:30:00+08:00",
+                "csv_line": 2
+              },
+              {
+                "table": "communications",
+                "record_id": "M1",
+                "source_id": "S001",
+                "timestamp": "2026-01-01T08:01:00+08:00",
+                "csv_line": 2
+              },
+              {
+                "table": "shipments",
+                "record_id": "G001",
+                "source_id": "S001",
+                "timestamp": "2026-01-01T08:30:00+08:00",
+                "csv_line": 2
+              },
+              {
+                "table": "communications",
+                "record_id": "J3_0",
+                "source_id": "S001",
+                "timestamp": "2026-01-01T08:59:00+08:00",
+                "csv_line": 231
+              },
+              {
+                "table": "communications",
+                "record_id": "J3_1",
+                "source_id": "S001",
+                "timestamp": "2026-01-01T09:00:00+08:00",
+                "csv_line": 232
+              },
+              {
+                "table": "communications",
+                "record_id": "J3_2",
+                "source_id": "S001",
+                "timestamp": "2026-01-01T09:01:00+08:00",
+                "csv_line": 233
+              }
+            ],
+            "status": "有监督方向候选，待核验，不证明控制"
+          },
+          {
+            "from": "actor:A6",
+            "to": "actor:A4",
+            "score": 1.0,
+            "evidence": [
+              {
+                "table": "communications",
+                "record_id": "TECH_MSG0",
+                "source_id": "S001",
+                "timestamp": "2026-01-01T08:10:00+08:00",
+                "csv_line": 50
+              },
+              {
+                "table": "communications",
+                "record_id": "TECH_MSG1",
+                "source_id": "S001",
+                "timestamp": "2026-01-01T08:15:00+08:00",
+                "csv_line": 51
+              },
+              {
+                "table": "communications",
+                "record_id": "TECH_MSG2",
+                "source_id": "S001",
+                "timestamp": "2026-01-01T08:20:00+08:00",
+                "csv_line": 52
+              },
+              {
+                "table": "communications",
+                "record_id": "J4_0",
+                "source_id": "S001",
+                "timestamp": "2026-01-01T09:07:00+08:00",
+                "csv_line": 234
+              },
+              {
+                "table": "communications",
+                "record_id": "J4_1",
+                "source_id": "S001",
+                "timestamp": "2026-01-01T09:08:00+08:00",
+                "csv_line": 235
+              }
+            ],
+            "status": "有监督方向候选，待核验，不证明控制"
+          },
+          {
+            "from": "actor:A4",
+            "to": "actor:A1",
+            "score": 0.9999998807907104,
+            "evidence": [
+              {
+                "table": "communications",
+                "record_id": "J0_0",
+                "source_id": "S001",
+                "timestamp": "2026-01-01T08:35:00+08:00",
+                "csv_line": 223
+              },
+              {
+                "table": "communications",
+                "record_id": "J0_1",
+                "source_id": "S001",
+                "timestamp": "2026-01-01T08:36:00+08:00",
+                "csv_line": 224
+              },
+              {
+                "table": "communications",
+                "record_id": "BG_A6_0",
+                "source_id": "S001",
+                "timestamp": "2026-01-01T08:55:00+08:00",
+                "csv_line": 63
+              }
+            ],
+            "status": "有监督方向候选，待核验，不证明控制"
+          },
+          {
+            "from": "actor:A4",
+            "to": "actor:A5",
+            "score": 0.9999998807907104,
+            "evidence": [
+              {
+                "table": "communications",
+                "record_id": "BG_A4_0",
+                "source_id": "S001",
+                "timestamp": "2026-01-01T08:10:00+08:00",
+                "csv_line": 59
+              },
+              {
+                "table": "communications",
+                "record_id": "J1_0",
+                "source_id": "S001",
+                "timestamp": "2026-01-01T08:43:00+08:00",
+                "csv_line": 225
+              },
+              {
+                "table": "communications",
+                "record_id": "J1_1",
+                "source_id": "S001",
+                "timestamp": "2026-01-01T08:44:00+08:00",
+                "csv_line": 226
+              },
+              {
+                "table": "communications",
+                "record_id": "J1_2",
+                "source_id": "S001",
+                "timestamp": "2026-01-01T08:45:00+08:00",
+                "csv_line": 227
+              },
+              {
+                "table": "communications",
+                "record_id": "BG_A5_1",
+                "source_id": "S001",
+                "timestamp": "2026-01-01T09:32:00+08:00",
+                "csv_line": 62
+              }
+            ],
+            "status": "有监督方向候选，待核验，不证明控制"
+          }
+        ],
+        "cycle_suppressed": [],
+        "control_threshold": 0.95,
+        "media": [
+          {
+            "case_id": "DEMO14_C001",
+            "table": "communications",
+            "record_id": "M1",
+            "source_id": "RAW0",
+            "path": "raw_media/DEMO14_C001.png",
+            "sha256": "9507580fb119ecd44648cdff8cfbb083db9c91a9c366a6419065d53f66819058",
+            "confirmed": true,
+            "reviewer": "合成生成器，非真实核验",
+            "available_at": "2026-01-01T08:01:00+08:00",
+            "kind": "image",
+            "sampling": {
+              "path": "D:\\Projects\\FourFlowAnalysis\\data\\advanced_sample_synthetic\\raw_media\\DEMO14_C001.png",
+              "truncated": false
+            }
+          },
+          {
+            "case_id": "DEMO14_C001",
+            "table": "communications",
+            "record_id": "M1",
+            "source_id": "RAW1",
+            "path": "raw_media/DEMO14_C001.wav",
+            "sha256": "dbf2dd7f1e6e1c7fe900a9b6902b2bb7a49f111bd1276edb71695b77dd626d78",
+            "confirmed": true,
+            "reviewer": "合成生成器，非真实核验",
+            "available_at": "2026-01-01T08:01:00+08:00",
+            "kind": "audio",
+            "sampling": {
+              "path": "D:\\Projects\\FourFlowAnalysis\\data\\advanced_sample_synthetic\\raw_media\\DEMO14_C001.wav",
+              "truncated": true,
+              "sample_rate": 8000,
+              "samples_used": 4096,
+              "scope": "前0.512秒波形，仅轻量联合编码；长音轨由独立ASR模块处理"
+            }
+          },
+          {
+            "case_id": "DEMO14_C001",
+            "table": "communications",
+            "record_id": "M1",
+            "source_id": "RAW2",
+            "path": "raw_media/DEMO14_C001.mp4",
+            "sha256": "0b231a398e0344b2fcfe3c2c6e877c770f3fc611c05bc56c5ca9bc501308ea4a",
+            "confirmed": true,
+            "reviewer": "合成生成器，非真实核验",
+            "available_at": "2026-01-01T08:01:00+08:00",
+            "kind": "video",
+            "sampling": {
+              "path": "D:\\Projects\\FourFlowAnalysis\\data\\advanced_sample_synthetic\\raw_media\\DEMO14_C001.mp4",
+              "truncated": true,
+              "scope": "全时段4帧采样，视频音轨须另登记音频对应，未采样画面不等于不存在"
+            }
+          }
+        ],
+        "missing_modalities": [],
+        "media_attention": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.19299785792827606,
+            0.18186959624290466,
+            0.30007848143577576,
+            0.32505401968955994
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "event_count": 72,
+        "unseen_domain_fields": [],
+        "limitations": [
+          "合成训练不能替代真实案件验证。",
+          "控制边是有监督方向候选，不是指挥或违法认定。",
+          "原始媒体轻量编码仅证明训练链路；不承诺人脸、说话人或视听语义识别。",
+          "时序关联和遮蔽敏感性不是因果干预。"
+        ],
+        "scope": "全部分数为候选模式输出，不能作法律、身份或个案因果认定",
+        "trained_modalities": [
+          "image",
+          "audio",
+          "video"
+        ],
+        "ignored_untrained_modalities": [],
+        "explanation": {
+          "method": "精确四流Shapley(16子集)+八支路遮蔽+节点梯度乘输入",
+          "baseline": 0.9999998807907104,
+          "empty_prior": 0.5999159216880798,
+          "flow_shapley": {
+            "funds": 0.5390513947155947,
+            "goods": 0.23033024475444108,
+            "information": -0.1072979747550562,
+            "people": -0.26199970561234903
+          },
+          "coalition_scores": {
+            "0": 0.5999159216880798,
+            "1": 1.0,
+            "2": 1.0,
+            "3": 1.0,
+            "4": 0.48512962460517883,
+            "5": 0.9999990463256836,
+            "6": 0.9975572824478149,
+            "7": 1.0,
+            "8": 0.01980539783835411,
+            "9": 1.0,
+            "10": 0.9999943971633911,
+            "11": 1.0,
+            "12": 0.0039758444763720036,
+            "13": 0.9999954700469971,
+            "14": 0.07505570352077484,
+            "15": 0.9999998807907104
+          },
+          "sum_residual": -5.551115123125783e-17,
+          "branch_ablation": [
+            {
+              "branch": "entity",
+              "score_after_mask": 0.6039537191390991,
+              "delta": 0.39604616165161133
+            },
+            {
+              "branch": "trajectory",
+              "score_after_mask": 0.9998565912246704,
+              "delta": 0.00014328956604003906
+            },
+            {
+              "branch": "interaction",
+              "score_after_mask": 0.9944360256195068,
+              "delta": 0.005563855171203613
+            },
+            {
+              "branch": "media",
+              "score_after_mask": 0.9999998807907104,
+              "delta": 0.0
+            },
+            {
+              "branch": "image",
+              "score_after_mask": 0.9999998807907104,
+              "delta": 0.0
+            },
+            {
+              "branch": "audio",
+              "score_after_mask": 0.9999998807907104,
+              "delta": 0.0
+            },
+            {
+              "branch": "video",
+              "score_after_mask": 0.9999998807907104,
+              "delta": 0.0
+            },
+            {
+              "branch": "text",
+              "score_after_mask": 0.9999998807907104,
+              "delta": 0.0
+            }
+          ],
+          "salient_nodes": [
+            {
+              "node": "wallet:TRON:DEMO14_C001-W01",
+              "label": "DEMO14_C001-W01",
+              "gradient_times_input": 6.758057594299316,
+              "sources": [
+                {
+                  "table": "funds",
+                  "record_id": "N1",
+                  "source_id": "S001",
+                  "csv_line": 12,
+                  "timestamp": "2026-01-01T21:17:00+08:00"
+                },
+                {
+                  "table": "funds",
+                  "record_id": "T001",
+                  "source_id": "S001",
+                  "csv_line": 2,
+                  "timestamp": "2026-01-01T08:00:00+08:00"
+                },
+                {
+                  "table": "funds",
+                  "record_id": "T002",
+                  "source_id": "S001",
+                  "csv_line": 3,
+                  "timestamp": "2026-01-01T08:04:00+08:00"
+                },
+                {
+                  "table": "funds",
+                  "record_id": "T003",
+                  "source_id": "S001",
+                  "csv_line": 4,
+                  "timestamp": "2026-01-01T08:06:00+08:00"
+                },
+                {
+                  "table": "funds",
+                  "record_id": "T004",
+                  "source_id": "S001",
+                  "csv_line": 5,
+                  "timestamp": "2026-01-01T08:04:00+08:00"
+                },
+                {
+                  "table": "funds",
+                  "record_id": "T005",
+                  "source_id": "S001",
+                  "csv_line": 6,
+                  "timestamp": "2026-01-01T08:05:00+08:00"
+                },
+                {
+                  "table": "funds",
+                  "record_id": "T009",
+                  "source_id": "S001",
+                  "csv_line": 10,
+                  "timestamp": "2026-01-01T08:17:00+08:00"
+                },
+                {
+                  "table": "identity_links",
+                  "record_id": "I2",
+                  "source_id": "S001",
+                  "csv_line": 3,
+                  "timestamp": "2026-01-01T07:00:00+08:00"
+                },
+                {
+                  "table": "network_events",
+                  "record_id": "NET002",
+                  "source_id": "S001",
+                  "csv_line": 3,
+                  "timestamp": "2026-01-01T08:04:00+08:00"
+                },
+                {
+                  "table": "network_events",
+                  "record_id": "NET005",
+                  "source_id": "S001",
+                  "csv_line": 6,
+                  "timestamp": "2026-01-01T08:16:00+08:00"
+                }
+              ]
+            },
+            {
+              "node": "actor:A3",
+              "label": "主体B",
+              "gradient_times_input": 4.674628734588623,
+              "sources": [
+                {
+                  "table": "communications",
+                  "record_id": "BG_A2_0",
+                  "source_id": "S001",
+                  "csv_line": 57,
+                  "timestamp": "2026-01-01T09:12:00+08:00"
+                },
+                {
+                  "table": "communications",
+                  "record_id": "BG_A4_1",
+                  "source_id": "S001",
+                  "csv_line": 60,
+                  "timestamp": "2026-01-01T08:28:00+08:00"
+                },
+                {
+                  "table": "communications",
+                  "record_id": "BG_A5_0",
+                  "source_id": "S001",
+                  "csv_line": 61,
+                  "timestamp": "2026-01-01T09:01:00+08:00"
+                },
+                {
+                  "table": "communications",
+                  "record_id": "BG_A6_1",
+                  "source_id": "S001",
+                  "csv_line": 64,
+                  "timestamp": "2026-01-01T08:57:00+08:00"
+                },
+                {
+                  "table": "communications",
+                  "record_id": "FUND_MSG",
+                  "source_id": "S001",
+                  "csv_line": 54,
+                  "timestamp": "2026-01-01T08:16:00+08:00"
+                },
+                {
+                  "table": "communications",
+                  "record_id": "J3_0",
+                  "source_id": "S001",
+                  "csv_line": 231,
+                  "timestamp": "2026-01-01T08:59:00+08:00"
+                },
+                {
+                  "table": "communications",
+                  "record_id": "J3_1",
+                  "source_id": "S001",
+                  "csv_line": 232,
+                  "timestamp": "2026-01-01T09:00:00+08:00"
+                },
+                {
+                  "table": "communications",
+                  "record_id": "J3_2",
+                  "source_id": "S001",
+                  "csv_line": 233,
+                  "timestamp": "2026-01-01T09:01:00+08:00"
+                },
+                {
+                  "table": "communications",
+                  "record_id": "M1",
+                  "source_id": "S001",
+                  "csv_line": 2,
+                  "timestamp": "2026-01-01T08:01:00+08:00"
+                },
+                {
+                  "table": "communications",
+                  "record_id": "M3",
+                  "source_id": "S001",
+                  "csv_line": 4,
+                  "timestamp": "2026-01-01T08:09:00+08:00"
+                },
+                {
+                  "table": "identity_links",
+                  "record_id": "I2",
+                  "source_id": "S001",
+                  "csv_line": 3,
+                  "timestamp": "2026-01-01T07:00:00+08:00"
+                },
+                {
+                  "table": "network_events",
+                  "record_id": "NET002",
+                  "source_id": "S001",
+                  "csv_line": 3,
+                  "timestamp": "2026-01-01T08:04:00+08:00"
+                },
+                {
+                  "table": "network_events",
+                  "record_id": "NET005",
+                  "source_id": "S001",
+                  "csv_line": 6,
+                  "timestamp": "2026-01-01T08:16:00+08:00"
+                },
+                {
+                  "table": "relations",
+                  "record_id": "R1",
+                  "source_id": "S001",
+                  "csv_line": 2,
+                  "timestamp": "2026-01-01T07:30:00+08:00"
+                },
+                {
+                  "table": "shipments",
+                  "record_id": "G001",
+                  "source_id": "S001",
+                  "csv_line": 2,
+                  "timestamp": "2026-01-01T08:30:00+08:00"
+                },
+                {
+                  "table": "shipments",
+                  "record_id": "G002",
+                  "source_id": "S001",
+                  "csv_line": 3,
+                  "timestamp": "2026-01-01T09:00:00+08:00"
+                }
+              ]
+            },
+            {
+              "node": "actor:A6",
+              "label": "主体A",
+              "gradient_times_input": 3.2604942321777344,
+              "sources": [
+                {
+                  "table": "communications",
+                  "record_id": "BG_A1_0",
+                  "source_id": "S001",
+                  "csv_line": 55,
+                  "timestamp": "2026-01-01T08:48:00+08:00"
+                },
+                {
+                  "table": "communications",
+                  "record_id": "BG_A1_1",
+                  "source_id": "S001",
+                  "csv_line": 56,
+                  "timestamp": "2026-01-01T09:21:00+08:00"
+                },
+                {
+                  "table": "communications",
+                  "record_id": "COORD_EXTRA",
+                  "source_id": "S001",
+                  "csv_line": 53,
+                  "timestamp": "2026-01-01T08:12:00+08:00"
+                },
+                {
+                  "table": "communications",
+                  "record_id": "J2_0",
+                  "source_id": "S001",
+                  "csv_line": 228,
+                  "timestamp": "2026-01-01T08:51:00+08:00"
+                },
+                {
+                  "table": "communications",
+                  "record_id": "J2_1",
+                  "source_id": "S001",
+                  "csv_line": 229,
+                  "timestamp": "2026-01-01T08:52:00+08:00"
+                },
+                {
+                  "table": "communications",
+                  "record_id": "J2_2",
+                  "source_id": "S001",
+                  "csv_line": 230,
+                  "timestamp": "2026-01-01T08:53:00+08:00"
+                },
+                {
+                  "table": "communications",
+                  "record_id": "J3_0",
+                  "source_id": "S001",
+                  "csv_line": 231,
+                  "timestamp": "2026-01-01T08:59:00+08:00"
+                },
+                {
+                  "table": "communications",
+                  "record_id": "J3_1",
+                  "source_id": "S001",
+                  "csv_line": 232,
+                  "timestamp": "2026-01-01T09:00:00+08:00"
+                },
+                {
+                  "table": "communications",
+                  "record_id": "J3_2",
+                  "source_id": "S001",
+                  "csv_line": 233,
+                  "timestamp": "2026-01-01T09:01:00+08:00"
+                },
+                {
+                  "table": "communications",
+                  "record_id": "J4_0",
+                  "source_id": "S001",
+                  "csv_line": 234,
+                  "timestamp": "2026-01-01T09:07:00+08:00"
+                },
+                {
+                  "table": "communications",
+                  "record_id": "J4_1",
+                  "source_id": "S001",
+                  "csv_line": 235,
+                  "timestamp": "2026-01-01T09:08:00+08:00"
+                },
+                {
+                  "table": "communications",
+                  "record_id": "M1",
+                  "source_id": "S001",
+                  "csv_line": 2,
+                  "timestamp": "2026-01-01T08:01:00+08:00"
+                },
+                {
+                  "table": "communications",
+                  "record_id": "M2",
+                  "source_id": "S001",
+                  "csv_line": 3,
+                  "timestamp": "2026-01-01T08:05:00+08:00"
+                },
+                {
+                  "table": "communications",
+                  "record_id": "M4",
+                  "source_id": "S001",
+                  "csv_line": 5,
+                  "timestamp": "2026-01-01T08:13:00+08:00"
+                },
+                {
+                  "table": "communications",
+                  "record_id": "TECH_MSG0",
+                  "source_id": "S001",
+                  "csv_line": 50,
+                  "timestamp": "2026-01-01T08:10:00+08:00"
+                },
+                {
+                  "table": "communications",
+                  "record_id": "TECH_MSG1",
+                  "source_id": "S001",
+                  "csv_line": 51,
+                  "timestamp": "2026-01-01T08:15:00+08:00"
+                },
+                {
+                  "table": "communications",
+                  "record_id": "TECH_MSG2",
+                  "source_id": "S001",
+                  "csv_line": 52,
+                  "timestamp": "2026-01-01T08:20:00+08:00"
+                },
+                {
+                  "table": "identity_links",
+                  "record_id": "I1",
+                  "source_id": "S001",
+                  "csv_line": 2,
+                  "timestamp": "2026-01-01T07:00:00+08:00"
+                },
+                {
+                  "table": "network_events",
+                  "record_id": "NET001",
+                  "source_id": "S001",
+                  "csv_line": 2,
+                  "timestamp": "2026-01-01T08:00:00+08:00"
+                },
+                {
+                  "table": "network_events",
+                  "record_id": "NET004",
+                  "source_id": "S001",
+                  "csv_line": 5,
+                  "timestamp": "2026-01-01T08:12:00+08:00"
+                },
+                {
+                  "table": "network_events",
+                  "record_id": "NETV1",
+                  "source_id": "S001",
+                  "csv_line": 8,
+                  "timestamp": "2026-01-01T08:08:00+08:00"
+                },
+                {
+                  "table": "network_events",
+                  "record_id": "NETV2",
+                  "source_id": "S001",
+                  "csv_line": 9,
+                  "timestamp": "2026-01-01T08:11:00+08:00"
+                },
+                {
+                  "table": "network_events",
+                  "record_id": "NETV3",
+                  "source_id": "S001",
+                  "csv_line": 10,
+                  "timestamp": "2026-01-01T08:14:00+08:00"
+                },
+                {
+                  "table": "relations",
+                  "record_id": "R1",
+                  "source_id": "S001",
+                  "csv_line": 2,
+                  "timestamp": "2026-01-01T07:30:00+08:00"
+                },
+                {
+                  "table": "shipments",
+                  "record_id": "G001",
+                  "source_id": "S001",
+                  "csv_line": 2,
+                  "timestamp": "2026-01-01T08:30:00+08:00"
+                }
+              ]
+            },
+            {
+              "node": "actor:A4",
+              "label": "主体E",
+              "gradient_times_input": 3.0540072917938232,
+              "sources": [
+                {
+                  "table": "communications",
+                  "record_id": "BG_A4_0",
+                  "source_id": "S001",
+                  "csv_line": 59,
+                  "timestamp": "2026-01-01T08:10:00+08:00"
+                },
+                {
+                  "table": "communications",
+                  "record_id": "BG_A5_0",
+                  "source_id": "S001",
+                  "csv_line": 61,
+                  "timestamp": "2026-01-01T09:01:00+08:00"
+                },
+                {
+                  "table": "communications",
+                  "record_id": "BG_A5_1",
+                  "source_id": "S001",
+                  "csv_line": 62,
+                  "timestamp": "2026-01-01T09:32:00+08:00"
+                },
+                {
+                  "table": "communications",
+                  "record_id": "BG_A6_0",
+                  "source_id": "S001",
+                  "csv_line": 63,
+                  "timestamp": "2026-01-01T08:55:00+08:00"
+                },
+                {
+                  "table": "communications",
+                  "record_id": "J0_0",
+                  "source_id": "S001",
+                  "csv_line": 223,
+                  "timestamp": "2026-01-01T08:35:00+08:00"
+                },
+                {
+                  "table": "communications",
+                  "record_id": "J0_1",
+                  "source_id": "S001",
+                  "csv_line": 224,
+                  "timestamp": "2026-01-01T08:36:00+08:00"
+                },
+                {
+                  "table": "communications",
+                  "record_id": "J1_0",
+                  "source_id": "S001",
+                  "csv_line": 225,
+                  "timestamp": "2026-01-01T08:43:00+08:00"
+                },
+                {
+                  "table": "communications",
+                  "record_id": "J1_1",
+                  "source_id": "S001",
+                  "csv_line": 226,
+                  "timestamp": "2026-01-01T08:44:00+08:00"
+                },
+                {
+                  "table": "communications",
+                  "record_id": "J1_2",
+                  "source_id": "S001",
+                  "csv_line": 227,
+                  "timestamp": "2026-01-01T08:45:00+08:00"
+                },
+                {
+                  "table": "communications",
+                  "record_id": "J4_0",
+                  "source_id": "S001",
+                  "csv_line": 234,
+                  "timestamp": "2026-01-01T09:07:00+08:00"
+                },
+                {
+                  "table": "communications",
+                  "record_id": "J4_1",
+                  "source_id": "S001",
+                  "csv_line": 235,
+                  "timestamp": "2026-01-01T09:08:00+08:00"
+                },
+                {
+                  "table": "communications",
+                  "record_id": "TECH_MSG0",
+                  "source_id": "S001",
+                  "csv_line": 50,
+                  "timestamp": "2026-01-01T08:10:00+08:00"
+                },
+                {
+                  "table": "communications",
+                  "record_id": "TECH_MSG1",
+                  "source_id": "S001",
+                  "csv_line": 51,
+                  "timestamp": "2026-01-01T08:15:00+08:00"
+                },
+                {
+                  "table": "communications",
+                  "record_id": "TECH_MSG2",
+                  "source_id": "S001",
+                  "csv_line": 52,
+                  "timestamp": "2026-01-01T08:20:00+08:00"
+                },
+                {
+                  "table": "network_events",
+                  "record_id": "TECH0",
+                  "source_id": "S001",
+                  "csv_line": 110,
+                  "timestamp": "2026-01-01T08:05:00+08:00"
+                },
+                {
+                  "table": "network_events",
+                  "record_id": "TECH1",
+                  "source_id": "S001",
+                  "csv_line": 111,
+                  "timestamp": "2026-01-01T08:07:00+08:00"
+                },
+                {
+                  "table": "network_events",
+                  "record_id": "TECH4",
+                  "source_id": "S001",
+                  "csv_line": 112,
+                  "timestamp": "2026-01-01T08:13:00+08:00"
+                },
+                {
+                  "table": "network_events",
+                  "record_id": "TECH5",
+                  "source_id": "S001",
+                  "csv_line": 113,
+                  "timestamp": "2026-01-01T08:15:00+08:00"
+                }
+              ]
+            },
+            {
+              "node": "actor:A1",
+              "label": "主体F",
+              "gradient_times_input": 1.9089266061782837,
+              "sources": [
+                {
+                  "table": "communications",
+                  "record_id": "BG_A2_0",
+                  "source_id": "S001",
+                  "csv_line": 57,
+                  "timestamp": "2026-01-01T09:12:00+08:00"
+                },
+                {
+                  "table": "communications",
+                  "record_id": "BG_A6_0",
+                  "source_id": "S001",
+                  "csv_line": 63,
+                  "timestamp": "2026-01-01T08:55:00+08:00"
+                },
+                {
+                  "table": "communications",
+                  "record_id": "BG_A6_1",
+                  "source_id": "S001",
+                  "csv_line": 64,
+                  "timestamp": "2026-01-01T08:57:00+08:00"
+                },
+                {
+                  "table": "communications",
+                  "record_id": "COORD_EXTRA",
+                  "source_id": "S001",
+                  "csv_line": 53,
+                  "timestamp": "2026-01-01T08:12:00+08:00"
+                },
+                {
+                  "table": "communications",
+                  "record_id": "J0_0",
+                  "source_id": "S001",
+                  "csv_line": 223,
+                  "timestamp": "2026-01-01T08:35:00+08:00"
+                },
+                {
+                  "table": "communications",
+                  "record_id": "J0_1",
+                  "source_id": "S001",
+                  "csv_line": 224,
+                  "timestamp": "2026-01-01T08:36:00+08:00"
+                },
+                {
+                  "table": "network_events",
+                  "record_id": "BGIP_A6_0",
+                  "source_id": "S001",
+                  "csv_line": 115,
+                  "timestamp": "2026-01-01T08:45:00+08:00"
+                },
+                {
+                  "table": "network_events",
+                  "record_id": "BGIP_A6_1",
+                  "source_id": "S001",
+                  "csv_line": 116,
+                  "timestamp": "2026-01-01T09:26:00+08:00"
+                },
+                {
+                  "table": "shipments",
+                  "record_id": "G_EXTRA",
+                  "source_id": "S001",
+                  "csv_line": 26,
+                  "timestamp": "2026-01-01T09:30:00+08:00"
+                },
+                {
+                  "table": "shipments",
+                  "record_id": "G_EXTRA2",
+                  "source_id": "S001",
+                  "csv_line": 27,
+                  "timestamp": "2026-01-01T10:10:00+08:00"
+                }
+              ]
+            },
+            {
+              "node": "wallet:TRON:DEMO14_C001-W00",
+              "label": "DEMO14_C001-W00",
+              "gradient_times_input": 1.8871934413909912,
+              "sources": [
+                {
+                  "table": "funds",
+                  "record_id": "T001",
+                  "source_id": "S001",
+                  "csv_line": 2,
+                  "timestamp": "2026-01-01T08:00:00+08:00"
+                },
+                {
+                  "table": "identity_links",
+                  "record_id": "I1",
+                  "source_id": "S001",
+                  "csv_line": 2,
+                  "timestamp": "2026-01-01T07:00:00+08:00"
+                },
+                {
+                  "table": "network_events",
+                  "record_id": "NET001",
+                  "source_id": "S001",
+                  "csv_line": 2,
+                  "timestamp": "2026-01-01T08:00:00+08:00"
+                },
+                {
+                  "table": "network_events",
+                  "record_id": "NET004",
+                  "source_id": "S001",
+                  "csv_line": 5,
+                  "timestamp": "2026-01-01T08:12:00+08:00"
+                },
+                {
+                  "table": "network_events",
+                  "record_id": "NETV1",
+                  "source_id": "S001",
+                  "csv_line": 8,
+                  "timestamp": "2026-01-01T08:08:00+08:00"
+                },
+                {
+                  "table": "network_events",
+                  "record_id": "NETV2",
+                  "source_id": "S001",
+                  "csv_line": 9,
+                  "timestamp": "2026-01-01T08:11:00+08:00"
+                },
+                {
+                  "table": "network_events",
+                  "record_id": "NETV3",
+                  "source_id": "S001",
+                  "csv_line": 10,
+                  "timestamp": "2026-01-01T08:14:00+08:00"
+                }
+              ]
+            },
+            {
+              "node": "actor:A2",
+              "label": "主体C",
+              "gradient_times_input": 1.6248011589050293,
+              "sources": [
+                {
+                  "table": "communications",
+                  "record_id": "BG_A3_0",
+                  "source_id": "S001",
+                  "csv_line": 58,
+                  "timestamp": "2026-01-01T09:08:00+08:00"
+                },
+                {
+                  "table": "communications",
+                  "record_id": "FUND_MSG",
+                  "source_id": "S001",
+                  "csv_line": 54,
+                  "timestamp": "2026-01-01T08:16:00+08:00"
+                },
+                {
+                  "table": "communications",
+                  "record_id": "J2_0",
+                  "source_id": "S001",
+                  "csv_line": 228,
+                  "timestamp": "2026-01-01T08:51:00+08:00"
+                },
+                {
+                  "table": "communications",
+                  "record_id": "J2_1",
+                  "source_id": "S001",
+                  "csv_line": 229,
+                  "timestamp": "2026-01-01T08:52:00+08:00"
+                },
+                {
+                  "table": "communications",
+                  "record_id": "J2_2",
+                  "source_id": "S001",
+                  "csv_line": 230,
+                  "timestamp": "2026-01-01T08:53:00+08:00"
+                },
+                {
+                  "table": "communications",
+                  "record_id": "M2",
+                  "source_id": "S001",
+                  "csv_line": 3,
+                  "timestamp": "2026-01-01T08:05:00+08:00"
+                },
+                {
+                  "table": "communications",
+                  "record_id": "M3",
+                  "source_id": "S001",
+                  "csv_line": 4,
+                  "timestamp": "2026-01-01T08:09:00+08:00"
+                },
+                {
+                  "table": "identity_links",
+                  "record_id": "I3",
+                  "source_id": "S001",
+                  "csv_line": 4,
+                  "timestamp": "2026-01-01T07:00:00+08:00"
+                },
+                {
+                  "table": "network_events",
+                  "record_id": "BGIP_A3_0",
+                  "source_id": "S001",
+                  "csv_line": 114,
+                  "timestamp": "2026-01-01T09:10:00+08:00"
+                },
+                {
+                  "table": "network_events",
+                  "record_id": "NET003",
+                  "source_id": "S001",
+                  "csv_line": 4,
+                  "timestamp": "2026-01-01T08:08:00+08:00"
+                },
+                {
+                  "table": "network_events",
+                  "record_id": "NET006",
+                  "source_id": "S001",
+                  "csv_line": 7,
+                  "timestamp": "2026-01-01T08:20:00+08:00"
+                },
+                {
+                  "table": "shipments",
+                  "record_id": "G002",
+                  "source_id": "S001",
+                  "csv_line": 3,
+                  "timestamp": "2026-01-01T09:00:00+08:00"
+                }
+              ]
+            },
+            {
+              "node": "actor:A5",
+              "label": "主体D",
+              "gradient_times_input": 1.046810269355774,
+              "sources": [
+                {
+                  "table": "communications",
+                  "record_id": "BG_A1_0",
+                  "source_id": "S001",
+                  "csv_line": 55,
+                  "timestamp": "2026-01-01T08:48:00+08:00"
+                },
+                {
+                  "table": "communications",
+                  "record_id": "BG_A1_1",
+                  "source_id": "S001",
+                  "csv_line": 56,
+                  "timestamp": "2026-01-01T09:21:00+08:00"
+                },
+                {
+                  "table": "communications",
+                  "record_id": "BG_A3_0",
+                  "source_id": "S001",
+                  "csv_line": 58,
+                  "timestamp": "2026-01-01T09:08:00+08:00"
+                },
+                {
+                  "table": "communications",
+                  "record_id": "BG_A4_0",
+                  "source_id": "S001",
+                  "csv_line": 59,
+                  "timestamp": "2026-01-01T08:10:00+08:00"
+                },
+                {
+                  "table": "communications",
+                  "record_id": "BG_A4_1",
+                  "source_id": "S001",
+                  "csv_line": 60,
+                  "timestamp": "2026-01-01T08:28:00+08:00"
+                },
+                {
+                  "table": "communications",
+                  "record_id": "BG_A5_1",
+                  "source_id": "S001",
+                  "csv_line": 62,
+                  "timestamp": "2026-01-01T09:32:00+08:00"
+                },
+                {
+                  "table": "communications",
+                  "record_id": "J1_0",
+                  "source_id": "S001",
+                  "csv_line": 225,
+                  "timestamp": "2026-01-01T08:43:00+08:00"
+                },
+                {
+                  "table": "communications",
+                  "record_id": "J1_1",
+                  "source_id": "S001",
+                  "csv_line": 226,
+                  "timestamp": "2026-01-01T08:44:00+08:00"
+                },
+                {
+                  "table": "communications",
+                  "record_id": "J1_2",
+                  "source_id": "S001",
+                  "csv_line": 227,
+                  "timestamp": "2026-01-01T08:45:00+08:00"
+                },
+                {
+                  "table": "communications",
+                  "record_id": "M4",
+                  "source_id": "S001",
+                  "csv_line": 5,
+                  "timestamp": "2026-01-01T08:13:00+08:00"
+                },
+                {
+                  "table": "shipments",
+                  "record_id": "G001",
+                  "source_id": "S001",
+                  "csv_line": 2,
+                  "timestamp": "2026-01-01T08:30:00+08:00"
+                },
+                {
+                  "table": "shipments",
+                  "record_id": "G002",
+                  "source_id": "S001",
+                  "csv_line": 3,
+                  "timestamp": "2026-01-01T09:00:00+08:00"
+                },
+                {
+                  "table": "shipments",
+                  "record_id": "G_EXTRA",
+                  "source_id": "S001",
+                  "csv_line": 26,
+                  "timestamp": "2026-01-01T09:30:00+08:00"
+                },
+                {
+                  "table": "shipments",
+                  "record_id": "G_EXTRA2",
+                  "source_id": "S001",
+                  "csv_line": 27,
+                  "timestamp": "2026-01-01T10:10:00+08:00"
+                }
+              ]
+            },
+            {
+              "node": "device:D2",
+              "label": "D2",
+              "gradient_times_input": 0.8587429523468018,
+              "sources": [
+                {
+                  "table": "communications",
+                  "record_id": "FUND_MSG",
+                  "source_id": "S001",
+                  "csv_line": 54,
+                  "timestamp": "2026-01-01T08:16:00+08:00"
+                },
+                {
+                  "table": "communications",
+                  "record_id": "M3",
+                  "source_id": "S001",
+                  "csv_line": 4,
+                  "timestamp": "2026-01-01T08:09:00+08:00"
+                },
+                {
+                  "table": "network_events",
+                  "record_id": "NET002",
+                  "source_id": "S001",
+                  "csv_line": 3,
+                  "timestamp": "2026-01-01T08:04:00+08:00"
+                },
+                {
+                  "table": "network_events",
+                  "record_id": "NET005",
+                  "source_id": "S001",
+                  "csv_line": 6,
+                  "timestamp": "2026-01-01T08:16:00+08:00"
+                }
+              ]
+            },
+            {
+              "node": "device:D_BG_A6",
+              "label": "D_BG_A6",
+              "gradient_times_input": 0.6495614647865295,
+              "sources": [
+                {
+                  "table": "communications",
+                  "record_id": "BG_A6_0",
+                  "source_id": "S001",
+                  "csv_line": 63,
+                  "timestamp": "2026-01-01T08:55:00+08:00"
+                },
+                {
+                  "table": "communications",
+                  "record_id": "BG_A6_1",
+                  "source_id": "S001",
+                  "csv_line": 64,
+                  "timestamp": "2026-01-01T08:57:00+08:00"
+                },
+                {
+                  "table": "network_events",
+                  "record_id": "BGIP_A6_0",
+                  "source_id": "S001",
+                  "csv_line": 115,
+                  "timestamp": "2026-01-01T08:45:00+08:00"
+                },
+                {
+                  "table": "network_events",
+                  "record_id": "BGIP_A6_1",
+                  "source_id": "S001",
+                  "csv_line": 116,
+                  "timestamp": "2026-01-01T09:26:00+08:00"
+                }
+              ]
+            }
+          ],
+          "limitations": "空图使用学习到的零池化先验。删除流会改变输入分布；Shapley、梯度及注意力是模型解释，不是因果、控制或违法证明。"
+        },
+        "multiobjective": {
+          "weights": {
+            "coverage": 0.3,
+            "traceability": 0.3,
+            "uncertainty": 0.2,
+            "impact": 0.2
+          },
+          "candidates": [
+            {
+              "id": "CTRL2",
+              "target": "人员联系",
+              "question": "核验定向联系 actor:A6 → actor:A3",
+              "objectives": {
+                "coverage": 0.75,
+                "traceability": 1.0,
+                "uncertainty": 0.0,
+                "impact": 1.0
+              },
+              "sources": [
+                {
+                  "table": "relations",
+                  "record_id": "R1",
+                  "source_id": "S001",
+                  "timestamp": "2026-01-01T07:30:00+08:00",
+                  "csv_line": 2
+                },
+                {
+                  "table": "communications",
+                  "record_id": "M1",
+                  "source_id": "S001",
+                  "timestamp": "2026-01-01T08:01:00+08:00",
+                  "csv_line": 2
+                },
+                {
+                  "table": "shipments",
+                  "record_id": "G001",
+                  "source_id": "S001",
+                  "timestamp": "2026-01-01T08:30:00+08:00",
+                  "csv_line": 2
+                },
+                {
+                  "table": "communications",
+                  "record_id": "J3_0",
+                  "source_id": "S001",
+                  "timestamp": "2026-01-01T08:59:00+08:00",
+                  "csv_line": 231
+                },
+                {
+                  "table": "communications",
+                  "record_id": "J3_1",
+                  "source_id": "S001",
+                  "timestamp": "2026-01-01T09:00:00+08:00",
+                  "csv_line": 232
+                },
+                {
+                  "table": "communications",
+                  "record_id": "J3_2",
+                  "source_id": "S001",
+                  "timestamp": "2026-01-01T09:01:00+08:00",
+                  "csv_line": 233
+                }
+              ],
+              "weighted_priority": 0.725,
+              "dominated_by": [],
+              "pareto_front": true,
+              "rank_range": [
+                1,
+                1
+              ]
+            },
+            {
+              "id": "ORDER_O001",
+              "target": "产业",
+              "question": "补充订单来源 O001",
+              "objectives": {
+                "coverage": 1.0,
+                "traceability": 0.3333333333333333,
+                "uncertainty": 0.25,
+                "impact": 0.8326
+              },
+              "sources": [
+                {
+                  "timestamp": "2026-01-01T07:00:00+08:00",
+                  "effective_from": "2026-01-01T07:00:00+08:00",
+                  "lineage_verified": true,
+                  "flow": "人员流",
+                  "table": "identity_links",
+                  "record_id": "I3",
+                  "source_id": "S001",
+                  "csv_line": 4,
+                  "original_line": 4,
+                  "source_title": "合成记录说明",
+                  "reference": "evidence/DEMO14_C001.txt",
+                  "association": "经核实身份关联"
+                },
+                {
+                  "timestamp": "2026-01-01T07:00:00+08:00",
+                  "effective_from": "2026-01-01T07:00:00+08:00",
+                  "lineage_verified": true,
+                  "flow": "人员流",
+                  "table": "identity_links",
+                  "record_id": "I2",
+                  "source_id": "S001",
+                  "csv_line": 3,
+                  "original_line": 3,
+                  "source_title": "合成记录说明",
+                  "reference": "evidence/DEMO14_C001.txt",
+                  "association": "经核实身份关联"
+                },
+                {
+                  "timestamp": "2026-01-01T07:00:00+08:00",
+                  "effective_from": "2026-01-01T07:00:00+08:00",
+                  "lineage_verified": true,
+                  "flow": "人员流",
+                  "table": "identity_links",
+                  "record_id": "I1",
+                  "source_id": "S001",
+                  "csv_line": 2,
+                  "original_line": 2,
+                  "source_title": "合成记录说明",
+                  "reference": "evidence/DEMO14_C001.txt",
+                  "association": "经核实身份关联"
+                },
+                {
+                  "timestamp": "2026-01-01T08:00:00+08:00",
+                  "effective_from": "2026-01-01T08:00:00+08:00",
+                  "lineage_verified": true,
+                  "flow": "信息流",
+                  "table": "network_events",
+                  "record_id": "NET001",
+                  "source_id": "S001",
+                  "csv_line": 2,
+                  "original_line": 2,
+                  "source_title": "合成记录说明",
+                  "reference": "evidence/DEMO14_C001.txt",
+                  "association": "参与主体/付款账户在窗口内的背景记录"
+                },
+                {
+                  "timestamp": "2026-01-01T08:00:00+08:00",
+                  "effective_from": "2026-01-01T08:00:00+08:00",
+                  "lineage_verified": true,
+                  "flow": "资金流",
+                  "table": "funds",
+                  "record_id": "T001",
+                  "source_id": "S001",
+                  "csv_line": 2,
+                  "original_line": 2,
+                  "source_title": "合成记录说明",
+                  "reference": "evidence/DEMO14_C001.txt",
+                  "association": "同订单直接关联"
+                },
+                {
+                  "timestamp": "2026-01-01T08:01:00+08:00",
+                  "effective_from": "2026-01-01T08:01:00+08:00",
+                  "lineage_verified": true,
+                  "flow": "信息流",
+                  "table": "communications",
+                  "record_id": "M1",
+                  "source_id": "S001",
+                  "csv_line": 2,
+                  "original_line": 2,
+                  "source_title": "合成记录说明",
+                  "reference": "evidence/DEMO14_C001.txt",
+                  "association": "参与主体/付款账户在窗口内的背景记录"
+                },
+                {
+                  "timestamp": "2026-01-01T08:04:00+08:00",
+                  "effective_from": "2026-01-01T08:04:00+08:00",
+                  "lineage_verified": true,
+                  "flow": "信息流",
+                  "table": "network_events",
+                  "record_id": "NET002",
+                  "source_id": "S001",
+                  "csv_line": 3,
+                  "original_line": 3,
+                  "source_title": "合成记录说明",
+                  "reference": "evidence/DEMO14_C001.txt",
+                  "association": "参与主体/付款账户在窗口内的背景记录"
+                },
+                {
+                  "timestamp": "2026-01-01T08:05:00+08:00",
+                  "effective_from": "2026-01-01T08:05:00+08:00",
+                  "lineage_verified": true,
+                  "flow": "信息流",
+                  "table": "communications",
+                  "record_id": "M2",
+                  "source_id": "S001",
+                  "csv_line": 3,
+                  "original_line": 3,
+                  "source_title": "合成记录说明",
+                  "reference": "evidence/DEMO14_C001.txt",
+                  "association": "参与主体/付款账户在窗口内的背景记录"
+                },
+                {
+                  "timestamp": "2026-01-01T08:08:00+08:00",
+                  "effective_from": "2026-01-01T08:08:00+08:00",
+                  "lineage_verified": true,
+                  "flow": "信息流",
+                  "table": "network_events",
+                  "record_id": "NET003",
+                  "source_id": "S001",
+                  "csv_line": 4,
+                  "original_line": 4,
+                  "source_title": "合成记录说明",
+                  "reference": "evidence/DEMO14_C001.txt",
+                  "association": "参与主体/付款账户在窗口内的背景记录"
+                },
+                {
+                  "timestamp": "2026-01-01T08:08:00+08:00",
+                  "effective_from": "2026-01-01T08:08:00+08:00",
+                  "lineage_verified": true,
+                  "flow": "信息流",
+                  "table": "network_events",
+                  "record_id": "NETV1",
+                  "source_id": "S001",
+                  "csv_line": 8,
+                  "original_line": 8,
+                  "source_title": "合成记录说明",
+                  "reference": "evidence/DEMO14_C001.txt",
+                  "association": "参与主体/付款账户在窗口内的背景记录"
+                },
+                {
+                  "timestamp": "2026-01-01T08:09:00+08:00",
+                  "effective_from": "2026-01-01T08:09:00+08:00",
+                  "lineage_verified": true,
+                  "flow": "信息流",
+                  "table": "communications",
+                  "record_id": "M3",
+                  "source_id": "S001",
+                  "csv_line": 4,
+                  "original_line": 4,
+                  "source_title": "合成记录说明",
+                  "reference": "evidence/DEMO14_C001.txt",
+                  "association": "参与主体/付款账户在窗口内的背景记录"
+                },
+                {
+                  "timestamp": "2026-01-01T08:10:00+08:00",
+                  "effective_from": "2026-01-01T08:10:00+08:00",
+                  "lineage_verified": true,
+                  "flow": "信息流",
+                  "table": "communications",
+                  "record_id": "BG_A4_0",
+                  "source_id": "S001",
+                  "csv_line": 59,
+                  "original_line": 59,
+                  "source_title": "合成记录说明",
+                  "reference": "evidence/DEMO14_C001.txt",
+                  "association": "参与主体/付款账户在窗口内的背景记录"
+                },
+                {
+                  "timestamp": "2026-01-01T08:10:00+08:00",
+                  "effective_from": "2026-01-01T08:10:00+08:00",
+                  "lineage_verified": true,
+                  "flow": "信息流",
+                  "table": "communications",
+                  "record_id": "TECH_MSG0",
+                  "source_id": "S001",
+                  "csv_line": 50,
+                  "original_line": 50,
+                  "source_title": "合成记录说明",
+                  "reference": "evidence/DEMO14_C001.txt",
+                  "association": "参与主体/付款账户在窗口内的背景记录"
+                },
+                {
+                  "timestamp": "2026-01-01T08:11:00+08:00",
+                  "effective_from": "2026-01-01T08:11:00+08:00",
+                  "lineage_verified": true,
+                  "flow": "信息流",
+                  "table": "network_events",
+                  "record_id": "NETV2",
+                  "source_id": "S001",
+                  "csv_line": 9,
+                  "original_line": 9,
+                  "source_title": "合成记录说明",
+                  "reference": "evidence/DEMO14_C001.txt",
+                  "association": "参与主体/付款账户在窗口内的背景记录"
+                },
+                {
+                  "timestamp": "2026-01-01T08:12:00+08:00",
+                  "effective_from": "2026-01-01T08:12:00+08:00",
+                  "lineage_verified": true,
+                  "flow": "信息流",
+                  "table": "network_events",
+                  "record_id": "NET004",
+                  "source_id": "S001",
+                  "csv_line": 5,
+                  "original_line": 5,
+                  "source_title": "合成记录说明",
+                  "reference": "evidence/DEMO14_C001.txt",
+                  "association": "参与主体/付款账户在窗口内的背景记录"
+                },
+                {
+                  "timestamp": "2026-01-01T08:12:00+08:00",
+                  "effective_from": "2026-01-01T08:12:00+08:00",
+                  "lineage_verified": true,
+                  "flow": "信息流",
+                  "table": "communications",
+                  "record_id": "COORD_EXTRA",
+                  "source_id": "S001",
+                  "csv_line": 53,
+                  "original_line": 53,
+                  "source_title": "合成记录说明",
+                  "reference": "evidence/DEMO14_C001.txt",
+                  "association": "参与主体/付款账户在窗口内的背景记录"
+                },
+                {
+                  "timestamp": "2026-01-01T08:13:00+08:00",
+                  "effective_from": "2026-01-01T08:13:00+08:00",
+                  "lineage_verified": true,
+                  "flow": "信息流",
+                  "table": "communications",
+                  "record_id": "M4",
+                  "source_id": "S001",
+                  "csv_line": 5,
+                  "original_line": 5,
+                  "source_title": "合成记录说明",
+                  "reference": "evidence/DEMO14_C001.txt",
+                  "association": "参与主体/付款账户在窗口内的背景记录"
+                },
+                {
+                  "timestamp": "2026-01-01T08:14:00+08:00",
+                  "effective_from": "2026-01-01T08:14:00+08:00",
+                  "lineage_verified": true,
+                  "flow": "信息流",
+                  "table": "network_events",
+                  "record_id": "NETV3",
+                  "source_id": "S001",
+                  "csv_line": 10,
+                  "original_line": 10,
+                  "source_title": "合成记录说明",
+                  "reference": "evidence/DEMO14_C001.txt",
+                  "association": "参与主体/付款账户在窗口内的背景记录"
+                },
+                {
+                  "timestamp": "2026-01-01T08:15:00+08:00",
+                  "effective_from": "2026-01-01T08:15:00+08:00",
+                  "lineage_verified": true,
+                  "flow": "信息流",
+                  "table": "communications",
+                  "record_id": "TECH_MSG1",
+                  "source_id": "S001",
+                  "csv_line": 51,
+                  "original_line": 51,
+                  "source_title": "合成记录说明",
+                  "reference": "evidence/DEMO14_C001.txt",
+                  "association": "参与主体/付款账户在窗口内的背景记录"
+                },
+                {
+                  "timestamp": "2026-01-01T08:16:00+08:00",
+                  "effective_from": "2026-01-01T08:16:00+08:00",
+                  "lineage_verified": true,
+                  "flow": "信息流",
+                  "table": "network_events",
+                  "record_id": "NET005",
+                  "source_id": "S001",
+                  "csv_line": 6,
+                  "original_line": 6,
+                  "source_title": "合成记录说明",
+                  "reference": "evidence/DEMO14_C001.txt",
+                  "association": "参与主体/付款账户在窗口内的背景记录"
+                },
+                {
+                  "timestamp": "2026-01-01T08:16:00+08:00",
+                  "effective_from": "2026-01-01T08:16:00+08:00",
+                  "lineage_verified": true,
+                  "flow": "信息流",
+                  "table": "communications",
+                  "record_id": "FUND_MSG",
+                  "source_id": "S001",
+                  "csv_line": 54,
+                  "original_line": 54,
+                  "source_title": "合成记录说明",
+                  "reference": "evidence/DEMO14_C001.txt",
+                  "association": "参与主体/付款账户在窗口内的背景记录"
+                },
+                {
+                  "timestamp": "2026-01-01T08:20:00+08:00",
+                  "effective_from": "2026-01-01T08:20:00+08:00",
+                  "lineage_verified": true,
+                  "flow": "信息流",
+                  "table": "network_events",
+                  "record_id": "NET006",
+                  "source_id": "S001",
+                  "csv_line": 7,
+                  "original_line": 7,
+                  "source_title": "合成记录说明",
+                  "reference": "evidence/DEMO14_C001.txt",
+                  "association": "参与主体/付款账户在窗口内的背景记录"
+                },
+                {
+                  "timestamp": "2026-01-01T08:20:00+08:00",
+                  "effective_from": "2026-01-01T08:20:00+08:00",
+                  "lineage_verified": true,
+                  "flow": "信息流",
+                  "table": "communications",
+                  "record_id": "TECH_MSG2",
+                  "source_id": "S001",
+                  "csv_line": 52,
+                  "original_line": 52,
+                  "source_title": "合成记录说明",
+                  "reference": "evidence/DEMO14_C001.txt",
+                  "association": "参与主体/付款账户在窗口内的背景记录"
+                },
+                {
+                  "timestamp": "2026-01-01T08:28:00+08:00",
+                  "effective_from": "2026-01-01T08:28:00+08:00",
+                  "lineage_verified": true,
+                  "flow": "信息流",
+                  "table": "communications",
+                  "record_id": "BG_A4_1",
+                  "source_id": "S001",
+                  "csv_line": 60,
+                  "original_line": 60,
+                  "source_title": "合成记录说明",
+                  "reference": "evidence/DEMO14_C001.txt",
+                  "association": "参与主体/付款账户在窗口内的背景记录"
+                },
+                {
+                  "timestamp": "2026-01-01T08:30:00+08:00",
+                  "effective_from": "2026-01-01T08:30:00+08:00",
+                  "lineage_verified": true,
+                  "flow": "产业流",
+                  "table": "shipments",
+                  "record_id": "G001",
+                  "source_id": "S001",
+                  "csv_line": 2,
+                  "original_line": 2,
+                  "source_title": "合成记录说明",
+                  "reference": "evidence/DEMO14_C001.txt",
+                  "association": "同订单直接关联"
+                },
+                {
+                  "timestamp": "2026-01-01T08:43:00+08:00",
+                  "effective_from": "2026-01-01T08:43:00+08:00",
+                  "lineage_verified": true,
+                  "flow": "信息流",
+                  "table": "communications",
+                  "record_id": "J1_0",
+                  "source_id": "S001",
+                  "csv_line": 225,
+                  "original_line": 225,
+                  "source_title": "合成记录说明",
+                  "reference": "evidence/DEMO14_C001.txt",
+                  "association": "参与主体/付款账户在窗口内的背景记录"
+                },
+                {
+                  "timestamp": "2026-01-01T08:44:00+08:00",
+                  "effective_from": "2026-01-01T08:44:00+08:00",
+                  "lineage_verified": true,
+                  "flow": "信息流",
+                  "table": "communications",
+                  "record_id": "J1_1",
+                  "source_id": "S001",
+                  "csv_line": 226,
+                  "original_line": 226,
+                  "source_title": "合成记录说明",
+                  "reference": "evidence/DEMO14_C001.txt",
+                  "association": "参与主体/付款账户在窗口内的背景记录"
+                },
+                {
+                  "timestamp": "2026-01-01T08:45:00+08:00",
+                  "effective_from": "2026-01-01T08:45:00+08:00",
+                  "lineage_verified": true,
+                  "flow": "信息流",
+                  "table": "communications",
+                  "record_id": "J1_2",
+                  "source_id": "S001",
+                  "csv_line": 227,
+                  "original_line": 227,
+                  "source_title": "合成记录说明",
+                  "reference": "evidence/DEMO14_C001.txt",
+                  "association": "参与主体/付款账户在窗口内的背景记录"
+                },
+                {
+                  "timestamp": "2026-01-01T08:48:00+08:00",
+                  "effective_from": "2026-01-01T08:48:00+08:00",
+                  "lineage_verified": true,
+                  "flow": "信息流",
+                  "table": "communications",
+                  "record_id": "BG_A1_0",
+                  "source_id": "S001",
+                  "csv_line": 55,
+                  "original_line": 55,
+                  "source_title": "合成记录说明",
+                  "reference": "evidence/DEMO14_C001.txt",
+                  "association": "参与主体/付款账户在窗口内的背景记录"
+                },
+                {
+                  "timestamp": "2026-01-01T08:51:00+08:00",
+                  "effective_from": "2026-01-01T08:51:00+08:00",
+                  "lineage_verified": true,
+                  "flow": "信息流",
+                  "table": "communications",
+                  "record_id": "J2_0",
+                  "source_id": "S001",
+                  "csv_line": 228,
+                  "original_line": 228,
+                  "source_title": "合成记录说明",
+                  "reference": "evidence/DEMO14_C001.txt",
+                  "association": "参与主体/付款账户在窗口内的背景记录"
+                },
+                {
+                  "timestamp": "2026-01-01T08:52:00+08:00",
+                  "effective_from": "2026-01-01T08:52:00+08:00",
+                  "lineage_verified": true,
+                  "flow": "信息流",
+                  "table": "communications",
+                  "record_id": "J2_1",
+                  "source_id": "S001",
+                  "csv_line": 229,
+                  "original_line": 229,
+                  "source_title": "合成记录说明",
+                  "reference": "evidence/DEMO14_C001.txt",
+                  "association": "参与主体/付款账户在窗口内的背景记录"
+                },
+                {
+                  "timestamp": "2026-01-01T08:53:00+08:00",
+                  "effective_from": "2026-01-01T08:53:00+08:00",
+                  "lineage_verified": true,
+                  "flow": "信息流",
+                  "table": "communications",
+                  "record_id": "J2_2",
+                  "source_id": "S001",
+                  "csv_line": 230,
+                  "original_line": 230,
+                  "source_title": "合成记录说明",
+                  "reference": "evidence/DEMO14_C001.txt",
+                  "association": "参与主体/付款账户在窗口内的背景记录"
+                },
+                {
+                  "timestamp": "2026-01-01T08:57:00+08:00",
+                  "effective_from": "2026-01-01T08:57:00+08:00",
+                  "lineage_verified": true,
+                  "flow": "信息流",
+                  "table": "communications",
+                  "record_id": "BG_A6_1",
+                  "source_id": "S001",
+                  "csv_line": 64,
+                  "original_line": 64,
+                  "source_title": "合成记录说明",
+                  "reference": "evidence/DEMO14_C001.txt",
+                  "association": "参与主体/付款账户在窗口内的背景记录"
+                },
+                {
+                  "timestamp": "2026-01-01T08:59:00+08:00",
+                  "effective_from": "2026-01-01T08:59:00+08:00",
+                  "lineage_verified": true,
+                  "flow": "信息流",
+                  "table": "communications",
+                  "record_id": "J3_0",
+                  "source_id": "S001",
+                  "csv_line": 231,
+                  "original_line": 231,
+                  "source_title": "合成记录说明",
+                  "reference": "evidence/DEMO14_C001.txt",
+                  "association": "参与主体/付款账户在窗口内的背景记录"
+                },
+                {
+                  "timestamp": "2026-01-01T09:00:00+08:00",
+                  "effective_from": "2026-01-01T09:00:00+08:00",
+                  "lineage_verified": true,
+                  "flow": "产业流",
+                  "table": "shipments",
+                  "record_id": "G002",
+                  "source_id": "S001",
+                  "csv_line": 3,
+                  "original_line": 3,
+                  "source_title": "合成记录说明",
+                  "reference": "evidence/DEMO14_C001.txt",
+                  "association": "同订单直接关联"
+                },
+                {
+                  "timestamp": "2026-01-01T09:00:00+08:00",
+                  "effective_from": "2026-01-01T09:00:00+08:00",
+                  "lineage_verified": true,
+                  "flow": "信息流",
+                  "table": "communications",
+                  "record_id": "J3_1",
+                  "source_id": "S001",
+                  "csv_line": 232,
+                  "original_line": 232,
+                  "source_title": "合成记录说明",
+                  "reference": "evidence/DEMO14_C001.txt",
+                  "association": "参与主体/付款账户在窗口内的背景记录"
+                }
+              ],
+              "weighted_priority": 0.61652,
+              "dominated_by": [],
+              "pareto_front": true,
+              "rank_range": [
+                2,
+                4
+              ]
+            },
+            {
+              "id": "CTRL4",
+              "target": "人员联系",
+              "question": "核验定向联系 actor:A4 → actor:A1",
+              "objectives": {
+                "coverage": 0.25,
+                "traceability": 1.0,
+                "uncertainty": 2.384185791015625e-07,
+                "impact": 0.9999998807907104
+              },
+              "sources": [
+                {
+                  "table": "communications",
+                  "record_id": "J0_0",
+                  "source_id": "S001",
+                  "timestamp": "2026-01-01T08:35:00+08:00",
+                  "csv_line": 223
+                },
+                {
+                  "table": "communications",
+                  "record_id": "J0_1",
+                  "source_id": "S001",
+                  "timestamp": "2026-01-01T08:36:00+08:00",
+                  "csv_line": 224
+                },
+                {
+                  "table": "communications",
+                  "record_id": "BG_A6_0",
+                  "source_id": "S001",
+                  "timestamp": "2026-01-01T08:55:00+08:00",
+                  "csv_line": 63
+                }
+              ],
+              "weighted_priority": 0.5750000238418579,
+              "dominated_by": [],
+              "pareto_front": true,
+              "rank_range": [
+                2,
+                3
+              ]
+            },
+            {
+              "id": "CTRL5",
+              "target": "人员联系",
+              "question": "核验定向联系 actor:A4 → actor:A5",
+              "objectives": {
+                "coverage": 0.25,
+                "traceability": 1.0,
+                "uncertainty": 2.384185791015625e-07,
+                "impact": 0.9999998807907104
+              },
+              "sources": [
+                {
+                  "table": "communications",
+                  "record_id": "BG_A4_0",
+                  "source_id": "S001",
+                  "timestamp": "2026-01-01T08:10:00+08:00",
+                  "csv_line": 59
+                },
+                {
+                  "table": "communications",
+                  "record_id": "J1_0",
+                  "source_id": "S001",
+                  "timestamp": "2026-01-01T08:43:00+08:00",
+                  "csv_line": 225
+                },
+                {
+                  "table": "communications",
+                  "record_id": "J1_1",
+                  "source_id": "S001",
+                  "timestamp": "2026-01-01T08:44:00+08:00",
+                  "csv_line": 226
+                },
+                {
+                  "table": "communications",
+                  "record_id": "J1_2",
+                  "source_id": "S001",
+                  "timestamp": "2026-01-01T08:45:00+08:00",
+                  "csv_line": 227
+                },
+                {
+                  "table": "communications",
+                  "record_id": "BG_A5_1",
+                  "source_id": "S001",
+                  "timestamp": "2026-01-01T09:32:00+08:00",
+                  "csv_line": 62
+                }
+              ],
+              "weighted_priority": 0.5750000238418579,
+              "dominated_by": [],
+              "pareto_front": true,
+              "rank_range": [
+                3,
+                4
+              ]
+            },
+            {
+              "id": "IP1",
+              "target": "信息/IP",
+              "question": "核验IP 192.0.2.1（synthetic-DEMO14_C001）的业务背景",
+              "objectives": {
+                "coverage": 0.25,
+                "traceability": 0.3333333333333333,
+                "uncertainty": 1.0,
+                "impact": 0.5
+              },
+              "sources": [
+                {
+                  "record_id": "NET001",
+                  "ip_node": "ip:synthetic-DEMO14_C001:192.0.2.1",
+                  "ip": "192.0.2.1",
+                  "scope": "synthetic-DEMO14_C001",
+                  "timestamp": "2026-01-01T08:00:00+08:00",
+                  "anchors": [
+                    "actor:A6",
+                    "wallet:TRON:DEMO14_C001-W00"
+                  ],
+                  "device_nodes": [
+                    "device:D1"
+                  ],
+                  "source_id": "S001",
+                  "source_port": "30000",
+                  "event_type": "合成访问观测",
+                  "csv_line": 2,
+                  "original_line": 2,
+                  "edges": [
+                    [
+                      "wallet:TRON:DEMO14_C001-W00",
+                      "ip:synthetic-DEMO14_C001:192.0.2.1",
+                      "network_events:NET001:account"
+                    ],
+                    [
+                      "actor:A6",
+                      "ip:synthetic-DEMO14_C001:192.0.2.1",
+                      "network_events:NET001:actor"
+                    ],
+                    [
+                      "device:D1",
+                      "ip:synthetic-DEMO14_C001:192.0.2.1",
+                      "network_events:NET001:device"
+                    ]
+                  ]
+                },
+                {
+                  "record_id": "NET002",
+                  "ip_node": "ip:synthetic-DEMO14_C001:192.0.2.1",
+                  "ip": "192.0.2.1",
+                  "scope": "synthetic-DEMO14_C001",
+                  "timestamp": "2026-01-01T08:04:00+08:00",
+                  "anchors": [
+                    "actor:A3",
+                    "wallet:TRON:DEMO14_C001-W01"
+                  ],
+                  "device_nodes": [
+                    "device:D2"
+                  ],
+                  "source_id": "S001",
+                  "source_port": "30001",
+                  "event_type": "合成访问观测",
+                  "csv_line": 3,
+                  "original_line": 3,
+                  "edges": [
+                    [
+                      "wallet:TRON:DEMO14_C001-W01",
+                      "ip:synthetic-DEMO14_C001:192.0.2.1",
+                      "network_events:NET002:account"
+                    ],
+                    [
+                      "actor:A3",
+                      "ip:synthetic-DEMO14_C001:192.0.2.1",
+                      "network_events:NET002:actor"
+                    ],
+                    [
+                      "device:D2",
+                      "ip:synthetic-DEMO14_C001:192.0.2.1",
+                      "network_events:NET002:device"
+                    ]
+                  ]
+                },
+                {
+                  "record_id": "NET003",
+                  "ip_node": "ip:synthetic-DEMO14_C001:192.0.2.1",
+                  "ip": "192.0.2.1",
+                  "scope": "synthetic-DEMO14_C001",
+                  "timestamp": "2026-01-01T08:08:00+08:00",
+                  "anchors": [
+                    "actor:A2",
+                    "wallet:TRON:DEMO14_C001-W02"
+                  ],
+                  "device_nodes": [
+                    "device:D3"
+                  ],
+                  "source_id": "S001",
+                  "source_port": "30002",
+                  "event_type": "合成访问观测",
+                  "csv_line": 4,
+                  "original_line": 4,
+                  "edges": [
+                    [
+                      "wallet:TRON:DEMO14_C001-W02",
+                      "ip:synthetic-DEMO14_C001:192.0.2.1",
+                      "network_events:NET003:account"
+                    ],
+                    [
+                      "actor:A2",
+                      "ip:synthetic-DEMO14_C001:192.0.2.1",
+                      "network_events:NET003:actor"
+                    ],
+                    [
+                      "device:D3",
+                      "ip:synthetic-DEMO14_C001:192.0.2.1",
+                      "network_events:NET003:device"
+                    ]
+                  ]
+                }
+              ],
+              "weighted_priority": 0.475,
+              "dominated_by": [],
+              "pareto_front": true,
+              "rank_range": [
+                5,
+                6
+              ]
+            },
+            {
+              "id": "ORDER_O002",
+              "target": "产业",
+              "question": "补充订单来源 O002",
+              "objectives": {
+                "coverage": 0.5,
+                "traceability": 0.3333333333333333,
+                "uncertainty": 0.75,
+                "impact": 0.3333
+              },
+              "sources": [
+                {
+                  "timestamp": "2026-01-01T08:10:00+08:00",
+                  "effective_from": "2026-01-01T08:10:00+08:00",
+                  "lineage_verified": true,
+                  "flow": "信息流",
+                  "table": "communications",
+                  "record_id": "BG_A4_0",
+                  "source_id": "S001",
+                  "csv_line": 59,
+                  "original_line": 59,
+                  "source_title": "合成记录说明",
+                  "reference": "evidence/DEMO14_C001.txt",
+                  "association": "参与主体/付款账户在窗口内的背景记录"
+                },
+                {
+                  "timestamp": "2026-01-01T08:12:00+08:00",
+                  "effective_from": "2026-01-01T08:12:00+08:00",
+                  "lineage_verified": true,
+                  "flow": "信息流",
+                  "table": "communications",
+                  "record_id": "COORD_EXTRA",
+                  "source_id": "S001",
+                  "csv_line": 53,
+                  "original_line": 53,
+                  "source_title": "合成记录说明",
+                  "reference": "evidence/DEMO14_C001.txt",
+                  "association": "参与主体/付款账户在窗口内的背景记录"
+                },
+                {
+                  "timestamp": "2026-01-01T08:13:00+08:00",
+                  "effective_from": "2026-01-01T08:13:00+08:00",
+                  "lineage_verified": true,
+                  "flow": "信息流",
+                  "table": "communications",
+                  "record_id": "M4",
+                  "source_id": "S001",
+                  "csv_line": 5,
+                  "original_line": 5,
+                  "source_title": "合成记录说明",
+                  "reference": "evidence/DEMO14_C001.txt",
+                  "association": "参与主体/付款账户在窗口内的背景记录"
+                },
+                {
+                  "timestamp": "2026-01-01T08:28:00+08:00",
+                  "effective_from": "2026-01-01T08:28:00+08:00",
+                  "lineage_verified": true,
+                  "flow": "信息流",
+                  "table": "communications",
+                  "record_id": "BG_A4_1",
+                  "source_id": "S001",
+                  "csv_line": 60,
+                  "original_line": 60,
+                  "source_title": "合成记录说明",
+                  "reference": "evidence/DEMO14_C001.txt",
+                  "association": "参与主体/付款账户在窗口内的背景记录"
+                },
+                {
+                  "timestamp": "2026-01-01T08:35:00+08:00",
+                  "effective_from": "2026-01-01T08:35:00+08:00",
+                  "lineage_verified": true,
+                  "flow": "信息流",
+                  "table": "communications",
+                  "record_id": "J0_0",
+                  "source_id": "S001",
+                  "csv_line": 223,
+                  "original_line": 223,
+                  "source_title": "合成记录说明",
+                  "reference": "evidence/DEMO14_C001.txt",
+                  "association": "参与主体/付款账户在窗口内的背景记录"
+                },
+                {
+                  "timestamp": "2026-01-01T08:36:00+08:00",
+                  "effective_from": "2026-01-01T08:36:00+08:00",
+                  "lineage_verified": true,
+                  "flow": "信息流",
+                  "table": "communications",
+                  "record_id": "J0_1",
+                  "source_id": "S001",
+                  "csv_line": 224,
+                  "original_line": 224,
+                  "source_title": "合成记录说明",
+                  "reference": "evidence/DEMO14_C001.txt",
+                  "association": "参与主体/付款账户在窗口内的背景记录"
+                },
+                {
+                  "timestamp": "2026-01-01T08:43:00+08:00",
+                  "effective_from": "2026-01-01T08:43:00+08:00",
+                  "lineage_verified": true,
+                  "flow": "信息流",
+                  "table": "communications",
+                  "record_id": "J1_0",
+                  "source_id": "S001",
+                  "csv_line": 225,
+                  "original_line": 225,
+                  "source_title": "合成记录说明",
+                  "reference": "evidence/DEMO14_C001.txt",
+                  "association": "参与主体/付款账户在窗口内的背景记录"
+                },
+                {
+                  "timestamp": "2026-01-01T08:44:00+08:00",
+                  "effective_from": "2026-01-01T08:44:00+08:00",
+                  "lineage_verified": true,
+                  "flow": "信息流",
+                  "table": "communications",
+                  "record_id": "J1_1",
+                  "source_id": "S001",
+                  "csv_line": 226,
+                  "original_line": 226,
+                  "source_title": "合成记录说明",
+                  "reference": "evidence/DEMO14_C001.txt",
+                  "association": "参与主体/付款账户在窗口内的背景记录"
+                },
+                {
+                  "timestamp": "2026-01-01T08:45:00+08:00",
+                  "effective_from": "2026-01-01T08:45:00+08:00",
+                  "lineage_verified": true,
+                  "flow": "信息流",
+                  "table": "network_events",
+                  "record_id": "BGIP_A6_0",
+                  "source_id": "S001",
+                  "csv_line": 115,
+                  "original_line": 115,
+                  "source_title": "合成记录说明",
+                  "reference": "evidence/DEMO14_C001.txt",
+                  "association": "参与主体/付款账户在窗口内的背景记录"
+                },
+                {
+                  "timestamp": "2026-01-01T08:45:00+08:00",
+                  "effective_from": "2026-01-01T08:45:00+08:00",
+                  "lineage_verified": true,
+                  "flow": "信息流",
+                  "table": "communications",
+                  "record_id": "J1_2",
+                  "source_id": "S001",
+                  "csv_line": 227,
+                  "original_line": 227,
+                  "source_title": "合成记录说明",
+                  "reference": "evidence/DEMO14_C001.txt",
+                  "association": "参与主体/付款账户在窗口内的背景记录"
+                },
+                {
+                  "timestamp": "2026-01-01T08:48:00+08:00",
+                  "effective_from": "2026-01-01T08:48:00+08:00",
+                  "lineage_verified": true,
+                  "flow": "信息流",
+                  "table": "communications",
+                  "record_id": "BG_A1_0",
+                  "source_id": "S001",
+                  "csv_line": 55,
+                  "original_line": 55,
+                  "source_title": "合成记录说明",
+                  "reference": "evidence/DEMO14_C001.txt",
+                  "association": "参与主体/付款账户在窗口内的背景记录"
+                },
+                {
+                  "timestamp": "2026-01-01T08:55:00+08:00",
+                  "effective_from": "2026-01-01T08:55:00+08:00",
+                  "lineage_verified": true,
+                  "flow": "信息流",
+                  "table": "communications",
+                  "record_id": "BG_A6_0",
+                  "source_id": "S001",
+                  "csv_line": 63,
+                  "original_line": 63,
+                  "source_title": "合成记录说明",
+                  "reference": "evidence/DEMO14_C001.txt",
+                  "association": "参与主体/付款账户在窗口内的背景记录"
+                },
+                {
+                  "timestamp": "2026-01-01T08:57:00+08:00",
+                  "effective_from": "2026-01-01T08:57:00+08:00",
+                  "lineage_verified": true,
+                  "flow": "信息流",
+                  "table": "communications",
+                  "record_id": "BG_A6_1",
+                  "source_id": "S001",
+                  "csv_line": 64,
+                  "original_line": 64,
+                  "source_title": "合成记录说明",
+                  "reference": "evidence/DEMO14_C001.txt",
+                  "association": "参与主体/付款账户在窗口内的背景记录"
+                },
+                {
+                  "timestamp": "2026-01-01T09:08:00+08:00",
+                  "effective_from": "2026-01-01T09:08:00+08:00",
+                  "lineage_verified": true,
+                  "flow": "信息流",
+                  "table": "communications",
+                  "record_id": "BG_A3_0",
+                  "source_id": "S001",
+                  "csv_line": 58,
+                  "original_line": 58,
+                  "source_title": "合成记录说明",
+                  "reference": "evidence/DEMO14_C001.txt",
+                  "association": "参与主体/付款账户在窗口内的背景记录"
+                },
+                {
+                  "timestamp": "2026-01-01T09:12:00+08:00",
+                  "effective_from": "2026-01-01T09:12:00+08:00",
+                  "lineage_verified": true,
+                  "flow": "信息流",
+                  "table": "communications",
+                  "record_id": "BG_A2_0",
+                  "source_id": "S001",
+                  "csv_line": 57,
+                  "original_line": 57,
+                  "source_title": "合成记录说明",
+                  "reference": "evidence/DEMO14_C001.txt",
+                  "association": "参与主体/付款账户在窗口内的背景记录"
+                },
+                {
+                  "timestamp": "2026-01-01T09:21:00+08:00",
+                  "effective_from": "2026-01-01T09:21:00+08:00",
+                  "lineage_verified": true,
+                  "flow": "信息流",
+                  "table": "communications",
+                  "record_id": "BG_A1_1",
+                  "source_id": "S001",
+                  "csv_line": 56,
+                  "original_line": 56,
+                  "source_title": "合成记录说明",
+                  "reference": "evidence/DEMO14_C001.txt",
+                  "association": "参与主体/付款账户在窗口内的背景记录"
+                },
+                {
+                  "timestamp": "2026-01-01T09:26:00+08:00",
+                  "effective_from": "2026-01-01T09:26:00+08:00",
+                  "lineage_verified": true,
+                  "flow": "信息流",
+                  "table": "network_events",
+                  "record_id": "BGIP_A6_1",
+                  "source_id": "S001",
+                  "csv_line": 116,
+                  "original_line": 116,
+                  "source_title": "合成记录说明",
+                  "reference": "evidence/DEMO14_C001.txt",
+                  "association": "参与主体/付款账户在窗口内的背景记录"
+                },
+                {
+                  "timestamp": "2026-01-01T09:30:00+08:00",
+                  "effective_from": "2026-01-01T09:30:00+08:00",
+                  "lineage_verified": true,
+                  "flow": "产业流",
+                  "table": "shipments",
+                  "record_id": "G_EXTRA",
+                  "source_id": "S001",
+                  "csv_line": 26,
+                  "original_line": 26,
+                  "source_title": "合成记录说明",
+                  "reference": "evidence/DEMO14_C001.txt",
+                  "association": "同订单直接关联"
+                },
+                {
+                  "timestamp": "2026-01-01T09:32:00+08:00",
+                  "effective_from": "2026-01-01T09:32:00+08:00",
+                  "lineage_verified": true,
+                  "flow": "信息流",
+                  "table": "communications",
+                  "record_id": "BG_A5_1",
+                  "source_id": "S001",
+                  "csv_line": 62,
+                  "original_line": 62,
+                  "source_title": "合成记录说明",
+                  "reference": "evidence/DEMO14_C001.txt",
+                  "association": "参与主体/付款账户在窗口内的背景记录"
+                },
+                {
+                  "timestamp": "2026-01-01T10:10:00+08:00",
+                  "effective_from": "2026-01-01T10:10:00+08:00",
+                  "lineage_verified": true,
+                  "flow": "产业流",
+                  "table": "shipments",
+                  "record_id": "G_EXTRA2",
+                  "source_id": "S001",
+                  "csv_line": 27,
+                  "original_line": 27,
+                  "source_title": "合成记录说明",
+                  "reference": "evidence/DEMO14_C001.txt",
+                  "association": "同订单直接关联"
+                }
+              ],
+              "weighted_priority": 0.46666,
+              "dominated_by": [],
+              "pareto_front": true,
+              "rank_range": [
+                5,
+                6
+              ]
+            },
+            {
+              "id": "CTRL1",
+              "target": "人员联系",
+              "question": "核验定向联系 actor:A6 → actor:A2",
+              "objectives": {
+                "coverage": 0.25,
+                "traceability": 1.0,
+                "uncertainty": 0.0,
+                "impact": 1.0
+              },
+              "sources": [
+                {
+                  "table": "communications",
+                  "record_id": "M2",
+                  "source_id": "S001",
+                  "timestamp": "2026-01-01T08:05:00+08:00",
+                  "csv_line": 3
+                },
+                {
+                  "table": "communications",
+                  "record_id": "J2_0",
+                  "source_id": "S001",
+                  "timestamp": "2026-01-01T08:51:00+08:00",
+                  "csv_line": 228
+                },
+                {
+                  "table": "communications",
+                  "record_id": "J2_1",
+                  "source_id": "S001",
+                  "timestamp": "2026-01-01T08:52:00+08:00",
+                  "csv_line": 229
+                },
+                {
+                  "table": "communications",
+                  "record_id": "J2_2",
+                  "source_id": "S001",
+                  "timestamp": "2026-01-01T08:53:00+08:00",
+                  "csv_line": 230
+                }
+              ],
+              "weighted_priority": 0.575,
+              "dominated_by": [
+                "CTRL2"
+              ],
+              "pareto_front": false,
+              "rank_range": [
+                7,
+                7
+              ]
+            },
+            {
+              "id": "CTRL3",
+              "target": "人员联系",
+              "question": "核验定向联系 actor:A6 → actor:A4",
+              "objectives": {
+                "coverage": 0.25,
+                "traceability": 1.0,
+                "uncertainty": 0.0,
+                "impact": 1.0
+              },
+              "sources": [
+                {
+                  "table": "communications",
+                  "record_id": "TECH_MSG0",
+                  "source_id": "S001",
+                  "timestamp": "2026-01-01T08:10:00+08:00",
+                  "csv_line": 50
+                },
+                {
+                  "table": "communications",
+                  "record_id": "TECH_MSG1",
+                  "source_id": "S001",
+                  "timestamp": "2026-01-01T08:15:00+08:00",
+                  "csv_line": 51
+                },
+                {
+                  "table": "communications",
+                  "record_id": "TECH_MSG2",
+                  "source_id": "S001",
+                  "timestamp": "2026-01-01T08:20:00+08:00",
+                  "csv_line": 52
+                },
+                {
+                  "table": "communications",
+                  "record_id": "J4_0",
+                  "source_id": "S001",
+                  "timestamp": "2026-01-01T09:07:00+08:00",
+                  "csv_line": 234
+                },
+                {
+                  "table": "communications",
+                  "record_id": "J4_1",
+                  "source_id": "S001",
+                  "timestamp": "2026-01-01T09:08:00+08:00",
+                  "csv_line": 235
+                }
+              ],
+              "weighted_priority": 0.575,
+              "dominated_by": [
+                "CTRL2"
+              ],
+              "pareto_front": false,
+              "rank_range": [
+                8,
+                8
+              ]
+            },
+            {
+              "id": "FUND1",
+              "target": "资金",
+              "question": "复核资金模式 短时拆分候选",
+              "objectives": {
+                "coverage": 0.25,
+                "traceability": 0.3333333333333333,
+                "uncertainty": 0.8,
+                "impact": 0.5
+              },
+              "sources": [
+                {
+                  "record_ids": [
+                    "T002",
+                    "T003",
+                    "T004",
+                    "T005"
+                  ],
+                  "source_ids": [
+                    "S001"
+                  ],
+                  "detail": "30 分钟内连接 4 个不同对端，币种 USDT。候选结构不表示违法。"
+                }
+              ],
+              "weighted_priority": 0.43500000000000005,
+              "dominated_by": [
+                "IP1"
+              ],
+              "pareto_front": false,
+              "rank_range": [
+                9,
+                9
+              ]
+            },
+            {
+              "id": "FUND7",
+              "target": "资金",
+              "question": "复核资金模式 回流结构候选",
+              "objectives": {
+                "coverage": 0.25,
+                "traceability": 0.3333333333333333,
+                "uncertainty": 0.8,
+                "impact": 0.5
+              },
+              "sources": [
+                {
+                  "record_ids": [
+                    "N3",
+                    "T002",
+                    "T006",
+                    "T009"
+                  ],
+                  "source_ids": [
+                    "S001"
+                  ],
+                  "detail": "USDT 中存在 3 个地址的闭合连接。此项为静态结构，尚需核对时序和资金归属。"
+                }
+              ],
+              "weighted_priority": 0.43500000000000005,
+              "dominated_by": [
+                "IP1"
+              ],
+              "pareto_front": false,
+              "rank_range": [
+                10,
+                10
+              ]
+            },
+            {
+              "id": "FUND2",
+              "target": "资金",
+              "question": "复核资金模式 短时归集候选",
+              "objectives": {
+                "coverage": 0.25,
+                "traceability": 0.3333333333333333,
+                "uncertainty": 0.8,
+                "impact": 0.375
+              },
+              "sources": [
+                {
+                  "record_ids": [
+                    "T006",
+                    "T007",
+                    "T008"
+                  ],
+                  "source_ids": [
+                    "S001"
+                  ],
+                  "detail": "30 分钟内连接 3 个不同对端，币种 USDT。候选结构不表示违法。"
+                }
+              ],
+              "weighted_priority": 0.41000000000000003,
+              "dominated_by": [
+                "FUND1",
+                "FUND7",
+                "IP1"
+              ],
+              "pareto_front": false,
+              "rank_range": [
+                11,
+                25
+              ]
+            },
+            {
+              "id": "FUND8",
+              "target": "资金",
+              "question": "复核资金模式 回流结构候选",
+              "objectives": {
+                "coverage": 0.25,
+                "traceability": 0.3333333333333333,
+                "uncertainty": 0.8,
+                "impact": 0.375
+              },
+              "sources": [
+                {
+                  "record_ids": [
+                    "T003",
+                    "T007",
+                    "T009"
+                  ],
+                  "source_ids": [
+                    "S001"
+                  ],
+                  "detail": "USDT 中存在 3 个地址的闭合连接。此项为静态结构，尚需核对时序和资金归属。"
+                }
+              ],
+              "weighted_priority": 0.41000000000000003,
+              "dominated_by": [
+                "FUND1",
+                "FUND7",
+                "IP1"
+              ],
+              "pareto_front": false,
+              "rank_range": [
+                12,
+                26
+              ]
+            },
+            {
+              "id": "FUND9",
+              "target": "资金",
+              "question": "复核资金模式 回流结构候选",
+              "objectives": {
+                "coverage": 0.25,
+                "traceability": 0.3333333333333333,
+                "uncertainty": 0.8,
+                "impact": 0.375
+              },
+              "sources": [
+                {
+                  "record_ids": [
+                    "T004",
+                    "T008",
+                    "T009"
+                  ],
+                  "source_ids": [
+                    "S001"
+                  ],
+                  "detail": "USDT 中存在 3 个地址的闭合连接。此项为静态结构，尚需核对时序和资金归属。"
+                }
+              ],
+              "weighted_priority": 0.41000000000000003,
+              "dominated_by": [
+                "FUND1",
+                "FUND7",
+                "IP1"
+              ],
+              "pareto_front": false,
+              "rank_range": [
+                13,
+                27
+              ]
+            },
+            {
+              "id": "IP10",
+              "target": "信息/IP",
+              "question": "核验IP 203.0.113.39（synthetic-DEMO14_C001）的业务背景",
+              "objectives": {
+                "coverage": 0.25,
+                "traceability": 0.3333333333333333,
+                "uncertainty": 1.0,
+                "impact": 0.16666666666666666
+              },
+              "sources": [
+                {
+                  "record_id": "BGIP_A6_1",
+                  "ip_node": "ip:synthetic-DEMO14_C001:203.0.113.39",
+                  "ip": "203.0.113.39",
+                  "scope": "synthetic-DEMO14_C001",
+                  "timestamp": "2026-01-01T09:26:00+08:00",
+                  "anchors": [
+                    "actor:A1"
+                  ],
+                  "device_nodes": [
+                    "device:D_BG_A6"
+                  ],
+                  "source_id": "S001",
+                  "source_port": "45001",
+                  "event_type": "合成一般网络观测",
+                  "csv_line": 116,
+                  "original_line": 116,
+                  "edges": [
+                    [
+                      "actor:A1",
+                      "ip:synthetic-DEMO14_C001:203.0.113.39",
+                      "network_events:BGIP_A6_1:actor"
+                    ],
+                    [
+                      "device:D_BG_A6",
+                      "ip:synthetic-DEMO14_C001:203.0.113.39",
+                      "network_events:BGIP_A6_1:device"
+                    ]
+                  ]
+                }
+              ],
+              "weighted_priority": 0.4083333333333333,
+              "dominated_by": [
+                "IP1"
+              ],
+              "pareto_front": false,
+              "rank_range": [
+                11,
+                14
+              ]
+            },
+            {
+              "id": "IP11",
+              "target": "信息/IP",
+              "question": "核验IP 198.51.100.10（synthetic-DEMO14_C001）的业务背景",
+              "objectives": {
+                "coverage": 0.25,
+                "traceability": 0.3333333333333333,
+                "uncertainty": 1.0,
+                "impact": 0.16666666666666666
+              },
+              "sources": [
+                {
+                  "record_id": "TECH0",
+                  "ip_node": "ip:synthetic-DEMO14_C001:198.51.100.10",
+                  "ip": "198.51.100.10",
+                  "scope": "synthetic-DEMO14_C001",
+                  "timestamp": "2026-01-01T08:05:00+08:00",
+                  "anchors": [
+                    "actor:A4"
+                  ],
+                  "device_nodes": [
+                    "device:D_TECH"
+                  ],
+                  "source_id": "S001",
+                  "source_port": "41000",
+                  "event_type": "合成设备维护会话",
+                  "csv_line": 110,
+                  "original_line": 110,
+                  "edges": [
+                    [
+                      "actor:A4",
+                      "ip:synthetic-DEMO14_C001:198.51.100.10",
+                      "network_events:TECH0:actor"
+                    ],
+                    [
+                      "device:D_TECH",
+                      "ip:synthetic-DEMO14_C001:198.51.100.10",
+                      "network_events:TECH0:device"
+                    ]
+                  ]
+                }
+              ],
+              "weighted_priority": 0.4083333333333333,
+              "dominated_by": [
+                "IP1"
+              ],
+              "pareto_front": false,
+              "rank_range": [
+                12,
+                15
+              ]
+            },
+            {
+              "id": "IP12",
+              "target": "信息/IP",
+              "question": "核验IP 198.51.100.11（synthetic-DEMO14_C001）的业务背景",
+              "objectives": {
+                "coverage": 0.25,
+                "traceability": 0.3333333333333333,
+                "uncertainty": 1.0,
+                "impact": 0.16666666666666666
+              },
+              "sources": [
+                {
+                  "record_id": "TECH1",
+                  "ip_node": "ip:synthetic-DEMO14_C001:198.51.100.11",
+                  "ip": "198.51.100.11",
+                  "scope": "synthetic-DEMO14_C001",
+                  "timestamp": "2026-01-01T08:07:00+08:00",
+                  "anchors": [
+                    "actor:A4"
+                  ],
+                  "device_nodes": [
+                    "device:D_TECH"
+                  ],
+                  "source_id": "S001",
+                  "source_port": "41001",
+                  "event_type": "合成设备维护会话",
+                  "csv_line": 111,
+                  "original_line": 111,
+                  "edges": [
+                    [
+                      "actor:A4",
+                      "ip:synthetic-DEMO14_C001:198.51.100.11",
+                      "network_events:TECH1:actor"
+                    ],
+                    [
+                      "device:D_TECH",
+                      "ip:synthetic-DEMO14_C001:198.51.100.11",
+                      "network_events:TECH1:device"
+                    ]
+                  ]
+                }
+              ],
+              "weighted_priority": 0.4083333333333333,
+              "dominated_by": [
+                "IP1"
+              ],
+              "pareto_front": false,
+              "rank_range": [
+                13,
+                16
+              ]
+            },
+            {
+              "id": "IP13",
+              "target": "信息/IP",
+              "question": "核验IP 198.51.100.14（synthetic-DEMO14_C001）的业务背景",
+              "objectives": {
+                "coverage": 0.25,
+                "traceability": 0.3333333333333333,
+                "uncertainty": 1.0,
+                "impact": 0.16666666666666666
+              },
+              "sources": [
+                {
+                  "record_id": "TECH4",
+                  "ip_node": "ip:synthetic-DEMO14_C001:198.51.100.14",
+                  "ip": "198.51.100.14",
+                  "scope": "synthetic-DEMO14_C001",
+                  "timestamp": "2026-01-01T08:13:00+08:00",
+                  "anchors": [
+                    "actor:A4"
+                  ],
+                  "device_nodes": [
+                    "device:D_TECH"
+                  ],
+                  "source_id": "S001",
+                  "source_port": "41004",
+                  "event_type": "合成设备维护会话",
+                  "csv_line": 112,
+                  "original_line": 112,
+                  "edges": [
+                    [
+                      "actor:A4",
+                      "ip:synthetic-DEMO14_C001:198.51.100.14",
+                      "network_events:TECH4:actor"
+                    ],
+                    [
+                      "device:D_TECH",
+                      "ip:synthetic-DEMO14_C001:198.51.100.14",
+                      "network_events:TECH4:device"
+                    ]
+                  ]
+                }
+              ],
+              "weighted_priority": 0.4083333333333333,
+              "dominated_by": [
+                "IP1"
+              ],
+              "pareto_front": false,
+              "rank_range": [
+                14,
+                17
+              ]
+            },
+            {
+              "id": "IP14",
+              "target": "信息/IP",
+              "question": "核验IP 198.51.100.15（synthetic-DEMO14_C001）的业务背景",
+              "objectives": {
+                "coverage": 0.25,
+                "traceability": 0.3333333333333333,
+                "uncertainty": 1.0,
+                "impact": 0.16666666666666666
+              },
+              "sources": [
+                {
+                  "record_id": "TECH5",
+                  "ip_node": "ip:synthetic-DEMO14_C001:198.51.100.15",
+                  "ip": "198.51.100.15",
+                  "scope": "synthetic-DEMO14_C001",
+                  "timestamp": "2026-01-01T08:15:00+08:00",
+                  "anchors": [
+                    "actor:A4"
+                  ],
+                  "device_nodes": [
+                    "device:D_TECH"
+                  ],
+                  "source_id": "S001",
+                  "source_port": "41005",
+                  "event_type": "合成设备维护会话",
+                  "csv_line": 113,
+                  "original_line": 113,
+                  "edges": [
+                    [
+                      "actor:A4",
+                      "ip:synthetic-DEMO14_C001:198.51.100.15",
+                      "network_events:TECH5:actor"
+                    ],
+                    [
+                      "device:D_TECH",
+                      "ip:synthetic-DEMO14_C001:198.51.100.15",
+                      "network_events:TECH5:device"
+                    ]
+                  ]
+                }
+              ],
+              "weighted_priority": 0.4083333333333333,
+              "dominated_by": [
+                "IP1"
+              ],
+              "pareto_front": false,
+              "rank_range": [
+                15,
+                18
+              ]
+            },
+            {
+              "id": "IP15",
+              "target": "信息/IP",
+              "question": "核验IP 203.0.113.249（synthetic-DEMO14_C001）的业务背景",
+              "objectives": {
+                "coverage": 0.25,
+                "traceability": 0.3333333333333333,
+                "uncertainty": 1.0,
+                "impact": 0.16666666666666666
+              },
+              "sources": [
+                {
+                  "record_id": "UNKNOWN_ONCE",
+                  "ip_node": "ip:synthetic-DEMO14_C001:203.0.113.249",
+                  "ip": "203.0.113.249",
+                  "scope": "synthetic-DEMO14_C001",
+                  "timestamp": "2026-01-01T08:20:00+08:00",
+                  "anchors": [
+                    "actor:BYSTANDER"
+                  ],
+                  "device_nodes": [
+                    "device:D_UNKNOWN"
+                  ],
+                  "source_id": "S001",
+                  "source_port": "",
+                  "event_type": "合成单次观测，角色未知",
+                  "csv_line": 117,
+                  "original_line": 117,
+                  "edges": [
+                    [
+                      "actor:BYSTANDER",
+                      "ip:synthetic-DEMO14_C001:203.0.113.249",
+                      "network_events:UNKNOWN_ONCE:actor"
+                    ],
+                    [
+                      "device:D_UNKNOWN",
+                      "ip:synthetic-DEMO14_C001:203.0.113.249",
+                      "network_events:UNKNOWN_ONCE:device"
+                    ]
+                  ]
+                }
+              ],
+              "weighted_priority": 0.4083333333333333,
+              "dominated_by": [
+                "IP1"
+              ],
+              "pareto_front": false,
+              "rank_range": [
+                16,
+                19
+              ]
+            },
+            {
+              "id": "IP2",
+              "target": "信息/IP",
+              "question": "核验IP 192.0.2.2（synthetic-DEMO14_C001）的业务背景",
+              "objectives": {
+                "coverage": 0.25,
+                "traceability": 0.3333333333333333,
+                "uncertainty": 1.0,
+                "impact": 0.16666666666666666
+              },
+              "sources": [
+                {
+                  "record_id": "NET004",
+                  "ip_node": "ip:synthetic-DEMO14_C001:192.0.2.2",
+                  "ip": "192.0.2.2",
+                  "scope": "synthetic-DEMO14_C001",
+                  "timestamp": "2026-01-01T08:12:00+08:00",
+                  "anchors": [
+                    "actor:A6",
+                    "wallet:TRON:DEMO14_C001-W00"
+                  ],
+                  "device_nodes": [
+                    "device:D1"
+                  ],
+                  "source_id": "S001",
+                  "source_port": "30003",
+                  "event_type": "合成访问观测",
+                  "csv_line": 5,
+                  "original_line": 5,
+                  "edges": [
+                    [
+                      "wallet:TRON:DEMO14_C001-W00",
+                      "ip:synthetic-DEMO14_C001:192.0.2.2",
+                      "network_events:NET004:account"
+                    ],
+                    [
+                      "actor:A6",
+                      "ip:synthetic-DEMO14_C001:192.0.2.2",
+                      "network_events:NET004:actor"
+                    ],
+                    [
+                      "device:D1",
+                      "ip:synthetic-DEMO14_C001:192.0.2.2",
+                      "network_events:NET004:device"
+                    ]
+                  ]
+                }
+              ],
+              "weighted_priority": 0.4083333333333333,
+              "dominated_by": [
+                "IP1"
+              ],
+              "pareto_front": false,
+              "rank_range": [
+                17,
+                20
+              ]
+            },
+            {
+              "id": "IP3",
+              "target": "信息/IP",
+              "question": "核验IP 2001:db8::1（synthetic-DEMO14_C001）的业务背景",
+              "objectives": {
+                "coverage": 0.25,
+                "traceability": 0.3333333333333333,
+                "uncertainty": 1.0,
+                "impact": 0.16666666666666666
+              },
+              "sources": [
+                {
+                  "record_id": "NETV1",
+                  "ip_node": "ip:synthetic-DEMO14_C001:2001%3Adb8%3A%3A1",
+                  "ip": "2001:db8::1",
+                  "scope": "synthetic-DEMO14_C001",
+                  "timestamp": "2026-01-01T08:08:00+08:00",
+                  "anchors": [
+                    "actor:A6",
+                    "wallet:TRON:DEMO14_C001-W00"
+                  ],
+                  "device_nodes": [
+                    "device:D1"
+                  ],
+                  "source_id": "S001",
+                  "source_port": "",
+                  "event_type": "合成IPv6访问",
+                  "csv_line": 8,
+                  "original_line": 8,
+                  "edges": [
+                    [
+                      "wallet:TRON:DEMO14_C001-W00",
+                      "ip:synthetic-DEMO14_C001:2001%3Adb8%3A%3A1",
+                      "network_events:NETV1:account"
+                    ],
+                    [
+                      "actor:A6",
+                      "ip:synthetic-DEMO14_C001:2001%3Adb8%3A%3A1",
+                      "network_events:NETV1:actor"
+                    ],
+                    [
+                      "device:D1",
+                      "ip:synthetic-DEMO14_C001:2001%3Adb8%3A%3A1",
+                      "network_events:NETV1:device"
+                    ]
+                  ]
+                }
+              ],
+              "weighted_priority": 0.4083333333333333,
+              "dominated_by": [
+                "IP1"
+              ],
+              "pareto_front": false,
+              "rank_range": [
+                18,
+                21
+              ]
+            },
+            {
+              "id": "IP4",
+              "target": "信息/IP",
+              "question": "核验IP 2001:db8::2（synthetic-DEMO14_C001）的业务背景",
+              "objectives": {
+                "coverage": 0.25,
+                "traceability": 0.3333333333333333,
+                "uncertainty": 1.0,
+                "impact": 0.16666666666666666
+              },
+              "sources": [
+                {
+                  "record_id": "NETV2",
+                  "ip_node": "ip:synthetic-DEMO14_C001:2001%3Adb8%3A%3A2",
+                  "ip": "2001:db8::2",
+                  "scope": "synthetic-DEMO14_C001",
+                  "timestamp": "2026-01-01T08:11:00+08:00",
+                  "anchors": [
+                    "actor:A6",
+                    "wallet:TRON:DEMO14_C001-W00"
+                  ],
+                  "device_nodes": [
+                    "device:D1"
+                  ],
+                  "source_id": "S001",
+                  "source_port": "",
+                  "event_type": "合成IPv6访问",
+                  "csv_line": 9,
+                  "original_line": 9,
+                  "edges": [
+                    [
+                      "wallet:TRON:DEMO14_C001-W00",
+                      "ip:synthetic-DEMO14_C001:2001%3Adb8%3A%3A2",
+                      "network_events:NETV2:account"
+                    ],
+                    [
+                      "actor:A6",
+                      "ip:synthetic-DEMO14_C001:2001%3Adb8%3A%3A2",
+                      "network_events:NETV2:actor"
+                    ],
+                    [
+                      "device:D1",
+                      "ip:synthetic-DEMO14_C001:2001%3Adb8%3A%3A2",
+                      "network_events:NETV2:device"
+                    ]
+                  ]
+                }
+              ],
+              "weighted_priority": 0.4083333333333333,
+              "dominated_by": [
+                "IP1"
+              ],
+              "pareto_front": false,
+              "rank_range": [
+                19,
+                22
+              ]
+            },
+            {
+              "id": "IP5",
+              "target": "信息/IP",
+              "question": "核验IP 2001:db8::3（synthetic-DEMO14_C001）的业务背景",
+              "objectives": {
+                "coverage": 0.25,
+                "traceability": 0.3333333333333333,
+                "uncertainty": 1.0,
+                "impact": 0.16666666666666666
+              },
+              "sources": [
+                {
+                  "record_id": "NETV3",
+                  "ip_node": "ip:synthetic-DEMO14_C001:2001%3Adb8%3A%3A3",
+                  "ip": "2001:db8::3",
+                  "scope": "synthetic-DEMO14_C001",
+                  "timestamp": "2026-01-01T08:14:00+08:00",
+                  "anchors": [
+                    "actor:A6",
+                    "wallet:TRON:DEMO14_C001-W00"
+                  ],
+                  "device_nodes": [
+                    "device:D1"
+                  ],
+                  "source_id": "S001",
+                  "source_port": "",
+                  "event_type": "合成IPv6访问",
+                  "csv_line": 10,
+                  "original_line": 10,
+                  "edges": [
+                    [
+                      "wallet:TRON:DEMO14_C001-W00",
+                      "ip:synthetic-DEMO14_C001:2001%3Adb8%3A%3A3",
+                      "network_events:NETV3:account"
+                    ],
+                    [
+                      "actor:A6",
+                      "ip:synthetic-DEMO14_C001:2001%3Adb8%3A%3A3",
+                      "network_events:NETV3:actor"
+                    ],
+                    [
+                      "device:D1",
+                      "ip:synthetic-DEMO14_C001:2001%3Adb8%3A%3A3",
+                      "network_events:NETV3:device"
+                    ]
+                  ]
+                }
+              ],
+              "weighted_priority": 0.4083333333333333,
+              "dominated_by": [
+                "IP1"
+              ],
+              "pareto_front": false,
+              "rank_range": [
+                20,
+                23
+              ]
+            },
+            {
+              "id": "IP6",
+              "target": "信息/IP",
+              "question": "核验IP 192.0.2.3（synthetic-DEMO14_C001）的业务背景",
+              "objectives": {
+                "coverage": 0.25,
+                "traceability": 0.3333333333333333,
+                "uncertainty": 1.0,
+                "impact": 0.16666666666666666
+              },
+              "sources": [
+                {
+                  "record_id": "NET005",
+                  "ip_node": "ip:synthetic-DEMO14_C001:192.0.2.3",
+                  "ip": "192.0.2.3",
+                  "scope": "synthetic-DEMO14_C001",
+                  "timestamp": "2026-01-01T08:16:00+08:00",
+                  "anchors": [
+                    "actor:A3",
+                    "wallet:TRON:DEMO14_C001-W01"
+                  ],
+                  "device_nodes": [
+                    "device:D2"
+                  ],
+                  "source_id": "S001",
+                  "source_port": "30004",
+                  "event_type": "合成访问观测",
+                  "csv_line": 6,
+                  "original_line": 6,
+                  "edges": [
+                    [
+                      "wallet:TRON:DEMO14_C001-W01",
+                      "ip:synthetic-DEMO14_C001:192.0.2.3",
+                      "network_events:NET005:account"
+                    ],
+                    [
+                      "actor:A3",
+                      "ip:synthetic-DEMO14_C001:192.0.2.3",
+                      "network_events:NET005:actor"
+                    ],
+                    [
+                      "device:D2",
+                      "ip:synthetic-DEMO14_C001:192.0.2.3",
+                      "network_events:NET005:device"
+                    ]
+                  ]
+                }
+              ],
+              "weighted_priority": 0.4083333333333333,
+              "dominated_by": [
+                "IP1"
+              ],
+              "pareto_front": false,
+              "rank_range": [
+                21,
+                24
+              ]
+            },
+            {
+              "id": "IP7",
+              "target": "信息/IP",
+              "question": "核验IP 192.0.2.4（synthetic-DEMO14_C001）的业务背景",
+              "objectives": {
+                "coverage": 0.25,
+                "traceability": 0.3333333333333333,
+                "uncertainty": 1.0,
+                "impact": 0.16666666666666666
+              },
+              "sources": [
+                {
+                  "record_id": "NET006",
+                  "ip_node": "ip:synthetic-DEMO14_C001:192.0.2.4",
+                  "ip": "192.0.2.4",
+                  "scope": "synthetic-DEMO14_C001",
+                  "timestamp": "2026-01-01T08:20:00+08:00",
+                  "anchors": [
+                    "actor:A2",
+                    "wallet:TRON:DEMO14_C001-W02"
+                  ],
+                  "device_nodes": [
+                    "device:D3"
+                  ],
+                  "source_id": "S001",
+                  "source_port": "30005",
+                  "event_type": "合成访问观测",
+                  "csv_line": 7,
+                  "original_line": 7,
+                  "edges": [
+                    [
+                      "wallet:TRON:DEMO14_C001-W02",
+                      "ip:synthetic-DEMO14_C001:192.0.2.4",
+                      "network_events:NET006:account"
+                    ],
+                    [
+                      "actor:A2",
+                      "ip:synthetic-DEMO14_C001:192.0.2.4",
+                      "network_events:NET006:actor"
+                    ],
+                    [
+                      "device:D3",
+                      "ip:synthetic-DEMO14_C001:192.0.2.4",
+                      "network_events:NET006:device"
+                    ]
+                  ]
+                }
+              ],
+              "weighted_priority": 0.4083333333333333,
+              "dominated_by": [
+                "IP1"
+              ],
+              "pareto_front": false,
+              "rank_range": [
+                22,
+                25
+              ]
+            },
+            {
+              "id": "IP8",
+              "target": "信息/IP",
+              "question": "核验IP 203.0.113.29（synthetic-DEMO14_C001）的业务背景",
+              "objectives": {
+                "coverage": 0.25,
+                "traceability": 0.3333333333333333,
+                "uncertainty": 1.0,
+                "impact": 0.16666666666666666
+              },
+              "sources": [
+                {
+                  "record_id": "BGIP_A3_0",
+                  "ip_node": "ip:synthetic-DEMO14_C001:203.0.113.29",
+                  "ip": "203.0.113.29",
+                  "scope": "synthetic-DEMO14_C001",
+                  "timestamp": "2026-01-01T09:10:00+08:00",
+                  "anchors": [
+                    "actor:A2"
+                  ],
+                  "device_nodes": [
+                    "device:D_BG_A3"
+                  ],
+                  "source_id": "S001",
+                  "source_port": "45000",
+                  "event_type": "合成一般网络观测",
+                  "csv_line": 114,
+                  "original_line": 114,
+                  "edges": [
+                    [
+                      "actor:A2",
+                      "ip:synthetic-DEMO14_C001:203.0.113.29",
+                      "network_events:BGIP_A3_0:actor"
+                    ],
+                    [
+                      "device:D_BG_A3",
+                      "ip:synthetic-DEMO14_C001:203.0.113.29",
+                      "network_events:BGIP_A3_0:device"
+                    ]
+                  ]
+                }
+              ],
+              "weighted_priority": 0.4083333333333333,
+              "dominated_by": [
+                "IP1"
+              ],
+              "pareto_front": false,
+              "rank_range": [
+                23,
+                26
+              ]
+            },
+            {
+              "id": "IP9",
+              "target": "信息/IP",
+              "question": "核验IP 203.0.113.38（synthetic-DEMO14_C001）的业务背景",
+              "objectives": {
+                "coverage": 0.25,
+                "traceability": 0.3333333333333333,
+                "uncertainty": 1.0,
+                "impact": 0.16666666666666666
+              },
+              "sources": [
+                {
+                  "record_id": "BGIP_A6_0",
+                  "ip_node": "ip:synthetic-DEMO14_C001:203.0.113.38",
+                  "ip": "203.0.113.38",
+                  "scope": "synthetic-DEMO14_C001",
+                  "timestamp": "2026-01-01T08:45:00+08:00",
+                  "anchors": [
+                    "actor:A1"
+                  ],
+                  "device_nodes": [
+                    "device:D_BG_A6"
+                  ],
+                  "source_id": "S001",
+                  "source_port": "45000",
+                  "event_type": "合成一般网络观测",
+                  "csv_line": 115,
+                  "original_line": 115,
+                  "edges": [
+                    [
+                      "actor:A1",
+                      "ip:synthetic-DEMO14_C001:203.0.113.38",
+                      "network_events:BGIP_A6_0:actor"
+                    ],
+                    [
+                      "device:D_BG_A6",
+                      "ip:synthetic-DEMO14_C001:203.0.113.38",
+                      "network_events:BGIP_A6_0:device"
+                    ]
+                  ]
+                }
+              ],
+              "weighted_priority": 0.4083333333333333,
+              "dominated_by": [
+                "IP1"
+              ],
+              "pareto_front": false,
+              "rank_range": [
+                24,
+                27
+              ]
+            },
+            {
+              "id": "FUND10",
+              "target": "资金",
+              "question": "复核资金模式 回流结构候选",
+              "objectives": {
+                "coverage": 0.25,
+                "traceability": 0.3333333333333333,
+                "uncertainty": 0.8,
+                "impact": 0.25
+              },
+              "sources": [
+                {
+                  "record_ids": [
+                    "N1",
+                    "T009"
+                  ],
+                  "source_ids": [
+                    "S001"
+                  ],
+                  "detail": "USDT 中存在 2 个地址的闭合连接。此项为静态结构，尚需核对时序和资金归属。"
+                }
+              ],
+              "weighted_priority": 0.385,
+              "dominated_by": [
+                "FUND1",
+                "FUND2",
+                "FUND7",
+                "FUND8",
+                "FUND9",
+                "IP1"
+              ],
+              "pareto_front": false,
+              "rank_range": [
+                28,
+                28
+              ]
+            },
+            {
+              "id": "FUND3",
+              "target": "资金",
+              "question": "复核资金模式 短时转入转出候选",
+              "objectives": {
+                "coverage": 0.25,
+                "traceability": 0.3333333333333333,
+                "uncertainty": 0.8,
+                "impact": 0.25
+              },
+              "sources": [
+                {
+                  "record_ids": [
+                    "T002",
+                    "T006"
+                  ],
+                  "source_ids": [
+                    "S001"
+                  ],
+                  "detail": "同币种两笔记录间隔不超过 30 分钟，金额比在 0.5—1.5。没有证明为同一笔资金。"
+                }
+              ],
+              "weighted_priority": 0.385,
+              "dominated_by": [
+                "FUND1",
+                "FUND2",
+                "FUND7",
+                "FUND8",
+                "FUND9",
+                "IP1"
+              ],
+              "pareto_front": false,
+              "rank_range": [
+                29,
+                29
+              ]
+            },
+            {
+              "id": "FUND4",
+              "target": "资金",
+              "question": "复核资金模式 短时转入转出候选",
+              "objectives": {
+                "coverage": 0.25,
+                "traceability": 0.3333333333333333,
+                "uncertainty": 0.8,
+                "impact": 0.25
+              },
+              "sources": [
+                {
+                  "record_ids": [
+                    "T003",
+                    "T007"
+                  ],
+                  "source_ids": [
+                    "S001"
+                  ],
+                  "detail": "同币种两笔记录间隔不超过 30 分钟，金额比在 0.5—1.5。没有证明为同一笔资金。"
+                }
+              ],
+              "weighted_priority": 0.385,
+              "dominated_by": [
+                "FUND1",
+                "FUND2",
+                "FUND7",
+                "FUND8",
+                "FUND9",
+                "IP1"
+              ],
+              "pareto_front": false,
+              "rank_range": [
+                30,
+                30
+              ]
+            },
+            {
+              "id": "FUND5",
+              "target": "资金",
+              "question": "复核资金模式 短时转入转出候选",
+              "objectives": {
+                "coverage": 0.25,
+                "traceability": 0.3333333333333333,
+                "uncertainty": 0.8,
+                "impact": 0.25
+              },
+              "sources": [
+                {
+                  "record_ids": [
+                    "T004",
+                    "T008"
+                  ],
+                  "source_ids": [
+                    "S001"
+                  ],
+                  "detail": "同币种两笔记录间隔不超过 30 分钟，金额比在 0.5—1.5。没有证明为同一笔资金。"
+                }
+              ],
+              "weighted_priority": 0.385,
+              "dominated_by": [
+                "FUND1",
+                "FUND2",
+                "FUND7",
+                "FUND8",
+                "FUND9",
+                "IP1"
+              ],
+              "pareto_front": false,
+              "rank_range": [
+                31,
+                31
+              ]
+            },
+            {
+              "id": "FUND6",
+              "target": "资金",
+              "question": "复核资金模式 短时转入转出候选",
+              "objectives": {
+                "coverage": 0.25,
+                "traceability": 0.3333333333333333,
+                "uncertainty": 0.8,
+                "impact": 0.25
+              },
+              "sources": [
+                {
+                  "record_ids": [
+                    "T005",
+                    "T010"
+                  ],
+                  "source_ids": [
+                    "S001"
+                  ],
+                  "detail": "同币种两笔记录间隔不超过 30 分钟，金额比在 0.5—1.5。没有证明为同一笔资金。"
+                }
+              ],
+              "weighted_priority": 0.385,
+              "dominated_by": [
+                "FUND1",
+                "FUND2",
+                "FUND7",
+                "FUND8",
+                "FUND9",
+                "IP1"
+              ],
+              "pareto_front": false,
+              "rank_range": [
+                32,
+                32
+              ]
+            }
+          ],
+          "interpretation": "优先级为人工核验资源分配偏好，不是违法概率或自动处置建议；四目标均为越大越优先。"
+        }
+      }
+    }
+  ]
+}

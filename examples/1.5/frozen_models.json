@@ -1,0 +1,17 @@
+{
+  "fund": {
+    "directory": "D:\\Projects\\FourFlowAnalysis\\runtime\\models\\funds_1_3_selected",
+    "sha256": "dd2b6703e613ac0b9af77badcae6eece5a31ca3f658e94c5932f86bd5ad2e99e",
+    "model_id": "THGNN_1_3_20261028_172448"
+  },
+  "roles": {
+    "directory": "D:\\Projects\\FourFlowAnalysis\\runtime\\models\\roles_1_3",
+    "sha256": "e09f74f88d8e9ce851e03025bb92ddd6953cd609485a6f1846d849a19deea20e",
+    "model_id": "ROLE_20261028_171837_138669"
+  },
+  "joint": {
+    "directory": "D:\\Projects\\FourFlowAnalysis\\runtime\\models\\joint_1_4_erm",
+    "sha256": "7652e4804ce54f98e03840d878b78b098213bf11a051249e91b951201ce4eac3",
+    "model_id": "DUAL_20261028_195545_470207"
+  }
+}

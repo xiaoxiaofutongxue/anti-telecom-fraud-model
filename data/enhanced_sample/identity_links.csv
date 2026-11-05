@@ -1,0 +1,13 @@
+﻿case_id,link_id,actor_id,entity_kind,entity_id,chain,timestamp,verified,verification_note,source_id
+C001,I1,A4,wallet,C001-W00,TRON,2026-01-01T07:00:00+08:00,true,合成来源中的已标注对应关系,S001
+C001,I2,A1,wallet,C001-W01,TRON,2026-01-01T07:00:00+08:00,true,合成来源中的已标注对应关系,S001
+C001,I3,A3,wallet,C001-W02,TRON,2026-01-01T07:00:00+08:00,true,合成来源中的已标注对应关系,S001
+C001,I4,A2,wallet,C001-W06,TRON,2026-01-01T07:10:00+08:00,false,候选关联，尚未核实,S001
+C002,I1,A1,wallet,C002-W00,TRON,2026-01-04T07:00:00+08:00,true,合成来源中的已标注对应关系,S001
+C002,I2,A4,wallet,C002-W01,TRON,2026-01-04T07:00:00+08:00,true,合成来源中的已标注对应关系,S001
+C002,I3,A5,wallet,C002-W02,TRON,2026-01-04T07:00:00+08:00,true,合成来源中的已标注对应关系,S001
+C002,I4,A2,wallet,C002-W06,TRON,2026-01-04T07:10:00+08:00,false,候选关联，尚未核实,S001
+C003,I1,A2,wallet,C003-W00,TRON,2026-01-07T07:00:00+08:00,true,合成来源中的已标注对应关系,S001
+C003,I2,A4,wallet,C003-W01,TRON,2026-01-07T07:00:00+08:00,true,合成来源中的已标注对应关系,S001
+C003,I3,A6,wallet,C003-W02,TRON,2026-01-07T07:00:00+08:00,true,合成来源中的已标注对应关系,S001
+C003,I4,A5,wallet,C003-W06,TRON,2026-01-07T07:10:00+08:00,false,候选关联，尚未核实,S001

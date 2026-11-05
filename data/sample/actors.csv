@@ -1,0 +1,13 @@
+﻿case_id,actor_id,alias,actor_type,role,role_verified,source_id
+C001,A1,主体A,person,记录中的协调角色,true,S001
+C001,A2,主体B,person,,false,S001
+C001,A3,主体C,person,,false,S001
+C001,A4,主体D,organization,,false,S001
+C002,A1,主体A,person,记录中的协调角色,true,S001
+C002,A2,主体B,person,,false,S001
+C002,A3,主体C,person,,false,S001
+C002,A4,主体D,organization,,false,S001
+C003,A1,主体A,person,记录中的协调角色,true,S001
+C003,A2,主体B,person,,false,S001
+C003,A3,主体C,person,,false,S001
+C003,A4,主体D,organization,,false,S001

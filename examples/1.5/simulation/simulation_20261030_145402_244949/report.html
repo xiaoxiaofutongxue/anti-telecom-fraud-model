@@ -1,0 +1,168 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; img-src 'self' data:"><title>四流系统1.5 · 全流程模拟自测</title><style>body{font:16px/1.65 'Microsoft YaHei UI',sans-serif;background:#f4f6fa;color:#172b44;max-width:1240px;margin:auto;padding:30px}h1{color:#173d79}aside{background:#fff0d7;padding:18px;border-radius:12px}table{width:100%;border-collapse:collapse;background:white;margin:24px 0}th,td{text-align:left;padding:16px;border-bottom:1px solid #dae3ee;vertical-align:top}td:first-child{width:25%}pre{white-space:pre-wrap;overflow-wrap:anywhere;margin:0;font:13px/1.6 'Microsoft YaHei UI',sans-serif}.pass{color:#166534}.warn{color:#92400e}.fail{color:#b91c1c}a{color:#1d4ed8}</style><h1>全流程合成模拟自测</h1><aside>隔离的合成全流程模拟，不读写用户核验库、不修改生产数据或模型指针。功能通过不等于真实侦查效果达标。</aside><p>时间：2026-10-30T14:54:20.102510+08:00 · 种子 1001 · 12个合成案件</p><p>通过 12 · 需关注 1 · 失败 0</p><ul><li><a href="reports\SIM13_1001_C001_20261030_145406_224058\report.html">模拟个案完整报告</a></li><li><a href="reports\SIM13_1001_C001_20261030_145406_404809\report.html">空历史快照报告</a></li><li><a href="joint_reports\joint_20261030_145409_195732\report.html">双图/原始多模态/控制候选/多目标解释</a></li><li><a href="causal_runs\causal_20261030_145409_309900\report.html">独立合成因果研究</a></li></ul><p>完整模型分数、误报/漏报、未判定和标签比较见同目录model_evaluation.json。人工确认记录仅写本次simulation.sqlite3。原始脏数据、清洗报告、材料识别及研究输出均保留在本次目录。</p><table><thead><tr><th>板块/步骤</th><th>结果</th><th>实际输出与限制</th></tr></thead><tbody><tr><td>导入、去重、冲突隔离与原始溯源</td><td class="pass">通过</td><td><pre>{
+  &quot;cases&quot;: 12,
+  &quot;quarantined&quot;: 7,
+  &quot;normalization_changes&quot;: 4,
+  &quot;original_unchanged&quot;: true,
+  &quot;amounts_unchanged&quot;: true,
+  &quot;cleaning_report&quot;: &quot;cleaned/cleaning_report.json&quot;
+}</pre></td></tr><tr><td>四流图谱、逐币种守恒和事件轨迹图</td><td class="pass">通过</td><td><pre>{
+  &quot;nodes&quot;: 59,
+  &quot;edges&quot;: 134,
+  &quot;events&quot;: 61,
+  &quot;currency_totals&quot;: {
+    &quot;USDT&quot;: &quot;3193.57&quot;,
+    &quot;CNY&quot;: &quot;700.00&quot;
+  },
+  &quot;patterns&quot;: 14
+}</pre></td></tr><tr><td>时序路径及逐步来源</td><td class="pass">通过</td><td><pre>{
+  &quot;paths&quot;: 1,
+  &quot;first_chain_steps&quot;: 1,
+  &quot;truncated&quot;: false
+}</pre></td></tr><tr><td>IP网络与产业订单溯源</td><td class="pass">通过</td><td><pre>{
+  &quot;network_events&quot;: 20,
+  &quot;ips&quot;: 18,
+  &quot;orders&quot;: 2,
+  &quot;material_gaps&quot;: [
+    {
+      &quot;order&quot;: &quot;O001&quot;,
+      &quot;missing&quot;: [
+        &quot;仅有单一来源材料组，需独立材料交叉核验&quot;
+      ]
+    },
+    {
+      &quot;order&quot;: &quot;O002&quot;,
+      &quot;missing&quot;: [
+        &quot;窗口内未找到发运前的同订单付款记录&quot;,
+        &quot;缺少在发运前生效的已核实身份对应&quot;,
+        &quot;仅有单一来源材料组，需独立材料交叉核验&quot;
+      ]
+    }
+  ]
+}</pre></td></tr><tr><td>四种特征投影</td><td class="pass">通过</td><td><pre>{
+  &quot;projected_nodes&quot;: {
+    &quot;PCA&quot;: 59,
+    &quot;LDA&quot;: 7,
+    &quot;LLE&quot;: 59,
+    &quot;t-SNE&quot;: 59
+  },
+  &quot;scope&quot;: &quot;仅探索，LDA使用已知人员标签，不能当独立分类效果&quot;
+}</pre></td></tr><tr><td>资金/人员模型输出、覆盖率及保存载入</td><td class="warn">需关注</td><td><pre>{
+  &quot;fund_f1&quot;: 0.9231,
+  &quot;fund_confusion&quot;: {
+    &quot;tp&quot;: 6,
+    &quot;fp&quot;: 1,
+    &quot;fn&quot;: 0,
+    &quot;tn&quot;: 5
+  },
+  &quot;fund_error_cases&quot;: [
+    {
+      &quot;case_id&quot;: &quot;SIM13_1001_C006&quot;,
+      &quot;nodes&quot;: 51,
+      &quot;edges&quot;: 126,
+      &quot;label&quot;: 0,
+      &quot;fund_score&quot;: 0.712421,
+      &quot;fund_available&quot;: true,
+      &quot;fund_reason&quot;: &quot;&quot;,
+      &quot;person_candidates&quot;: 6,
+      &quot;person_abstained&quot;: 1,
+      &quot;known_or_related_training_records&quot;: false
+    }
+  ],
+  &quot;role_macro_f1&quot;: 1.0,
+  &quot;role_errors&quot;: [],
+  &quot;selective&quot;: {
+    &quot;labelled_persons&quot;: 72,
+    &quot;eligible&quot;: 72,
+    &quot;abstained&quot;: 0,
+    &quot;coverage&quot;: 1.0,
+    &quot;joint_accuracy_on_eligible&quot;: 1.0,
+    &quot;high_confidence_joint_errors&quot;: 0,
+    &quot;unlabelled_persons&quot;: 12,
+    &quot;unlabelled_abstained&quot;: 12
+  },
+  &quot;note&quot;: &quot;模拟指标和错例保留在model_evaluation.json；不能代表真实案件性能&quot;
+}</pre></td></tr><tr><td>缺流、错快照及金额/标识扰动</td><td class="pass">通过</td><td><pre>{
+  &quot;missing_information_abstained&quot;: 7,
+  &quot;stale_snapshot_rejected&quot;: true,
+  &quot;same_currency_scale_score_delta&quot;: 0.0,
+  &quot;identifier_renaming_invariant&quot;: true
+}</pre></td></tr><tr><td>人工确认、排除及历史快照</td><td class="pass">通过</td><td><pre>{
+  &quot;source_annotation_preserved&quot;: true,
+  &quot;future_review_not_in_history&quot;: true,
+  &quot;current_exclusion_effective&quot;: true
+}</pre></td></tr><tr><td>本金条件情景及本地留痕</td><td class="pass">通过</td><td><pre>{
+  &quot;confirmed_principal&quot;: &quot;100&quot;,
+  &quot;coverage_min&quot;: &quot;0.5&quot;,
+  &quot;coverage_max&quot;: &quot;0.8&quot;,
+  &quot;currency&quot;: &quot;USDT&quot;,
+  &quot;lower&quot;: &quot;125.00&quot;,
+  &quot;upper&quot;: &quot;200.00&quot;,
+  &quot;source_ids&quot;: [
+    &quot;S001&quot;
+  ],
+  &quot;method&quot;: &quot;已核实去重本金 / 假定覆盖率&quot;,
+  &quot;interpretation&quot;: &quot;条件情景区间；不是统计置信区间或自动认定的涉案金额。覆盖率由分析人员提供，系统未证明该假设。&quot;,
+  &quot;scope_as_of&quot;: &quot;&quot;
+}</pre></td></tr><tr><td>报告、空快照、ZIP与审计日志</td><td class="pass">通过</td><td><pre>{
+  &quot;case_report&quot;: &quot;reports\\SIM13_1001_C001_20261030_145406_224058&quot;,
+  &quot;empty_report&quot;: &quot;reports\\SIM13_1001_C001_20261030_145406_404809&quot;,
+  &quot;checksummed_files&quot;: 18,
+  &quot;audit_events&quot;: 5
+}</pre></td></tr><tr><td>双图、原始三模态、定向控制与MOID-XAI</td><td class="pass">通过</td><td><pre>{
+  &quot;model_id&quot;: &quot;DUAL_20261028_195545_470207&quot;,
+  &quot;audited_cases&quot;: 12,
+  &quot;events&quot;: 72,
+  &quot;raw_materials&quot;: 3,
+  &quot;control_candidates&quot;: 5,
+  &quot;exact_flow_coalitions&quot;: 16,
+  &quot;shapley_residual&quot;: -5.551115123125783e-17,
+  &quot;all_branches_trained&quot;: {
+    &quot;entity&quot;: 89.37952423095703,
+    &quot;trajectory&quot;: 3.849644660949707,
+    &quot;raw_image&quot;: 0.028743132948875427,
+    &quot;raw_audio&quot;: 0.00805903971195221,
+    &quot;raw_video&quot;: 0.008035860024392605,
+    &quot;interaction&quot;: 0.3421107530593872,
+    &quot;control&quot;: 4.708164691925049
+  },
+  &quot;model_pointer_unchanged&quot;: true,
+  &quot;scope&quot;: &quot;合成验证，控制边和视听表示不等于真实侦查事实&quot;
+}</pre></td></tr><tr><td>因果设计、混杂调整及假设检查</td><td class="pass">通过</td><td><pre>{
+  &quot;known_effect&quot;: 1.5,
+  &quot;estimate&quot;: 1.393395726199591,
+  &quot;interval&quot;: [
+    1.2907895548257453,
+    1.4960018975734368
+  ],
+  &quot;interval_method&quot;: &quot;分组稳健标准误 × t临界值；自由度=独立组数-1，仍为近似区间&quot;,
+  &quot;unconfirmed_assumptions_rejected&quot;: true
+}</pre></td></tr><tr><td>图片/语音/PDF/视频及人工通信导入</td><td class="pass">通过</td><td><pre>{
+  &quot;materials&quot;: [
+    {
+      &quot;file&quot;: &quot;synthetic_record.png&quot;,
+      &quot;segments&quot;: 6,
+      &quot;candidates&quot;: 5,
+      &quot;output&quot;: &quot;media\\material_20261030_145412_570240&quot;
+    },
+    {
+      &quot;file&quot;: &quot;synthetic_speech.wav&quot;,
+      &quot;segments&quot;: 2,
+      &quot;candidates&quot;: 1,
+      &quot;output&quot;: &quot;media\\material_20261030_145415_766707&quot;
+    },
+    {
+      &quot;file&quot;: &quot;synthetic_scan.pdf&quot;,
+      &quot;segments&quot;: 6,
+      &quot;candidates&quot;: 5,
+      &quot;output&quot;: &quot;media\\material_20261030_145418_299234&quot;
+    },
+    {
+      &quot;file&quot;: &quot;synthetic_silent_video.mp4&quot;,
+      &quot;segments&quot;: 6,
+      &quot;candidates&quot;: 5,
+      &quot;output&quot;: &quot;media\\material_20261030_145419_732783&quot;
+    }
+  ],
+  &quot;reviewed_import_creates_new_dataset&quot;: true,
+  &quot;source_type&quot;: &quot;synthetic&quot;
+}</pre></td></tr></tbody></table><p>需求评估：结构化四流辅助研判主流程可据本次结果验收；真实跨地区/案型效果、自动法律或个案因果认定、原始视听语义效果及真实控制关系仍未验证，自主调证未实现，不能由这些合成测试替代。</p></html>

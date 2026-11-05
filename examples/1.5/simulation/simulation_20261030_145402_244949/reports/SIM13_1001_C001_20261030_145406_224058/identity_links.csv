@@ -1,0 +1,5 @@
+﻿link_id,actor_id,entity_kind,entity_id,chain,timestamp,verified,effective_verified,manual_review,verification_note,source_id
+I1,A6,wallet,SIM13_1001_C001-W00,TRON,2026-01-01T07:00:00+08:00,true,True,,合成来源中的已标注对应关系,S001
+I2,A5,wallet,SIM13_1001_C001-W01,TRON,2026-01-01T07:00:00+08:00,true,True,,合成来源中的已标注对应关系,S001
+I3,A2,wallet,SIM13_1001_C001-W02,TRON,2026-01-01T07:00:00+08:00,true,True,,合成来源中的已标注对应关系,S001
+I4,A3,wallet,SIM13_1001_C001-W06,TRON,2026-01-01T07:10:00+08:00,false,False,"{""dataset"": ""cb829b4e91403c69a913f85000f51683b1ccdf77b2b3d79091e313a2c0197786"", ""case_id"": ""SIM13_1001_C001"", ""finding_id"": ""identity:I4"", ""status"": ""已排除"", ""note"": ""合成自测：补充材料后排除"", ""reviewer"": ""合成流程自测"", ""updated"": ""2026-10-30T14:54:06.120109+08:00""}",候选关联，尚未核实,S001

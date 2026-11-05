@@ -1,0 +1,61 @@
+{
+  "version": "1.5.0",
+  "origin": "synthetic",
+  "case_id": "DEMO14_C001",
+  "dataset_fingerprint": "b995ecde79c2ab1952f60e6e1c57b0a473bcd461b08b0c99398926dd22f1c1c2",
+  "graph_fingerprint": "cc38facdb153e2ab9083945e3e48c2becaea8a45c9eec7eca0e82785cc758292",
+  "status": "complete",
+  "stages": [
+    {
+      "name": "核对输入及人工核验快照",
+      "status": "passed"
+    },
+    {
+      "name": "逐币种精确金额与质量提示",
+      "status": "passed"
+    },
+    {
+      "name": "资金/IP模式与截断检查",
+      "status": "passed"
+    },
+    {
+      "name": "IP与来源关联",
+      "status": "passed"
+    },
+    {
+      "name": "产业订单与材料缺口",
+      "status": "passed"
+    },
+    {
+      "name": "规划完整事件窗口",
+      "status": "passed"
+    },
+    {
+      "name": "导出完整统计和来源报告",
+      "status": "passed"
+    },
+    {
+      "name": "再次核对数据与核验状态",
+      "status": "passed"
+    }
+  ],
+  "scope": "本地辅助分析任务编排，不联网、不自动取得外部证据、不自动认定违法。",
+  "model_windows": 1,
+  "report": "reports\\DEMO14_C001_20261030_145334_800227/report.html",
+  "window_report": "windows.json",
+  "record_coverage": 1.0,
+  "truncated": false,
+  "finding_count": 14,
+  "industry_orders": 2,
+  "ip_count": 15,
+  "pattern_diagnostics": {
+    "skipped_cycle_currencies": [],
+    "truncated_cycle_currencies": [],
+    "fund_findings_truncated": false,
+    "ip_findings_truncated": false,
+    "search_complete": true,
+    "returned_findings": 14,
+    "interpretation": "已执行当前规则范围的搜索；规则本身不覆盖全部异常或违法行为"
+  },
+  "next_actions": []
+}

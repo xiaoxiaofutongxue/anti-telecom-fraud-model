@@ -1,0 +1,115 @@
+{
+  "system": "反电诈四流辅助侦查系统",
+  "version": "1.5.0",
+  "created_at": "2026-10-30T14:54:06.404433+08:00",
+  "case": {
+    "case_id": "SIM13_1001_C001",
+    "title": "合成角色与资金联合样本 C001",
+    "region": "区域A",
+    "case_type": "反电诈资金与产业关联",
+    "_table": "cases",
+    "_line": 2,
+    "_original_line": 2,
+    "_original_sha256": "7feb3b1c2508612b44d33811435edff507054bbf60719ac7d492b6d593e2ea17",
+    "_lineage_verified": true,
+    "_original_sheet": ""
+  },
+  "origin": "synthetic",
+  "dataset_fingerprint": "cb829b4e91403c69a913f85000f51683b1ccdf77b2b3d79091e313a2c0197786",
+  "as_of": "2020-01-01T00:00:00+08:00",
+  "graph": {
+    "nodes": 0,
+    "edges": 0,
+    "flows": {
+      "funds": 0,
+      "goods": 0,
+      "information": 0,
+      "people": 0
+    }
+  },
+  "amounts": {
+    "gross_by_currency": {},
+    "addresses": [],
+    "interpretation": "逐币种交易额合计包含重复流转，不等于涉案本金；净流入不等于账户余额。"
+  },
+  "principal_scenario": {
+    "available": false,
+    "reason": "此前金额情景对应不同的截至时间，请在当前快照重新填写假设。"
+  },
+  "findings": [],
+  "actor_structure": [],
+  "identity_links": [],
+  "evidence_chains": [],
+  "network_analysis": {
+    "ips": [],
+    "observations": [],
+    "findings": [],
+    "window_minutes": 30,
+    "interpretation": "IP为时点网络观测，不用于自动实名绑定；非公网IP按network_scope隔离，不做IP地理定位。",
+    "truncated": false
+  },
+  "analysis_options": {
+    "network_window_minutes": 30,
+    "industry_window_hours": 168
+  },
+  "industry_traces": [],
+  "pca": {
+    "available": false,
+    "reason": "PCA仅支持1至256节点的当前快照"
+  },
+  "cleaning_report": "D:\\Projects\\FourFlowAnalysis\\runtime\\upgrade_1_5\\acceptance_20261030_145326_579314\\simulation\\simulation_20261030_145402_244949\\cleaned\\cleaning_report.json",
+  "model_assessment": {
+    "available": false,
+    "reason": "尚未加载模型"
+  },
+  "leads": [],
+  "reviews": [],
+  "sources": [
+    {
+      "case_id": "SIM13_1001_C001",
+      "source_id": "S001",
+      "title": "合成记录说明",
+      "reference": "evidence/SIM13_1001_C001.txt",
+      "_table": "sources",
+      "_line": 2,
+      "_original_line": 2,
+      "_original_sha256": "8907f3ff5e8ef97641703b07bcbe696a77c6bb475384a9c3300f21b105b45bbb",
+      "_lineage_verified": true,
+      "_sha256": "20ee7bd6f962460d469e7e672d959f1ae3d67503b180025e94583f82011b5295",
+      "_original_sheet": ""
+    }
+  ],
+  "boundaries": [
+    "全部输出用于辅助核验，违法认定由有权人员根据完整材料作出。",
+    "关联路径及删除特征后的分数变化不是因果证明。",
+    "共享IP不等于同一人员，不进行无来源地理定位。产业排序不等于违法概率。",
+    "图谱只覆盖导入数据；未知身份保持未知；候选身份不作为已核实绑定。",
+    "交易额不等于涉案本金；金额区间仅在人工提供覆盖率假设后输出。",
+    "图模型为小规模本地实现，合成指标不能替代真实案件评估。"
+  ],
+  "pattern_diagnostics": {
+    "skipped_cycle_currencies": [],
+    "truncated_cycle_currencies": [],
+    "fund_findings_truncated": false,
+    "ip_findings_truncated": false,
+    "search_complete": true,
+    "returned_findings": 0,
+    "interpretation": "已执行当前规则范围的搜索；规则本身不覆盖全部异常或违法行为"
+  },
+  "role_hierarchy": {
+    "available": false,
+    "reason": "尚未载入角色层级模型"
+  },
+  "cohort_causal": null,
+  "joint_analysis": null,
+  "behavior_timeline": [],
+  "behavior_graph": {
+    "available": true,
+    "case_id": "SIM13_1001_C001",
+    "as_of": "2020-01-01T00:00:00+08:00",
+    "max_gap_hours": 72,
+    "nodes": [],
+    "edges": [],
+    "interpretation": "事件节点来自去重原始记录；边只表示同一实体在窗口内先后出现，不证明资金归属、实体控制或因果关系。"
+  }
+}

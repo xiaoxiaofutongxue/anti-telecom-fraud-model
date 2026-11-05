@@ -1,0 +1,1 @@
+﻿case_id,shipment_id,order_id,from_place,to_place,sender_id,receiver_id,carrier_id,vehicle_id,timestamp,goods_label,service_type,source_id

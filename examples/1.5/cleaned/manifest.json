@@ -1,0 +1,18 @@
+{
+  "schema_version": 2,
+  "timezone": "Asia/Shanghai",
+  "origin": "synthetic",
+  "title": "合成Excel接入验收",
+  "label_definition": {
+    "task_id": "",
+    "positive": "",
+    "negative": ""
+  },
+  "role_task": {
+    "task_id": "",
+    "roles": [],
+    "levels": [],
+    "compatible_pairs": []
+  },
+  "cleaning": "cleaning_report.json"
+}

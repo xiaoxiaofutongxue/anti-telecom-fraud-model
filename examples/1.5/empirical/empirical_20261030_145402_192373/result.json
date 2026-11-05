@@ -1,0 +1,7937 @@
+{
+  "version": "1.5.0",
+  "created_at": "2026-10-30T14:54:01.874148+08:00",
+  "model_id": "DUAL_20261028_195545_470207",
+  "model_weights_sha256": "7652e4804ce54f98e03840d878b78b098213bf11a051249e91b951201ce4eac3",
+  "model_kind": "joint",
+  "origin": "synthetic",
+  "dataset_path": "D:\\Projects\\FourFlowAnalysis\\data\\advanced_joint_holdout_synthetic",
+  "dataset_fingerprint": "dcf5e5adc0462f63545804fb25448200d4fb40d649c3b55ccb8d944ad3d84e54",
+  "summary": {
+    "n": 24,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "accuracy": 1.0,
+    "roc_auc": 1.0,
+    "brier": 0.0,
+    "confusion": {
+      "tp": 12,
+      "fp": 0,
+      "fn": 0,
+      "tn": 12
+    },
+    "calibration": {
+      "n": 24,
+      "brier": 7.73930923486042e-10,
+      "log_loss": 8.546356014849807e-06,
+      "ece": 8.545969023165956e-06,
+      "bins": [
+        {
+          "lower": 0.0,
+          "upper": 0.2,
+          "n": 12,
+          "mean_prediction": 1.6307143556826276e-05,
+          "observed_frequency": 0.0
+        },
+        {
+          "lower": 0.8,
+          "upper": 1.0,
+          "n": 12,
+          "mean_prediction": 0.9999992152055105,
+          "observed_frequency": 1.0
+        }
+      ],
+      "interpretation": "分箱频率仅描述这组留出标签；Brier同时受区分能力影响，小样本或合成数据不能证明真实概率校准。"
+    },
+    "precision_wilson_case_level": [
+      0.7575059933447693,
+      1.0
+    ],
+    "recall_wilson_case_level": [
+      0.7575059933447693,
+      1.0
+    ],
+    "labelled_cases": 24,
+    "available_cases": 24,
+    "coverage": 1.0,
+    "positive_cases": 12,
+    "negative_cases": 12,
+    "independent_groups": 24,
+    "f1_cluster_bootstrap_95": [
+      1.0,
+      1.0
+    ],
+    "usable_bootstrap": 1000,
+    "interval_scope": "按声明关联分组整组重采样；Wilson按案件计算，组内相关时只作参考。零错误可能产生退化区间，不证明100%泛化。",
+    "role_macro_f1": 1.0,
+    "level_macro_f1": 1.0,
+    "person_coverage": 1.0,
+    "control_precision": 1.0,
+    "control_recall": 1.0
+  },
+  "cases": [
+    {
+      "case_id": "E14JOINT_C001",
+      "region": "合成未见区域丁",
+      "case_type": "合成未见场景丁",
+      "label": 1,
+      "score": 0.9999998807907104,
+      "available": true,
+      "reason": ""
+    },
+    {
+      "case_id": "E14JOINT_C002",
+      "region": "合成未见区域丁",
+      "case_type": "合成未见场景丁",
+      "label": 0,
+      "score": 1.2648831670958316e-07,
+      "available": true,
+      "reason": ""
+    },
+    {
+      "case_id": "E14JOINT_C003",
+      "region": "合成未见区域丁",
+      "case_type": "合成未见场景丁",
+      "label": 1,
+      "score": 0.9999969005584717,
+      "available": true,
+      "reason": ""
+    },
+    {
+      "case_id": "E14JOINT_C004",
+      "region": "合成未见区域丁",
+      "case_type": "合成未见场景丁",
+      "label": 0,
+      "score": 2.070314142343932e-09,
+      "available": true,
+      "reason": ""
+    },
+    {
+      "case_id": "E14JOINT_C005",
+      "region": "合成未见区域丁",
+      "case_type": "合成未见场景丁",
+      "label": 1,
+      "score": 0.9999998807907104,
+      "available": true,
+      "reason": ""
+    },
+    {
+      "case_id": "E14JOINT_C006",
+      "region": "合成未见区域丁",
+      "case_type": "合成未见场景丁",
+      "label": 0,
+      "score": 7.50751860323362e-05,
+      "available": true,
+      "reason": ""
+    },
+    {
+      "case_id": "E14JOINT_C007",
+      "region": "合成未见区域丁",
+      "case_type": "合成未见场景丁",
+      "label": 1,
+      "score": 1.0,
+      "available": true,
+      "reason": ""
+    },
+    {
+      "case_id": "E14JOINT_C008",
+      "region": "合成未见区域丁",
+      "case_type": "合成未见场景丁",
+      "label": 0,
+      "score": 6.4893734830206995e-09,
+      "available": true,
+      "reason": ""
+    },
+    {
+      "case_id": "E14JOINT_C009",
+      "region": "合成未见区域丁",
+      "case_type": "合成未见场景丁",
+      "label": 1,
+      "score": 0.9999998807907104,
+      "available": true,
+      "reason": ""
+    },
+    {
+      "case_id": "E14JOINT_C010",
+      "region": "合成未见区域丁",
+      "case_type": "合成未见场景丁",
+      "label": 0,
+      "score": 1.6593719465163304e-06,
+      "available": true,
+      "reason": ""
+    },
+    {
+      "case_id": "E14JOINT_C011",
+      "region": "合成未见区域丁",
+      "case_type": "合成未见场景丁",
+      "label": 1,
+      "score": 1.0,
+      "available": true,
+      "reason": ""
+    },
+    {
+      "case_id": "E14JOINT_C012",
+      "region": "合成未见区域丁",
+      "case_type": "合成未见场景丁",
+      "label": 0,
+      "score": 4.9056261275381985e-09,
+      "available": true,
+      "reason": ""
+    },
+    {
+      "case_id": "E14JOINT_C013",
+      "region": "合成未见区域丁",
+      "case_type": "合成未见场景丁",
+      "label": 1,
+      "score": 1.0,
+      "available": true,
+      "reason": ""
+    },
+    {
+      "case_id": "E14JOINT_C014",
+      "region": "合成未见区域丁",
+      "case_type": "合成未见场景丁",
+      "label": 0,
+      "score": 4.521727078099502e-06,
+      "available": true,
+      "reason": ""
+    },
+    {
+      "case_id": "E14JOINT_C015",
+      "region": "合成未见区域丁",
+      "case_type": "合成未见场景丁",
+      "label": 1,
+      "score": 0.9999996423721313,
+      "available": true,
+      "reason": ""
+    },
+    {
+      "case_id": "E14JOINT_C016",
+      "region": "合成未见区域丁",
+      "case_type": "合成未见场景丁",
+      "label": 0,
+      "score": 7.000818147417931e-09,
+      "available": true,
+      "reason": ""
+    },
+    {
+      "case_id": "E14JOINT_C017",
+      "region": "合成未见区域丁",
+      "case_type": "合成未见场景丁",
+      "label": 1,
+      "score": 1.0,
+      "available": true,
+      "reason": ""
+    },
+    {
+      "case_id": "E14JOINT_C018",
+      "region": "合成未见区域丁",
+      "case_type": "合成未见场景丁",
+      "label": 0,
+      "score": 7.444903644682199e-07,
+      "available": true,
+      "reason": ""
+    },
+    {
+      "case_id": "E14JOINT_C019",
+      "region": "合成未见区域丁",
+      "case_type": "合成未见场景丁",
+      "label": 1,
+      "score": 0.999996542930603,
+      "available": true,
+      "reason": ""
+    },
+    {
+      "case_id": "E14JOINT_C020",
+      "region": "合成未见区域丁",
+      "case_type": "合成未见场景丁",
+      "label": 0,
+      "score": 4.242996620718031e-09,
+      "available": true,
+      "reason": ""
+    },
+    {
+      "case_id": "E14JOINT_C021",
+      "region": "合成未见区域丁",
+      "case_type": "合成未见场景丁",
+      "label": 1,
+      "score": 0.9999979734420776,
+      "available": true,
+      "reason": ""
+    },
+    {
+      "case_id": "E14JOINT_C022",
+      "region": "合成未见区域丁",
+      "case_type": "合成未见场景丁",
+      "label": 0,
+      "score": 0.00011352726141922176,
+      "available": true,
+      "reason": ""
+    },
+    {
+      "case_id": "E14JOINT_C023",
+      "region": "合成未见区域丁",
+      "case_type": "合成未见场景丁",
+      "label": 1,
+      "score": 0.9999998807907104,
+      "available": true,
+      "reason": ""
+    },
+    {
+      "case_id": "E14JOINT_C024",
+      "region": "合成未见区域丁",
+      "case_type": "合成未见场景丁",
+      "label": 0,
+      "score": 6.4883960426698195e-09,
+      "available": true,
+      "reason": ""
+    }
+  ],
+  "persons": [
+    {
+      "case_id": "E14JOINT_C001",
+      "actor_id": "A1",
+      "truth_role": "协调",
+      "truth_level": "上游",
+      "role": "协调",
+      "level": "上游",
+      "available": true,
+      "correct": true,
+      "reasons": []
+    },
+    {
+      "case_id": "E14JOINT_C001",
+      "actor_id": "A2",
+      "truth_role": "资金处理",
+      "truth_level": "中间层",
+      "role": "资金处理",
+      "level": "中间层",
+      "available": true,
+      "correct": true,
+      "reasons": []
+    },
+    {
+      "case_id": "E14JOINT_C001",
+      "actor_id": "A4",
+      "truth_role": "资金处理",
+      "truth_level": "中间层",
+      "role": "资金处理",
+      "level": "中间层",
+      "available": true,
+      "correct": true,
+      "reasons": []
+    },
+    {
+      "case_id": "E14JOINT_C001",
+      "actor_id": "A3",
+      "truth_role": "运输执行",
+      "truth_level": "执行层",
+      "role": "运输执行",
+      "level": "执行层",
+      "available": true,
+      "correct": true,
+      "reasons": []
+    },
+    {
+      "case_id": "E14JOINT_C001",
+      "actor_id": "A6",
+      "truth_role": "技术支持",
+      "truth_level": "中间层",
+      "role": "技术支持",
+      "level": "中间层",
+      "available": true,
+      "correct": true,
+      "reasons": []
+    },
+    {
+      "case_id": "E14JOINT_C001",
+      "actor_id": "A5",
+      "truth_role": "运输执行",
+      "truth_level": "执行层",
+      "role": "运输执行",
+      "level": "执行层",
+      "available": true,
+      "correct": true,
+      "reasons": []
+    },
+    {
+      "case_id": "E14JOINT_C002",
+      "actor_id": "A2",
+      "truth_role": "协调",
+      "truth_level": "上游",
+      "role": "协调",
+      "level": "上游",
+      "available": true,
+      "correct": true,
+      "reasons": []
+    },
+    {
+      "case_id": "E14JOINT_C002",
+      "actor_id": "A4",
+      "truth_role": "资金处理",
+      "truth_level": "中间层",
+      "role": "资金处理",
+      "level": "中间层",
+      "available": true,
+      "correct": true,
+      "reasons": []
+    },
+    {
+      "case_id": "E14JOINT_C002",
+      "actor_id": "A5",
+      "truth_role": "资金处理",
+      "truth_level": "中间层",
+      "role": "资金处理",
+      "level": "中间层",
+      "available": true,
+      "correct": true,
+      "reasons": []
+    },
+    {
+      "case_id": "E14JOINT_C002",
+      "actor_id": "A3",
+      "truth_role": "运输执行",
+      "truth_level": "执行层",
+      "role": "运输执行",
+      "level": "执行层",
+      "available": true,
+      "correct": true,
+      "reasons": []
+    },
+    {
+      "case_id": "E14JOINT_C002",
+      "actor_id": "A1",
+      "truth_role": "技术支持",
+      "truth_level": "中间层",
+      "role": "技术支持",
+      "level": "中间层",
+      "available": true,
+      "correct": true,
+      "reasons": []
+    },
+    {
+      "case_id": "E14JOINT_C002",
+      "actor_id": "A6",
+      "truth_role": "运输执行",
+      "truth_level": "执行层",
+      "role": "运输执行",
+      "level": "执行层",
+      "available": true,
+      "correct": true,
+      "reasons": []
+    },
+    {
+      "case_id": "E14JOINT_C003",
+      "actor_id": "A6",
+      "truth_role": "协调",
+      "truth_level": "上游",
+      "role": "协调",
+      "level": "上游",
+      "available": true,
+      "correct": true,
+      "reasons": []
+    },
+    {
+      "case_id": "E14JOINT_C003",
+      "actor_id": "A4",
+      "truth_role": "资金处理",
+      "truth_level": "中间层",
+      "role": "资金处理",
+      "level": "中间层",
+      "available": true,
+      "correct": true,
+      "reasons": []
+    },
+    {
+      "case_id": "E14JOINT_C003",
+      "actor_id": "A5",
+      "truth_role": "资金处理",
+      "truth_level": "中间层",
+      "role": "资金处理",
+      "level": "中间层",
+      "available": true,
+      "correct": true,
+      "reasons": []
+    },
+    {
+      "case_id": "E14JOINT_C003",
+      "actor_id": "A1",
+      "truth_role": "运输执行",
+      "truth_level": "执行层",
+      "role": "运输执行",
+      "level": "执行层",
+      "available": true,
+      "correct": true,
+      "reasons": []
+    },
+    {
+      "case_id": "E14JOINT_C003",
+      "actor_id": "A3",
+      "truth_role": "技术支持",
+      "truth_level": "中间层",
+      "role": "技术支持",
+      "level": "中间层",
+      "available": true,
+      "correct": true,
+      "reasons": []
+    },
+    {
+      "case_id": "E14JOINT_C003",
+      "actor_id": "A2",
+      "truth_role": "运输执行",
+      "truth_level": "执行层",
+      "role": "运输执行",
+      "level": "执行层",
+      "available": true,
+      "correct": true,
+      "reasons": []
+    },
+    {
+      "case_id": "E14JOINT_C004",
+      "actor_id": "A6",
+      "truth_role": "协调",
+      "truth_level": "上游",
+      "role": "协调",
+      "level": "上游",
+      "available": true,
+      "correct": true,
+      "reasons": []
+    },
+    {
+      "case_id": "E14JOINT_C004",
+      "actor_id": "A3",
+      "truth_role": "资金处理",
+      "truth_level": "中间层",
+      "role": "资金处理",
+      "level": "中间层",
+      "available": true,
+      "correct": true,
+      "reasons": []
+    },
+    {
+      "case_id": "E14JOINT_C004",
+      "actor_id": "A1",
+      "truth_role": "资金处理",
+      "truth_level": "中间层",
+      "role": "资金处理",
+      "level": "中间层",
+      "available": true,
+      "correct": true,
+      "reasons": []
+    },
+    {
+      "case_id": "E14JOINT_C004",
+      "actor_id": "A5",
+      "truth_role": "运输执行",
+      "truth_level": "执行层",
+      "role": "运输执行",
+      "level": "执行层",
+      "available": true,
+      "correct": true,
+      "reasons": []
+    },
+    {
+      "case_id": "E14JOINT_C004",
+      "actor_id": "A4",
+      "truth_role": "技术支持",
+      "truth_level": "中间层",
+      "role": "技术支持",
+      "level": "中间层",
+      "available": true,
+      "correct": true,
+      "reasons": []
+    },
+    {
+      "case_id": "E14JOINT_C004",
+      "actor_id": "A2",
+      "truth_role": "运输执行",
+      "truth_level": "执行层",
+      "role": "运输执行",
+      "level": "执行层",
+      "available": true,
+      "correct": true,
+      "reasons": []
+    },
+    {
+      "case_id": "E14JOINT_C005",
+      "actor_id": "A2",
+      "truth_role": "协调",
+      "truth_level": "上游",
+      "role": "协调",
+      "level": "上游",
+      "available": true,
+      "correct": true,
+      "reasons": []
+    },
+    {
+      "case_id": "E14JOINT_C005",
+      "actor_id": "A3",
+      "truth_role": "资金处理",
+      "truth_level": "中间层",
+      "role": "资金处理",
+      "level": "中间层",
+      "available": true,
+      "correct": true,
+      "reasons": []
+    },
+    {
+      "case_id": "E14JOINT_C005",
+      "actor_id": "A5",
+      "truth_role": "资金处理",
+      "truth_level": "中间层",
+      "role": "资金处理",
+      "level": "中间层",
+      "available": true,
+      "correct": true,
+      "reasons": []
+    },
+    {
+      "case_id": "E14JOINT_C005",
+      "actor_id": "A4",
+      "truth_role": "运输执行",
+      "truth_level": "执行层",
+      "role": "运输执行",
+      "level": "执行层",
+      "available": true,
+      "correct": true,
+      "reasons": []
+    },
+    {
+      "case_id": "E14JOINT_C005",
+      "actor_id": "A6",
+      "truth_role": "技术支持",
+      "truth_level": "中间层",
+      "role": "技术支持",
+      "level": "中间层",
+      "available": true,
+      "correct": true,
+      "reasons": []
+    },
+    {
+      "case_id": "E14JOINT_C005",
+      "actor_id": "A1",
+      "truth_role": "运输执行",
+      "truth_level": "执行层",
+      "role": "运输执行",
+      "level": "执行层",
+      "available": true,
+      "correct": true,
+      "reasons": []
+    },
+    {
+      "case_id": "E14JOINT_C006",
+      "actor_id": "A4",
+      "truth_role": "协调",
+      "truth_level": "上游",
+      "role": "协调",
+      "level": "上游",
+      "available": true,
+      "correct": true,
+      "reasons": []
+    },
+    {
+      "case_id": "E14JOINT_C006",
+      "actor_id": "A1",
+      "truth_role": "资金处理",
+      "truth_level": "中间层",
+      "role": "资金处理",
+      "level": "中间层",
+      "available": true,
+      "correct": true,
+      "reasons": []
+    },
+    {
+      "case_id": "E14JOINT_C006",
+      "actor_id": "A2",
+      "truth_role": "资金处理",
+      "truth_level": "中间层",
+      "role": "资金处理",
+      "level": "中间层",
+      "available": true,
+      "correct": true,
+      "reasons": []
+    },
+    {
+      "case_id": "E14JOINT_C006",
+      "actor_id": "A3",
+      "truth_role": "运输执行",
+      "truth_level": "执行层",
+      "role": "运输执行",
+      "level": "执行层",
+      "available": true,
+      "correct": true,
+      "reasons": []
+    },
+    {
+      "case_id": "E14JOINT_C006",
+      "actor_id": "A6",
+      "truth_role": "技术支持",
+      "truth_level": "中间层",
+      "role": "技术支持",
+      "level": "中间层",
+      "available": true,
+      "correct": true,
+      "reasons": []
+    },
+    {
+      "case_id": "E14JOINT_C006",
+      "actor_id": "A5",
+      "truth_role": "运输执行",
+      "truth_level": "执行层",
+      "role": "运输执行",
+      "level": "执行层",
+      "available": true,
+      "correct": true,
+      "reasons": []
+    },
+    {
+      "case_id": "E14JOINT_C007",
+      "actor_id": "A3",
+      "truth_role": "协调",
+      "truth_level": "上游",
+      "role": "协调",
+      "level": "上游",
+      "available": true,
+      "correct": true,
+      "reasons": []
+    },
+    {
+      "case_id": "E14JOINT_C007",
+      "actor_id": "A1",
+      "truth_role": "资金处理",
+      "truth_level": "中间层",
+      "role": "资金处理",
+      "level": "中间层",
+      "available": true,
+      "correct": true,
+      "reasons": []
+    },
+    {
+      "case_id": "E14JOINT_C007",
+      "actor_id": "A6",
+      "truth_role": "资金处理",
+      "truth_level": "中间层",
+      "role": "资金处理",
+      "level": "中间层",
+      "available": true,
+      "correct": true,
+      "reasons": []
+    },
+    {
+      "case_id": "E14JOINT_C007",
+      "actor_id": "A4",
+      "truth_role": "运输执行",
+      "truth_level": "执行层",
+      "role": "运输执行",
+      "level": "执行层",
+      "available": true,
+      "correct": true,
+      "reasons": []
+    },
+    {
+      "case_id": "E14JOINT_C007",
+      "actor_id": "A5",
+      "truth_role": "技术支持",
+      "truth_level": "中间层",
+      "role": "技术支持",
+      "level": "中间层",
+      "available": true,
+      "correct": true,
+      "reasons": []
+    },
+    {
+      "case_id": "E14JOINT_C007",
+      "actor_id": "A2",
+      "truth_role": "运输执行",
+      "truth_level": "执行层",
+      "role": "运输执行",
+      "level": "执行层",
+      "available": true,
+      "correct": true,
+      "reasons": []
+    },
+    {
+      "case_id": "E14JOINT_C008",
+      "actor_id": "A1",
+      "truth_role": "协调",
+      "truth_level": "上游",
+      "role": "协调",
+      "level": "上游",
+      "available": true,
+      "correct": true,
+      "reasons": []
+    },
+    {
+      "case_id": "E14JOINT_C008",
+      "actor_id": "A5",
+      "truth_role": "资金处理",
+      "truth_level": "中间层",
+      "role": "资金处理",
+      "level": "中间层",
+      "available": true,
+      "correct": true,
+      "reasons": []
+    },
+    {
+      "case_id": "E14JOINT_C008",
+      "actor_id": "A4",
+      "truth_role": "资金处理",
+      "truth_level": "中间层",
+      "role": "资金处理",
+      "level": "中间层",
+      "available": true,
+      "correct": true,
+      "reasons": []
+    },
+    {
+      "case_id": "E14JOINT_C008",
+      "actor_id": "A2",
+      "truth_role": "运输执行",
+      "truth_level": "执行层",
+      "role": "运输执行",
+      "level": "执行层",
+      "available": true,
+      "correct": true,
+      "reasons": []
+    },
+    {
+      "case_id": "E14JOINT_C008",
+      "actor_id": "A3",
+      "truth_role": "技术支持",
+      "truth_level": "中间层",
+      "role": "技术支持",
+      "level": "中间层",
+      "available": true,
+      "correct": true,
+      "reasons": []
+    },
+    {
+      "case_id": "E14JOINT_C008",
+      "actor_id": "A6",
+      "truth_role": "运输执行",
+      "truth_level": "执行层",
+      "role": "运输执行",
+      "level": "执行层",
+      "available": true,
+      "correct": true,
+      "reasons": []
+    },
+    {
+      "case_id": "E14JOINT_C009",
+      "actor_id": "A1",
+      "truth_role": "协调",
+      "truth_level": "上游",
+      "role": "协调",
+      "level": "上游",
+      "available": true,
+      "correct": true,
+      "reasons": []
+    },
+    {
+      "case_id": "E14JOINT_C009",
+      "actor_id": "A6",
+      "truth_role": "资金处理",
+      "truth_level": "中间层",
+      "role": "资金处理",
+      "level": "中间层",
+      "available": true,
+      "correct": true,
+      "reasons": []
+    },
+    {
+      "case_id": "E14JOINT_C009",
+      "actor_id": "A5",
+      "truth_role": "资金处理",
+      "truth_level": "中间层",
+      "role": "资金处理",
+      "level": "中间层",
+      "available": true,
+      "correct": true,
+      "reasons": []
+    },
+    {
+      "case_id": "E14JOINT_C009",
+      "actor_id": "A3",
+      "truth_role": "运输执行",
+      "truth_level": "执行层",
+      "role": "运输执行",
+      "level": "执行层",
+      "available": true,
+      "correct": true,
+      "reasons": []
+    },
+    {
+      "case_id": "E14JOINT_C009",
+      "actor_id": "A4",
+      "truth_role": "技术支持",
+      "truth_level": "中间层",
+      "role": "技术支持",
+      "level": "中间层",
+      "available": true,
+      "correct": true,
+      "reasons": []
+    },
+    {
+      "case_id": "E14JOINT_C009",
+      "actor_id": "A2",
+      "truth_role": "运输执行",
+      "truth_level": "执行层",
+      "role": "运输执行",
+      "level": "执行层",
+      "available": true,
+      "correct": true,
+      "reasons": []
+    },
+    {
+      "case_id": "E14JOINT_C010",
+      "actor_id": "A1",
+      "truth_role": "协调",
+      "truth_level": "上游",
+      "role": "协调",
+      "level": "上游",
+      "available": true,
+      "correct": true,
+      "reasons": []
+    },
+    {
+      "case_id": "E14JOINT_C010",
+      "actor_id": "A5",
+      "truth_role": "资金处理",
+      "truth_level": "中间层",
+      "role": "资金处理",
+      "level": "中间层",
+      "available": true,
+      "correct": true,
+      "reasons": []
+    },
+    {
+      "case_id": "E14JOINT_C010",
+      "actor_id": "A4",
+      "truth_role": "资金处理",
+      "truth_level": "中间层",
+      "role": "资金处理",
+      "level": "中间层",
+      "available": true,
+      "correct": true,
+      "reasons": []
+    },
+    {
+      "case_id": "E14JOINT_C010",
+      "actor_id": "A2",
+      "truth_role": "运输执行",
+      "truth_level": "执行层",
+      "role": "运输执行",
+      "level": "执行层",
+      "available": true,
+      "correct": true,
+      "reasons": []
+    },
+    {
+      "case_id": "E14JOINT_C010",
+      "actor_id": "A3",
+      "truth_role": "技术支持",
+      "truth_level": "中间层",
+      "role": "技术支持",
+      "level": "中间层",
+      "available": true,
+      "correct": true,
+      "reasons": []
+    },
+    {
+      "case_id": "E14JOINT_C010",
+      "actor_id": "A6",
+      "truth_role": "运输执行",
+      "truth_level": "执行层",
+      "role": "运输执行",
+      "level": "执行层",
+      "available": true,
+      "correct": true,
+      "reasons": []
+    },
+    {
+      "case_id": "E14JOINT_C011",
+      "actor_id": "A4",
+      "truth_role": "协调",
+      "truth_level": "上游",
+      "role": "协调",
+      "level": "上游",
+      "available": true,
+      "correct": true,
+      "reasons": []
+    },
+    {
+      "case_id": "E14JOINT_C011",
+      "actor_id": "A6",
+      "truth_role": "资金处理",
+      "truth_level": "中间层",
+      "role": "资金处理",
+      "level": "中间层",
+      "available": true,
+      "correct": true,
+      "reasons": []
+    },
+    {
+      "case_id": "E14JOINT_C011",
+      "actor_id": "A3",
+      "truth_role": "资金处理",
+      "truth_level": "中间层",
+      "role": "资金处理",
+      "level": "中间层",
+      "available": true,
+      "correct": true,
+      "reasons": []
+    },
+    {
+      "case_id": "E14JOINT_C011",
+      "actor_id": "A1",
+      "truth_role": "运输执行",
+      "truth_level": "执行层",
+      "role": "运输执行",
+      "level": "执行层",
+      "available": true,
+      "correct": true,
+      "reasons": []
+    },
+    {
+      "case_id": "E14JOINT_C011",
+      "actor_id": "A2",
+      "truth_role": "技术支持",
+      "truth_level": "中间层",
+      "role": "技术支持",
+      "level": "中间层",
+      "available": true,
+      "correct": true,
+      "reasons": []
+    },
+    {
+      "case_id": "E14JOINT_C011",
+      "actor_id": "A5",
+      "truth_role": "运输执行",
+      "truth_level": "执行层",
+      "role": "运输执行",
+      "level": "执行层",
+      "available": true,
+      "correct": true,
+      "reasons": []
+    },
+    {
+      "case_id": "E14JOINT_C012",
+      "actor_id": "A5",
+      "truth_role": "协调",
+      "truth_level": "上游",
+      "role": "协调",
+      "level": "上游",
+      "available": true,
+      "correct": true,
+      "reasons": []
+    },
+    {
+      "case_id": "E14JOINT_C012",
+      "actor_id": "A2",
+      "truth_role": "资金处理",
+      "truth_level": "中间层",
+      "role": "资金处理",
+      "level": "中间层",
+      "available": true,
+      "correct": true,
+      "reasons": []
+    },
+    {
+      "case_id": "E14JOINT_C012",
+      "actor_id": "A4",
+      "truth_role": "资金处理",
+      "truth_level": "中间层",
+      "role": "资金处理",
+      "level": "中间层",
+      "available": true,
+      "correct": true,
+      "reasons": []
+    },
+    {
+      "case_id": "E14JOINT_C012",
+      "actor_id": "A1",
+      "truth_role": "运输执行",
+      "truth_level": "执行层",
+      "role": "运输执行",
+      "level": "执行层",
+      "available": true,
+      "correct": true,
+      "reasons": []
+    },
+    {
+      "case_id": "E14JOINT_C012",
+      "actor_id": "A6",
+      "truth_role": "技术支持",
+      "truth_level": "中间层",
+      "role": "技术支持",
+      "level": "中间层",
+      "available": true,
+      "correct": true,
+      "reasons": []
+    },
+    {
+      "case_id": "E14JOINT_C012",
+      "actor_id": "A3",
+      "truth_role": "运输执行",
+      "truth_level": "执行层",
+      "role": "运输执行",
+      "level": "执行层",
+      "available": true,
+      "correct": true,
+      "reasons": []
+    },
+    {
+      "case_id": "E14JOINT_C013",
+      "actor_id": "A3",
+      "truth_role": "协调",
+      "truth_level": "上游",
+      "role": "协调",
+      "level": "上游",
+      "available": true,
+      "correct": true,
+      "reasons": []
+    },
+    {
+      "case_id": "E14JOINT_C013",
+      "actor_id": "A5",
+      "truth_role": "资金处理",
+      "truth_level": "中间层",
+      "role": "资金处理",
+      "level": "中间层",
+      "available": true,
+      "correct": true,
+      "reasons": []
+    },
+    {
+      "case_id": "E14JOINT_C013",
+      "actor_id": "A2",
+      "truth_role": "资金处理",
+      "truth_level": "中间层",
+      "role": "资金处理",
+      "level": "中间层",
+      "available": true,
+      "correct": true,
+      "reasons": []
+    },
+    {
+      "case_id": "E14JOINT_C013",
+      "actor_id": "A6",
+      "truth_role": "运输执行",
+      "truth_level": "执行层",
+      "role": "运输执行",
+      "level": "执行层",
+      "available": true,
+      "correct": true,
+      "reasons": []
+    },
+    {
+      "case_id": "E14JOINT_C013",
+      "actor_id": "A1",
+      "truth_role": "技术支持",
+      "truth_level": "中间层",
+      "role": "技术支持",
+      "level": "中间层",
+      "available": true,
+      "correct": true,
+      "reasons": []
+    },
+    {
+      "case_id": "E14JOINT_C013",
+      "actor_id": "A4",
+      "truth_role": "运输执行",
+      "truth_level": "执行层",
+      "role": "运输执行",
+      "level": "执行层",
+      "available": true,
+      "correct": true,
+      "reasons": []
+    },
+    {
+      "case_id": "E14JOINT_C014",
+      "actor_id": "A5",
+      "truth_role": "协调",
+      "truth_level": "上游",
+      "role": "协调",
+      "level": "上游",
+      "available": true,
+      "correct": true,
+      "reasons": []
+    },
+    {
+      "case_id": "E14JOINT_C014",
+      "actor_id": "A4",
+      "truth_role": "资金处理",
+      "truth_level": "中间层",
+      "role": "资金处理",
+      "level": "中间层",
+      "available": true,
+      "correct": true,
+      "reasons": []
+    },
+    {
+      "case_id": "E14JOINT_C014",
+      "actor_id": "A1",
+      "truth_role": "资金处理",
+      "truth_level": "中间层",
+      "role": "资金处理",
+      "level": "中间层",
+      "available": true,
+      "correct": true,
+      "reasons": []
+    },
+    {
+      "case_id": "E14JOINT_C014",
+      "actor_id": "A2",
+      "truth_role": "运输执行",
+      "truth_level": "执行层",
+      "role": "运输执行",
+      "level": "执行层",
+      "available": true,
+      "correct": true,
+      "reasons": []
+    },
+    {
+      "case_id": "E14JOINT_C014",
+      "actor_id": "A6",
+      "truth_role": "技术支持",
+      "truth_level": "中间层",
+      "role": "技术支持",
+      "level": "中间层",
+      "available": true,
+      "correct": true,
+      "reasons": []
+    },
+    {
+      "case_id": "E14JOINT_C014",
+      "actor_id": "A3",
+      "truth_role": "运输执行",
+      "truth_level": "执行层",
+      "role": "运输执行",
+      "level": "执行层",
+      "available": true,
+      "correct": true,
+      "reasons": []
+    },
+    {
+      "case_id": "E14JOINT_C015",
+      "actor_id": "A4",
+      "truth_role": "协调",
+      "truth_level": "上游",
+      "role": "协调",
+      "level": "上游",
+      "available": true,
+      "correct": true,
+      "reasons": []
+    },
+    {
+      "case_id": "E14JOINT_C015",
+      "actor_id": "A6",
+      "truth_role": "资金处理",
+      "truth_level": "中间层",
+      "role": "资金处理",
+      "level": "中间层",
+      "available": true,
+      "correct": true,
+      "reasons": []
+    },
+    {
+      "case_id": "E14JOINT_C015",
+      "actor_id": "A2",
+      "truth_role": "资金处理",
+      "truth_level": "中间层",
+      "role": "资金处理",
+      "level": "中间层",
+      "available": true,
+      "correct": true,
+      "reasons": []
+    },
+    {
+      "case_id": "E14JOINT_C015",
+      "actor_id": "A1",
+      "truth_role": "运输执行",
+      "truth_level": "执行层",
+      "role": "运输执行",
+      "level": "执行层",
+      "available": true,
+      "correct": true,
+      "reasons": []
+    },
+    {
+      "case_id": "E14JOINT_C015",
+      "actor_id": "A3",
+      "truth_role": "技术支持",
+      "truth_level": "中间层",
+      "role": "技术支持",
+      "level": "中间层",
+      "available": true,
+      "correct": true,
+      "reasons": []
+    },
+    {
+      "case_id": "E14JOINT_C015",
+      "actor_id": "A5",
+      "truth_role": "运输执行",
+      "truth_level": "执行层",
+      "role": "运输执行",
+      "level": "执行层",
+      "available": true,
+      "correct": true,
+      "reasons": []
+    },
+    {
+      "case_id": "E14JOINT_C016",
+      "actor_id": "A5",
+      "truth_role": "协调",
+      "truth_level": "上游",
+      "role": "协调",
+      "level": "上游",
+      "available": true,
+      "correct": true,
+      "reasons": []
+    },
+    {
+      "case_id": "E14JOINT_C016",
+      "actor_id": "A2",
+      "truth_role": "资金处理",
+      "truth_level": "中间层",
+      "role": "资金处理",
+      "level": "中间层",
+      "available": true,
+      "correct": true,
+      "reasons": []
+    },
+    {
+      "case_id": "E14JOINT_C016",
+      "actor_id": "A1",
+      "truth_role": "资金处理",
+      "truth_level": "中间层",
+      "role": "资金处理",
+      "level": "中间层",
+      "available": true,
+      "correct": true,
+      "reasons": []
+    },
+    {
+      "case_id": "E14JOINT_C016",
+      "actor_id": "A6",
+      "truth_role": "运输执行",
+      "truth_level": "执行层",
+      "role": "运输执行",
+      "level": "执行层",
+      "available": true,
+      "correct": true,
+      "reasons": []
+    },
+    {
+      "case_id": "E14JOINT_C016",
+      "actor_id": "A3",
+      "truth_role": "技术支持",
+      "truth_level": "中间层",
+      "role": "技术支持",
+      "level": "中间层",
+      "available": true,
+      "correct": true,
+      "reasons": []
+    },
+    {
+      "case_id": "E14JOINT_C016",
+      "actor_id": "A4",
+      "truth_role": "运输执行",
+      "truth_level": "执行层",
+      "role": "运输执行",
+      "level": "执行层",
+      "available": true,
+      "correct": true,
+      "reasons": []
+    },
+    {
+      "case_id": "E14JOINT_C017",
+      "actor_id": "A5",
+      "truth_role": "协调",
+      "truth_level": "上游",
+      "role": "协调",
+      "level": "上游",
+      "available": true,
+      "correct": true,
+      "reasons": []
+    },
+    {
+      "case_id": "E14JOINT_C017",
+      "actor_id": "A3",
+      "truth_role": "资金处理",
+      "truth_level": "中间层",
+      "role": "资金处理",
+      "level": "中间层",
+      "available": true,
+      "correct": true,
+      "reasons": []
+    },
+    {
+      "case_id": "E14JOINT_C017",
+      "actor_id": "A4",
+      "truth_role": "资金处理",
+      "truth_level": "中间层",
+      "role": "资金处理",
+      "level": "中间层",
+      "available": true,
+      "correct": true,
+      "reasons": []
+    },
+    {
+      "case_id": "E14JOINT_C017",
+      "actor_id": "A2",
+      "truth_role": "运输执行",
+      "truth_level": "执行层",
+      "role": "运输执行",
+      "level": "执行层",
+      "available": true,
+      "correct": true,
+      "reasons": []
+    },
+    {
+      "case_id": "E14JOINT_C017",
+      "actor_id": "A1",
+      "truth_role": "技术支持",
+      "truth_level": "中间层",
+      "role": "技术支持",
+      "level": "中间层",
+      "available": true,
+      "correct": true,
+      "reasons": []
+    },
+    {
+      "case_id": "E14JOINT_C017",
+      "actor_id": "A6",
+      "truth_role": "运输执行",
+      "truth_level": "执行层",
+      "role": "运输执行",
+      "level": "执行层",
+      "available": true,
+      "correct": true,
+      "reasons": []
+    },
+    {
+      "case_id": "E14JOINT_C018",
+      "actor_id": "A5",
+      "truth_role": "协调",
+      "truth_level": "上游",
+      "role": "协调",
+      "level": "上游",
+      "available": true,
+      "correct": true,
+      "reasons": []
+    },
+    {
+      "case_id": "E14JOINT_C018",
+      "actor_id": "A4",
+      "truth_role": "资金处理",
+      "truth_level": "中间层",
+      "role": "资金处理",
+      "level": "中间层",
+      "available": true,
+      "correct": true,
+      "reasons": []
+    },
+    {
+      "case_id": "E14JOINT_C018",
+      "actor_id": "A2",
+      "truth_role": "资金处理",
+      "truth_level": "中间层",
+      "role": "资金处理",
+      "level": "中间层",
+      "available": true,
+      "correct": true,
+      "reasons": []
+    },
+    {
+      "case_id": "E14JOINT_C018",
+      "actor_id": "A3",
+      "truth_role": "运输执行",
+      "truth_level": "执行层",
+      "role": "运输执行",
+      "level": "执行层",
+      "available": true,
+      "correct": true,
+      "reasons": []
+    },
+    {
+      "case_id": "E14JOINT_C018",
+      "actor_id": "A6",
+      "truth_role": "技术支持",
+      "truth_level": "中间层",
+      "role": "技术支持",
+      "level": "中间层",
+      "available": true,
+      "correct": true,
+      "reasons": []
+    },
+    {
+      "case_id": "E14JOINT_C018",
+      "actor_id": "A1",
+      "truth_role": "运输执行",
+      "truth_level": "执行层",
+      "role": "运输执行",
+      "level": "执行层",
+      "available": true,
+      "correct": true,
+      "reasons": []
+    },
+    {
+      "case_id": "E14JOINT_C019",
+      "actor_id": "A1",
+      "truth_role": "协调",
+      "truth_level": "上游",
+      "role": "协调",
+      "level": "上游",
+      "available": true,
+      "correct": true,
+      "reasons": []
+    },
+    {
+      "case_id": "E14JOINT_C019",
+      "actor_id": "A6",
+      "truth_role": "资金处理",
+      "truth_level": "中间层",
+      "role": "资金处理",
+      "level": "中间层",
+      "available": true,
+      "correct": true,
+      "reasons": []
+    },
+    {
+      "case_id": "E14JOINT_C019",
+      "actor_id": "A4",
+      "truth_role": "资金处理",
+      "truth_level": "中间层",
+      "role": "资金处理",
+      "level": "中间层",
+      "available": true,
+      "correct": true,
+      "reasons": []
+    },
+    {
+      "case_id": "E14JOINT_C019",
+      "actor_id": "A5",
+      "truth_role": "运输执行",
+      "truth_level": "执行层",
+      "role": "运输执行",
+      "level": "执行层",
+      "available": true,
+      "correct": true,
+      "reasons": []
+    },
+    {
+      "case_id": "E14JOINT_C019",
+      "actor_id": "A3",
+      "truth_role": "技术支持",
+      "truth_level": "中间层",
+      "role": "技术支持",
+      "level": "中间层",
+      "available": true,
+      "correct": true,
+      "reasons": []
+    },
+    {
+      "case_id": "E14JOINT_C019",
+      "actor_id": "A2",
+      "truth_role": "运输执行",
+      "truth_level": "执行层",
+      "role": "运输执行",
+      "level": "执行层",
+      "available": true,
+      "correct": true,
+      "reasons": []
+    },
+    {
+      "case_id": "E14JOINT_C020",
+      "actor_id": "A6",
+      "truth_role": "协调",
+      "truth_level": "上游",
+      "role": "协调",
+      "level": "上游",
+      "available": true,
+      "correct": true,
+      "reasons": []
+    },
+    {
+      "case_id": "E14JOINT_C020",
+      "actor_id": "A2",
+      "truth_role": "资金处理",
+      "truth_level": "中间层",
+      "role": "资金处理",
+      "level": "中间层",
+      "available": true,
+      "correct": true,
+      "reasons": []
+    },
+    {
+      "case_id": "E14JOINT_C020",
+      "actor_id": "A1",
+      "truth_role": "资金处理",
+      "truth_level": "中间层",
+      "role": "资金处理",
+      "level": "中间层",
+      "available": true,
+      "correct": true,
+      "reasons": []
+    },
+    {
+      "case_id": "E14JOINT_C020",
+      "actor_id": "A3",
+      "truth_role": "运输执行",
+      "truth_level": "执行层",
+      "role": "运输执行",
+      "level": "执行层",
+      "available": true,
+      "correct": true,
+      "reasons": []
+    },
+    {
+      "case_id": "E14JOINT_C020",
+      "actor_id": "A5",
+      "truth_role": "技术支持",
+      "truth_level": "中间层",
+      "role": "技术支持",
+      "level": "中间层",
+      "available": true,
+      "correct": true,
+      "reasons": []
+    },
+    {
+      "case_id": "E14JOINT_C020",
+      "actor_id": "A4",
+      "truth_role": "运输执行",
+      "truth_level": "执行层",
+      "role": "运输执行",
+      "level": "执行层",
+      "available": true,
+      "correct": true,
+      "reasons": []
+    },
+    {
+      "case_id": "E14JOINT_C021",
+      "actor_id": "A1",
+      "truth_role": "协调",
+      "truth_level": "上游",
+      "role": "协调",
+      "level": "上游",
+      "available": true,
+      "correct": true,
+      "reasons": []
+    },
+    {
+      "case_id": "E14JOINT_C021",
+      "actor_id": "A3",
+      "truth_role": "资金处理",
+      "truth_level": "中间层",
+      "role": "资金处理",
+      "level": "中间层",
+      "available": true,
+      "correct": true,
+      "reasons": []
+    },
+    {
+      "case_id": "E14JOINT_C021",
+      "actor_id": "A5",
+      "truth_role": "资金处理",
+      "truth_level": "中间层",
+      "role": "资金处理",
+      "level": "中间层",
+      "available": true,
+      "correct": true,
+      "reasons": []
+    },
+    {
+      "case_id": "E14JOINT_C021",
+      "actor_id": "A2",
+      "truth_role": "运输执行",
+      "truth_level": "执行层",
+      "role": "运输执行",
+      "level": "执行层",
+      "available": true,
+      "correct": true,
+      "reasons": []
+    },
+    {
+      "case_id": "E14JOINT_C021",
+      "actor_id": "A6",
+      "truth_role": "技术支持",
+      "truth_level": "中间层",
+      "role": "技术支持",
+      "level": "中间层",
+      "available": true,
+      "correct": true,
+      "reasons": []
+    },
+    {
+      "case_id": "E14JOINT_C021",
+      "actor_id": "A4",
+      "truth_role": "运输执行",
+      "truth_level": "执行层",
+      "role": "运输执行",
+      "level": "执行层",
+      "available": true,
+      "correct": true,
+      "reasons": []
+    },
+    {
+      "case_id": "E14JOINT_C022",
+      "actor_id": "A1",
+      "truth_role": "协调",
+      "truth_level": "上游",
+      "role": "协调",
+      "level": "上游",
+      "available": true,
+      "correct": true,
+      "reasons": []
+    },
+    {
+      "case_id": "E14JOINT_C022",
+      "actor_id": "A6",
+      "truth_role": "资金处理",
+      "truth_level": "中间层",
+      "role": "资金处理",
+      "level": "中间层",
+      "available": true,
+      "correct": true,
+      "reasons": []
+    },
+    {
+      "case_id": "E14JOINT_C022",
+      "actor_id": "A2",
+      "truth_role": "资金处理",
+      "truth_level": "中间层",
+      "role": "资金处理",
+      "level": "中间层",
+      "available": true,
+      "correct": true,
+      "reasons": []
+    },
+    {
+      "case_id": "E14JOINT_C022",
+      "actor_id": "A3",
+      "truth_role": "运输执行",
+      "truth_level": "执行层",
+      "role": "运输执行",
+      "level": "执行层",
+      "available": true,
+      "correct": true,
+      "reasons": []
+    },
+    {
+      "case_id": "E14JOINT_C022",
+      "actor_id": "A4",
+      "truth_role": "技术支持",
+      "truth_level": "中间层",
+      "role": "技术支持",
+      "level": "中间层",
+      "available": true,
+      "correct": true,
+      "reasons": []
+    },
+    {
+      "case_id": "E14JOINT_C022",
+      "actor_id": "A5",
+      "truth_role": "运输执行",
+      "truth_level": "执行层",
+      "role": "运输执行",
+      "level": "执行层",
+      "available": true,
+      "correct": true,
+      "reasons": []
+    },
+    {
+      "case_id": "E14JOINT_C023",
+      "actor_id": "A3",
+      "truth_role": "协调",
+      "truth_level": "上游",
+      "role": "协调",
+      "level": "上游",
+      "available": true,
+      "correct": true,
+      "reasons": []
+    },
+    {
+      "case_id": "E14JOINT_C023",
+      "actor_id": "A5",
+      "truth_role": "资金处理",
+      "truth_level": "中间层",
+      "role": "资金处理",
+      "level": "中间层",
+      "available": true,
+      "correct": true,
+      "reasons": []
+    },
+    {
+      "case_id": "E14JOINT_C023",
+      "actor_id": "A1",
+      "truth_role": "资金处理",
+      "truth_level": "中间层",
+      "role": "资金处理",
+      "level": "中间层",
+      "available": true,
+      "correct": true,
+      "reasons": []
+    },
+    {
+      "case_id": "E14JOINT_C023",
+      "actor_id": "A2",
+      "truth_role": "运输执行",
+      "truth_level": "执行层",
+      "role": "运输执行",
+      "level": "执行层",
+      "available": true,
+      "correct": true,
+      "reasons": []
+    },
+    {
+      "case_id": "E14JOINT_C023",
+      "actor_id": "A6",
+      "truth_role": "技术支持",
+      "truth_level": "中间层",
+      "role": "技术支持",
+      "level": "中间层",
+      "available": true,
+      "correct": true,
+      "reasons": []
+    },
+    {
+      "case_id": "E14JOINT_C023",
+      "actor_id": "A4",
+      "truth_role": "运输执行",
+      "truth_level": "执行层",
+      "role": "运输执行",
+      "level": "执行层",
+      "available": true,
+      "correct": true,
+      "reasons": []
+    },
+    {
+      "case_id": "E14JOINT_C024",
+      "actor_id": "A6",
+      "truth_role": "协调",
+      "truth_level": "上游",
+      "role": "协调",
+      "level": "上游",
+      "available": true,
+      "correct": true,
+      "reasons": []
+    },
+    {
+      "case_id": "E14JOINT_C024",
+      "actor_id": "A1",
+      "truth_role": "资金处理",
+      "truth_level": "中间层",
+      "role": "资金处理",
+      "level": "中间层",
+      "available": true,
+      "correct": true,
+      "reasons": []
+    },
+    {
+      "case_id": "E14JOINT_C024",
+      "actor_id": "A2",
+      "truth_role": "资金处理",
+      "truth_level": "中间层",
+      "role": "资金处理",
+      "level": "中间层",
+      "available": true,
+      "correct": true,
+      "reasons": []
+    },
+    {
+      "case_id": "E14JOINT_C024",
+      "actor_id": "A4",
+      "truth_role": "运输执行",
+      "truth_level": "执行层",
+      "role": "运输执行",
+      "level": "执行层",
+      "available": true,
+      "correct": true,
+      "reasons": []
+    },
+    {
+      "case_id": "E14JOINT_C024",
+      "actor_id": "A3",
+      "truth_role": "技术支持",
+      "truth_level": "中间层",
+      "role": "技术支持",
+      "level": "中间层",
+      "available": true,
+      "correct": true,
+      "reasons": []
+    },
+    {
+      "case_id": "E14JOINT_C024",
+      "actor_id": "A5",
+      "truth_role": "运输执行",
+      "truth_level": "执行层",
+      "role": "运输执行",
+      "level": "执行层",
+      "available": true,
+      "correct": true,
+      "reasons": []
+    }
+  ],
+  "control_pairs": [
+    {
+      "case_id": "E14JOINT_C001",
+      "from_actor": "A1",
+      "to_actor": "A2",
+      "label": 1,
+      "selected": true,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C001",
+      "from_actor": "A1",
+      "to_actor": "A4",
+      "label": 1,
+      "selected": true,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C001",
+      "from_actor": "A1",
+      "to_actor": "A3",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C001",
+      "from_actor": "A1",
+      "to_actor": "A6",
+      "label": 1,
+      "selected": true,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C001",
+      "from_actor": "A1",
+      "to_actor": "A5",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C001",
+      "from_actor": "A2",
+      "to_actor": "A1",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C001",
+      "from_actor": "A2",
+      "to_actor": "A4",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C001",
+      "from_actor": "A2",
+      "to_actor": "A3",
+      "label": 1,
+      "selected": true,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C001",
+      "from_actor": "A2",
+      "to_actor": "A6",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C001",
+      "from_actor": "A2",
+      "to_actor": "A5",
+      "label": 1,
+      "selected": true,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C001",
+      "from_actor": "A4",
+      "to_actor": "A1",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C001",
+      "from_actor": "A4",
+      "to_actor": "A2",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C001",
+      "from_actor": "A4",
+      "to_actor": "A3",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C001",
+      "from_actor": "A4",
+      "to_actor": "A6",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C001",
+      "from_actor": "A4",
+      "to_actor": "A5",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C001",
+      "from_actor": "A3",
+      "to_actor": "A1",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C001",
+      "from_actor": "A3",
+      "to_actor": "A2",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C001",
+      "from_actor": "A3",
+      "to_actor": "A4",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C001",
+      "from_actor": "A3",
+      "to_actor": "A6",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C001",
+      "from_actor": "A3",
+      "to_actor": "A5",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C001",
+      "from_actor": "A6",
+      "to_actor": "A1",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C001",
+      "from_actor": "A6",
+      "to_actor": "A2",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C001",
+      "from_actor": "A6",
+      "to_actor": "A4",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C001",
+      "from_actor": "A6",
+      "to_actor": "A3",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C001",
+      "from_actor": "A6",
+      "to_actor": "A5",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C001",
+      "from_actor": "A5",
+      "to_actor": "A1",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C001",
+      "from_actor": "A5",
+      "to_actor": "A2",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C001",
+      "from_actor": "A5",
+      "to_actor": "A4",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C001",
+      "from_actor": "A5",
+      "to_actor": "A3",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C001",
+      "from_actor": "A5",
+      "to_actor": "A6",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C002",
+      "from_actor": "A2",
+      "to_actor": "A4",
+      "label": 1,
+      "selected": true,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C002",
+      "from_actor": "A2",
+      "to_actor": "A5",
+      "label": 1,
+      "selected": true,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C002",
+      "from_actor": "A2",
+      "to_actor": "A3",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C002",
+      "from_actor": "A2",
+      "to_actor": "A1",
+      "label": 1,
+      "selected": true,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C002",
+      "from_actor": "A2",
+      "to_actor": "A6",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C002",
+      "from_actor": "A4",
+      "to_actor": "A2",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C002",
+      "from_actor": "A4",
+      "to_actor": "A5",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C002",
+      "from_actor": "A4",
+      "to_actor": "A3",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C002",
+      "from_actor": "A4",
+      "to_actor": "A1",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C002",
+      "from_actor": "A4",
+      "to_actor": "A6",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C002",
+      "from_actor": "A5",
+      "to_actor": "A2",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C002",
+      "from_actor": "A5",
+      "to_actor": "A4",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C002",
+      "from_actor": "A5",
+      "to_actor": "A3",
+      "label": 1,
+      "selected": true,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C002",
+      "from_actor": "A5",
+      "to_actor": "A1",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C002",
+      "from_actor": "A5",
+      "to_actor": "A6",
+      "label": 1,
+      "selected": true,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C002",
+      "from_actor": "A3",
+      "to_actor": "A2",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C002",
+      "from_actor": "A3",
+      "to_actor": "A4",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C002",
+      "from_actor": "A3",
+      "to_actor": "A5",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C002",
+      "from_actor": "A3",
+      "to_actor": "A1",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C002",
+      "from_actor": "A3",
+      "to_actor": "A6",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C002",
+      "from_actor": "A1",
+      "to_actor": "A2",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C002",
+      "from_actor": "A1",
+      "to_actor": "A4",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C002",
+      "from_actor": "A1",
+      "to_actor": "A5",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C002",
+      "from_actor": "A1",
+      "to_actor": "A3",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C002",
+      "from_actor": "A1",
+      "to_actor": "A6",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C002",
+      "from_actor": "A6",
+      "to_actor": "A2",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C002",
+      "from_actor": "A6",
+      "to_actor": "A4",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C002",
+      "from_actor": "A6",
+      "to_actor": "A5",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C002",
+      "from_actor": "A6",
+      "to_actor": "A3",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C002",
+      "from_actor": "A6",
+      "to_actor": "A1",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C003",
+      "from_actor": "A6",
+      "to_actor": "A4",
+      "label": 1,
+      "selected": true,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C003",
+      "from_actor": "A6",
+      "to_actor": "A5",
+      "label": 1,
+      "selected": true,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C003",
+      "from_actor": "A6",
+      "to_actor": "A1",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C003",
+      "from_actor": "A6",
+      "to_actor": "A3",
+      "label": 1,
+      "selected": true,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C003",
+      "from_actor": "A6",
+      "to_actor": "A2",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C003",
+      "from_actor": "A4",
+      "to_actor": "A6",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C003",
+      "from_actor": "A4",
+      "to_actor": "A5",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C003",
+      "from_actor": "A4",
+      "to_actor": "A1",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C003",
+      "from_actor": "A4",
+      "to_actor": "A3",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C003",
+      "from_actor": "A4",
+      "to_actor": "A2",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C003",
+      "from_actor": "A5",
+      "to_actor": "A6",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C003",
+      "from_actor": "A5",
+      "to_actor": "A4",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C003",
+      "from_actor": "A5",
+      "to_actor": "A1",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C003",
+      "from_actor": "A5",
+      "to_actor": "A3",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C003",
+      "from_actor": "A5",
+      "to_actor": "A2",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C003",
+      "from_actor": "A1",
+      "to_actor": "A6",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C003",
+      "from_actor": "A1",
+      "to_actor": "A4",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C003",
+      "from_actor": "A1",
+      "to_actor": "A5",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C003",
+      "from_actor": "A1",
+      "to_actor": "A3",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C003",
+      "from_actor": "A1",
+      "to_actor": "A2",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C003",
+      "from_actor": "A3",
+      "to_actor": "A6",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C003",
+      "from_actor": "A3",
+      "to_actor": "A4",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C003",
+      "from_actor": "A3",
+      "to_actor": "A5",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C003",
+      "from_actor": "A3",
+      "to_actor": "A1",
+      "label": 1,
+      "selected": true,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C003",
+      "from_actor": "A3",
+      "to_actor": "A2",
+      "label": 1,
+      "selected": true,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C003",
+      "from_actor": "A2",
+      "to_actor": "A6",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C003",
+      "from_actor": "A2",
+      "to_actor": "A4",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C003",
+      "from_actor": "A2",
+      "to_actor": "A5",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C003",
+      "from_actor": "A2",
+      "to_actor": "A1",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C003",
+      "from_actor": "A2",
+      "to_actor": "A3",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C004",
+      "from_actor": "A6",
+      "to_actor": "A3",
+      "label": 1,
+      "selected": true,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C004",
+      "from_actor": "A6",
+      "to_actor": "A1",
+      "label": 1,
+      "selected": true,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C004",
+      "from_actor": "A6",
+      "to_actor": "A5",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C004",
+      "from_actor": "A6",
+      "to_actor": "A4",
+      "label": 1,
+      "selected": true,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C004",
+      "from_actor": "A6",
+      "to_actor": "A2",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C004",
+      "from_actor": "A3",
+      "to_actor": "A6",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C004",
+      "from_actor": "A3",
+      "to_actor": "A1",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C004",
+      "from_actor": "A3",
+      "to_actor": "A5",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C004",
+      "from_actor": "A3",
+      "to_actor": "A4",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C004",
+      "from_actor": "A3",
+      "to_actor": "A2",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C004",
+      "from_actor": "A1",
+      "to_actor": "A6",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C004",
+      "from_actor": "A1",
+      "to_actor": "A3",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C004",
+      "from_actor": "A1",
+      "to_actor": "A5",
+      "label": 1,
+      "selected": true,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C004",
+      "from_actor": "A1",
+      "to_actor": "A4",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C004",
+      "from_actor": "A1",
+      "to_actor": "A2",
+      "label": 1,
+      "selected": true,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C004",
+      "from_actor": "A5",
+      "to_actor": "A6",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C004",
+      "from_actor": "A5",
+      "to_actor": "A3",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C004",
+      "from_actor": "A5",
+      "to_actor": "A1",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C004",
+      "from_actor": "A5",
+      "to_actor": "A4",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C004",
+      "from_actor": "A5",
+      "to_actor": "A2",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C004",
+      "from_actor": "A4",
+      "to_actor": "A6",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C004",
+      "from_actor": "A4",
+      "to_actor": "A3",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C004",
+      "from_actor": "A4",
+      "to_actor": "A1",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C004",
+      "from_actor": "A4",
+      "to_actor": "A5",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C004",
+      "from_actor": "A4",
+      "to_actor": "A2",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C004",
+      "from_actor": "A2",
+      "to_actor": "A6",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C004",
+      "from_actor": "A2",
+      "to_actor": "A3",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C004",
+      "from_actor": "A2",
+      "to_actor": "A1",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C004",
+      "from_actor": "A2",
+      "to_actor": "A5",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C004",
+      "from_actor": "A2",
+      "to_actor": "A4",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C005",
+      "from_actor": "A2",
+      "to_actor": "A3",
+      "label": 1,
+      "selected": true,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C005",
+      "from_actor": "A2",
+      "to_actor": "A5",
+      "label": 1,
+      "selected": true,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C005",
+      "from_actor": "A2",
+      "to_actor": "A4",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C005",
+      "from_actor": "A2",
+      "to_actor": "A6",
+      "label": 1,
+      "selected": true,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C005",
+      "from_actor": "A2",
+      "to_actor": "A1",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C005",
+      "from_actor": "A3",
+      "to_actor": "A2",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C005",
+      "from_actor": "A3",
+      "to_actor": "A5",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C005",
+      "from_actor": "A3",
+      "to_actor": "A4",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C005",
+      "from_actor": "A3",
+      "to_actor": "A6",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C005",
+      "from_actor": "A3",
+      "to_actor": "A1",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C005",
+      "from_actor": "A5",
+      "to_actor": "A2",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C005",
+      "from_actor": "A5",
+      "to_actor": "A3",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C005",
+      "from_actor": "A5",
+      "to_actor": "A4",
+      "label": 1,
+      "selected": true,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C005",
+      "from_actor": "A5",
+      "to_actor": "A6",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C005",
+      "from_actor": "A5",
+      "to_actor": "A1",
+      "label": 1,
+      "selected": true,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C005",
+      "from_actor": "A4",
+      "to_actor": "A2",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C005",
+      "from_actor": "A4",
+      "to_actor": "A3",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C005",
+      "from_actor": "A4",
+      "to_actor": "A5",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C005",
+      "from_actor": "A4",
+      "to_actor": "A6",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C005",
+      "from_actor": "A4",
+      "to_actor": "A1",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C005",
+      "from_actor": "A6",
+      "to_actor": "A2",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C005",
+      "from_actor": "A6",
+      "to_actor": "A3",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C005",
+      "from_actor": "A6",
+      "to_actor": "A5",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C005",
+      "from_actor": "A6",
+      "to_actor": "A4",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C005",
+      "from_actor": "A6",
+      "to_actor": "A1",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C005",
+      "from_actor": "A1",
+      "to_actor": "A2",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C005",
+      "from_actor": "A1",
+      "to_actor": "A3",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C005",
+      "from_actor": "A1",
+      "to_actor": "A5",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C005",
+      "from_actor": "A1",
+      "to_actor": "A4",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C005",
+      "from_actor": "A1",
+      "to_actor": "A6",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C006",
+      "from_actor": "A4",
+      "to_actor": "A1",
+      "label": 1,
+      "selected": true,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C006",
+      "from_actor": "A4",
+      "to_actor": "A2",
+      "label": 1,
+      "selected": true,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C006",
+      "from_actor": "A4",
+      "to_actor": "A3",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C006",
+      "from_actor": "A4",
+      "to_actor": "A6",
+      "label": 1,
+      "selected": true,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C006",
+      "from_actor": "A4",
+      "to_actor": "A5",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C006",
+      "from_actor": "A1",
+      "to_actor": "A4",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C006",
+      "from_actor": "A1",
+      "to_actor": "A2",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C006",
+      "from_actor": "A1",
+      "to_actor": "A3",
+      "label": 1,
+      "selected": true,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C006",
+      "from_actor": "A1",
+      "to_actor": "A6",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C006",
+      "from_actor": "A1",
+      "to_actor": "A5",
+      "label": 1,
+      "selected": true,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C006",
+      "from_actor": "A2",
+      "to_actor": "A4",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C006",
+      "from_actor": "A2",
+      "to_actor": "A1",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C006",
+      "from_actor": "A2",
+      "to_actor": "A3",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C006",
+      "from_actor": "A2",
+      "to_actor": "A6",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C006",
+      "from_actor": "A2",
+      "to_actor": "A5",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C006",
+      "from_actor": "A3",
+      "to_actor": "A4",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C006",
+      "from_actor": "A3",
+      "to_actor": "A1",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C006",
+      "from_actor": "A3",
+      "to_actor": "A2",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C006",
+      "from_actor": "A3",
+      "to_actor": "A6",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C006",
+      "from_actor": "A3",
+      "to_actor": "A5",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C006",
+      "from_actor": "A6",
+      "to_actor": "A4",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C006",
+      "from_actor": "A6",
+      "to_actor": "A1",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C006",
+      "from_actor": "A6",
+      "to_actor": "A2",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C006",
+      "from_actor": "A6",
+      "to_actor": "A3",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C006",
+      "from_actor": "A6",
+      "to_actor": "A5",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C006",
+      "from_actor": "A5",
+      "to_actor": "A4",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C006",
+      "from_actor": "A5",
+      "to_actor": "A1",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C006",
+      "from_actor": "A5",
+      "to_actor": "A2",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C006",
+      "from_actor": "A5",
+      "to_actor": "A3",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C006",
+      "from_actor": "A5",
+      "to_actor": "A6",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C007",
+      "from_actor": "A3",
+      "to_actor": "A1",
+      "label": 1,
+      "selected": true,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C007",
+      "from_actor": "A3",
+      "to_actor": "A6",
+      "label": 1,
+      "selected": true,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C007",
+      "from_actor": "A3",
+      "to_actor": "A4",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C007",
+      "from_actor": "A3",
+      "to_actor": "A5",
+      "label": 1,
+      "selected": true,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C007",
+      "from_actor": "A3",
+      "to_actor": "A2",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C007",
+      "from_actor": "A1",
+      "to_actor": "A3",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C007",
+      "from_actor": "A1",
+      "to_actor": "A6",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C007",
+      "from_actor": "A1",
+      "to_actor": "A4",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C007",
+      "from_actor": "A1",
+      "to_actor": "A5",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C007",
+      "from_actor": "A1",
+      "to_actor": "A2",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C007",
+      "from_actor": "A6",
+      "to_actor": "A3",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C007",
+      "from_actor": "A6",
+      "to_actor": "A1",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C007",
+      "from_actor": "A6",
+      "to_actor": "A4",
+      "label": 1,
+      "selected": true,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C007",
+      "from_actor": "A6",
+      "to_actor": "A5",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C007",
+      "from_actor": "A6",
+      "to_actor": "A2",
+      "label": 1,
+      "selected": true,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C007",
+      "from_actor": "A4",
+      "to_actor": "A3",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C007",
+      "from_actor": "A4",
+      "to_actor": "A1",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C007",
+      "from_actor": "A4",
+      "to_actor": "A6",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C007",
+      "from_actor": "A4",
+      "to_actor": "A5",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C007",
+      "from_actor": "A4",
+      "to_actor": "A2",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C007",
+      "from_actor": "A5",
+      "to_actor": "A3",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C007",
+      "from_actor": "A5",
+      "to_actor": "A1",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C007",
+      "from_actor": "A5",
+      "to_actor": "A6",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C007",
+      "from_actor": "A5",
+      "to_actor": "A4",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C007",
+      "from_actor": "A5",
+      "to_actor": "A2",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C007",
+      "from_actor": "A2",
+      "to_actor": "A3",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C007",
+      "from_actor": "A2",
+      "to_actor": "A1",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C007",
+      "from_actor": "A2",
+      "to_actor": "A6",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C007",
+      "from_actor": "A2",
+      "to_actor": "A4",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C007",
+      "from_actor": "A2",
+      "to_actor": "A5",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C008",
+      "from_actor": "A1",
+      "to_actor": "A5",
+      "label": 1,
+      "selected": true,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C008",
+      "from_actor": "A1",
+      "to_actor": "A4",
+      "label": 1,
+      "selected": true,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C008",
+      "from_actor": "A1",
+      "to_actor": "A2",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C008",
+      "from_actor": "A1",
+      "to_actor": "A3",
+      "label": 1,
+      "selected": true,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C008",
+      "from_actor": "A1",
+      "to_actor": "A6",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C008",
+      "from_actor": "A5",
+      "to_actor": "A1",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C008",
+      "from_actor": "A5",
+      "to_actor": "A4",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C008",
+      "from_actor": "A5",
+      "to_actor": "A2",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C008",
+      "from_actor": "A5",
+      "to_actor": "A3",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C008",
+      "from_actor": "A5",
+      "to_actor": "A6",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C008",
+      "from_actor": "A4",
+      "to_actor": "A1",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C008",
+      "from_actor": "A4",
+      "to_actor": "A5",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C008",
+      "from_actor": "A4",
+      "to_actor": "A2",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C008",
+      "from_actor": "A4",
+      "to_actor": "A3",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C008",
+      "from_actor": "A4",
+      "to_actor": "A6",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C008",
+      "from_actor": "A2",
+      "to_actor": "A1",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C008",
+      "from_actor": "A2",
+      "to_actor": "A5",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C008",
+      "from_actor": "A2",
+      "to_actor": "A4",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C008",
+      "from_actor": "A2",
+      "to_actor": "A3",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C008",
+      "from_actor": "A2",
+      "to_actor": "A6",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C008",
+      "from_actor": "A3",
+      "to_actor": "A1",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C008",
+      "from_actor": "A3",
+      "to_actor": "A5",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C008",
+      "from_actor": "A3",
+      "to_actor": "A4",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C008",
+      "from_actor": "A3",
+      "to_actor": "A2",
+      "label": 1,
+      "selected": true,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C008",
+      "from_actor": "A3",
+      "to_actor": "A6",
+      "label": 1,
+      "selected": true,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C008",
+      "from_actor": "A6",
+      "to_actor": "A1",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C008",
+      "from_actor": "A6",
+      "to_actor": "A5",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C008",
+      "from_actor": "A6",
+      "to_actor": "A4",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C008",
+      "from_actor": "A6",
+      "to_actor": "A2",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C008",
+      "from_actor": "A6",
+      "to_actor": "A3",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C009",
+      "from_actor": "A1",
+      "to_actor": "A6",
+      "label": 1,
+      "selected": true,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C009",
+      "from_actor": "A1",
+      "to_actor": "A5",
+      "label": 1,
+      "selected": true,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C009",
+      "from_actor": "A1",
+      "to_actor": "A3",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C009",
+      "from_actor": "A1",
+      "to_actor": "A4",
+      "label": 1,
+      "selected": true,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C009",
+      "from_actor": "A1",
+      "to_actor": "A2",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C009",
+      "from_actor": "A6",
+      "to_actor": "A1",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C009",
+      "from_actor": "A6",
+      "to_actor": "A5",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C009",
+      "from_actor": "A6",
+      "to_actor": "A3",
+      "label": 1,
+      "selected": true,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C009",
+      "from_actor": "A6",
+      "to_actor": "A4",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C009",
+      "from_actor": "A6",
+      "to_actor": "A2",
+      "label": 1,
+      "selected": true,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C009",
+      "from_actor": "A5",
+      "to_actor": "A1",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C009",
+      "from_actor": "A5",
+      "to_actor": "A6",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C009",
+      "from_actor": "A5",
+      "to_actor": "A3",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C009",
+      "from_actor": "A5",
+      "to_actor": "A4",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C009",
+      "from_actor": "A5",
+      "to_actor": "A2",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C009",
+      "from_actor": "A3",
+      "to_actor": "A1",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C009",
+      "from_actor": "A3",
+      "to_actor": "A6",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C009",
+      "from_actor": "A3",
+      "to_actor": "A5",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C009",
+      "from_actor": "A3",
+      "to_actor": "A4",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C009",
+      "from_actor": "A3",
+      "to_actor": "A2",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C009",
+      "from_actor": "A4",
+      "to_actor": "A1",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C009",
+      "from_actor": "A4",
+      "to_actor": "A6",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C009",
+      "from_actor": "A4",
+      "to_actor": "A5",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C009",
+      "from_actor": "A4",
+      "to_actor": "A3",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C009",
+      "from_actor": "A4",
+      "to_actor": "A2",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C009",
+      "from_actor": "A2",
+      "to_actor": "A1",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C009",
+      "from_actor": "A2",
+      "to_actor": "A6",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C009",
+      "from_actor": "A2",
+      "to_actor": "A5",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C009",
+      "from_actor": "A2",
+      "to_actor": "A3",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C009",
+      "from_actor": "A2",
+      "to_actor": "A4",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C010",
+      "from_actor": "A1",
+      "to_actor": "A5",
+      "label": 1,
+      "selected": true,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C010",
+      "from_actor": "A1",
+      "to_actor": "A4",
+      "label": 1,
+      "selected": true,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C010",
+      "from_actor": "A1",
+      "to_actor": "A2",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C010",
+      "from_actor": "A1",
+      "to_actor": "A3",
+      "label": 1,
+      "selected": true,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C010",
+      "from_actor": "A1",
+      "to_actor": "A6",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C010",
+      "from_actor": "A5",
+      "to_actor": "A1",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C010",
+      "from_actor": "A5",
+      "to_actor": "A4",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C010",
+      "from_actor": "A5",
+      "to_actor": "A2",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C010",
+      "from_actor": "A5",
+      "to_actor": "A3",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C010",
+      "from_actor": "A5",
+      "to_actor": "A6",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C010",
+      "from_actor": "A4",
+      "to_actor": "A1",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C010",
+      "from_actor": "A4",
+      "to_actor": "A5",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C010",
+      "from_actor": "A4",
+      "to_actor": "A2",
+      "label": 1,
+      "selected": true,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C010",
+      "from_actor": "A4",
+      "to_actor": "A3",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C010",
+      "from_actor": "A4",
+      "to_actor": "A6",
+      "label": 1,
+      "selected": true,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C010",
+      "from_actor": "A2",
+      "to_actor": "A1",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C010",
+      "from_actor": "A2",
+      "to_actor": "A5",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C010",
+      "from_actor": "A2",
+      "to_actor": "A4",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C010",
+      "from_actor": "A2",
+      "to_actor": "A3",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C010",
+      "from_actor": "A2",
+      "to_actor": "A6",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C010",
+      "from_actor": "A3",
+      "to_actor": "A1",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C010",
+      "from_actor": "A3",
+      "to_actor": "A5",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C010",
+      "from_actor": "A3",
+      "to_actor": "A4",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C010",
+      "from_actor": "A3",
+      "to_actor": "A2",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C010",
+      "from_actor": "A3",
+      "to_actor": "A6",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C010",
+      "from_actor": "A6",
+      "to_actor": "A1",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C010",
+      "from_actor": "A6",
+      "to_actor": "A5",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C010",
+      "from_actor": "A6",
+      "to_actor": "A4",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C010",
+      "from_actor": "A6",
+      "to_actor": "A2",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C010",
+      "from_actor": "A6",
+      "to_actor": "A3",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C011",
+      "from_actor": "A4",
+      "to_actor": "A6",
+      "label": 1,
+      "selected": true,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C011",
+      "from_actor": "A4",
+      "to_actor": "A3",
+      "label": 1,
+      "selected": true,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C011",
+      "from_actor": "A4",
+      "to_actor": "A1",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C011",
+      "from_actor": "A4",
+      "to_actor": "A2",
+      "label": 1,
+      "selected": true,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C011",
+      "from_actor": "A4",
+      "to_actor": "A5",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C011",
+      "from_actor": "A6",
+      "to_actor": "A4",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C011",
+      "from_actor": "A6",
+      "to_actor": "A3",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C011",
+      "from_actor": "A6",
+      "to_actor": "A1",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C011",
+      "from_actor": "A6",
+      "to_actor": "A2",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C011",
+      "from_actor": "A6",
+      "to_actor": "A5",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C011",
+      "from_actor": "A3",
+      "to_actor": "A4",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C011",
+      "from_actor": "A3",
+      "to_actor": "A6",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C011",
+      "from_actor": "A3",
+      "to_actor": "A1",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C011",
+      "from_actor": "A3",
+      "to_actor": "A2",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C011",
+      "from_actor": "A3",
+      "to_actor": "A5",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C011",
+      "from_actor": "A1",
+      "to_actor": "A4",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C011",
+      "from_actor": "A1",
+      "to_actor": "A6",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C011",
+      "from_actor": "A1",
+      "to_actor": "A3",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C011",
+      "from_actor": "A1",
+      "to_actor": "A2",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C011",
+      "from_actor": "A1",
+      "to_actor": "A5",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C011",
+      "from_actor": "A2",
+      "to_actor": "A4",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C011",
+      "from_actor": "A2",
+      "to_actor": "A6",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C011",
+      "from_actor": "A2",
+      "to_actor": "A3",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C011",
+      "from_actor": "A2",
+      "to_actor": "A1",
+      "label": 1,
+      "selected": true,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C011",
+      "from_actor": "A2",
+      "to_actor": "A5",
+      "label": 1,
+      "selected": true,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C011",
+      "from_actor": "A5",
+      "to_actor": "A4",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C011",
+      "from_actor": "A5",
+      "to_actor": "A6",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C011",
+      "from_actor": "A5",
+      "to_actor": "A3",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C011",
+      "from_actor": "A5",
+      "to_actor": "A1",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C011",
+      "from_actor": "A5",
+      "to_actor": "A2",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C012",
+      "from_actor": "A5",
+      "to_actor": "A2",
+      "label": 1,
+      "selected": true,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C012",
+      "from_actor": "A5",
+      "to_actor": "A4",
+      "label": 1,
+      "selected": true,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C012",
+      "from_actor": "A5",
+      "to_actor": "A1",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C012",
+      "from_actor": "A5",
+      "to_actor": "A6",
+      "label": 1,
+      "selected": true,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C012",
+      "from_actor": "A5",
+      "to_actor": "A3",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C012",
+      "from_actor": "A2",
+      "to_actor": "A5",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C012",
+      "from_actor": "A2",
+      "to_actor": "A4",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C012",
+      "from_actor": "A2",
+      "to_actor": "A1",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C012",
+      "from_actor": "A2",
+      "to_actor": "A6",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C012",
+      "from_actor": "A2",
+      "to_actor": "A3",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C012",
+      "from_actor": "A4",
+      "to_actor": "A5",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C012",
+      "from_actor": "A4",
+      "to_actor": "A2",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C012",
+      "from_actor": "A4",
+      "to_actor": "A1",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C012",
+      "from_actor": "A4",
+      "to_actor": "A6",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C012",
+      "from_actor": "A4",
+      "to_actor": "A3",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C012",
+      "from_actor": "A1",
+      "to_actor": "A5",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C012",
+      "from_actor": "A1",
+      "to_actor": "A2",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C012",
+      "from_actor": "A1",
+      "to_actor": "A4",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C012",
+      "from_actor": "A1",
+      "to_actor": "A6",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C012",
+      "from_actor": "A1",
+      "to_actor": "A3",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C012",
+      "from_actor": "A6",
+      "to_actor": "A5",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C012",
+      "from_actor": "A6",
+      "to_actor": "A2",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C012",
+      "from_actor": "A6",
+      "to_actor": "A4",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C012",
+      "from_actor": "A6",
+      "to_actor": "A1",
+      "label": 1,
+      "selected": true,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C012",
+      "from_actor": "A6",
+      "to_actor": "A3",
+      "label": 1,
+      "selected": true,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C012",
+      "from_actor": "A3",
+      "to_actor": "A5",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C012",
+      "from_actor": "A3",
+      "to_actor": "A2",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C012",
+      "from_actor": "A3",
+      "to_actor": "A4",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C012",
+      "from_actor": "A3",
+      "to_actor": "A1",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C012",
+      "from_actor": "A3",
+      "to_actor": "A6",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C013",
+      "from_actor": "A3",
+      "to_actor": "A5",
+      "label": 1,
+      "selected": true,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C013",
+      "from_actor": "A3",
+      "to_actor": "A2",
+      "label": 1,
+      "selected": true,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C013",
+      "from_actor": "A3",
+      "to_actor": "A6",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C013",
+      "from_actor": "A3",
+      "to_actor": "A1",
+      "label": 1,
+      "selected": true,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C013",
+      "from_actor": "A3",
+      "to_actor": "A4",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C013",
+      "from_actor": "A5",
+      "to_actor": "A3",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C013",
+      "from_actor": "A5",
+      "to_actor": "A2",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C013",
+      "from_actor": "A5",
+      "to_actor": "A6",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C013",
+      "from_actor": "A5",
+      "to_actor": "A1",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C013",
+      "from_actor": "A5",
+      "to_actor": "A4",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C013",
+      "from_actor": "A2",
+      "to_actor": "A3",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C013",
+      "from_actor": "A2",
+      "to_actor": "A5",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C013",
+      "from_actor": "A2",
+      "to_actor": "A6",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C013",
+      "from_actor": "A2",
+      "to_actor": "A1",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C013",
+      "from_actor": "A2",
+      "to_actor": "A4",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C013",
+      "from_actor": "A6",
+      "to_actor": "A3",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C013",
+      "from_actor": "A6",
+      "to_actor": "A5",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C013",
+      "from_actor": "A6",
+      "to_actor": "A2",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C013",
+      "from_actor": "A6",
+      "to_actor": "A1",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C013",
+      "from_actor": "A6",
+      "to_actor": "A4",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C013",
+      "from_actor": "A1",
+      "to_actor": "A3",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C013",
+      "from_actor": "A1",
+      "to_actor": "A5",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C013",
+      "from_actor": "A1",
+      "to_actor": "A2",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C013",
+      "from_actor": "A1",
+      "to_actor": "A6",
+      "label": 1,
+      "selected": true,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C013",
+      "from_actor": "A1",
+      "to_actor": "A4",
+      "label": 1,
+      "selected": true,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C013",
+      "from_actor": "A4",
+      "to_actor": "A3",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C013",
+      "from_actor": "A4",
+      "to_actor": "A5",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C013",
+      "from_actor": "A4",
+      "to_actor": "A2",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C013",
+      "from_actor": "A4",
+      "to_actor": "A6",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C013",
+      "from_actor": "A4",
+      "to_actor": "A1",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C014",
+      "from_actor": "A5",
+      "to_actor": "A4",
+      "label": 1,
+      "selected": true,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C014",
+      "from_actor": "A5",
+      "to_actor": "A1",
+      "label": 1,
+      "selected": true,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C014",
+      "from_actor": "A5",
+      "to_actor": "A2",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C014",
+      "from_actor": "A5",
+      "to_actor": "A6",
+      "label": 1,
+      "selected": true,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C014",
+      "from_actor": "A5",
+      "to_actor": "A3",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C014",
+      "from_actor": "A4",
+      "to_actor": "A5",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C014",
+      "from_actor": "A4",
+      "to_actor": "A1",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C014",
+      "from_actor": "A4",
+      "to_actor": "A2",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C014",
+      "from_actor": "A4",
+      "to_actor": "A6",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C014",
+      "from_actor": "A4",
+      "to_actor": "A3",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C014",
+      "from_actor": "A1",
+      "to_actor": "A5",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C014",
+      "from_actor": "A1",
+      "to_actor": "A4",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C014",
+      "from_actor": "A1",
+      "to_actor": "A2",
+      "label": 1,
+      "selected": true,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C014",
+      "from_actor": "A1",
+      "to_actor": "A6",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C014",
+      "from_actor": "A1",
+      "to_actor": "A3",
+      "label": 1,
+      "selected": true,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C014",
+      "from_actor": "A2",
+      "to_actor": "A5",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C014",
+      "from_actor": "A2",
+      "to_actor": "A4",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C014",
+      "from_actor": "A2",
+      "to_actor": "A1",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C014",
+      "from_actor": "A2",
+      "to_actor": "A6",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C014",
+      "from_actor": "A2",
+      "to_actor": "A3",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C014",
+      "from_actor": "A6",
+      "to_actor": "A5",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C014",
+      "from_actor": "A6",
+      "to_actor": "A4",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C014",
+      "from_actor": "A6",
+      "to_actor": "A1",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C014",
+      "from_actor": "A6",
+      "to_actor": "A2",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C014",
+      "from_actor": "A6",
+      "to_actor": "A3",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C014",
+      "from_actor": "A3",
+      "to_actor": "A5",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C014",
+      "from_actor": "A3",
+      "to_actor": "A4",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C014",
+      "from_actor": "A3",
+      "to_actor": "A1",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C014",
+      "from_actor": "A3",
+      "to_actor": "A2",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C014",
+      "from_actor": "A3",
+      "to_actor": "A6",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C015",
+      "from_actor": "A4",
+      "to_actor": "A6",
+      "label": 1,
+      "selected": true,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C015",
+      "from_actor": "A4",
+      "to_actor": "A2",
+      "label": 1,
+      "selected": true,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C015",
+      "from_actor": "A4",
+      "to_actor": "A1",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C015",
+      "from_actor": "A4",
+      "to_actor": "A3",
+      "label": 1,
+      "selected": true,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C015",
+      "from_actor": "A4",
+      "to_actor": "A5",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C015",
+      "from_actor": "A6",
+      "to_actor": "A4",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C015",
+      "from_actor": "A6",
+      "to_actor": "A2",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C015",
+      "from_actor": "A6",
+      "to_actor": "A1",
+      "label": 1,
+      "selected": true,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C015",
+      "from_actor": "A6",
+      "to_actor": "A3",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C015",
+      "from_actor": "A6",
+      "to_actor": "A5",
+      "label": 1,
+      "selected": true,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C015",
+      "from_actor": "A2",
+      "to_actor": "A4",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C015",
+      "from_actor": "A2",
+      "to_actor": "A6",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C015",
+      "from_actor": "A2",
+      "to_actor": "A1",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C015",
+      "from_actor": "A2",
+      "to_actor": "A3",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C015",
+      "from_actor": "A2",
+      "to_actor": "A5",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C015",
+      "from_actor": "A1",
+      "to_actor": "A4",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C015",
+      "from_actor": "A1",
+      "to_actor": "A6",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C015",
+      "from_actor": "A1",
+      "to_actor": "A2",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C015",
+      "from_actor": "A1",
+      "to_actor": "A3",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C015",
+      "from_actor": "A1",
+      "to_actor": "A5",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C015",
+      "from_actor": "A3",
+      "to_actor": "A4",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C015",
+      "from_actor": "A3",
+      "to_actor": "A6",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C015",
+      "from_actor": "A3",
+      "to_actor": "A2",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C015",
+      "from_actor": "A3",
+      "to_actor": "A1",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C015",
+      "from_actor": "A3",
+      "to_actor": "A5",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C015",
+      "from_actor": "A5",
+      "to_actor": "A4",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C015",
+      "from_actor": "A5",
+      "to_actor": "A6",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C015",
+      "from_actor": "A5",
+      "to_actor": "A2",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C015",
+      "from_actor": "A5",
+      "to_actor": "A1",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C015",
+      "from_actor": "A5",
+      "to_actor": "A3",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C016",
+      "from_actor": "A5",
+      "to_actor": "A2",
+      "label": 1,
+      "selected": true,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C016",
+      "from_actor": "A5",
+      "to_actor": "A1",
+      "label": 1,
+      "selected": true,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C016",
+      "from_actor": "A5",
+      "to_actor": "A6",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C016",
+      "from_actor": "A5",
+      "to_actor": "A3",
+      "label": 1,
+      "selected": true,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C016",
+      "from_actor": "A5",
+      "to_actor": "A4",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C016",
+      "from_actor": "A2",
+      "to_actor": "A5",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C016",
+      "from_actor": "A2",
+      "to_actor": "A1",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C016",
+      "from_actor": "A2",
+      "to_actor": "A6",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C016",
+      "from_actor": "A2",
+      "to_actor": "A3",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C016",
+      "from_actor": "A2",
+      "to_actor": "A4",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C016",
+      "from_actor": "A1",
+      "to_actor": "A5",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C016",
+      "from_actor": "A1",
+      "to_actor": "A2",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C016",
+      "from_actor": "A1",
+      "to_actor": "A6",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C016",
+      "from_actor": "A1",
+      "to_actor": "A3",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C016",
+      "from_actor": "A1",
+      "to_actor": "A4",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C016",
+      "from_actor": "A6",
+      "to_actor": "A5",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C016",
+      "from_actor": "A6",
+      "to_actor": "A2",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C016",
+      "from_actor": "A6",
+      "to_actor": "A1",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C016",
+      "from_actor": "A6",
+      "to_actor": "A3",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C016",
+      "from_actor": "A6",
+      "to_actor": "A4",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C016",
+      "from_actor": "A3",
+      "to_actor": "A5",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C016",
+      "from_actor": "A3",
+      "to_actor": "A2",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C016",
+      "from_actor": "A3",
+      "to_actor": "A1",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C016",
+      "from_actor": "A3",
+      "to_actor": "A6",
+      "label": 1,
+      "selected": true,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C016",
+      "from_actor": "A3",
+      "to_actor": "A4",
+      "label": 1,
+      "selected": true,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C016",
+      "from_actor": "A4",
+      "to_actor": "A5",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C016",
+      "from_actor": "A4",
+      "to_actor": "A2",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C016",
+      "from_actor": "A4",
+      "to_actor": "A1",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C016",
+      "from_actor": "A4",
+      "to_actor": "A6",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C016",
+      "from_actor": "A4",
+      "to_actor": "A3",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C017",
+      "from_actor": "A5",
+      "to_actor": "A3",
+      "label": 1,
+      "selected": true,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C017",
+      "from_actor": "A5",
+      "to_actor": "A4",
+      "label": 1,
+      "selected": true,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C017",
+      "from_actor": "A5",
+      "to_actor": "A2",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C017",
+      "from_actor": "A5",
+      "to_actor": "A1",
+      "label": 1,
+      "selected": true,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C017",
+      "from_actor": "A5",
+      "to_actor": "A6",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C017",
+      "from_actor": "A3",
+      "to_actor": "A5",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C017",
+      "from_actor": "A3",
+      "to_actor": "A4",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C017",
+      "from_actor": "A3",
+      "to_actor": "A2",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C017",
+      "from_actor": "A3",
+      "to_actor": "A1",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C017",
+      "from_actor": "A3",
+      "to_actor": "A6",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C017",
+      "from_actor": "A4",
+      "to_actor": "A5",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C017",
+      "from_actor": "A4",
+      "to_actor": "A3",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C017",
+      "from_actor": "A4",
+      "to_actor": "A2",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C017",
+      "from_actor": "A4",
+      "to_actor": "A1",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C017",
+      "from_actor": "A4",
+      "to_actor": "A6",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C017",
+      "from_actor": "A2",
+      "to_actor": "A5",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C017",
+      "from_actor": "A2",
+      "to_actor": "A3",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C017",
+      "from_actor": "A2",
+      "to_actor": "A4",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C017",
+      "from_actor": "A2",
+      "to_actor": "A1",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C017",
+      "from_actor": "A2",
+      "to_actor": "A6",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C017",
+      "from_actor": "A1",
+      "to_actor": "A5",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C017",
+      "from_actor": "A1",
+      "to_actor": "A3",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C017",
+      "from_actor": "A1",
+      "to_actor": "A4",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C017",
+      "from_actor": "A1",
+      "to_actor": "A2",
+      "label": 1,
+      "selected": true,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C017",
+      "from_actor": "A1",
+      "to_actor": "A6",
+      "label": 1,
+      "selected": true,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C017",
+      "from_actor": "A6",
+      "to_actor": "A5",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C017",
+      "from_actor": "A6",
+      "to_actor": "A3",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C017",
+      "from_actor": "A6",
+      "to_actor": "A4",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C017",
+      "from_actor": "A6",
+      "to_actor": "A2",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C017",
+      "from_actor": "A6",
+      "to_actor": "A1",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C018",
+      "from_actor": "A5",
+      "to_actor": "A4",
+      "label": 1,
+      "selected": true,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C018",
+      "from_actor": "A5",
+      "to_actor": "A2",
+      "label": 1,
+      "selected": true,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C018",
+      "from_actor": "A5",
+      "to_actor": "A3",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C018",
+      "from_actor": "A5",
+      "to_actor": "A6",
+      "label": 1,
+      "selected": true,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C018",
+      "from_actor": "A5",
+      "to_actor": "A1",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C018",
+      "from_actor": "A4",
+      "to_actor": "A5",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C018",
+      "from_actor": "A4",
+      "to_actor": "A2",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C018",
+      "from_actor": "A4",
+      "to_actor": "A3",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C018",
+      "from_actor": "A4",
+      "to_actor": "A6",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C018",
+      "from_actor": "A4",
+      "to_actor": "A1",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C018",
+      "from_actor": "A2",
+      "to_actor": "A5",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C018",
+      "from_actor": "A2",
+      "to_actor": "A4",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C018",
+      "from_actor": "A2",
+      "to_actor": "A3",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C018",
+      "from_actor": "A2",
+      "to_actor": "A6",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C018",
+      "from_actor": "A2",
+      "to_actor": "A1",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C018",
+      "from_actor": "A3",
+      "to_actor": "A5",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C018",
+      "from_actor": "A3",
+      "to_actor": "A4",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C018",
+      "from_actor": "A3",
+      "to_actor": "A2",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C018",
+      "from_actor": "A3",
+      "to_actor": "A6",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C018",
+      "from_actor": "A3",
+      "to_actor": "A1",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C018",
+      "from_actor": "A6",
+      "to_actor": "A5",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C018",
+      "from_actor": "A6",
+      "to_actor": "A4",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C018",
+      "from_actor": "A6",
+      "to_actor": "A2",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C018",
+      "from_actor": "A6",
+      "to_actor": "A3",
+      "label": 1,
+      "selected": true,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C018",
+      "from_actor": "A6",
+      "to_actor": "A1",
+      "label": 1,
+      "selected": true,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C018",
+      "from_actor": "A1",
+      "to_actor": "A5",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C018",
+      "from_actor": "A1",
+      "to_actor": "A4",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C018",
+      "from_actor": "A1",
+      "to_actor": "A2",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C018",
+      "from_actor": "A1",
+      "to_actor": "A3",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C018",
+      "from_actor": "A1",
+      "to_actor": "A6",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C019",
+      "from_actor": "A1",
+      "to_actor": "A6",
+      "label": 1,
+      "selected": true,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C019",
+      "from_actor": "A1",
+      "to_actor": "A4",
+      "label": 1,
+      "selected": true,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C019",
+      "from_actor": "A1",
+      "to_actor": "A5",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C019",
+      "from_actor": "A1",
+      "to_actor": "A3",
+      "label": 1,
+      "selected": true,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C019",
+      "from_actor": "A1",
+      "to_actor": "A2",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C019",
+      "from_actor": "A6",
+      "to_actor": "A1",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C019",
+      "from_actor": "A6",
+      "to_actor": "A4",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C019",
+      "from_actor": "A6",
+      "to_actor": "A5",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C019",
+      "from_actor": "A6",
+      "to_actor": "A3",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C019",
+      "from_actor": "A6",
+      "to_actor": "A2",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C019",
+      "from_actor": "A4",
+      "to_actor": "A1",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C019",
+      "from_actor": "A4",
+      "to_actor": "A6",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C019",
+      "from_actor": "A4",
+      "to_actor": "A5",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C019",
+      "from_actor": "A4",
+      "to_actor": "A3",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C019",
+      "from_actor": "A4",
+      "to_actor": "A2",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C019",
+      "from_actor": "A5",
+      "to_actor": "A1",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C019",
+      "from_actor": "A5",
+      "to_actor": "A6",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C019",
+      "from_actor": "A5",
+      "to_actor": "A4",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C019",
+      "from_actor": "A5",
+      "to_actor": "A3",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C019",
+      "from_actor": "A5",
+      "to_actor": "A2",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C019",
+      "from_actor": "A3",
+      "to_actor": "A1",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C019",
+      "from_actor": "A3",
+      "to_actor": "A6",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C019",
+      "from_actor": "A3",
+      "to_actor": "A4",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C019",
+      "from_actor": "A3",
+      "to_actor": "A5",
+      "label": 1,
+      "selected": true,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C019",
+      "from_actor": "A3",
+      "to_actor": "A2",
+      "label": 1,
+      "selected": true,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C019",
+      "from_actor": "A2",
+      "to_actor": "A1",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C019",
+      "from_actor": "A2",
+      "to_actor": "A6",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C019",
+      "from_actor": "A2",
+      "to_actor": "A4",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C019",
+      "from_actor": "A2",
+      "to_actor": "A5",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C019",
+      "from_actor": "A2",
+      "to_actor": "A3",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C020",
+      "from_actor": "A6",
+      "to_actor": "A2",
+      "label": 1,
+      "selected": true,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C020",
+      "from_actor": "A6",
+      "to_actor": "A1",
+      "label": 1,
+      "selected": true,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C020",
+      "from_actor": "A6",
+      "to_actor": "A3",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C020",
+      "from_actor": "A6",
+      "to_actor": "A5",
+      "label": 1,
+      "selected": true,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C020",
+      "from_actor": "A6",
+      "to_actor": "A4",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C020",
+      "from_actor": "A2",
+      "to_actor": "A6",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C020",
+      "from_actor": "A2",
+      "to_actor": "A1",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C020",
+      "from_actor": "A2",
+      "to_actor": "A3",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C020",
+      "from_actor": "A2",
+      "to_actor": "A5",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C020",
+      "from_actor": "A2",
+      "to_actor": "A4",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C020",
+      "from_actor": "A1",
+      "to_actor": "A6",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C020",
+      "from_actor": "A1",
+      "to_actor": "A2",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C020",
+      "from_actor": "A1",
+      "to_actor": "A3",
+      "label": 1,
+      "selected": true,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C020",
+      "from_actor": "A1",
+      "to_actor": "A5",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C020",
+      "from_actor": "A1",
+      "to_actor": "A4",
+      "label": 1,
+      "selected": true,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C020",
+      "from_actor": "A3",
+      "to_actor": "A6",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C020",
+      "from_actor": "A3",
+      "to_actor": "A2",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C020",
+      "from_actor": "A3",
+      "to_actor": "A1",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C020",
+      "from_actor": "A3",
+      "to_actor": "A5",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C020",
+      "from_actor": "A3",
+      "to_actor": "A4",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C020",
+      "from_actor": "A5",
+      "to_actor": "A6",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C020",
+      "from_actor": "A5",
+      "to_actor": "A2",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C020",
+      "from_actor": "A5",
+      "to_actor": "A1",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C020",
+      "from_actor": "A5",
+      "to_actor": "A3",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C020",
+      "from_actor": "A5",
+      "to_actor": "A4",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C020",
+      "from_actor": "A4",
+      "to_actor": "A6",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C020",
+      "from_actor": "A4",
+      "to_actor": "A2",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C020",
+      "from_actor": "A4",
+      "to_actor": "A1",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C020",
+      "from_actor": "A4",
+      "to_actor": "A3",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C020",
+      "from_actor": "A4",
+      "to_actor": "A5",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C021",
+      "from_actor": "A1",
+      "to_actor": "A3",
+      "label": 1,
+      "selected": true,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C021",
+      "from_actor": "A1",
+      "to_actor": "A5",
+      "label": 1,
+      "selected": true,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C021",
+      "from_actor": "A1",
+      "to_actor": "A2",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C021",
+      "from_actor": "A1",
+      "to_actor": "A6",
+      "label": 1,
+      "selected": true,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C021",
+      "from_actor": "A1",
+      "to_actor": "A4",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C021",
+      "from_actor": "A3",
+      "to_actor": "A1",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C021",
+      "from_actor": "A3",
+      "to_actor": "A5",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C021",
+      "from_actor": "A3",
+      "to_actor": "A2",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C021",
+      "from_actor": "A3",
+      "to_actor": "A6",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C021",
+      "from_actor": "A3",
+      "to_actor": "A4",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C021",
+      "from_actor": "A5",
+      "to_actor": "A1",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C021",
+      "from_actor": "A5",
+      "to_actor": "A3",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C021",
+      "from_actor": "A5",
+      "to_actor": "A2",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C021",
+      "from_actor": "A5",
+      "to_actor": "A6",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C021",
+      "from_actor": "A5",
+      "to_actor": "A4",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C021",
+      "from_actor": "A2",
+      "to_actor": "A1",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C021",
+      "from_actor": "A2",
+      "to_actor": "A3",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C021",
+      "from_actor": "A2",
+      "to_actor": "A5",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C021",
+      "from_actor": "A2",
+      "to_actor": "A6",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C021",
+      "from_actor": "A2",
+      "to_actor": "A4",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C021",
+      "from_actor": "A6",
+      "to_actor": "A1",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C021",
+      "from_actor": "A6",
+      "to_actor": "A3",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C021",
+      "from_actor": "A6",
+      "to_actor": "A5",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C021",
+      "from_actor": "A6",
+      "to_actor": "A2",
+      "label": 1,
+      "selected": true,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C021",
+      "from_actor": "A6",
+      "to_actor": "A4",
+      "label": 1,
+      "selected": true,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C021",
+      "from_actor": "A4",
+      "to_actor": "A1",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C021",
+      "from_actor": "A4",
+      "to_actor": "A3",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C021",
+      "from_actor": "A4",
+      "to_actor": "A5",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C021",
+      "from_actor": "A4",
+      "to_actor": "A2",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C021",
+      "from_actor": "A4",
+      "to_actor": "A6",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C022",
+      "from_actor": "A1",
+      "to_actor": "A6",
+      "label": 1,
+      "selected": true,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C022",
+      "from_actor": "A1",
+      "to_actor": "A2",
+      "label": 1,
+      "selected": true,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C022",
+      "from_actor": "A1",
+      "to_actor": "A3",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C022",
+      "from_actor": "A1",
+      "to_actor": "A4",
+      "label": 1,
+      "selected": true,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C022",
+      "from_actor": "A1",
+      "to_actor": "A5",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C022",
+      "from_actor": "A6",
+      "to_actor": "A1",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C022",
+      "from_actor": "A6",
+      "to_actor": "A2",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C022",
+      "from_actor": "A6",
+      "to_actor": "A3",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C022",
+      "from_actor": "A6",
+      "to_actor": "A4",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C022",
+      "from_actor": "A6",
+      "to_actor": "A5",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C022",
+      "from_actor": "A2",
+      "to_actor": "A1",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C022",
+      "from_actor": "A2",
+      "to_actor": "A6",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C022",
+      "from_actor": "A2",
+      "to_actor": "A3",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C022",
+      "from_actor": "A2",
+      "to_actor": "A4",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C022",
+      "from_actor": "A2",
+      "to_actor": "A5",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C022",
+      "from_actor": "A3",
+      "to_actor": "A1",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C022",
+      "from_actor": "A3",
+      "to_actor": "A6",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C022",
+      "from_actor": "A3",
+      "to_actor": "A2",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C022",
+      "from_actor": "A3",
+      "to_actor": "A4",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C022",
+      "from_actor": "A3",
+      "to_actor": "A5",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C022",
+      "from_actor": "A4",
+      "to_actor": "A1",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C022",
+      "from_actor": "A4",
+      "to_actor": "A6",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C022",
+      "from_actor": "A4",
+      "to_actor": "A2",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C022",
+      "from_actor": "A4",
+      "to_actor": "A3",
+      "label": 1,
+      "selected": true,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C022",
+      "from_actor": "A4",
+      "to_actor": "A5",
+      "label": 1,
+      "selected": true,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C022",
+      "from_actor": "A5",
+      "to_actor": "A1",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C022",
+      "from_actor": "A5",
+      "to_actor": "A6",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C022",
+      "from_actor": "A5",
+      "to_actor": "A2",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C022",
+      "from_actor": "A5",
+      "to_actor": "A3",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C022",
+      "from_actor": "A5",
+      "to_actor": "A4",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C023",
+      "from_actor": "A3",
+      "to_actor": "A5",
+      "label": 1,
+      "selected": true,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C023",
+      "from_actor": "A3",
+      "to_actor": "A1",
+      "label": 1,
+      "selected": true,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C023",
+      "from_actor": "A3",
+      "to_actor": "A2",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C023",
+      "from_actor": "A3",
+      "to_actor": "A6",
+      "label": 1,
+      "selected": true,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C023",
+      "from_actor": "A3",
+      "to_actor": "A4",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C023",
+      "from_actor": "A5",
+      "to_actor": "A3",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C023",
+      "from_actor": "A5",
+      "to_actor": "A1",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C023",
+      "from_actor": "A5",
+      "to_actor": "A2",
+      "label": 1,
+      "selected": true,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C023",
+      "from_actor": "A5",
+      "to_actor": "A6",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C023",
+      "from_actor": "A5",
+      "to_actor": "A4",
+      "label": 1,
+      "selected": true,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C023",
+      "from_actor": "A1",
+      "to_actor": "A3",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C023",
+      "from_actor": "A1",
+      "to_actor": "A5",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C023",
+      "from_actor": "A1",
+      "to_actor": "A2",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C023",
+      "from_actor": "A1",
+      "to_actor": "A6",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C023",
+      "from_actor": "A1",
+      "to_actor": "A4",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C023",
+      "from_actor": "A2",
+      "to_actor": "A3",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C023",
+      "from_actor": "A2",
+      "to_actor": "A5",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C023",
+      "from_actor": "A2",
+      "to_actor": "A1",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C023",
+      "from_actor": "A2",
+      "to_actor": "A6",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C023",
+      "from_actor": "A2",
+      "to_actor": "A4",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C023",
+      "from_actor": "A6",
+      "to_actor": "A3",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C023",
+      "from_actor": "A6",
+      "to_actor": "A5",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C023",
+      "from_actor": "A6",
+      "to_actor": "A1",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C023",
+      "from_actor": "A6",
+      "to_actor": "A2",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C023",
+      "from_actor": "A6",
+      "to_actor": "A4",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C023",
+      "from_actor": "A4",
+      "to_actor": "A3",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C023",
+      "from_actor": "A4",
+      "to_actor": "A5",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C023",
+      "from_actor": "A4",
+      "to_actor": "A1",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C023",
+      "from_actor": "A4",
+      "to_actor": "A2",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C023",
+      "from_actor": "A4",
+      "to_actor": "A6",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C024",
+      "from_actor": "A6",
+      "to_actor": "A1",
+      "label": 1,
+      "selected": true,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C024",
+      "from_actor": "A6",
+      "to_actor": "A2",
+      "label": 1,
+      "selected": true,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C024",
+      "from_actor": "A6",
+      "to_actor": "A4",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C024",
+      "from_actor": "A6",
+      "to_actor": "A3",
+      "label": 1,
+      "selected": true,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C024",
+      "from_actor": "A6",
+      "to_actor": "A5",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C024",
+      "from_actor": "A1",
+      "to_actor": "A6",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C024",
+      "from_actor": "A1",
+      "to_actor": "A2",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C024",
+      "from_actor": "A1",
+      "to_actor": "A4",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C024",
+      "from_actor": "A1",
+      "to_actor": "A3",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C024",
+      "from_actor": "A1",
+      "to_actor": "A5",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C024",
+      "from_actor": "A2",
+      "to_actor": "A6",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C024",
+      "from_actor": "A2",
+      "to_actor": "A1",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C024",
+      "from_actor": "A2",
+      "to_actor": "A4",
+      "label": 1,
+      "selected": true,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C024",
+      "from_actor": "A2",
+      "to_actor": "A3",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C024",
+      "from_actor": "A2",
+      "to_actor": "A5",
+      "label": 1,
+      "selected": true,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C024",
+      "from_actor": "A4",
+      "to_actor": "A6",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C024",
+      "from_actor": "A4",
+      "to_actor": "A1",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C024",
+      "from_actor": "A4",
+      "to_actor": "A2",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C024",
+      "from_actor": "A4",
+      "to_actor": "A3",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C024",
+      "from_actor": "A4",
+      "to_actor": "A5",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C024",
+      "from_actor": "A3",
+      "to_actor": "A6",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C024",
+      "from_actor": "A3",
+      "to_actor": "A1",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C024",
+      "from_actor": "A3",
+      "to_actor": "A2",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C024",
+      "from_actor": "A3",
+      "to_actor": "A4",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C024",
+      "from_actor": "A3",
+      "to_actor": "A5",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C024",
+      "from_actor": "A5",
+      "to_actor": "A6",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C024",
+      "from_actor": "A5",
+      "to_actor": "A1",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C024",
+      "from_actor": "A5",
+      "to_actor": "A2",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C024",
+      "from_actor": "A5",
+      "to_actor": "A4",
+      "label": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "case_id": "E14JOINT_C024",
+      "from_actor": "A5",
+      "to_actor": "A3",
+      "label": 0,
+      "selected": false,
+      "available": true
+    }
+  ],
+  "fund_errors": [],
+  "scope": "外部留出实证，未训练、校准或改变阈值。人工标签正确性仍需提供方核实。",
+  "raw_roles": {
+    "n": 144,
+    "accuracy": 1.0,
+    "macro_f1": 1.0,
+    "confusion": [
+      [
+        24,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        48,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        24,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        48
+      ]
+    ],
+    "nll": 0.00017583547784704126,
+    "calibration": {
+      "n": 144,
+      "brier": 5.313805799122615e-08,
+      "log_loss": 0.00017583547784704126,
+      "ece": 0.00017581673132049946,
+      "bins": [
+        {
+          "lower": 0.8,
+          "upper": 1.0,
+          "n": 144,
+          "mean_prediction": 0.9998241832686795,
+          "observed_frequency": 1.0
+        }
+      ],
+      "interpretation": "分箱频率仅描述这组留出标签；Brier同时受区分能力影响，小样本或合成数据不能证明真实概率校准。"
+    }
+  },
+  "raw_levels": {
+    "n": 144,
+    "accuracy": 1.0,
+    "macro_f1": 1.0,
+    "confusion": [
+      [
+        24,
+        0,
+        0
+      ],
+      [
+        0,
+        72,
+        0
+      ],
+      [
+        0,
+        0,
+        48
+      ]
+    ],
+    "nll": 0.0002243061757803581,
+    "calibration": {
+      "n": 144,
+      "brier": 1.1151111576770772e-07,
+      "log_loss": 0.0002243061757803581,
+      "ece": 0.00022427199615371318,
+      "bins": [
+        {
+          "lower": 0.8,
+          "upper": 1.0,
+          "n": 144,
+          "mean_prediction": 0.9997757280038463,
+          "observed_frequency": 1.0
+        }
+      ],
+      "interpretation": "分箱频率仅描述这组留出标签；Brier同时受区分能力影响，小样本或合成数据不能证明真实概率校准。"
+    }
+  },
+  "person_coverage": 1.0,
+  "displayed_control": {
+    "tp": 120,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0
+  },
+  "criteria": {
+    "passed": false,
+    "checks": [
+      {
+        "criterion": "min_cases",
+        "minimum": 30,
+        "actual": 24,
+        "passed": false
+      },
+      {
+        "criterion": "min_positive_cases",
+        "minimum": 10,
+        "actual": 12,
+        "passed": true
+      },
+      {
+        "criterion": "min_negative_cases",
+        "minimum": 10,
+        "actual": 12,
+        "passed": true
+      },
+      {
+        "criterion": "min_independent_groups",
+        "minimum": 10,
+        "actual": 24,
+        "passed": true
+      },
+      {
+        "criterion": "min_coverage",
+        "minimum": 0.8,
+        "actual": 1.0,
+        "passed": true
+      },
+      {
+        "criterion": "min_precision",
+        "minimum": 0.8,
+        "actual": 1.0,
+        "passed": true
+      },
+      {
+        "criterion": "min_recall",
+        "minimum": 0.8,
+        "actual": 1.0,
+        "passed": true
+      },
+      {
+        "criterion": "min_role_macro_f1",
+        "minimum": 0.8,
+        "actual": 1.0,
+        "passed": true
+      },
+      {
+        "criterion": "min_level_macro_f1",
+        "minimum": 0.8,
+        "actual": 1.0,
+        "passed": true
+      },
+      {
+        "criterion": "min_person_coverage",
+        "minimum": 0.8,
+        "actual": 1.0,
+        "passed": true
+      },
+      {
+        "criterion": "min_control_precision",
+        "minimum": 0.8,
+        "actual": 1.0,
+        "passed": true
+      },
+      {
+        "criterion": "min_control_recall",
+        "minimum": 0.8,
+        "actual": 1.0,
+        "passed": true
+      }
+    ],
+    "scope": "业务人员设定的本地验收规则；示例数值不是行业标准或法律结论"
+  },
+  "subgroups": {
+    "region": {
+      "合成未见区域丁": {
+        "n": 24,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "accuracy": 1.0,
+        "roc_auc": 1.0,
+        "brier": 0.0,
+        "confusion": {
+          "tp": 12,
+          "fp": 0,
+          "fn": 0,
+          "tn": 12
+        },
+        "calibration": {
+          "n": 24,
+          "brier": 7.73930923486042e-10,
+          "log_loss": 8.546356014849807e-06,
+          "ece": 8.545969023165956e-06,
+          "bins": [
+            {
+              "lower": 0.0,
+              "upper": 0.2,
+              "n": 12,
+              "mean_prediction": 1.6307143556826276e-05,
+              "observed_frequency": 0.0
+            },
+            {
+              "lower": 0.8,
+              "upper": 1.0,
+              "n": 12,
+              "mean_prediction": 0.9999992152055105,
+              "observed_frequency": 1.0
+            }
+          ],
+          "interpretation": "分箱频率仅描述这组留出标签；Brier同时受区分能力影响，小样本或合成数据不能证明真实概率校准。"
+        },
+        "precision_wilson_case_level": [
+          0.7575059933447693,
+          1.0
+        ],
+        "recall_wilson_case_level": [
+          0.7575059933447693,
+          1.0
+        ],
+        "labelled_cases": 24,
+        "available_cases": 24,
+        "coverage": 1.0,
+        "positive_cases": 12,
+        "negative_cases": 12,
+        "independent_groups": 24,
+        "f1_cluster_bootstrap_95": [
+          1.0,
+          1.0
+        ],
+        "usable_bootstrap": 1000,
+        "interval_scope": "按声明关联分组整组重采样；Wilson按案件计算，组内相关时只作参考。零错误可能产生退化区间，不证明100%泛化。"
+      }
+    },
+    "case_type": {
+      "合成未见场景丁": {
+        "n": 24,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "accuracy": 1.0,
+        "roc_auc": 1.0,
+        "brier": 0.0,
+        "confusion": {
+          "tp": 12,
+          "fp": 0,
+          "fn": 0,
+          "tn": 12
+        },
+        "calibration": {
+          "n": 24,
+          "brier": 7.73930923486042e-10,
+          "log_loss": 8.546356014849807e-06,
+          "ece": 8.545969023165956e-06,
+          "bins": [
+            {
+              "lower": 0.0,
+              "upper": 0.2,
+              "n": 12,
+              "mean_prediction": 1.6307143556826276e-05,
+              "observed_frequency": 0.0
+            },
+            {
+              "lower": 0.8,
+              "upper": 1.0,
+              "n": 12,
+              "mean_prediction": 0.9999992152055105,
+              "observed_frequency": 1.0
+            }
+          ],
+          "interpretation": "分箱频率仅描述这组留出标签；Brier同时受区分能力影响，小样本或合成数据不能证明真实概率校准。"
+        },
+        "precision_wilson_case_level": [
+          0.7575059933447693,
+          1.0
+        ],
+        "recall_wilson_case_level": [
+          0.7575059933447693,
+          1.0
+        ],
+        "labelled_cases": 24,
+        "available_cases": 24,
+        "coverage": 1.0,
+        "positive_cases": 12,
+        "negative_cases": 12,
+        "independent_groups": 24,
+        "f1_cluster_bootstrap_95": [
+          1.0,
+          1.0
+        ],
+        "usable_bootstrap": 1000,
+        "interval_scope": "按声明关联分组整组重采样；Wilson按案件计算，组内相关时只作参考。零错误可能产生退化区间，不证明100%泛化。"
+      }
+    }
+  }
+}
